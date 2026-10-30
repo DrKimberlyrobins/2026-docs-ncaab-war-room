@@ -10,7 +10,7 @@ GitHub Pages research dashboard for 2026–27 men's college basketball.
 - GitHub Actions refreshes team and slate snapshots every three hours; successful files survive partial outages. Actions must be enabled. Scheduled runs can be delayed by GitHub.
 
 ## Run
-Serve this directory using `python -m http.server 8000`. Open http://localhost:8000. No dependencies or secrets needed. Live ESPN access is required for team schedules/game summaries; scoreboard and directory have timestamped repository fallbacks. Browser CORS/source outages can still block detailed analysis.
+Serve this directory using `python -m http.server 8000`. Open http://localhost:8000. No dependencies or secrets needed. Live ESPN access is required for team schedules/game summaries; scoreboard and directory have timestamped repository fallbacks. Upcoming matchup schedules and the latest three completed game half scores also have repository fallbacks. Browser CORS/source outages can still block uncached analysis.
 
 ## Verification
 `node --check app.js`
