@@ -24,3 +24,6 @@ NCAA membership reconciliation; possession-based opponent-adjusted efficiency; s
 Every event returned for a selected date appears on its own card with precomputed full-game and first-half baselines, season labels, source retrieval times and preparation counts. The scheduled GitHub workflow prepares all upcoming source slates every three hours. The dashboard reads snapshot data from the repository directly, so data-only commits do not depend on a Pages rebuild. For dates without a prepared snapshot, the browser prepares all returned matchups in a bounded queue. Current-season samples are preferred; explicitly labeled prior-season references are used when fewer than three current-season games are available. Missing sources remain listed, with unavailable fields. These baselines remain unvalidated.
 
 `python scripts/check-daily.py` checks season selection, event retention, and future/live exclusions.
+
+## Canonical membership
+The All Teams directory uses the NCAA's sport-specific 2026–27 Division I men's basketball membership roster: 365 unique institution IDs. Membership count and duplicates are checked during refresh. ESPN's 362-team discovery response is not used as the canonical directory. Scoreboard event counts describe games on selected dates, not total membership.

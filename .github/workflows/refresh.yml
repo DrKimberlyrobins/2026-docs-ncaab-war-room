@@ -24,6 +24,8 @@ jobs:
           node --check app.js
           node scripts/check-model.cjs
           python scripts/check-daily.py
+      - name: Refresh NCAA 365-team membership
+        run: python scripts/membership.py
       - name: Fetch timestamped evidence
         id: fetch
         continue-on-error: true
