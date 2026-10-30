@@ -1,0 +1,13 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const source=fs.readFileSync('app.js','utf8');
+const a=source.indexOf('function sample('),b=source.indexOf('const fmt=',a);
+const num=x=>x==null||x===''?null:Number.isFinite(Number(x?.value??x))?Number(x?.value??x):null;
+const ctx={num};vm.createContext(ctx);vm.runInContext(source.slice(a,b)+';this.sample=sample;this.baseline=baseline;',ctx);
+const rows=Array.from({length:3},()=>({pf:80,pa:60,hf:35,ha:25}));
+const m=ctx.baseline(rows,rows);assert.equal(m.full.total,140);assert.equal(m.half.total,60);
+assert.equal(ctx.baseline(rows.slice(1),rows).full,null);
+assert.equal(ctx.baseline(rows.map(x=>({...x,hf:null})),rows).half,null);
+const event=(date,completed,score)=>({id:date,date,competitions:[{status:{type:{completed}},competitors:[{id:'1',score:{value:score},team:{displayName:'A'}},{id:'2',score:{value:70},team:{displayName:'B'}}]}]});
+const p={data:{events:[event('2026-11-01',true,80),event('2026-11-03',true,100),event('2026-10-30',false,0)]}};
+assert.equal(ctx.sample(p,'1','2026-11-02').length,1);assert.equal(ctx.sample(p,'1','2026-11-02')[0].pf,80);
+console.log('Passed: cutoff excludes future/live games; minimum samples; actual-half availability; score arithmetic.');
