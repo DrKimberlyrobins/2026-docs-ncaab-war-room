@@ -7,11 +7,15 @@ from pathlib import Path
 
 def fresh(path):
     p=ROOT/path
-    return p.exists() and datetime.now(timezone.utc).timestamp()-p.stat().st_mtime<43200
+    try:
+        fetched=datetime.fromisoformat(json.loads(p.read_text())['fetchedAt'].replace('Z','+00:00'))
+        return (datetime.now(timezone.utc)-fetched).total_seconds()<43200
+    except (OSError,ValueError,KeyError):return False
 
 def warm(team):
     errors=[]
-    for season in (2026,2027):
+    year=datetime.now(timezone.utc).year+(datetime.now(timezone.utc).month>=7)
+    for season in (year-1,year):
         path=Path(f'data/schedules/{season}/{team}.json')
         try:
             if fresh(path): p=json.loads((ROOT/path).read_text())
@@ -28,7 +32,7 @@ def warm(team):
                         item['competitions'].append(co)
                     events.append(item)
                 p['data']={'events':events};save(path,p)
-            completed=[e for e in p['data']['events'] if e.get('competitions',[{}])[0].get('status',{}).get('type',{}).get('completed')]
+            completed=[e for e in p['data']['events'] if e.get('competitions',[{}])[0].get('status',{}).get('type',{}).get('completed') and e.get('seasonType',{}).get('type')!=1 and e.get('competitions',[{}])[0].get('type',{}).get('slug')!='exhibition']
             for e in sorted(completed,key=lambda x:x['date'],reverse=True)[:3]:
                 sp=Path(f"data/summaries/{e['id']}.json")
                 if (ROOT/sp).exists():continue
@@ -48,7 +52,7 @@ if __name__=='__main__':
                 for c in e.get('competitions',[]):
                     ids.update(str(t['id']) for t in c.get('competitors',[]))
     errors=[]
-    with ThreadPoolExecutor(max_workers=6) as pool:
+    with ThreadPoolExecutor(max_workers=16) as pool:
         for result in pool.map(warm,sorted(ids)): errors.extend(result)
     print('Cached schedule evidence for',len(ids),'teams;',len(errors),'source failures')
     save(Path('data/schedule-health.json'),{'checkedAt':datetime.now(timezone.utc).isoformat(),'teamsRequested':len(ids),'failures':errors})

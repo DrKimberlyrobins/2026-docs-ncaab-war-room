@@ -19,3 +19,8 @@ Serve this directory using `python -m http.server 8000`. Open http://localhost:8
 
 ## Outstanding before calling this a complete forecasting system
 NCAA membership reconciliation; possession-based opponent-adjusted efficiency; schedule-strength adjustment; current roster/availability and expected-minute inputs; historical pregame backtest with calibration and held-out evaluation; reliable sportsbook period/player lines; shared server-side immutable forecast archive. This release provides research and a descriptive baseline, not a validated betting model. Browser receipts are local, not account-synced or tamper-proof. No 1Q markets: NCAA men's basketball plays halves.
+
+## Daily matchup preparation
+Every event returned for a selected date appears on its own card with precomputed full-game and first-half baselines, season labels, source retrieval times and preparation counts. The scheduled GitHub workflow prepares all upcoming source slates every three hours. The dashboard reads snapshot data from the repository directly, so data-only commits do not depend on a Pages rebuild. For dates without a prepared snapshot, the browser prepares all returned matchups in a bounded queue. Current-season samples are preferred; explicitly labeled prior-season references are used when fewer than three current-season games are available. Missing sources remain listed, with unavailable fields. These baselines remain unvalidated.
+
+`python scripts/check-daily.py` checks season selection, event retention, and future/live exclusions.

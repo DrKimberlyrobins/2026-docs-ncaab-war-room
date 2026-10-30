@@ -1,5 +1,5 @@
 """Fetch timestamped ESPN snapshots without replacing good files on source failure."""
-import json, os, time, urllib.request
+import json, os, time, urllib.request, uuid
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -35,7 +35,7 @@ def compact(obj):
 
 def save(path,obj):
     path=ROOT/path; path.parent.mkdir(parents=True,exist_ok=True)
-    tmp=path.with_suffix('.tmp'); tmp.write_text(json.dumps(obj,separators=(',',':'))); tmp.replace(path)
+    tmp=path.with_name(path.name+'.'+uuid.uuid4().hex+'.tmp'); tmp.write_text(json.dumps(obj,separators=(',',':'))); tmp.replace(path)
 def main():
     failures=[]
     jobs=[('teams?groups=50&limit=1000','data/teams.json')]

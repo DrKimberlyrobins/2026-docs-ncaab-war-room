@@ -1,5 +1,8 @@
 name: Refresh NCAAB evidence
 on:
+  push:
+    branches: [main]
+    paths: ['scripts/**', '.github/workflows/refresh.yml']
   workflow_dispatch:
   schedule:
     - cron: '17 */3 * * *'
@@ -16,6 +19,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Verify daily preparation rules
+        run: |
+          node --check app.js
+          node scripts/check-model.cjs
+          python scripts/check-daily.py
       - name: Fetch timestamped evidence
         id: fetch
         continue-on-error: true
@@ -24,6 +32,10 @@ jobs:
         id: warm
         continue-on-error: true
         run: python scripts/warm.py
+      - name: Prepare every daily matchup
+        run: |
+          python scripts/prepare.py
+          node scripts/check-prepared.cjs
       - name: Retain successful snapshots and source health
         run: |
           git config user.name 'github-actions[bot]'
