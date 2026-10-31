@@ -34,6 +34,8 @@ jobs:
         id: warm
         continue-on-error: true
         run: python scripts/warm.py
+      - name: Report live ratings pipeline health
+        run: python scripts/ratings_health.py
       - name: Prepare every daily matchup
         run: |
           python scripts/prepare.py
