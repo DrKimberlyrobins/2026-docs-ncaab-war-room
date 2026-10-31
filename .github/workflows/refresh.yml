@@ -28,12 +28,12 @@ jobs:
           python scripts/test_audit_team_mapping.py
       - name: Refresh NCAA 365-team membership
         run: python scripts/membership.py
-      - name: Build ESPN master team lookup
-        run: python scripts/build_team_lookup.py
       - name: Fetch timestamped evidence
         id: fetch
         continue-on-error: true
         run: python scripts/refresh.py
+      - name: Build ESPN master team lookup
+        run: python scripts/build_team_lookup.py
       - name: Cache upcoming matchup evidence
         id: warm
         continue-on-error: true
