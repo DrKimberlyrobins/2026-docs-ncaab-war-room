@@ -42,6 +42,9 @@ jobs:
         id: torvik
         continue-on-error: true
         run: python scripts/stage_torvik_csv.py
+      - name: Build Torvik team identity candidates
+        if: steps.torvik.outcome == 'success'
+        run: python scripts/torvik_identity_candidates.py
       - name: Report live ratings pipeline health
         run: python scripts/ratings_health.py
       - name: Prepare every daily matchup
