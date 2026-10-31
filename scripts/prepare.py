@@ -70,6 +70,8 @@ def ratings_for(matchup, ratings):
             return None, 'Ratings and tipoff timestamps must include timezones.'
         if stamp > tip:
             return None, 'Ratings were fetched after tipoff; pregame forecast blocked.'
+        if (tip - stamp).total_seconds() > 72 * 3600:
+            return None, 'Ratings snapshot is over 72 hours old; simulation blocked.'
     except (ValueError, TypeError, KeyError):
         return None, 'Invalid ratings timestamp or matchup tipoff.'
     c=(matchup.get('competitions') or [{}])[0]
@@ -79,10 +81,13 @@ def ratings_for(matchup, ratings):
     try:
         def team(t):
             item=ratings['teams'][str(t['id'])]
-            return Team(t['team']['displayName'],float(item['adj_off']),float(item['adj_def']),float(item['adj_tempo']))
+            result = Team(t['team']['displayName'],float(item['adj_off']),float(item['adj_def']),float(item['adj_tempo']))
+            from possession_simulator import validate
+            validate(result)
+            return result
         return (team(away),team(home)),None
     except (KeyError,TypeError,ValueError):
-        return None,'Verified ratings missing for one or both teams.'
+        return None,'Verified valid ratings missing for one or both teams.'
 
 def prepare(e,now,ratings=None):
     c=(e.get('competitions') or [{}])[0]
