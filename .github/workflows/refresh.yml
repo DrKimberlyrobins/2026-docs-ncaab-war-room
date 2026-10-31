@@ -24,6 +24,7 @@ jobs:
           node --check app.js
           node scripts/check-model.cjs
           python scripts/check-daily.py
+          python scripts/test_validate_ratings.py
       - name: Refresh NCAA 365-team membership
         run: python scripts/membership.py
       - name: Fetch timestamped evidence
