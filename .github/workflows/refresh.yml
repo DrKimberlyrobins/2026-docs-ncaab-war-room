@@ -41,6 +41,13 @@ jobs:
       - name: Stage public Torvik CSV for identity review
         continue-on-error: true
         run: python scripts/stage_torvik_csv.py
+      - name: Publish verified ratings when reviewed mapping is available
+        run: |
+          if [ -s data/staging/torvik-ratings.json ] && [ -s data/torvik-espn-reviewed.json ]; then
+            python scripts/validate_ratings.py
+          else
+            echo "No verified mapping or staged CSV; ratings publication blocked."
+          fi
       - name: Report live ratings pipeline health
         run: python scripts/ratings_health.py
       - name: Prepare every daily matchup
