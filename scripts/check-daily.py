@@ -29,4 +29,25 @@ class DailyChecks(unittest.TestCase):
         with patch.object(prepare,'read',lambda _:p):rows,_=prepare.sample('a',2026,'2026-02-03T12:00:00Z')
         self.assertEqual(len(rows),1)
 
+    def test_ratings_after_tipoff_rejected(self):
+        game={'date':'2026-11-01T19:00:00Z','competitions':[{'competitors':[
+            {'id':'1','homeAway':'away','team':{'displayName':'Away'}},
+            {'id':'2','homeAway':'home','team':{'displayName':'Home'}}]}]}
+        ratings={'source':'test','fetchedAt':'2026-11-01T19:01:00Z','teams':{
+            '1':{'adj_off':110,'adj_def':100,'adj_tempo':67},
+            '2':{'adj_off':105,'adj_def':102,'adj_tempo':68}}}
+        pair,error=prepare.ratings_for(game,ratings)
+        self.assertIsNone(pair)
+        self.assertIn('after tipoff',error)
+        ratings['fetchedAt']='2026-11-01T18:59:00Z'
+        pair,error=prepare.ratings_for(game,ratings)
+        self.assertIsNone(error)
+        self.assertEqual(pair[0].name,'Away')
+    def test_ratings_without_timezone_rejected(self):
+        game={'date':'2026-11-01T19:00:00Z','competitions':[{'competitors':[]}]}
+        ratings={'source':'test','fetchedAt':'2026-11-01T18:00:00','teams':{}}
+        pair,error=prepare.ratings_for(game,ratings)
+        self.assertIsNone(pair)
+        self.assertIn('timezones',error)
+
 if __name__=='__main__':unittest.main()
