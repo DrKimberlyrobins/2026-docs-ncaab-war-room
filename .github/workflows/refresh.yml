@@ -24,6 +24,8 @@ jobs:
           node --check app.js
           node scripts/check-model.cjs
           python scripts/check-daily.py
+          python -m py_compile scripts/stage_torvik_csv.py
+          python scripts/test_stage_torvik_csv.py
           python scripts/test_validate_ratings.py
           python scripts/test_audit_team_mapping.py
       - name: Refresh NCAA 365-team membership
