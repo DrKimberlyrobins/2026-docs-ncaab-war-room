@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from refresh import ROOT, save
 from possession_simulator import Team, simulate
+from empirical_simulator import simulate_scores
 
 def number(x):
     if isinstance(x,dict): x=x.get('value',x.get('displayValue'))
@@ -112,6 +113,13 @@ def prepare(e,now,ratings=None):
             sim_error='Simulator rejected inputs: '+str(exc)
     elif pair:
         sim_error='Game has started or passed; no retrospective pregame simulation generated.'
+    if sim_result is None and e.get('date','')>now and model['full']:
+        try:
+            sim_result=simulate_scores(aa,hh,n=10000,seed=int(e['id']) % (2**32))
+            sim_result['rating_source']={'source':'ESPN completed-game score snapshots','fetchedAt':now,'evidence':sa+sh}
+            sim_error=None
+        except (ValueError,OverflowError) as exc:
+            sim_error='Empirical simulator rejected inputs: '+str(exc)
     return {'simulation':sim_result,'simulationStatus':sim_error,'id':e['id'],'date':e['date'],'name':e.get('name'),'preparedAt':now,'season':season,'priorSeason':prior,'modelVersion':'score-baseline-v1','model':model,'samples':{'away':aa,'home':hh},'source':sa+sh,'state':'ready' if model['full'] and model['half'] else 'partial' if model['full'] else 'unavailable','reason':None if model['full'] else 'Fewer than 3 scored games for one or both teams, or source unavailable.'}
 
 def main():
