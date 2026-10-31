@@ -44,6 +44,15 @@ def main():
     approved = ROOT / "data/torvik-espn-reviewed.json"
     reviewed = json.loads(approved.read_text()) if approved.exists() else {}
     result = build_master(espn, reviewed)
+    membership_file = ROOT / "data/membership.json"
+    if membership_file.exists():
+        membership = json.loads(membership_file.read_text())
+        expected = membership.get("teamCount")
+        result["ncaaMembershipCount"] = expected
+        result["coverageComplete"] = result["espnTeamCount"] == expected
+        if not result["coverageComplete"]:
+            print("COVERAGE GAP: ESPN", result["espnTeamCount"], "vs NCAA", expected,
+                  "; do not claim all D-I teams mapped")
     target = ROOT / "data/team-lookup.json"
     target.write_text(json.dumps(result, indent=2) + "\n")
     print(f"Master lookup: {result['espnTeamCount']} ESPN teams; {result['reviewedCount']} reviewed T-Rank matches")
