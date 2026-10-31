@@ -38,6 +38,9 @@ jobs:
         id: warm
         continue-on-error: true
         run: python scripts/warm.py
+      - name: Stage public Torvik CSV for identity review
+        continue-on-error: true
+        run: python scripts/stage_torvik_csv.py
       - name: Report live ratings pipeline health
         run: python scripts/ratings_health.py
       - name: Prepare every daily matchup
