@@ -39,8 +39,12 @@ jobs:
         continue-on-error: true
         run: python scripts/warm.py
       - name: Stage public Torvik CSV for identity review
+        id: torvik
         continue-on-error: true
         run: python scripts/stage_torvik_csv.py
+      - name: Build Torvik team identity candidates
+        if: steps.torvik.outcome == 'success'
+        run: python scripts/torvik_identity_candidates.py
       - name: Report live ratings pipeline health
         run: python scripts/ratings_health.py
       - name: Prepare every daily matchup
@@ -57,5 +61,5 @@ jobs:
             git push
           fi
       - name: Report source failure
-        if: steps.fetch.outcome == 'failure' || steps.warm.outcome == 'failure'
+        if: steps.fetch.outcome == 'failure' || steps.warm.outcome == 'failure' || steps.torvik.outcome == 'failure'
         run: exit 1
