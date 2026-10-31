@@ -32,6 +32,8 @@ jobs:
         id: fetch
         continue-on-error: true
         run: python scripts/refresh.py
+      - name: Build ESPN master team lookup
+        run: python scripts/build_team_lookup.py
       - name: Cache upcoming matchup evidence
         id: warm
         continue-on-error: true
