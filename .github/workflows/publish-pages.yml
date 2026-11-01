@@ -18,7 +18,7 @@ permissions:
   contents: read
   pages: write
   id-token: write
-  deployments: read
+  deployments: write
 concurrency:
   group: docs-war-room-pages
   cancel-in-progress: false
@@ -62,7 +62,12 @@ jobs:
               const statuses = await github.rest.repos.listDeploymentStatuses({...context.repo, deployment_id:d.id, per_page:1});
               core.info(JSON.stringify({id:d.id, sha:d.sha, state:statuses.data[0]?.state}));
               if (d.sha === 'f6f5bbb3cbd5bd27d9dfce7aa02c1579e6539810' &&
-                  ['queued','pending','in_progress'].includes(statuses.data[0]?.state)) {
+                  statuses.data[0]?.state !== 'inactive') {
+                await github.rest.repos.createDeploymentStatus({
+                  ...context.repo, deployment_id:d.id, state:'inactive',
+                  description:'Superseded by the automatic calculator publication'
+                });
+                core.info('Marked the old deployment inactive: ' + d.id);
                 try {
                   await github.request('POST /repos/{owner}/{repo}/pages/deployments/{pages_deployment_id}/cancel',
                     {...context.repo, pages_deployment_id:d.id});
