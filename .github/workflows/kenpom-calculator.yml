@@ -1,0 +1,44 @@
+name: Refresh KenPom matchup calculator
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scripts/kenpom_calculator.py', 'scripts/test_kenpom_calculator.py', 'config/kenpom-calculator.json', '.github/workflows/kenpom-calculator.yml']
+  schedule:
+    - cron: '7 */3 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: ncaab-evidence
+  cancel-in-progress: false
+jobs:
+  calculate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test calculator and API validation
+        run: |
+          python -m unittest discover -s scripts -p test_kenpom_calculator.py
+          node --check calculator/calculator.js
+      - name: Fetch official KenPom ratings and today's matchups
+        id: kenpom
+        continue-on-error: true
+        env:
+          KENPOM_API_KEY: ${{ secrets.KENPOM_API_KEY }}
+        run: python scripts/kenpom_calculator.py
+      - name: Retain calculations and connection status
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/kenpom
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh KenPom matchup calculations and source status'
+            git push
+          fi
+      - name: Report retrieval failure
+        if: steps.kenpom.outcome == 'failure'
+        run: exit 1
