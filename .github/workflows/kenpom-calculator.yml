@@ -3,7 +3,11 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['scripts/automatic_matchups.py', 'scripts/test_automatic_matchups.py', 'config/kenpom-calculator.json', 'config/kenpom-team-aliases.json', '.github/workflows/kenpom-calculator.yml']
+    paths: ['scripts/automatic_matchups.py', 'scripts/test_automatic_matchups.py', 'scripts/first_half.py', 'scripts/test_first_half.py', 'config/kenpom-calculator.json', 'config/kenpom-team-aliases.json', '.github/workflows/kenpom-calculator.yml']
+  workflow_run:
+    workflows: ['Refresh NCAAB evidence']
+    types: [completed]
+    branches: [main]
   schedule:
     - cron: '7 */3 * * *'
 permissions:
@@ -24,6 +28,7 @@ jobs:
       - name: Verify source parsing and automatic page
         run: |
           python -m unittest discover -s scripts -p test_automatic_matchups.py
+          python -m unittest discover -s scripts -p test_first_half.py
           node --check calculator/calculator.js
           node scripts/test-calculator-flow.cjs
       - name: Fetch public ratings and prepare five daily slates

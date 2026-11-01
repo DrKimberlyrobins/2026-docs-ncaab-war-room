@@ -12,6 +12,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from zoneinfo import ZoneInfo
 from kenpom_calculator import calculate, finite
+from first_half import attach
 
 ROOT = Path(__file__).resolve().parents[1]
 KENPOM = 'https://kenpom.com/'
@@ -145,14 +146,17 @@ def main():
                 if not isinstance(slate.get('events'), list): raise ValueError('Schedule events missing')
                 stamp = datetime.now(timezone.utc).isoformat()
                 matchups = build(slate['events'], directory, ratings, config, reviewed)
+                for matchup, event in zip(matchups, slate['events']):
+                    attach(matchup, event, season, stamp)
                 payload = {'date': day.isoformat(), 'preparedAt': stamp,
                            'ratingsFetchedAt': fetched, 'ratingSource': KENPOM,
                            'scheduleSource': url, 'scheduleFetchedAt': stamp,
                            'season': season, 'ratedTeams': len(ratings), 'config': config,
                            'calculatedGames': sum(m['model'] is not None for m in matchups),
+                           'firstHalfGames': sum(m.get('firstHalf') is not None for m in matchups),
                            'matchups': matchups, 'evidenceLabel': 'Calculated at retrieval time; not certified pre-tipoff evidence'}
                 write(ROOT / f'data/calculator/daily/{day}.json', payload)
-                days.append({'date': str(day), 'games': len(matchups), 'calculated': payload['calculatedGames']})
+                days.append({'date': str(day), 'games': len(matchups), 'calculated': payload['calculatedGames'], 'firstHalf': payload['firstHalfGames']})
             except Exception as exc:
                 failures.append({'date': str(day), 'error': str(exc)})
         write(health, {'status': 'SOURCE_ERROR' if failures else 'READY',

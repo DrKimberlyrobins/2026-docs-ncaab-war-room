@@ -21,3 +21,11 @@ National baselines remain the explicit dated November 1, 2026 screenshot values 
 ## Publication
 
 GitHub Pages Source must be GitHub Actions. `Publish War Room` packages the public site and serializes deployment without cancelling an active run. Imported browser ratings from the previous version are no longer used. The public page contains no paste box or editable rating forms.
+
+## First-half calculator
+
+Every prepared matchup now includes a `firstHalf` projection when both teams have at least three usable completed games. `scripts/first_half.py` reads actual first and second regulation period scores from the existing ESPN schedule/summary evidence cache, with games strictly before the earlier of retrieval time and the selected tipoff. It examines up to ten recent completed games per team. Exhibitions, unfinished games, missing halves and invalid period totals are excluded.
+
+Each team's profile uses current-season evidence when three games are available; otherwise the prior season is explicitly labeled. First-half scoring share = total first-half points scored / total regulation points scored. Allowing share uses actual opponent points in the same manner. Overtime periods are excluded from both denominators. Away 1H points = current full-game away projection × average of away scoring share and home allowing share; reverse teams for home. Total and margin follow from the two projected scores. No fixed 50% substitute is used when evidence is missing. This timing model is unvalidated and does not establish current rotation continuity from prior-season samples.
+
+The automatic calculator also refreshes after the ESPN evidence workflow completes, so newly cached halves feed the next calculation. Source sample sizes, seasons, actual 1H averages and evidence retrieval links appear inside each game's 1H evidence panel. Both 1H and full-game rows remain visible, with 1H first. No manual input is required.
