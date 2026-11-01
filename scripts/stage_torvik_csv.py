@@ -19,7 +19,9 @@ def parse_csv(raw):
         raise ValueError("Missing CSV header")
     def normalized(name):
         return "".join(c for c in name.casefold() if c.isalnum())
-    columns = {normalized(k): k for k in reader.fieldnames if k}\n    if len(columns) < 4:\n        raise ValueError("Invalid or duplicate normalized CSV headers")
+    columns = {normalized(k): k for k in reader.fieldnames if k}
+    if len(columns) < 4:
+        raise ValueError("Invalid or duplicate normalized CSV headers")
     required = {"team", "adjoe", "adjde", "adjt"}
     if not required <= columns.keys():
         raise ValueError("Missing expected CSV fields: " + ", ".join(sorted(required - columns.keys())))
@@ -30,7 +32,9 @@ def parse_csv(raw):
         if not name or name in seen:
             raise ValueError("Missing or duplicate Torvik team name")
         seen.add(name)
-        vals = [float(row[columns[k]]) for k in ("adjoe", "adjde", "adjt")]\n        if not (50 <= vals[0] <= 160 and 50 <= vals[1] <= 160 and 45 <= vals[2] <= 90):\n            raise ValueError(f"Ratings outside simulator bounds for {name}")
+        vals = [float(row[columns[k]]) for k in ("adjoe", "adjde", "adjt")]
+        if not (50 <= vals[0] <= 160 and 50 <= vals[1] <= 160 and 45 <= vals[2] <= 90):
+            raise ValueError(f"Ratings outside simulator bounds for {name}")
         if not all(map(math.isfinite, vals)):
             raise ValueError("Nonfinite Torvik efficiency or tempo")
         teams.append(dict(team=name, adj_o=vals[0], adj_d=vals[1], adj_t=vals[2]))

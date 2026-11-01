@@ -16,11 +16,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - name: Verify daily preparation rules
         run: |
+          python -m compileall -q scripts
           node --check app.js
           node scripts/check-model.cjs
           python scripts/check-daily.py
@@ -61,7 +64,16 @@ jobs:
           git add data
           if ! git diff --cached --quiet; then
             git commit -m 'Refresh timestamped NCAAB source snapshots'
-            git push
+            for attempt in 1 2 3; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then
+                break
+              fi
+              if [ "$attempt" = 3 ]; then
+                exit 1
+              fi
+            done
           fi
       - name: Report source failure
         if: steps.fetch.outcome == 'failure' || steps.warm.outcome == 'failure'

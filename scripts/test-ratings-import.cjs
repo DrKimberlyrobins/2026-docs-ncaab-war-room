@@ -15,3 +15,8 @@ assert.equal(match({id:'87',shortDisplayName:'Notre Dame'},[...t,{...t[0],name:'
 const m=calculate(t[0],t[1],106,71.5);assert.ok(Math.abs(m.total-148.1859)<1e-8);
 assert.throws(()=>calculate(t[0],t[1],0,71.5));
 console.log('13 ratings import, identity and calculation checks passed.');
+
+const fullHeader='Rk\tTeam\tConf\tW-L\tNetRtg\tORtg\tDRtg\tAdjT\tLuck\tNetRtg\tORtg\tDRtg\tNetRtg';
+const fullRow='84\tNotre Dame\tACC\t0-0\t+10.83\t110.6\t94\t99.8\t72\t69.8\t310\t+.000\t1\t+0.00\t1\t0.0\t1\t0.0\t1\t+0.00\t1';
+assert.equal(parse(fullHeader+'\n'+fullRow+'\nStrength of Schedule\tNCSOS\n'+fullHeader)[0].tempo,69.8);
+console.log('Live KenPom repeated-header and separate-rank layout passed.');
