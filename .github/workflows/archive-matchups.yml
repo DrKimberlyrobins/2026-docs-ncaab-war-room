@@ -1,0 +1,52 @@
+name: Archive matchup receipts
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['scripts/archive_matchups.py', 'scripts/test_archive_matchups.py', '.github/workflows/archive-matchups.yml']
+  workflow_run:
+    workflows: ['Refresh automatic matchup calculator', 'Refresh Kambi markets', 'Refresh NCAAB evidence']
+    types: [completed]
+    branches: [main]
+  schedule:
+    - cron: '12,42 * * * *'
+permissions:
+  contents: write
+concurrency:
+  group: matchup-archive
+  cancel-in-progress: false
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify immutable receipts and actual results
+        run: python -m unittest discover -s scripts -p test_archive_matchups.py
+      - name: Save pregame evidence and fetch completed results
+        id: archive
+        continue-on-error: true
+        run: python scripts/archive_matchups.py
+      - name: Retain shared archive
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/archive
+          if ! git diff --cached --quiet; then
+            git commit -m 'Save frozen pregame receipts and postgame comparisons'
+            for attempt in 1 2 3; do
+              git fetch origin main
+              git rebase origin/main
+              if git push origin HEAD:main; then break; fi
+              if [ "$attempt" = 3 ]; then exit 1; fi
+            done
+          fi
+      - name: Report archive source errors
+        if: steps.archive.outcome == 'failure'
+        run: exit 1

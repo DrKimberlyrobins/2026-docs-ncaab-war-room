@@ -2,7 +2,7 @@ name: Publish War Room
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ['Refresh automatic matchup calculator', 'Refresh NCAAB evidence', 'Refresh Kambi markets']
+    workflows: ['Refresh automatic matchup calculator', 'Refresh NCAAB evidence', 'Refresh Kambi markets', 'Archive matchup receipts']
     types: [completed]
     branches: [main]
   push:
@@ -39,6 +39,9 @@ jobs:
         run: |
           node --check kambi.js
           node --check app.js
+          node --check calculator/archive.js
+          node scripts/test-archive-ui.cjs
+          python -m unittest discover -s scripts -p test_archive_matchups.py
           node --check calculator/calculator.js
           node --check calculator/import.js
           node scripts/test-ratings-import.cjs
