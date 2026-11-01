@@ -5,7 +5,7 @@ on:
     branches: [main]
     paths: ['scripts/archive_matchups.py', 'scripts/test_archive_matchups.py', '.github/workflows/archive-matchups.yml']
   workflow_run:
-    workflows: ['Refresh automatic matchup calculator', 'Refresh Kambi markets', 'Refresh NCAAB evidence']
+    workflows: ['Refresh automatic matchup calculator', 'Refresh Kambi markets', 'Refresh NCAAB evidence', 'Refresh pregame reports']
     types: [completed]
     branches: [main]
   schedule:

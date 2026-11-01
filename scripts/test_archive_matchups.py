@@ -47,4 +47,13 @@ class ArchiveTests(unittest.TestCase):
    with patch.object(archive,'ROOT',root):
     archive.main();first=json.loads(target.read_text());quote['periods']['half']['total']['outcomes'][0]['price']=-150;qp.write_text(json.dumps({'games':{'1':quote}}));archive.main();second=json.loads(target.read_text())
    self.assertEqual(first['snapshot'],snap);self.assertEqual(first['additionalMarkets'],second['additionalMarkets']);self.assertEqual(second['snapshot'],snap)
+ def test_reports_append_without_replacing_snapshot_or_using_late_news(self):
+  with tempfile.TemporaryDirectory() as tmp:
+   root=Path(tmp);folder=root/'data/archive/games';folder.mkdir(parents=True)
+   snap=freeze();snap['scheduledTipoff']='2099-11-01T14:30:00Z';target=folder/'1.json';target.write_text(json.dumps({'snapshot':snap,'result':None}))
+   article={'title':'Public report','url':'https://example.com/report','publishedAt':'2026-10-31','reviewedAt':datetime.now(timezone.utc).isoformat(),'notes':[{'text':'Uncertain participation'}]}
+   late={**article,'publishedAt':'2099-11-02','url':'https://example.com/late'}
+   qp=root/'data/reports/2026-11-01.json';qp.parent.mkdir(parents=True);qp.write_text(json.dumps({'games':{'1':{'articles':[article,late]}}}))
+   with patch.object(archive,'ROOT',root):archive.main();archive.main()
+   saved=json.loads(target.read_text());self.assertEqual(saved['snapshot'],snap);self.assertEqual(len(saved['reportEvidence']['articles']),1);self.assertEqual(saved['reportEvidence']['articles'][0]['title'],'Public report')
 if __name__=='__main__':unittest.main()

@@ -5,5 +5,6 @@ const data={date,calculatedGames:1,ratedTeams:365,ratingsFetchedAt:new Date().to
 const requests=[];const context=vm.createContext({Intl,Date,Number,String,Error,AbortSignal,window:{},location:{hash:''},document:{getElementById:id=>e[id]},fetch:async url=>{requests.push(url);return {ok:true,json:async()=>url.includes('archive/index')?{games:[],updatedAt:new Date().toISOString()}:url.includes('health')?{status:'READY',checkedAt:new Date().toISOString()}:data};}});
 vm.runInContext(fs.readFileSync('kambi.js','utf8'),context);
 vm.runInContext(fs.readFileSync('calculator/archive.js','utf8'),context);
+vm.runInContext(fs.readFileSync('reports.js','utf8'),context);
 vm.runInContext(fs.readFileSync('calculator/calculator.js','utf8'),context);
 setImmediate(()=>{try{assert.match(e.games.innerHTML,/148.2/);assert.match(e.games.innerHTML,/>1H</);assert.match(e.games.innerHTML,/PRIOR SEASON/);assert.match(e.games.innerHTML,/Source identity unavailable/);assert.ok(requests.every(r=>r.startsWith('../data/')));assert.match(e.status.textContent,/365 rated teams/);e.filter.value='villanova';e.filter.oninput();assert.ok(!e.games.innerHTML.includes('Missing'));console.log('Automatic page flow passed without localStorage or manual input.');}catch(x){console.error(x);process.exitCode=1;}});

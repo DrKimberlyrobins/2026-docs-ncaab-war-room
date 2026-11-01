@@ -1,4 +1,5 @@
 """Freeze first verified pregame receipt; store actual results separately."""
+import hashlib
 import copy
 import json
 import math
@@ -9,7 +10,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 ESPN = 'https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball'
 
-def time(s): return datetime.fromisoformat(s.replace('Z','+00:00'))
+def time(s):
+ d=datetime.fromisoformat(s.replace('Z','+00:00'))
+ return d.replace(tzinfo=timezone.utc) if d.tzinfo is None else d
 def score(x):
  if isinstance(x,dict): x=x.get('value',x.get('displayValue'))
  try:
@@ -106,6 +109,20 @@ def main():
        if kind not in (snap.get('kambi') or {}).get('periods',{}).get(period,{}) and kind not in extra[period]:
         extra[period][kind]={**copy.deepcopy(offer),'quoteFetchedAt':quote['fetchedAt'],'quoteSavedAt':now.isoformat(),'sourceUrl':quote.get('sourceUrl')};changed=True
      if changed:write(p,record)
+  # Reporting is separate append-only evidence, never a change to frozen scores.
+  if time(snap['scheduledTipoff'])>now:
+   public=read(ROOT/'data/reports'/(snap['gameDate']+'.json'),{}).get('games',{}).get(snap['id'],{})
+   retained=record.setdefault('reportEvidence',{'articles':[]})
+   known={a.get('evidenceId') for a in retained['articles']};changed=False
+   for article in public.get('articles',[]):
+    checked=article.get('reviewedAt') or article.get('retrievedAt')
+    if not checked or not time(article['publishedAt'])<time(snap['scheduledTipoff']):continue
+    if not time(checked)<=now<time(snap['scheduledTipoff']):continue
+    identity={k:article.get(k) for k in ('url','title','publishedAt','reviewedAt','notes')}
+    fingerprint=hashlib.sha256(json.dumps(identity,sort_keys=True).encode()).hexdigest()
+    if fingerprint not in known:
+     retained['articles'].append({**copy.deepcopy(article),'evidenceId':fingerprint,'savedAt':now.isoformat()});known.add(fingerprint);changed=True
+   if changed:write(p,record)
   if not record.get('result') and time(snap['scheduledTipoff'])<now:
    try:
     actual=result(fetch(ESPN+'/summary?event='+snap['id']),snap,datetime.now(timezone.utc).isoformat())

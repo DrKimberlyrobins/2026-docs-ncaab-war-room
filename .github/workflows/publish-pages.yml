@@ -2,13 +2,14 @@ name: Publish War Room
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ['Refresh automatic matchup calculator', 'Refresh NCAAB evidence', 'Refresh Kambi markets', 'Archive matchup receipts']
+    workflows: ['Refresh automatic matchup calculator', 'Refresh NCAAB evidence', 'Refresh Kambi markets', 'Archive matchup receipts', 'Refresh pregame reports']
     types: [completed]
     branches: [main]
   push:
     branches: [main]
     paths:
       - index.html
+      - reports.js
       - kambi.js
       - app.js
       - style.css
@@ -37,6 +38,9 @@ jobs:
           python-version: '3.12'
       - name: Verify calculator before publishing
         run: |
+          node --check reports.js
+          python -m unittest discover -s scripts -p test_pregame_reports.py
+          node scripts/test-reports.cjs
           node --check kambi.js
           node --check app.js
           node --check calculator/archive.js
@@ -54,7 +58,7 @@ jobs:
       - name: Package public site files
         run: |
           mkdir -p _site
-          cp index.html app.js kambi.js style.css _site/
+          cp index.html app.js kambi.js reports.js style.css _site/
           cp -R calculator data _site/
           touch _site/.nojekyll
       - uses: actions/configure-pages@v5
