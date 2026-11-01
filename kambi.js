@@ -22,7 +22,7 @@ window.DocKambi=(()=>{
    const p=projection?.[period],markets=g.periods?.[period]||{};
    return ['spread','total','moneyline'].map(kind=>{
     const m=markets[kind];if(!m)return `<tr><td>${period==='half'?'1H':'Full game'}</td><td>${kind}</td><td colspan="3">NO MARKET</td></tr>`;
-    const prices=m.outcomes.map(o=>`${names[o.teamId]||o.side}${kind==='moneyline'?'':' '+signed(o.line)} (${odds(o.price)})`).join(' · ');
+    const prices=m.outcomes.map(o=>`${names[o.teamId]||o.side}${kind==='moneyline'?'':' '+(kind==='total'?one(o.line):signed(o.line))} (${odds(o.price)})`).join(' · ');
     let model='No calibrated win probability',difference='—';
     if(kind==='total'){model=one(p?.total);if(p&&Number.isFinite(p.total))difference=signed(p.total-m.outcomes[0].line)+' points vs total';}
     if(kind==='spread'){
@@ -33,7 +33,7 @@ window.DocKambi=(()=>{
     return `<tr><td>${period==='half'?'1H':'Full game'}</td><td>${kind}</td><td>${esc(prices)}</td><td>${model}</td><td>${difference}</td></tr>`;
    }).join('');
   }).join('');
-  return `<section class="kambi"><h3>Kambi sportsbook comparison</h3><p class="muted">Kambi · offering ${esc(d.offering)} · ${esc(d.market)} · retrieved ${esc(stamp(g.fetchedAt))} · ${esc(g.state)}${stale?' · SNAPSHOT OVER 1 HOUR OLD':''}${started?' · SCHEDULED TIPOFF HAS PASSED':''}</p>${status?'<p>'+esc(status)+'</p>':''}<div class="scroll"><table><tr><th>Period</th><th>Market</th><th>Kambi line (American odds)</th><th>Our projection</th><th>Point difference</th></tr>${rows}</table></div><p class="muted">Positive spread difference favors ${esc(homeName)}; negative favors ${esc(awayName)}. Differences are arithmetic comparisons, not validated betting edges. Moneyline prices do not imply a model win probability. Snapshots refresh on a 30-minute schedule; they are not live quotes.</p><details><summary>Kambi market evidence</summary><p><a href="${esc(g.sourceUrl)}" target="_blank" rel="noopener">Kambi event ${esc(g.eventId)}</a></p><pre>${esc(JSON.stringify(g.periods,null,2))}</pre></details></section>`;
+  return `<section class="kambi"><h3>Kambi sportsbook comparison</h3><p>${projection?.full?.possessions!==undefined?'KenPom-based model':'Game Room scoring baseline'} shown above; sportsbook prices never change these projections.</p><p class="muted">Kambi · offering ${esc(d.offering)} · ${esc(d.market)} · retrieved ${esc(stamp(g.fetchedAt))} · ${esc(g.state)}${stale?' · SNAPSHOT OVER 1 HOUR OLD':''}${started?' · SCHEDULED TIPOFF HAS PASSED':''}</p>${status?'<p>'+esc(status)+'</p>':''}<div class="scroll"><table><tr><th>Period</th><th>Market</th><th>Kambi line (American odds)</th><th>Our projection</th><th>Point difference</th></tr>${rows}</table></div><p class="muted">Positive spread difference favors ${esc(homeName)}; negative favors ${esc(awayName)}. Differences are arithmetic comparisons, not validated betting edges. Moneyline prices do not imply a model win probability. Snapshots refresh on a 30-minute schedule; they are not live quotes.</p><details><summary>Kambi market evidence</summary><p><a href="${esc(g.sourceUrl)}" target="_blank" rel="noopener">Kambi event ${esc(g.eventId)}</a></p><pre>${esc(JSON.stringify(g.periods,null,2))}</pre></details></section>`;
  }
  return {load,render};
 })();
