@@ -36,6 +36,7 @@ jobs:
           node scripts/test-ratings-import.cjs
           node scripts/test-calculator-flow.cjs
           python -m unittest discover -s scripts -p test_kenpom_calculator.py
+          python -m unittest discover -s scripts -p test_automatic_matchups.py
       - name: Package public site files
         run: |
           mkdir -p _site

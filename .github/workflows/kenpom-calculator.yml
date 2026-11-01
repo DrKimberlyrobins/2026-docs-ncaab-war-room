@@ -1,9 +1,9 @@
-name: Refresh KenPom matchup calculator
+name: Refresh automatic matchup calculator
 on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['scripts/kenpom_calculator.py', 'scripts/test_kenpom_calculator.py', 'config/kenpom-calculator.json', '.github/workflows/kenpom-calculator.yml']
+    paths: ['scripts/automatic_matchups.py', 'scripts/test_automatic_matchups.py', 'config/kenpom-calculator.json', 'config/kenpom-team-aliases.json', '.github/workflows/kenpom-calculator.yml']
   schedule:
     - cron: '7 */3 * * *'
 permissions:
@@ -21,26 +21,24 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Test calculator and API validation
+      - name: Verify source parsing and automatic page
         run: |
-          python -m unittest discover -s scripts -p test_kenpom_calculator.py
+          python -m unittest discover -s scripts -p test_automatic_matchups.py
           node --check calculator/calculator.js
-          node scripts/test-ratings-import.cjs
           node scripts/test-calculator-flow.cjs
-      - name: Fetch official KenPom ratings and today's matchups
-        id: kenpom
+      - name: Fetch public ratings and prepare five daily slates
+        id: source
         continue-on-error: true
-        env:
-          KENPOM_API_KEY: ${{ secrets.KENPOM_API_KEY }}
-        run: python scripts/kenpom_calculator.py
-      - name: Retain calculations and connection status
+        run: python scripts/automatic_matchups.py
+      - name: Retain results and refresh status
         if: always()
         run: |
+          mkdir -p data/calculator
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/kenpom
+          git add data/calculator
           if ! git diff --cached --quiet; then
-            git commit -m 'Refresh KenPom matchup calculations and source status'
+            git commit -m 'Refresh automatic matchup results and source status'
             for attempt in 1 2 3; do
               git fetch origin main
               git rebase origin/main
@@ -52,6 +50,6 @@ jobs:
               fi
             done
           fi
-      - name: Report retrieval failure
-        if: steps.kenpom.outcome == 'failure'
+      - name: Report source failure
+        if: steps.source.outcome == 'failure'
         run: exit 1

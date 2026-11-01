@@ -1,33 +1,23 @@
-## Personal paste import — no API key
+# Automatic daily matchup calculator
 
-Open `calculator/`, copy your KenPom ratings table with its header, and paste it in the import box. Select the ratings date and season ending year (2027 for 2026–27). Preview the parsed entries, then save. Recognized column headers include Team, AdjOE/AdjO/ORtg, AdjDE/AdjD/DRtg, and AdjT/AdjTempo. Tab-separated tables and CSV are supported. A headerless table must contain exactly four columns: team, offense, defense, tempo. Invalid values and ambiguous columns fail visibly rather than shifting data into guessed columns.
+The calculator is now device-independent: it loads prepared results from `data/calculator/daily/YYYY-MM-DD.json`. Opening it on a new phone or computer requires no imported ratings, API key, localStorage, or manual input. The initial game date is today in America/Chicago.
 
-Imported ratings, national averages and user-confirmed ESPN team mappings live only in localStorage on the current browser/device. No import is uploaded to GitHub or any service. Clearing browser site data removes it; imports are not automatically shared between devices. The game schedule uses ESPN with repository snapshots as a fallback. Exact normalized names match automatically; unmatched identities require a user-selected imported team. Missing ratings remain explicit. Saved ratings are not automatically refreshed.
+## Automatic refresh
 
-The calculator blocks a selected schedule from a different season and blocks ratings dated after the selected game date. These are current calculations, not certified pregame evidence. Ratings dates are user-entered, not independently verified timestamps. Home-court effects remain unmodeled. Raw pasted text is cleared after saving, and never committed. No KenPom API key is needed for this mode.
+`Refresh automatic matchup calculator` runs every three hours at minute 7 UTC, after changes to its source/configuration, or through workflow_dispatch. `scripts/automatic_matchups.py` retrieves the public KenPom homepage once, validates the season and complete sequential team rankings, retrieves ESPN's team directory, and prepares today plus four upcoming dates. The resulting data commit triggers `Publish War Room`. Only derived matchup scores and source provenance are committed; the underlying KenPom ratings table is not published.
 
-# KenPom matchup calculator
+Team identities must match unique normalized institutional names or a reviewed ESPN-ID alias in `config/kenpom-team-aliases.json`. There is no fuzzy assignment. Games involving teams absent from KenPom's ratings remain visible with an explanation, including non-Division-I opponents. An empty scoreboard is labeled as a source response, not certified full coverage.
 
-Open `calculator/` from the War Room navigation. The manual calculator works immediately. Automated calculations use KenPom's official API, with both ratings and FanMatch team names coming from the same provider; no ESPN name guessing is involved.
+A failed retrieval preserves previous successful daily results and updates `data/calculator/health.json`. The page displays health, ratings retrieval time, and a warning when ratings are over 24 hours old. No login, cookies, API keys, or anti-bot bypasses are used. The old authenticated API script remains available for optional future use but does not power the automatic page.
 
-## Activate live data
+## Model
 
-1. Obtain a KenPom API bearer key with ratings and FanMatch access. A website subscription or successful website login does not by itself prove API access. Official documentation: https://kenpom.com/api-documentation.php . Ask KenPom about API access if your account does not provide a key; no access price or entitlement is assumed here.
-2. In this repository open Settings → Secrets and variables → Actions → New repository secret. Name it `KENPOM_API_KEY`, and place the API key in its value. Do not put passwords, API keys or cookies in code, page inputs, issues, or chat.
-3. Open Actions → Refresh KenPom matchup calculator → Run workflow. Scheduled refreshes run every three hours at minute 7 UTC. The selected game date is calculated in America/Chicago.
-4. Verify `data/kenpom/health.json` reports READY and the calculator displays the source retrieval timestamp. An empty FanMatch list is displayed as a source response, not a coverage guarantee.
+Possessions = both adjusted tempos added − configured national tempo.
+Matchup efficiency = team adjusted offense + opponent adjusted defense − configured national efficiency.
+Points = possessions × matchup efficiency / 100.
 
-The key is used only by Actions in the Authorization header. The site never receives it. The script fetches `/api.php?endpoint=ratings&y=2027` and `/api.php?endpoint=fanmatch&d=YYYY-MM-DD`. The ending season year is used. FanMatch documents current and past dates only, so this job publishes today's slate; retained dates remain browsable.
+National baselines remain the explicit dated November 1, 2026 screenshot values in `config/kenpom-calculator.json`: efficiency 106 and tempo 71.5. These are model configuration, not automatically retrieved national averages. Home advantage remains zero. Injuries, first-half forecasts and calibrated win probabilities are not modeled. Refresh-time calculations are not frozen pregame receipts and must not be graded as such.
 
-## Formula and national averages
+## Publication
 
-`config/kenpom-calculator.json` supplies explicitly dated national efficiency and tempo averages from Doc's November 1, 2026 screenshots: 106.0 and 71.5. They are not claimed to update from the API. Update that configuration when the averages change. The documented API does not expose a national-average endpoint. Do not substitute an unweighted mean of team ratings and call it KenPom's national average.
-
-Possessions = away AdjTempo + home AdjTempo − national tempo.
-Away efficiency = away AdjOE + home AdjDE − national efficiency; reverse teams for home.
-Projected points = efficiency × possessions / 100.
-Home advantage is configurable and currently zero for all games; home court is not modeled. This preserves the exact baseline discussed with Doc. No claim of calibration, injury adjustment, first-half accuracy, or win probability is made. KenPom's own predicted scores and possessions are displayed separately, not fed into our formula.
-
-Successful retrievals retain immutable timestamped calculation snapshots under `data/kenpom/snapshots/`. Daily display files are refreshed. These are retrieval snapshots, not certified pre-tipoff receipts; the FanMatch response does not supply tipoff times. No after-the-fact snapshot should be graded as an original pregame forecast.
-
-Failures preserve the last successful daily data and publish a separate health status. Missing team ratings or unexpected response shapes remain explicit. No screenshots are treated as a live feed.
+GitHub Pages Source must be GitHub Actions. `Publish War Room` packages the public site and serializes deployment without cancelling an active run. Imported browser ratings from the previous version are no longer used. The public page contains no paste box or editable rating forms.
