@@ -437,5 +437,64 @@
     "kambi": null,
     "marketStatus": "No verified fresh pregame market available at save time"
   },
-  "result": null
+  "result": null,
+  "additionalMarkets": {
+    "half": {},
+    "full": {
+      "total": {
+        "id": "2711496457",
+        "criterionId": "1001159509",
+        "label": "Total Points - Including Overtime",
+        "period": "full",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4399120564",
+            "price": -106,
+            "changedAt": "2026-11-01T11:34:01Z",
+            "side": "over",
+            "line": 144.5
+          },
+          {
+            "id": "4399120565",
+            "price": -121,
+            "changedAt": "2026-11-01T11:34:01Z",
+            "side": "under",
+            "line": 144.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-01T16:44:09.180032+00:00",
+        "quoteSavedAt": "2026-11-01T16:44:30.892544+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028896464.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "spread": {
+        "id": "2711522250",
+        "criterionId": "1001159512",
+        "label": "Point Spread",
+        "period": "full",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4399141078",
+            "price": -109,
+            "changedAt": "2026-11-01T11:34:03Z",
+            "teamId": "84",
+            "line": -34.5
+          },
+          {
+            "id": "4399141079",
+            "price": -112,
+            "changedAt": "2026-11-01T11:34:03Z",
+            "teamId": "2197",
+            "line": 34.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-01T16:44:09.180032+00:00",
+        "quoteSavedAt": "2026-11-01T16:44:30.892544+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028896464.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    }
+  }
 }
