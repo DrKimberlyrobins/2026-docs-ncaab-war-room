@@ -19,16 +19,7 @@ jobs:
         with:
           script: |
             const args = {...context.repo, pages_deployment_id: '74c39838ddc47831f2dc182dfdbcc50a87c72264'};
-            try {
-              const r = await github.request('GET /repos/{owner}/{repo}/pages/deployments/{pages_deployment_id}/status', args);
-              core.info('Earlier deployment status: ' + r.data.status);
-              if (['deployment_in_progress', 'deployment_queued', 'queued', 'in_progress', 'waiting'].includes(r.data.status)) {
-                await github.request('POST /repos/{owner}/{repo}/pages/deployments/{pages_deployment_id}/cancel', args);
-                core.info('Cancellation requested for the confirmed stalled deployment.');
-              }
-            } catch (e) {
-              if (e.status !== 404) throw e;
-              core.info('Earlier deployment no longer exists.');
-            }
+            await github.request('POST /repos/{owner}/{repo}/pages/deployments/{pages_deployment_id}/cancel', args);
+            core.info('Cancellation requested for the confirmed stalled deployment.');
             const result = await github.request('POST /repos/{owner}/{repo}/pages/builds', context.repo);
             core.info('Fresh Pages build: ' + result.data.status);
