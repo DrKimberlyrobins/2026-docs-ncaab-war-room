@@ -18,7 +18,6 @@ permissions:
   contents: read
   pages: write
   id-token: write
-  deployments: write
 concurrency:
   group: docs-war-room-pages
   cancel-in-progress: false
@@ -51,47 +50,9 @@ jobs:
           cp -R calculator data _site/
           touch _site/.nojekyll
       - uses: actions/configure-pages@v5
-      - name: Inspect and clear the confirmed stale deployment
-        uses: actions/github-script@v8
-        with:
-          script: |
-            const site = await github.request('GET /repos/{owner}/{repo}/pages', context.repo);
-            core.info('Pages publishing method: ' + site.data.build_type);
-            const records = await github.rest.repos.listDeployments({...context.repo, environment:'github-pages', per_page:10});
-            for (const d of records.data) {
-              const statuses = await github.rest.repos.listDeploymentStatuses({...context.repo, deployment_id:d.id, per_page:1});
-              core.info(JSON.stringify({id:d.id, sha:d.sha, state:statuses.data[0]?.state}));
-              if (d.sha === 'f6f5bbb3cbd5bd27d9dfce7aa02c1579e6539810' &&
-                  statuses.data[0]?.state !== 'inactive') {
-                await github.rest.repos.createDeploymentStatus({
-                  ...context.repo, deployment_id:d.id, state:'inactive',
-                  description:'Superseded by the automatic calculator publication'
-                });
-                core.info('Marked the old deployment inactive: ' + d.id);
-                try {
-                  await github.request('POST /repos/{owner}/{repo}/pages/deployments/{pages_deployment_id}/cancel',
-                    {...context.repo, pages_deployment_id:d.id});
-                  core.info('Cleared the confirmed stale deployment ' + d.id);
-                } catch(e) {
-                  core.warning('Stale deployment cancellation: ' + e.status + ' ' + e.message);
-                }
-              }
-            }
-      - name: Clear the Pages deployment identified by the publishing error
-        uses: actions/github-script@v8
-        with:
-          script: |
-            try {
-              await github.request('POST /repos/{owner}/{repo}/pages/deployments/{pages_deployment_id}/cancel',
-                {...context.repo, pages_deployment_id:'f6f5bbb3cbd5bd27d9dfce7aa02c1579e6539810'});
-              core.info('Cancelled the stale Pages deployment by its Pages build ID.');
-            } catch(e) {
-              if (e.status !== 400 && e.status !== 404) throw e;
-              core.info('Earlier Pages deployment no longer cancellable: ' + e.message);
-            }
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
       - name: Publish verified site
         id: deployment
-        uses: actions/deploy-pages@v5
+        uses: actions/deploy-pages@v4
