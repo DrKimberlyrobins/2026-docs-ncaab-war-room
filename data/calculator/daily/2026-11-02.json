@@ -1,10 +1,10 @@
 {
   "date": "2026-11-02",
-  "preparedAt": "2026-11-01T15:57:23.043253+00:00",
-  "ratingsFetchedAt": "2026-11-01T15:57:22.152068+00:00",
+  "preparedAt": "2026-11-01T19:39:23.662670+00:00",
+  "ratingsFetchedAt": "2026-11-01T19:39:23.329282+00:00",
   "ratingSource": "https://kenpom.com/",
   "scheduleSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?groups=50&limit=1000&dates=20261102",
-  "scheduleFetchedAt": "2026-11-01T15:57:23.043253+00:00",
+  "scheduleFetchedAt": "2026-11-01T19:39:23.662670+00:00",
   "season": 2027,
   "ratedTeams": 365,
   "config": {
@@ -16,9 +16,141 @@
     "homeAdvantagePoints": 0.0,
     "modelVersion": "additive-matchup-v1"
   },
-  "calculatedGames": 118,
-  "firstHalfGames": 118,
+  "calculatedGames": 119,
+  "firstHalfGames": 119,
   "matchups": [
+    {
+      "id": "401920912",
+      "date": "2026-11-02T08:00Z",
+      "awayName": "Northern Illinois Huskies",
+      "homeName": "Grambling Tigers",
+      "awayId": "2459",
+      "homeId": "2755",
+      "location": "Neutral",
+      "model": {
+        "away": 75.10280000000003,
+        "home": 74.02580000000003,
+        "total": 149.12860000000006,
+        "homeMargin": -1.0769999999999982,
+        "possessions": 71.80000000000001,
+        "awayEfficiency": 104.60000000000002,
+        "homeEfficiency": 103.10000000000002,
+        "homeAdvantagePoints": 0.0
+      },
+      "matchedTeams": {
+        "away": "Northern Illinois",
+        "home": "Grambling St."
+      },
+      "firstHalf": {
+        "away": 35.15977135858302,
+        "home": 33.77032938427757,
+        "total": 68.93010074286059,
+        "homeMargin": -1.3894419743054556,
+        "awayScoringShare": 0.4681552666289806,
+        "homeScoringShare": 0.45619675010979355,
+        "modelVersion": "first-half-timing-v1",
+        "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+        "awayProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.4827586206896552,
+          "allowingShare": 0.48727272727272725,
+          "firstScoredAverage": 28.0,
+          "firstAllowedAverage": 44.666666666666664,
+          "samples": [
+            {
+              "id": "401814602",
+              "date": "2026-03-06T23:00Z",
+              "firstScored": 27.0,
+              "secondScored": 28.0,
+              "firstAllowed": 47.0,
+              "secondAllowed": 47.0
+            },
+            {
+              "id": "401814595",
+              "date": "2026-03-04T01:00Z",
+              "firstScored": 28.0,
+              "secondScored": 48.0,
+              "firstAllowed": 51.0,
+              "secondAllowed": 51.0
+            },
+            {
+              "id": "401814587",
+              "date": "2026-02-28T21:45Z",
+              "firstScored": 29.0,
+              "secondScored": 14.0,
+              "firstAllowed": 36.0,
+              "secondAllowed": 43.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401814602",
+              "fetchedAt": "2026-10-30T13:19:30.049794+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401814595",
+              "fetchedAt": "2026-10-30T13:19:30.251454+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401814587",
+              "fetchedAt": "2026-10-30T13:19:25.614102+00:00"
+            }
+          ],
+          "priorSeason": true
+        },
+        "homeProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.4251207729468599,
+          "allowingShare": 0.453551912568306,
+          "firstScoredAverage": 29.333333333333332,
+          "firstAllowedAverage": 27.666666666666668,
+          "samples": [
+            {
+              "id": "401851717",
+              "date": "2026-03-11T00:30Z",
+              "firstScored": 27.0,
+              "secondScored": 38.0,
+              "firstAllowed": 28.0,
+              "secondAllowed": 40.0
+            },
+            {
+              "id": "401851715",
+              "date": "2026-03-10T00:30Z",
+              "firstScored": 34.0,
+              "secondScored": 43.0,
+              "firstAllowed": 19.0,
+              "secondAllowed": 33.0
+            },
+            {
+              "id": "401827106",
+              "date": "2026-03-06T01:00Z",
+              "firstScored": 27.0,
+              "secondScored": 38.0,
+              "firstAllowed": 36.0,
+              "secondAllowed": 27.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851717",
+              "fetchedAt": "2026-10-30T13:19:27.961698+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851715",
+              "fetchedAt": "2026-10-30T13:19:33.175322+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401827106",
+              "fetchedAt": "2026-10-30T13:19:25.152477+00:00"
+            }
+          ],
+          "priorSeason": true
+        }
+      },
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+    },
     {
       "id": "401921422",
       "date": "2026-11-02T11:00Z",
@@ -570,12 +702,12 @@
       "location": "Neutral",
       "model": {
         "away": 74.78309999999999,
-        "home": 71.9151,
-        "total": 146.69819999999999,
-        "homeMargin": -2.867999999999995,
+        "home": 71.84339999999999,
+        "total": 146.62649999999996,
+        "homeMargin": -2.939700000000002,
         "possessions": 71.69999999999999,
         "awayEfficiency": 104.30000000000001,
-        "homeEfficiency": 100.30000000000001,
+        "homeEfficiency": 100.19999999999999,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -584,9 +716,9 @@
       },
       "firstHalf": {
         "away": 34.091598660814135,
-        "home": 31.9529889060313,
-        "total": 66.04458756684544,
-        "homeMargin": -2.138609754782834,
+        "home": 31.921131489375234,
+        "total": 66.01273015018937,
+        "homeMargin": -2.1704671714389008,
         "awayScoringShare": 0.45587303362409604,
         "homeScoringShare": 0.4443154345336557,
         "modelVersion": "first-half-timing-v1",
@@ -701,11 +833,11 @@
       "homeId": "23",
       "location": "Home",
       "model": {
-        "away": 73.7955,
-        "home": 79.0717,
-        "total": 152.86720000000003,
-        "homeMargin": 5.276200000000003,
-        "possessions": 71.30000000000001,
+        "away": 73.692,
+        "home": 78.96079999999998,
+        "total": 152.65279999999996,
+        "homeMargin": 5.268799999999985,
+        "possessions": 71.19999999999999,
         "awayEfficiency": 103.5,
         "homeEfficiency": 110.89999999999998,
         "homeAdvantagePoints": 0.0
@@ -715,10 +847,10 @@
         "home": "San Jose St."
       },
       "firstHalf": {
-        "away": 36.7922607211089,
-        "home": 38.21662723047589,
-        "total": 75.0088879515848,
-        "homeMargin": 1.4243665093669904,
+        "away": 36.74065867241169,
+        "home": 38.16302747278937,
+        "total": 74.90368614520106,
+        "homeMargin": 1.4223688003776829,
         "awayScoringShare": 0.4985705188135984,
         "homeScoringShare": 0.4833161198061492,
         "modelVersion": "first-half-timing-v1",
@@ -1023,13 +1155,13 @@
       "homeId": "2377",
       "location": "Neutral",
       "model": {
-        "away": 76.464,
-        "home": 77.472,
-        "total": 153.93599999999998,
-        "homeMargin": 1.0079999999999956,
+        "away": 76.392,
+        "home": 77.328,
+        "total": 153.72,
+        "homeMargin": 0.936000000000007,
         "possessions": 72.0,
-        "awayEfficiency": 106.19999999999999,
-        "homeEfficiency": 107.6,
+        "awayEfficiency": 106.1,
+        "homeEfficiency": 107.4,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -1037,10 +1169,10 @@
         "home": "McNeese"
       },
       "firstHalf": {
-        "away": 33.09046685572492,
-        "home": 38.69738755980861,
-        "total": 71.78785441553353,
-        "homeMargin": 5.6069207040836915,
+        "away": 33.05930822403403,
+        "home": 38.62545933014354,
+        "total": 71.68476755417757,
+        "homeMargin": 5.5661511061095155,
         "awayScoringShare": 0.4327587734845799,
         "homeScoringShare": 0.4995015948963317,
         "modelVersion": "first-half-timing-v1",
@@ -1311,12 +1443,12 @@
       "homeId": "130",
       "location": "Home",
       "model": {
-        "away": 69.81049999999999,
+        "away": 69.6643,
         "home": 88.37789999999997,
-        "total": 158.18839999999994,
-        "homeMargin": 18.567399999999978,
+        "total": 158.04219999999998,
+        "homeMargin": 18.71359999999997,
         "possessions": 73.1,
-        "awayEfficiency": 95.5,
+        "awayEfficiency": 95.30000000000001,
         "homeEfficiency": 120.89999999999998,
         "homeAdvantagePoints": 0.0
       },
@@ -1325,10 +1457,10 @@
         "home": "Michigan"
       },
       "firstHalf": {
-        "away": 33.092483390410955,
+        "away": 33.023179760273976,
         "home": 42.44765416666665,
-        "total": 75.5401375570776,
-        "homeMargin": 9.355170776255697,
+        "total": 75.47083392694063,
+        "homeMargin": 9.424474406392676,
         "awayScoringShare": 0.47403303787268336,
         "homeScoringShare": 0.480297157622739,
         "modelVersion": "first-half-timing-v1",
@@ -1501,11 +1633,11 @@
       "homeId": "172",
       "location": "Home",
       "model": {
-        "away": 82.8036,
-        "home": 81.15800000000002,
-        "total": 163.96160000000003,
-        "homeMargin": -1.6455999999999875,
-        "possessions": 74.80000000000001,
+        "away": 82.69289999999997,
+        "home": 81.0495,
+        "total": 163.74239999999998,
+        "homeMargin": -1.6433999999999713,
+        "possessions": 74.69999999999999,
         "awayEfficiency": 110.69999999999999,
         "homeEfficiency": 108.5,
         "homeAdvantagePoints": 0.0
@@ -1515,10 +1647,10 @@
         "home": "Cornell"
       },
       "firstHalf": {
-        "away": 39.70324369333859,
-        "home": 40.38631718898386,
-        "total": 80.08956088232244,
-        "homeMargin": 0.6830734956452673,
+        "away": 39.65016449053999,
+        "home": 40.33232478632478,
+        "total": 79.98248927686478,
+        "homeMargin": 0.6821602957847901,
         "awayScoringShare": 0.4794869268164499,
         "homeScoringShare": 0.49762583095916424,
         "modelVersion": "first-half-timing-v1",
@@ -1650,11 +1782,11 @@
       "homeId": "2247",
       "location": "Home",
       "model": {
-        "away": 78.29459999999999,
-        "home": 77.7114,
-        "total": 156.00599999999997,
-        "homeMargin": -0.5831999999999908,
-        "possessions": 72.89999999999998,
+        "away": 78.18720000000002,
+        "home": 77.60480000000003,
+        "total": 155.79200000000003,
+        "homeMargin": -0.5823999999999927,
+        "possessions": 72.80000000000001,
         "awayEfficiency": 107.4,
         "homeEfficiency": 106.60000000000002,
         "homeAdvantagePoints": 0.0
@@ -1664,10 +1796,10 @@
         "home": "Georgia St."
       },
       "firstHalf": {
-        "away": 32.29440526651771,
-        "home": 38.77637131849315,
-        "total": 71.07077658501086,
-        "homeMargin": 6.481966051975441,
+        "away": 32.25010567081605,
+        "home": 38.723180136986315,
+        "total": 70.97328580780237,
+        "homeMargin": 6.473074466170267,
         "awayScoringShare": 0.4124729581161116,
         "homeScoringShare": 0.49897918861959956,
         "modelVersion": "first-half-timing-v1",
@@ -1782,13 +1914,13 @@
       "homeId": "150",
       "location": "Home",
       "model": {
-        "away": 57.40700000000002,
-        "home": 92.01800000000001,
-        "total": 149.42500000000004,
-        "homeMargin": 34.611,
+        "away": 57.3375,
+        "home": 91.94850000000001,
+        "total": 149.286,
+        "homeMargin": 34.61100000000001,
         "possessions": 69.5,
-        "awayEfficiency": 82.60000000000002,
-        "homeEfficiency": 132.4,
+        "awayEfficiency": 82.5,
+        "homeEfficiency": 132.3,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -1796,10 +1928,10 @@
         "home": "Duke"
       },
       "firstHalf": {
-        "away": 25.18602312123122,
-        "home": 44.87254658201247,
-        "total": 70.05856970324369,
-        "homeMargin": 19.68652346078125,
+        "away": 25.155531567815675,
+        "home": 44.83865493051548,
+        "total": 69.99418649833116,
+        "homeMargin": 19.683123362699806,
         "awayScoringShare": 0.4387273872738727,
         "homeScoringShare": 0.4876496618271693,
         "modelVersion": "first-half-timing-v1",
@@ -1927,12 +2059,12 @@
       "location": "Home",
       "model": {
         "away": 66.576,
-        "home": 86.213,
-        "total": 152.789,
-        "homeMargin": 19.637,
+        "home": 86.14,
+        "total": 152.716,
+        "homeMargin": 19.564000000000007,
         "possessions": 73.0,
         "awayEfficiency": 91.19999999999999,
-        "homeEfficiency": 118.1,
+        "homeEfficiency": 118.0,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -1941,9 +2073,9 @@
       },
       "firstHalf": {
         "away": 30.57146955515827,
-        "home": 42.68777120172173,
-        "total": 73.25924075688,
-        "homeMargin": 12.11630164656346,
+        "home": 42.651625756165664,
+        "total": 73.22309531132393,
+        "homeMargin": 12.080156201007394,
         "awayScoringShare": 0.4591965506362394,
         "homeScoringShare": 0.4951430898092136,
         "modelVersion": "first-half-timing-v1",
@@ -2111,13 +2243,13 @@
       "homeId": "218",
       "location": "Home",
       "model": {
-        "away": 64.484,
-        "home": 78.61559999999999,
-        "total": 143.09959999999998,
-        "homeMargin": 14.131599999999992,
+        "away": 64.4154,
+        "home": 78.54699999999998,
+        "total": 142.9624,
+        "homeMargin": 14.131599999999978,
         "possessions": 68.6,
-        "awayEfficiency": 94.0,
-        "homeEfficiency": 114.6,
+        "awayEfficiency": 93.9,
+        "homeEfficiency": 114.5,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -2125,10 +2257,10 @@
         "home": "Temple"
       },
       "firstHalf": {
-        "away": 30.26780953191779,
-        "home": 34.75830915537546,
-        "total": 65.02611868729325,
-        "homeMargin": 4.490499623457666,
+        "away": 30.235609734543416,
+        "home": 34.72797904267443,
+        "total": 64.96358877721784,
+        "homeMargin": 4.4923693081310105,
         "awayScoringShare": 0.46938480137581096,
         "homeScoringShare": 0.4421299227554768,
         "modelVersion": "first-half-timing-v1",
@@ -2273,12 +2405,12 @@
       "location": "Home",
       "model": {
         "away": 65.0056,
-        "home": 85.7248,
-        "total": 150.7304,
-        "homeMargin": 20.7192,
+        "home": 85.65359999999998,
+        "total": 150.6592,
+        "homeMargin": 20.647999999999982,
         "possessions": 71.19999999999999,
         "awayEfficiency": 91.30000000000001,
-        "homeEfficiency": 120.4,
+        "homeEfficiency": 120.30000000000001,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -2287,9 +2419,9 @@
       },
       "firstHalf": {
         "away": 30.8771808196963,
-        "home": 39.96836583120205,
-        "total": 70.84554665089834,
-        "homeMargin": 9.09118501150575,
+        "home": 39.93516951406649,
+        "total": 70.8123503337628,
+        "homeMargin": 9.057988694370188,
         "awayScoringShare": 0.47499262863039954,
         "homeScoringShare": 0.46624040920716114,
         "modelVersion": "first-half-timing-v1",
@@ -2433,12 +2565,12 @@
       "homeId": "127",
       "location": "Home",
       "model": {
-        "away": 61.600500000000004,
+        "away": 61.45470000000001,
         "home": 88.42770000000002,
-        "total": 150.02820000000003,
-        "homeMargin": 26.827200000000012,
+        "total": 149.88240000000002,
+        "homeMargin": 26.973000000000006,
         "possessions": 72.9,
-        "awayEfficiency": 84.5,
+        "awayEfficiency": 84.30000000000001,
         "homeEfficiency": 121.30000000000001,
         "homeAdvantagePoints": 0.0
       },
@@ -2447,10 +2579,10 @@
         "home": "Michigan St."
       },
       "firstHalf": {
-        "away": 27.122484299191377,
+        "away": 27.058289070080868,
         "home": 40.100061354638015,
-        "total": 67.2225456538294,
-        "homeMargin": 12.977577055446638,
+        "total": 67.15835042471889,
+        "homeMargin": 13.041772284557148,
         "awayScoringShare": 0.4402964959568733,
         "homeScoringShare": 0.4534785067873303,
         "modelVersion": "first-half-timing-v1",
@@ -2566,12 +2698,12 @@
       "location": "Neutral",
       "model": {
         "away": 70.65600000000002,
-        "home": 84.34560000000002,
-        "total": 155.00160000000005,
-        "homeMargin": 13.689599999999999,
+        "home": 84.27200000000002,
+        "total": 154.92800000000005,
+        "homeMargin": 13.616,
         "possessions": 73.60000000000002,
         "awayEfficiency": 96.0,
-        "homeEfficiency": 114.6,
+        "homeEfficiency": 114.5,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -2580,9 +2712,9 @@
       },
       "firstHalf": {
         "away": 34.420239588661275,
-        "home": 41.90760431198479,
-        "total": 76.32784390064606,
-        "homeMargin": 7.487364723323516,
+        "home": 41.87103572183472,
+        "total": 76.29127531049599,
+        "homeMargin": 7.450796133173448,
         "awayScoringShare": 0.48715239454060894,
         "homeScoringShare": 0.496855844430353,
         "modelVersion": "first-half-timing-v1",
@@ -2878,12 +3010,12 @@
       "location": "Home",
       "model": {
         "away": 65.39099999999999,
-        "home": 92.229,
-        "total": 157.62,
-        "homeMargin": 26.838000000000008,
+        "home": 92.08699999999999,
+        "total": 157.47799999999998,
+        "homeMargin": 26.695999999999998,
         "possessions": 71.0,
         "awayEfficiency": 92.1,
-        "homeEfficiency": 129.9,
+        "homeEfficiency": 129.7,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -2892,9 +3024,9 @@
       },
       "firstHalf": {
         "away": 28.966810952288967,
-        "home": 43.037253252088185,
-        "total": 72.00406420437716,
-        "homeMargin": 14.070442299799218,
+        "home": 42.9709911223698,
+        "total": 71.93780207465878,
+        "homeMargin": 14.004180170080836,
         "awayScoringShare": 0.44297855901101024,
         "homeScoringShare": 0.4666347163266238,
         "modelVersion": "first-half-timing-v1",
@@ -3169,13 +3301,13 @@
       "homeId": "282",
       "location": "Home",
       "model": {
-        "away": 79.92539999999998,
-        "home": 74.005,
-        "total": 153.93039999999996,
-        "homeMargin": -5.920399999999987,
+        "away": 79.8532,
+        "home": 73.86059999999999,
+        "total": 153.7138,
+        "homeMargin": -5.99260000000001,
         "possessions": 72.19999999999999,
-        "awayEfficiency": 110.69999999999999,
-        "homeEfficiency": 102.5,
+        "awayEfficiency": 110.60000000000002,
+        "homeEfficiency": 102.30000000000001,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -3183,10 +3315,10 @@
         "home": "Indiana St."
       },
       "firstHalf": {
-        "away": 36.208574881161965,
-        "home": 34.189213369456304,
-        "total": 70.39778825061828,
-        "homeMargin": -2.019361511705661,
+        "away": 36.175866141431925,
+        "home": 34.12250270922322,
+        "total": 70.29836885065515,
+        "homeMargin": -2.0533634322087053,
         "awayScoringShare": 0.4530296361502347,
         "homeScoringShare": 0.46198518166956704,
         "modelVersion": "first-half-timing-v1",
@@ -3343,12 +3475,12 @@
       "location": "Home",
       "model": {
         "away": 75.647,
-        "home": 79.29350000000001,
-        "total": 154.94050000000001,
-        "homeMargin": 3.646500000000003,
+        "home": 79.22200000000001,
+        "total": 154.86900000000003,
+        "homeMargin": 3.575000000000003,
         "possessions": 71.5,
         "awayEfficiency": 105.80000000000001,
-        "homeEfficiency": 110.9,
+        "homeEfficiency": 110.80000000000001,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -3357,9 +3489,9 @@
       },
       "firstHalf": {
         "away": 37.733352990033225,
-        "home": 37.17096242463394,
-        "total": 74.90431541466717,
-        "homeMargin": -0.5623905653992836,
+        "home": 37.13744487510767,
+        "total": 74.8707978651409,
+        "homeMargin": -0.5959081149255567,
         "awayScoringShare": 0.49880832009244547,
         "homeScoringShare": 0.46877691645133507,
         "modelVersion": "first-half-timing-v1",
@@ -3803,12 +3935,12 @@
       "homeId": "171",
       "location": "Home",
       "model": {
-        "away": 75.8244,
-        "home": 75.96560000000001,
-        "total": 151.79000000000002,
-        "homeMargin": 0.14120000000001198,
-        "possessions": 70.6,
-        "awayEfficiency": 107.4,
+        "away": 75.576,
+        "home": 75.85800000000002,
+        "total": 151.43400000000003,
+        "homeMargin": 0.2820000000000249,
+        "possessions": 70.5,
+        "awayEfficiency": 107.19999999999999,
         "homeEfficiency": 107.60000000000002,
         "homeAdvantagePoints": 0.0
       },
@@ -3817,10 +3949,10 @@
         "home": "Columbia"
       },
       "firstHalf": {
-        "away": 37.30204787841469,
-        "home": 34.364352482066,
-        "total": 71.6664003604807,
-        "homeMargin": -2.937695396348687,
+        "away": 37.17984673085535,
+        "home": 34.315677761836454,
+        "total": 71.4955244926918,
+        "homeMargin": -2.8641689690188983,
         "awayScoringShare": 0.4919530900134349,
         "homeScoringShare": 0.45236728837876616,
         "modelVersion": "first-half-timing-v1",
@@ -3969,13 +4101,13 @@
       "homeId": "2506",
       "location": "Home",
       "model": {
-        "away": 75.19050000000001,
-        "home": 73.45800000000001,
-        "total": 148.6485,
-        "homeMargin": -1.7325000000000017,
-        "possessions": 69.30000000000001,
+        "away": 75.082,
+        "home": 73.2828,
+        "total": 148.3648,
+        "homeMargin": -1.799199999999999,
+        "possessions": 69.19999999999999,
         "awayEfficiency": 108.5,
-        "homeEfficiency": 106.0,
+        "homeEfficiency": 105.9,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -3983,10 +4115,10 @@
         "home": "Presbyterian"
       },
       "firstHalf": {
-        "away": 36.2445703125,
-        "home": 32.071014716414865,
-        "total": 68.31558502891487,
-        "homeMargin": -4.173555596085137,
+        "away": 36.19226934523809,
+        "home": 31.994524180621394,
+        "total": 68.18679352585949,
+        "homeMargin": -4.197745164616695,
         "awayScoringShare": 0.4820365646258503,
         "homeScoringShare": 0.436589816172709,
         "modelVersion": "first-half-timing-v1",
@@ -4113,11 +4245,11 @@
       "homeId": "104",
       "location": "Home",
       "model": {
-        "away": 76.54820000000001,
-        "home": 72.523,
-        "total": 149.0712,
-        "homeMargin": -4.025200000000012,
-        "possessions": 69.4,
+        "away": 76.43790000000001,
+        "home": 72.41850000000001,
+        "total": 148.8564,
+        "homeMargin": -4.0194000000000045,
+        "possessions": 69.30000000000001,
         "awayEfficiency": 110.30000000000001,
         "homeEfficiency": 104.5,
         "homeAdvantagePoints": 0.0
@@ -4127,10 +4259,10 @@
         "home": "Boston University"
       },
       "firstHalf": {
-        "away": 35.5576429858705,
-        "home": 35.63774129757551,
-        "total": 71.195384283446,
-        "homeMargin": 0.08009831170500803,
+        "away": 35.50640718906089,
+        "home": 35.58639008533117,
+        "total": 71.09279727439205,
+        "homeMargin": 0.07998289627028043,
         "awayScoringShare": 0.4645131170409036,
         "homeScoringShare": 0.4913991602329676,
         "modelVersion": "first-half-timing-v1",
@@ -4430,12 +4562,12 @@
       "homeId": "2368",
       "location": "Home",
       "model": {
-        "away": 69.9896,
-        "home": 71.34239999999998,
-        "total": 141.332,
-        "homeMargin": 1.3527999999999878,
-        "possessions": 71.19999999999999,
-        "awayEfficiency": 98.30000000000001,
+        "away": 69.74909999999998,
+        "home": 71.24219999999998,
+        "total": 140.99129999999997,
+        "homeMargin": 1.4930999999999983,
+        "possessions": 71.1,
+        "awayEfficiency": 98.1,
         "homeEfficiency": 100.19999999999999,
         "homeAdvantagePoints": 0.0
       },
@@ -4444,10 +4576,10 @@
         "home": "Marist"
       },
       "firstHalf": {
-        "away": 34.23879908071336,
-        "home": 36.73232707923655,
-        "total": 70.9711261599499,
-        "homeMargin": 2.4935279985231844,
+        "away": 34.121146869829005,
+        "home": 36.680736732215145,
+        "total": 70.80188360204414,
+        "homeMargin": 2.55958986238614,
         "awayScoringShare": 0.4891983820555249,
         "homeScoringShare": 0.5148737227684597,
         "modelVersion": "first-half-timing-v1",
@@ -4562,12 +4694,12 @@
       "homeId": "2670",
       "location": "Home",
       "model": {
-        "away": 69.91630000000004,
+        "away": 69.84200000000001,
         "home": 85.37070000000001,
-        "total": 155.28700000000003,
-        "homeMargin": 15.454399999999978,
+        "total": 155.21270000000004,
+        "homeMargin": 15.5287,
         "possessions": 74.30000000000001,
-        "awayEfficiency": 94.10000000000002,
+        "awayEfficiency": 94.0,
         "homeEfficiency": 114.9,
         "homeAdvantagePoints": 0.0
       },
@@ -4576,10 +4708,10 @@
         "home": "VCU"
       },
       "firstHalf": {
-        "away": 29.876025159779584,
+        "away": 29.844275930066736,
         "home": 43.437293124044345,
-        "total": 73.31331828382393,
-        "homeMargin": 13.561267964264761,
+        "total": 73.28156905411109,
+        "homeMargin": 13.593017193977609,
         "awayScoringShare": 0.42731130165325637,
         "homeScoringShare": 0.5088079765545361,
         "modelVersion": "first-half-timing-v1",
@@ -4723,13 +4855,13 @@
       "homeId": "2226",
       "location": "Home",
       "model": {
-        "away": 73.33149999999999,
-        "home": 82.24919999999999,
-        "total": 155.58069999999998,
-        "homeMargin": 8.917699999999996,
-        "possessions": 73.69999999999999,
+        "away": 73.232,
+        "home": 82.064,
+        "total": 155.296,
+        "homeMargin": 8.831999999999994,
+        "possessions": 73.6,
         "awayEfficiency": 99.5,
-        "homeEfficiency": 111.6,
+        "homeEfficiency": 111.5,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -4737,10 +4869,10 @@
         "home": "Florida Atlantic"
       },
       "firstHalf": {
-        "away": 33.947820181731224,
-        "home": 40.62612774626656,
-        "total": 74.57394792799778,
-        "homeMargin": 6.678307564535338,
+        "away": 33.90175801052128,
+        "home": 40.53465015306677,
+        "total": 74.43640816358806,
+        "homeMargin": 6.632892142545494,
         "awayScoringShare": 0.462936394069823,
         "homeScoringShare": 0.49393948811984273,
         "modelVersion": "first-half-timing-v1",
@@ -4880,12 +5012,12 @@
       "location": "Home",
       "model": {
         "away": 71.905,
-        "home": 81.24900000000001,
-        "total": 153.154,
-        "homeMargin": 9.344000000000008,
+        "home": 81.17599999999999,
+        "total": 153.081,
+        "homeMargin": 9.270999999999987,
         "possessions": 73.0,
         "awayEfficiency": 98.5,
-        "homeEfficiency": 111.30000000000001,
+        "homeEfficiency": 111.19999999999999,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -4894,9 +5026,9 @@
       },
       "firstHalf": {
         "away": 34.94885767295988,
-        "home": 36.254690355329956,
-        "total": 71.20354802828984,
-        "homeMargin": 1.3058326823700739,
+        "home": 36.22211650954797,
+        "total": 71.17097418250785,
+        "homeMargin": 1.2732588365880915,
         "awayScoringShare": 0.48604210657061236,
         "homeScoringShare": 0.4462170655064056,
         "modelVersion": "first-half-timing-v1",
@@ -5208,13 +5340,13 @@
       "homeId": "120",
       "location": "Home",
       "model": {
-        "away": 63.0396,
-        "home": 84.1698,
-        "total": 147.2094,
-        "homeMargin": 21.130199999999995,
+        "away": 62.96939999999998,
+        "home": 84.02939999999998,
+        "total": 146.99879999999996,
+        "homeMargin": 21.060000000000002,
         "possessions": 70.19999999999999,
-        "awayEfficiency": 89.80000000000001,
-        "homeEfficiency": 119.9,
+        "awayEfficiency": 89.69999999999999,
+        "homeEfficiency": 119.69999999999999,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -5222,10 +5354,10 @@
         "home": "Maryland"
       },
       "firstHalf": {
-        "away": 26.382109595070425,
-        "home": 38.378794720248216,
-        "total": 64.76090431531864,
-        "homeMargin": 11.996685125177791,
+        "away": 26.352730853873233,
+        "home": 38.31477671404263,
+        "total": 64.66750756791586,
+        "homeMargin": 11.962045860169397,
         "awayScoringShare": 0.4185005868544601,
         "homeScoringShare": 0.4559687051679845,
         "modelVersion": "first-half-timing-v1",
@@ -5352,13 +5484,13 @@
       "homeId": "84",
       "location": "Home",
       "model": {
-        "away": 58.2813,
-        "home": 85.1697,
-        "total": 143.45100000000002,
-        "homeMargin": 26.888400000000004,
-        "possessions": 69.30000000000001,
+        "away": 58.19719999999998,
+        "home": 84.9776,
+        "total": 143.17479999999998,
+        "homeMargin": 26.780400000000014,
+        "possessions": 69.19999999999999,
         "awayEfficiency": 84.1,
-        "homeEfficiency": 122.9,
+        "homeEfficiency": 122.80000000000001,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -5366,10 +5498,10 @@
         "home": "Indiana"
       },
       "firstHalf": {
-        "away": 28.463428267372294,
-        "home": 42.03878127997602,
-        "total": 70.50220954734831,
-        "homeMargin": 13.575353012603728,
+        "away": 28.4223554993097,
+        "home": 41.94396293631761,
+        "total": 70.3663184356273,
+        "homeMargin": 13.521607437007912,
         "awayScoringShare": 0.4883801196502531,
         "homeScoringShare": 0.4935884625632827,
         "modelVersion": "first-half-timing-v1",
@@ -5496,13 +5628,13 @@
       "homeId": "153",
       "location": "Home",
       "model": {
-        "away": 69.3825,
-        "home": 86.4925,
-        "total": 155.875,
-        "homeMargin": 17.110000000000014,
-        "possessions": 72.5,
+        "away": 69.28679999999997,
+        "home": 86.30079999999997,
+        "total": 155.58759999999995,
+        "homeMargin": 17.013999999999996,
+        "possessions": 72.39999999999998,
         "awayEfficiency": 95.69999999999999,
-        "homeEfficiency": 119.30000000000001,
+        "homeEfficiency": 119.19999999999999,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -5510,10 +5642,10 @@
         "home": "North Carolina"
       },
       "firstHalf": {
-        "away": 33.32729941291584,
-        "home": 37.71100166862976,
-        "total": 71.0383010815456,
-        "homeMargin": 4.383702255713921,
+        "away": 33.281330724070436,
+        "home": 37.6274198665096,
+        "total": 70.90875059058004,
+        "homeMargin": 4.346089142439162,
         "awayScoringShare": 0.48034157623198714,
         "homeScoringShare": 0.43600314095013737,
         "modelVersion": "first-half-timing-v1",
@@ -5641,12 +5773,12 @@
       "location": "Home",
       "model": {
         "away": 64.416,
-        "home": 82.22720000000001,
-        "total": 146.6432,
-        "homeMargin": 17.811200000000014,
+        "home": 82.1568,
+        "total": 146.5728,
+        "homeMargin": 17.740800000000007,
         "possessions": 70.4,
         "awayEfficiency": 91.5,
-        "homeEfficiency": 116.80000000000001,
+        "homeEfficiency": 116.69999999999999,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -5655,9 +5787,9 @@
       },
       "firstHalf": {
         "away": 26.337771020280513,
-        "home": 38.66350791621962,
-        "total": 65.00127893650014,
-        "homeMargin": 12.325736895939109,
+        "home": 38.6304055977982,
+        "total": 64.96817661807872,
+        "homeMargin": 12.292634577517688,
         "awayScoringShare": 0.40887001708085746,
         "homeScoringShare": 0.4702033866679106,
         "modelVersion": "first-half-timing-v1",
@@ -5928,12 +6060,12 @@
       "homeId": "2750",
       "location": "Home",
       "model": {
-        "away": 72.3695,
+        "away": 72.22690000000003,
         "home": 78.07350000000001,
-        "total": 150.443,
-        "homeMargin": 5.704000000000008,
+        "total": 150.30040000000002,
+        "homeMargin": 5.846599999999981,
         "possessions": 71.30000000000001,
-        "awayEfficiency": 101.5,
+        "awayEfficiency": 101.30000000000001,
         "homeEfficiency": 109.5,
         "homeAdvantagePoints": 0.0
       },
@@ -5942,10 +6074,10 @@
         "home": "Wright St."
       },
       "firstHalf": {
-        "away": 29.70853744417726,
+        "away": 29.649998454139485,
         "home": 34.95430309684685,
-        "total": 64.66284054102411,
-        "homeMargin": 5.24576565266959,
+        "total": 64.60430155098634,
+        "homeMargin": 5.304304642707365,
         "awayScoringShare": 0.41051185159738923,
         "homeScoringShare": 0.4477102102102102,
         "modelVersion": "first-half-timing-v1",
@@ -6492,12 +6624,12 @@
       "homeId": "2168",
       "location": "Home",
       "model": {
-        "away": 62.21550000000001,
-        "home": 82.88370000000003,
-        "total": 145.09920000000005,
-        "homeMargin": 20.66820000000002,
-        "possessions": 70.30000000000001,
-        "awayEfficiency": 88.5,
+        "away": 61.986599999999996,
+        "home": 82.7658,
+        "total": 144.7524,
+        "homeMargin": 20.779200000000003,
+        "possessions": 70.19999999999999,
+        "awayEfficiency": 88.30000000000001,
         "homeEfficiency": 117.9,
         "homeAdvantagePoints": 0.0
       },
@@ -6506,10 +6638,10 @@
         "home": "Dayton"
       },
       "firstHalf": {
-        "away": 30.869196976328883,
-        "home": 39.63202127240987,
-        "total": 70.50121824873875,
-        "homeMargin": 8.76282429608099,
+        "away": 30.7556246480846,
+        "home": 39.57564570872222,
+        "total": 70.33127035680681,
+        "homeMargin": 8.820021060637622,
         "awayScoringShare": 0.4961656978780027,
         "homeScoringShare": 0.4781642382327268,
         "modelVersion": "first-half-timing-v1",
@@ -6648,13 +6780,13 @@
       "homeId": "290",
       "location": "Home",
       "model": {
-        "away": 80.726,
-        "home": 75.0064,
-        "total": 155.73239999999998,
-        "homeMargin": -5.7196,
-        "possessions": 72.4,
-        "awayEfficiency": 111.5,
-        "homeEfficiency": 103.6,
+        "away": 80.54220000000002,
+        "home": 74.83050000000001,
+        "total": 155.37270000000004,
+        "homeMargin": -5.7117000000000075,
+        "possessions": 72.30000000000001,
+        "awayEfficiency": 111.4,
+        "homeEfficiency": 103.5,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -6662,10 +6794,10 @@
         "home": "Georgia Southern"
       },
       "firstHalf": {
-        "away": 37.84400338854382,
-        "home": 33.60756563352258,
-        "total": 71.4515690220664,
-        "homeMargin": -4.236437755021235,
+        "away": 37.757838734989654,
+        "home": 33.528751415070076,
+        "total": 71.28659015005974,
+        "homeMargin": -4.229087319919579,
         "awayScoringShare": 0.4687957211870255,
         "homeScoringShare": 0.44806264043498395,
         "modelVersion": "first-half-timing-v1",
@@ -6840,11 +6972,11 @@
       "homeId": "256",
       "location": "Home",
       "model": {
-        "away": 78.65,
-        "home": 76.43350000000001,
-        "total": 155.08350000000002,
-        "homeMargin": -2.2164999999999964,
-        "possessions": 71.5,
+        "away": 78.54,
+        "home": 76.32660000000001,
+        "total": 154.8666,
+        "homeMargin": -2.213399999999993,
+        "possessions": 71.4,
         "awayEfficiency": 110.0,
         "homeEfficiency": 106.9,
         "homeAdvantagePoints": 0.0
@@ -6854,10 +6986,10 @@
         "home": "James Madison"
       },
       "firstHalf": {
-        "away": 35.97024834801762,
-        "home": 33.604886879432634,
-        "total": 69.57513522745026,
-        "homeMargin": -2.365361468584986,
+        "away": 35.919940308370045,
+        "home": 33.55788703764322,
+        "total": 69.47782734601327,
+        "homeMargin": -2.3620532707268254,
         "awayScoringShare": 0.45734581497797355,
         "homeScoringShare": 0.4396617566830333,
         "modelVersion": "first-half-timing-v1",
@@ -7141,12 +7273,12 @@
       "location": "Home",
       "model": {
         "away": 74.43959999999998,
-        "home": 71.3031,
-        "total": 145.74269999999999,
-        "homeMargin": -3.136499999999984,
+        "home": 71.16369999999998,
+        "total": 145.60329999999996,
+        "homeMargin": -3.275900000000007,
         "possessions": 69.69999999999999,
         "awayEfficiency": 106.80000000000001,
-        "homeEfficiency": 102.30000000000001,
+        "homeEfficiency": 102.1,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -7155,9 +7287,9 @@
       },
       "firstHalf": {
         "away": 31.676425531914887,
-        "home": 35.14762033952594,
-        "total": 66.82404587144083,
-        "homeMargin": 3.471194807611056,
+        "home": 35.07890553925316,
+        "total": 66.75533107116804,
+        "homeMargin": 3.4024800073382693,
         "awayScoringShare": 0.425531914893617,
         "homeScoringShare": 0.49293257010601144,
         "modelVersion": "first-half-timing-v1",
@@ -7273,12 +7405,12 @@
       "location": "Home",
       "model": {
         "away": 80.04,
-        "home": 78.51750000000001,
-        "total": 158.5575,
-        "homeMargin": -1.5224999999999937,
+        "home": 78.445,
+        "total": 158.485,
+        "homeMargin": -1.595000000000013,
         "possessions": 72.5,
         "awayEfficiency": 110.4,
-        "homeEfficiency": 108.30000000000001,
+        "homeEfficiency": 108.19999999999999,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -7287,9 +7419,9 @@
       },
       "firstHalf": {
         "away": 36.82658470730166,
-        "home": 36.220259599673206,
-        "total": 73.04684430697486,
-        "homeMargin": -0.6063251076284573,
+        "home": 36.18681522331154,
+        "total": 73.0133999306132,
+        "homeMargin": -0.639769483990122,
         "awayScoringShare": 0.46010225771241453,
         "homeScoringShare": 0.46130174291938997,
         "modelVersion": "first-half-timing-v1",
@@ -7416,13 +7548,13 @@
       "homeId": "276",
       "location": "Home",
       "model": {
-        "away": 79.31350000000002,
-        "home": 76.97430000000003,
-        "total": 156.28780000000006,
-        "homeMargin": -2.339199999999991,
+        "away": 79.16730000000003,
+        "home": 76.90120000000002,
+        "total": 156.06850000000003,
+        "homeMargin": -2.2661000000000087,
         "possessions": 73.10000000000002,
-        "awayEfficiency": 108.5,
-        "homeEfficiency": 105.30000000000001,
+        "awayEfficiency": 108.30000000000001,
+        "homeEfficiency": 105.19999999999999,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -7430,10 +7562,10 @@
         "home": "Marshall"
       },
       "firstHalf": {
-        "away": 35.89950042622742,
-        "home": 35.729551282559676,
-        "total": 71.6290517087871,
-        "homeMargin": -0.16994914366774339,
+        "away": 35.83332623189336,
+        "home": 35.69562008476047,
+        "total": 71.52894631665383,
+        "homeMargin": -0.13770614713288865,
         "awayScoringShare": 0.45262786822202283,
         "homeScoringShare": 0.4641750724925029,
         "modelVersion": "first-half-timing-v1",
@@ -7560,13 +7692,13 @@
       "homeId": "183",
       "location": "Home",
       "model": {
-        "away": 57.815799999999975,
-        "home": 78.53199999999998,
-        "total": 136.34779999999995,
-        "homeMargin": 20.716200000000008,
-        "possessions": 67.69999999999999,
-        "awayEfficiency": 85.39999999999998,
-        "homeEfficiency": 116.0,
+        "away": 57.662800000000026,
+        "home": 78.34840000000001,
+        "total": 136.01120000000003,
+        "homeMargin": 20.685599999999987,
+        "possessions": 67.60000000000002,
+        "awayEfficiency": 85.30000000000001,
+        "homeEfficiency": 115.89999999999998,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -7574,10 +7706,10 @@
         "home": "Syracuse"
       },
       "firstHalf": {
-        "away": 26.040517206477723,
-        "home": 36.36772744224593,
-        "total": 62.40824464872365,
-        "homeMargin": 10.327210235768206,
+        "away": 25.971605263157908,
+        "home": 36.282703315031604,
+        "total": 62.25430857818951,
+        "homeMargin": 10.311098051873696,
         "awayScoringShare": 0.45040485829959515,
         "homeScoringShare": 0.4630943748057599,
         "modelVersion": "first-half-timing-v1",
@@ -7824,12 +7956,12 @@
       "homeId": "2752",
       "location": "Home",
       "model": {
-        "away": 67.8695,
+        "away": 67.7205,
         "home": 89.10199999999999,
-        "total": 156.9715,
-        "homeMargin": 21.232499999999987,
+        "total": 156.8225,
+        "homeMargin": 21.38149999999999,
         "possessions": 74.5,
-        "awayEfficiency": 91.1,
+        "awayEfficiency": 90.9,
         "homeEfficiency": 119.6,
         "homeAdvantagePoints": 0.0
       },
@@ -7838,10 +7970,10 @@
         "home": "Xavier"
       },
       "firstHalf": {
-        "away": 30.92566392709382,
+        "away": 30.857770043609527,
         "home": 40.852594562647745,
-        "total": 71.77825848974156,
-        "homeMargin": 9.926930635553926,
+        "total": 71.71036460625727,
+        "homeMargin": 9.994824519038218,
         "awayScoringShare": 0.4556636475455664,
         "homeScoringShare": 0.4584924531733042,
         "modelVersion": "first-half-timing-v1",
@@ -8502,13 +8634,13 @@
       "homeId": "98",
       "location": "Home",
       "model": {
-        "away": 70.56,
-        "home": 83.016,
-        "total": 153.57600000000002,
-        "homeMargin": 12.456000000000003,
-        "possessions": 72.0,
-        "awayEfficiency": 98.0,
-        "homeEfficiency": 115.30000000000001,
+        "away": 70.39010000000002,
+        "home": 82.82879999999999,
+        "total": 153.21890000000002,
+        "homeMargin": 12.438699999999969,
+        "possessions": 71.9,
+        "awayEfficiency": 97.9,
+        "homeEfficiency": 115.19999999999999,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -8516,10 +8648,10 @@
         "home": "Western Kentucky"
       },
       "firstHalf": {
-        "away": 35.09298903290129,
-        "home": 41.07649397954647,
-        "total": 76.16948301244776,
-        "homeMargin": 5.983504946645176,
+        "away": 35.008489332834834,
+        "home": 40.98386702000889,
+        "total": 75.99235635284373,
+        "homeMargin": 5.975377687174053,
         "awayScoringShare": 0.49734961781322695,
         "homeScoringShare": 0.49480213428190306,
         "modelVersion": "first-half-timing-v1",
@@ -8670,12 +8802,12 @@
       "homeId": "275",
       "location": "Home",
       "model": {
-        "away": 69.57640000000002,
-        "home": 89.48639999999999,
-        "total": 159.0628,
-        "homeMargin": 19.909999999999968,
-        "possessions": 72.4,
-        "awayEfficiency": 96.10000000000002,
+        "away": 69.40800000000002,
+        "home": 89.36280000000001,
+        "total": 158.7708,
+        "homeMargin": 19.95479999999999,
+        "possessions": 72.30000000000001,
+        "awayEfficiency": 96.0,
         "homeEfficiency": 123.6,
         "homeAdvantagePoints": 0.0
       },
@@ -8684,10 +8816,10 @@
         "home": "Wisconsin"
       },
       "firstHalf": {
-        "away": 29.83968315712864,
-        "home": 42.10763149950347,
-        "total": 71.9473146566321,
-        "homeMargin": 12.26794834237483,
+        "away": 29.76746035394163,
+        "home": 42.04947178748759,
+        "total": 71.81693214142922,
+        "homeMargin": 12.28201143354596,
         "awayScoringShare": 0.4288765034857887,
         "homeScoringShare": 0.47054783184376037,
         "modelVersion": "first-half-timing-v1",
@@ -8802,12 +8934,12 @@
       "homeId": "2550",
       "location": "Home",
       "model": {
-        "away": 60.79199999999999,
+        "away": 60.65599999999999,
         "home": 77.384,
-        "total": 138.176,
-        "homeMargin": 16.592000000000013,
+        "total": 138.04,
+        "homeMargin": 16.72800000000001,
         "possessions": 68.0,
-        "awayEfficiency": 89.39999999999998,
+        "awayEfficiency": 89.19999999999999,
         "homeEfficiency": 113.80000000000001,
         "homeAdvantagePoints": 0.0
       },
@@ -8816,10 +8948,10 @@
         "home": "Seton Hall"
       },
       "firstHalf": {
-        "away": 29.290568769491436,
+        "away": 29.225041770007117,
         "home": 34.050895809881176,
-        "total": 63.34146457937261,
-        "homeMargin": 4.76032704038974,
+        "total": 63.27593757988829,
+        "homeMargin": 4.825854039874059,
         "awayScoringShare": 0.48181617267883015,
         "homeScoringShare": 0.4400250156347717,
         "modelVersion": "first-half-timing-v1",
@@ -8934,11 +9066,11 @@
       "homeId": "2057",
       "location": "Home",
       "model": {
-        "away": 70.9775,
-        "home": 81.34499999999998,
-        "total": 152.3225,
-        "homeMargin": 10.367499999999978,
-        "possessions": 72.5,
+        "away": 70.87959999999998,
+        "home": 81.23279999999997,
+        "total": 152.11239999999995,
+        "homeMargin": 10.353199999999987,
+        "possessions": 72.39999999999998,
         "awayEfficiency": 97.9,
         "homeEfficiency": 112.19999999999999,
         "homeAdvantagePoints": 0.0
@@ -8948,10 +9080,10 @@
         "home": "Belmont"
       },
       "firstHalf": {
-        "away": 33.4408418367347,
-        "home": 38.65907523751148,
-        "total": 72.09991707424618,
-        "homeMargin": 5.218233400776782,
+        "away": 33.39471653764953,
+        "home": 38.60575237511491,
+        "total": 72.00046891276443,
+        "homeMargin": 5.211035837465381,
         "awayScoringShare": 0.47114707952146373,
         "homeScoringShare": 0.4752483279551477,
         "modelVersion": "first-half-timing-v1",
@@ -9762,13 +9894,13 @@
       "homeId": "2348",
       "location": "Home",
       "model": {
-        "away": 78.23400000000001,
-        "home": 68.8176,
-        "total": 147.0516,
-        "homeMargin": -9.41640000000001,
-        "possessions": 70.80000000000001,
-        "awayEfficiency": 110.5,
-        "homeEfficiency": 97.19999999999999,
+        "away": 77.94239999999998,
+        "home": 68.5526,
+        "total": 146.49499999999998,
+        "homeMargin": -9.38979999999998,
+        "possessions": 70.6,
+        "awayEfficiency": 110.39999999999998,
+        "homeEfficiency": 97.1,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -9776,10 +9908,10 @@
         "home": "Louisiana Tech"
       },
       "firstHalf": {
-        "away": 37.37519874686718,
-        "home": 33.89853144952545,
-        "total": 71.27373019639262,
-        "homeMargin": -3.476667297341727,
+        "away": 37.23589092731829,
+        "home": 33.76799637079379,
+        "total": 71.00388729811208,
+        "homeMargin": -3.4678945565244987,
         "awayScoringShare": 0.4777360066833751,
         "homeScoringShare": 0.4925852027610009,
         "modelVersion": "first-half-timing-v1",
@@ -10062,12 +10194,12 @@
       "homeId": "269",
       "location": "Home",
       "model": {
-        "away": 63.153600000000004,
+        "away": 63.082800000000006,
         "home": 85.1016,
-        "total": 148.2552,
-        "homeMargin": 21.948,
+        "total": 148.1844,
+        "homeMargin": 22.0188,
         "possessions": 70.80000000000001,
-        "awayEfficiency": 89.19999999999999,
+        "awayEfficiency": 89.1,
         "homeEfficiency": 120.19999999999999,
         "homeAdvantagePoints": 0.0
       },
@@ -10076,10 +10208,10 @@
         "home": "Marquette"
       },
       "firstHalf": {
-        "away": 29.492927329192547,
+        "away": 29.459863509316772,
         "home": 39.273485164134094,
-        "total": 68.76641249332664,
-        "homeMargin": 9.780557834941547,
+        "total": 68.73334867345086,
+        "homeMargin": 9.813621654817322,
         "awayScoringShare": 0.4670031055900621,
         "homeScoringShare": 0.46148938638209025,
         "modelVersion": "first-half-timing-v1",
@@ -10506,12 +10638,12 @@
       "homeId": "356",
       "location": "Home",
       "model": {
-        "away": 59.795300000000026,
+        "away": 59.725200000000015,
         "home": 91.48050000000003,
-        "total": 151.27580000000006,
-        "homeMargin": 31.68520000000001,
+        "total": 151.20570000000004,
+        "homeMargin": 31.75530000000002,
         "possessions": 70.10000000000002,
-        "awayEfficiency": 85.30000000000001,
+        "awayEfficiency": 85.19999999999999,
         "homeEfficiency": 130.5,
         "homeAdvantagePoints": 0.0
       },
@@ -10520,10 +10652,10 @@
         "home": "Illinois"
       },
       "firstHalf": {
-        "away": 27.572277222222237,
+        "away": 27.539953333333344,
         "home": 43.301709707241926,
-        "total": 70.87398692946417,
-        "homeMargin": 15.72943248501969,
+        "total": 70.84166304057527,
+        "homeMargin": 15.761756373908582,
         "awayScoringShare": 0.46111111111111114,
         "homeScoringShare": 0.4733436055469954,
         "modelVersion": "first-half-timing-v1",
@@ -10639,12 +10771,12 @@
       "location": "Home",
       "model": {
         "away": 65.9175,
-        "home": 82.1325,
-        "total": 148.05,
-        "homeMargin": 16.21499999999999,
+        "home": 81.99150000000002,
+        "total": 147.90900000000002,
+        "homeMargin": 16.074000000000012,
         "possessions": 70.5,
         "awayEfficiency": 93.5,
-        "homeEfficiency": 116.5,
+        "homeEfficiency": 116.30000000000001,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -10653,9 +10785,9 @@
       },
       "firstHalf": {
         "away": 27.09773327268084,
-        "home": 41.060923407842964,
-        "total": 68.1586566805238,
-        "homeMargin": 13.963190135162122,
+        "home": 40.990432552207196,
+        "total": 68.08816582488804,
+        "homeMargin": 13.892699279526354,
         "awayScoringShare": 0.4110855732192641,
         "homeScoringShare": 0.49993514635306324,
         "modelVersion": "first-half-timing-v1",
@@ -11055,12 +11187,12 @@
       "homeId": "326",
       "location": "Home",
       "model": {
-        "away": 68.69520000000001,
+        "away": 68.62560000000002,
         "home": 76.76880000000004,
-        "total": 145.46400000000006,
-        "homeMargin": 8.073600000000027,
+        "total": 145.39440000000008,
+        "homeMargin": 8.143200000000022,
         "possessions": 69.60000000000002,
-        "awayEfficiency": 98.69999999999999,
+        "awayEfficiency": 98.6,
         "homeEfficiency": 110.30000000000001,
         "homeAdvantagePoints": 0.0
       },
@@ -11069,10 +11201,10 @@
         "home": "Texas St."
       },
       "firstHalf": {
-        "away": 34.78974390243903,
+        "away": 34.75449593495936,
         "home": 36.334426463588784,
-        "total": 71.12417036602781,
-        "homeMargin": 1.5446825611497559,
+        "total": 71.08892239854814,
+        "homeMargin": 1.5799305286294256,
         "awayScoringShare": 0.5064363143631436,
         "homeScoringShare": 0.4732967880647967,
         "modelVersion": "first-half-timing-v1",
@@ -11211,11 +11343,11 @@
       "homeId": "2803",
       "location": "Home",
       "model": {
-        "away": 73.03399999999998,
-        "home": 72.4139,
-        "total": 145.44789999999998,
-        "homeMargin": -0.6200999999999794,
-        "possessions": 68.89999999999998,
+        "away": 72.92800000000001,
+        "home": 72.30880000000003,
+        "total": 145.23680000000004,
+        "homeMargin": -0.619199999999978,
+        "possessions": 68.80000000000001,
         "awayEfficiency": 106.0,
         "homeEfficiency": 105.10000000000002,
         "homeAdvantagePoints": 0.0
@@ -11225,10 +11357,10 @@
         "home": "Bryant"
       },
       "firstHalf": {
-        "away": 36.34070550800964,
-        "home": 35.395616724237186,
-        "total": 71.73632223224683,
-        "homeMargin": -0.9450887837724551,
+        "away": 36.28796137809963,
+        "home": 35.34424427616139,
+        "total": 71.63220565426101,
+        "homeMargin": -0.9437171019382404,
         "awayScoringShare": 0.4975861312266842,
         "homeScoringShare": 0.48879589035029447,
         "modelVersion": "first-half-timing-v1",
@@ -11356,12 +11488,12 @@
       "location": "Neutral",
       "model": {
         "away": 78.11840000000002,
-        "home": 74.45660000000001,
-        "total": 152.57500000000005,
-        "homeMargin": -3.6618000000000137,
+        "home": 74.38480000000003,
+        "total": 152.50320000000005,
+        "homeMargin": -3.7335999999999956,
         "possessions": 71.80000000000001,
         "awayEfficiency": 108.80000000000001,
-        "homeEfficiency": 103.69999999999999,
+        "homeEfficiency": 103.60000000000002,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -11370,9 +11502,9 @@
       },
       "firstHalf": {
         "away": 36.02380762463344,
-        "home": 37.61646855340401,
-        "total": 73.64027617803745,
-        "homeMargin": 1.5926609287705702,
+        "home": 37.580194234644715,
+        "total": 73.60400185927816,
+        "homeMargin": 1.5563866100112733,
         "awayScoringShare": 0.46114369501466274,
         "homeScoringShare": 0.5052133531937264,
         "modelVersion": "first-half-timing-v1",
@@ -11516,13 +11648,13 @@
       "homeId": "77",
       "location": "Home",
       "model": {
-        "away": 64.84319999999998,
-        "home": 82.14839999999997,
-        "total": 146.99159999999995,
-        "homeMargin": 17.305199999999985,
-        "possessions": 68.39999999999998,
+        "away": 64.74840000000002,
+        "home": 81.96000000000002,
+        "total": 146.70840000000004,
+        "homeMargin": 17.211600000000004,
+        "possessions": 68.30000000000001,
         "awayEfficiency": 94.80000000000001,
-        "homeEfficiency": 120.1,
+        "homeEfficiency": 120.0,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -11530,10 +11662,10 @@
         "home": "Northwestern"
       },
       "firstHalf": {
-        "away": 32.166878171809834,
-        "home": 36.967301180053276,
-        "total": 69.13417935186311,
-        "homeMargin": 4.800423008243442,
+        "away": 32.11985057214346,
+        "home": 36.882519984773516,
+        "total": 69.00237055691699,
+        "homeMargin": 4.7626694126300535,
         "awayScoringShare": 0.4960717264386989,
         "homeScoringShare": 0.45000634437254156,
         "modelVersion": "first-half-timing-v1",
@@ -11677,13 +11809,13 @@
       "homeId": "2628",
       "location": "Home",
       "model": {
-        "away": 66.91619999999999,
-        "home": 88.1772,
-        "total": 155.09339999999997,
-        "homeMargin": 21.26100000000001,
+        "away": 66.84159999999999,
+        "home": 88.10259999999998,
+        "total": 154.94419999999997,
+        "homeMargin": 21.260999999999996,
         "possessions": 74.6,
-        "awayEfficiency": 89.69999999999999,
-        "homeEfficiency": 118.19999999999999,
+        "awayEfficiency": 89.6,
+        "homeEfficiency": 118.1,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -11691,10 +11823,10 @@
         "home": "TCU"
       },
       "firstHalf": {
-        "away": 33.815425695732834,
-        "home": 37.44168424330741,
-        "total": 71.25710993904025,
-        "homeMargin": 3.6262585475745723,
+        "away": 33.777727339327335,
+        "home": 37.41000769149411,
+        "total": 71.18773503082144,
+        "homeMargin": 3.6322803521667737,
         "awayScoringShare": 0.5053398981970411,
         "homeScoringShare": 0.42461865701459567,
         "modelVersion": "first-half-timing-v1",
@@ -11834,12 +11966,12 @@
       "location": "Home",
       "model": {
         "away": 70.3,
-        "home": 91.538,
-        "total": 161.838,
-        "homeMargin": 21.238,
+        "home": 91.39,
+        "total": 161.69,
+        "homeMargin": 21.090000000000003,
         "possessions": 74.0,
         "awayEfficiency": 95.0,
-        "homeEfficiency": 123.69999999999999,
+        "homeEfficiency": 123.5,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -11848,9 +11980,9 @@
       },
       "firstHalf": {
         "away": 32.21725681725682,
-        "home": 39.354727347781214,
-        "total": 71.57198416503803,
-        "homeMargin": 7.137470530524396,
+        "home": 39.29109803921568,
+        "total": 71.5083548564725,
+        "homeMargin": 7.073841221958865,
         "awayScoringShare": 0.4582824582824583,
         "homeScoringShare": 0.4299277605779154,
         "modelVersion": "first-half-timing-v1",
@@ -11965,11 +12097,11 @@
       "homeId": "2655",
       "location": "Home",
       "model": {
-        "away": 68.81,
-        "home": 77.91000000000001,
-        "total": 146.72000000000003,
-        "homeMargin": 9.100000000000009,
-        "possessions": 70.0,
+        "away": 68.71170000000001,
+        "home": 77.79870000000001,
+        "total": 146.5104,
+        "homeMargin": 9.087000000000003,
+        "possessions": 69.9,
         "awayEfficiency": 98.30000000000001,
         "homeEfficiency": 111.30000000000001,
         "homeAdvantagePoints": 0.0
@@ -11979,10 +12111,10 @@
         "home": "Tulane"
       },
       "firstHalf": {
-        "away": 28.195239124009515,
-        "home": 36.23306034111466,
-        "total": 64.42829946512417,
-        "homeMargin": 8.037821217105144,
+        "away": 28.154960210975215,
+        "home": 36.18129882634164,
+        "total": 64.33625903731685,
+        "homeMargin": 8.026338615366424,
         "awayScoringShare": 0.4097549647436348,
         "homeScoringShare": 0.4650630258133058,
         "modelVersion": "first-half-timing-v1",
@@ -12121,11 +12253,11 @@
       "homeId": "2567",
       "location": "Home",
       "model": {
-        "away": 68.39359999999999,
-        "home": 85.78679999999999,
-        "total": 154.18039999999996,
-        "homeMargin": 17.393199999999993,
-        "possessions": 73.69999999999999,
+        "away": 68.30080000000002,
+        "home": 85.67040000000003,
+        "total": 153.97120000000007,
+        "homeMargin": 17.369600000000005,
+        "possessions": 73.60000000000002,
         "awayEfficiency": 92.80000000000001,
         "homeEfficiency": 116.4,
         "homeAdvantagePoints": 0.0
@@ -12135,10 +12267,10 @@
         "home": "SMU"
       },
       "firstHalf": {
-        "away": 33.1098348205038,
-        "home": 39.31682209786879,
-        "total": 72.42665691837259,
-        "homeMargin": 6.206987277364988,
+        "away": 33.06490967149363,
+        "home": 39.26347498511729,
+        "total": 72.32838465661092,
+        "homeMargin": 6.198565313623661,
         "awayScoringShare": 0.4841072091614391,
         "homeScoringShare": 0.4583085287931103,
         "modelVersion": "first-half-timing-v1",
@@ -12341,12 +12473,12 @@
       "location": "Home",
       "model": {
         "away": 69.486,
-        "home": 88.06,
-        "total": 157.546,
-        "homeMargin": 18.573999999999998,
+        "home": 87.98599999999999,
+        "total": 157.47199999999998,
+        "homeMargin": 18.499999999999986,
         "possessions": 74.0,
         "awayEfficiency": 93.9,
-        "homeEfficiency": 119.0,
+        "homeEfficiency": 118.89999999999998,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -12355,9 +12487,9 @@
       },
       "firstHalf": {
         "away": 34.82920997573293,
-        "home": 41.19222386813542,
-        "total": 76.02143384386835,
-        "homeMargin": 6.363013892402492,
+        "home": 41.15760855396051,
+        "total": 75.98681852969344,
+        "homeMargin": 6.328398578227578,
         "awayScoringShare": 0.501240681226908,
         "homeScoringShare": 0.4677745158770772,
         "modelVersion": "first-half-timing-v1",
@@ -12497,12 +12629,12 @@
       "location": "Home",
       "model": {
         "away": 67.23720000000002,
-        "home": 76.5396,
-        "total": 143.7768,
-        "homeMargin": 9.302399999999977,
+        "home": 76.4028,
+        "total": 143.64000000000001,
+        "homeMargin": 9.165599999999984,
         "possessions": 68.4,
         "awayEfficiency": 98.30000000000001,
-        "homeEfficiency": 111.89999999999998,
+        "homeEfficiency": 111.69999999999999,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -12511,9 +12643,9 @@
       },
       "firstHalf": {
         "away": 31.597584698544704,
-        "home": 35.63721410638851,
-        "total": 67.23479880493322,
-        "homeMargin": 4.039629407843808,
+        "home": 35.573519353740814,
+        "total": 67.17110405228551,
+        "homeMargin": 3.9759346551961094,
         "awayScoringShare": 0.469942006784112,
         "homeScoringShare": 0.46560491701535567,
         "modelVersion": "first-half-timing-v1",
@@ -12760,13 +12892,13 @@
       "homeId": "2032",
       "location": "Home",
       "model": {
-        "away": 83.7694,
-        "home": 79.77320000000002,
-        "total": 163.54260000000002,
-        "homeMargin": -3.9961999999999875,
+        "away": 83.69400000000002,
+        "home": 79.6978,
+        "total": 163.39180000000002,
+        "homeMargin": -3.996200000000016,
         "possessions": 75.4,
-        "awayEfficiency": 111.1,
-        "homeEfficiency": 105.80000000000001,
+        "awayEfficiency": 111.0,
+        "homeEfficiency": 105.69999999999999,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -12774,10 +12906,10 @@
         "home": "Arkansas St."
       },
       "firstHalf": {
-        "away": 40.639761488171466,
-        "home": 38.68755814804391,
-        "total": 79.32731963621538,
-        "homeMargin": -1.9522033401275536,
+        "away": 40.60318204488779,
+        "home": 38.65099145792288,
+        "total": 79.25417350281066,
+        "homeMargin": -1.9521905869649103,
         "awayScoringShare": 0.48513850508862977,
         "homeScoringShare": 0.4849693650003247,
         "modelVersion": "first-half-timing-v1",
@@ -12916,12 +13048,12 @@
       "homeId": "309",
       "location": "Home",
       "model": {
-        "away": 77.75720000000003,
+        "away": 77.68740000000003,
         "home": 69.80000000000001,
-        "total": 147.55720000000002,
-        "homeMargin": -7.9572000000000145,
+        "total": 147.48740000000004,
+        "homeMargin": -7.887400000000014,
         "possessions": 69.80000000000001,
-        "awayEfficiency": 111.4,
+        "awayEfficiency": 111.30000000000001,
         "homeEfficiency": 100.0,
         "homeAdvantagePoints": 0.0
       },
@@ -12930,10 +13062,10 @@
         "home": "Louisiana"
       },
       "firstHalf": {
-        "away": 36.55455394819215,
+        "away": 36.521740165473844,
         "home": 31.443679266455074,
-        "total": 67.99823321464723,
-        "homeMargin": -5.1108746817370765,
+        "total": 67.96541943192892,
+        "homeMargin": -5.0780608990187694,
         "awayScoringShare": 0.470111500262254,
         "homeScoringShare": 0.45048251098073167,
         "modelVersion": "first-half-timing-v1",
@@ -13216,11 +13348,11 @@
       "homeId": "305",
       "location": "Home",
       "model": {
-        "away": 62.481100000000005,
-        "home": 83.76350000000001,
-        "total": 146.24460000000002,
-        "homeMargin": 21.282400000000003,
-        "possessions": 71.9,
+        "away": 62.39420000000001,
+        "home": 83.647,
+        "total": 146.0412,
+        "homeMargin": 21.252799999999993,
+        "possessions": 71.80000000000001,
         "awayEfficiency": 86.9,
         "homeEfficiency": 116.5,
         "homeAdvantagePoints": 0.0
@@ -13230,10 +13362,10 @@
         "home": "DePaul"
       },
       "firstHalf": {
-        "away": 26.79113833333334,
-        "home": 36.682551639584254,
-        "total": 63.4736899729176,
-        "homeMargin": 9.891413306250914,
+        "away": 26.753876666666674,
+        "home": 36.63153279168497,
+        "total": 63.385409458351646,
+        "homeMargin": 9.877656125018294,
         "awayScoringShare": 0.42878787878787883,
         "homeScoringShare": 0.43793002488654664,
         "modelVersion": "first-half-timing-v1",
@@ -13682,12 +13814,12 @@
       "homeId": "145",
       "location": "Home",
       "model": {
-        "away": 62.00389999999999,
-        "home": 83.85019999999999,
-        "total": 145.85409999999996,
-        "homeMargin": 21.8463,
-        "possessions": 70.69999999999999,
-        "awayEfficiency": 87.69999999999999,
+        "away": 61.84560000000004,
+        "home": 83.73160000000001,
+        "total": 145.57720000000006,
+        "homeMargin": 21.885999999999974,
+        "possessions": 70.60000000000002,
+        "awayEfficiency": 87.60000000000002,
         "homeEfficiency": 118.6,
         "homeAdvantagePoints": 0.0
       },
@@ -13696,10 +13828,10 @@
         "home": "Mississippi"
       },
       "firstHalf": {
-        "away": 27.13955236187845,
-        "home": 38.677380985915484,
-        "total": 65.81693334779393,
-        "homeMargin": 11.537828624037033,
+        "away": 27.07026331491715,
+        "home": 38.62267464788733,
+        "total": 65.69293796280448,
+        "homeMargin": 11.55241133297018,
         "awayScoringShare": 0.43770718232044203,
         "homeScoringShare": 0.4612676056338028,
         "modelVersion": "first-half-timing-v1",
@@ -13889,11 +14021,11 @@
       "homeId": "2110",
       "location": "Home",
       "model": {
-        "away": 75.3684,
-        "home": 79.92959999999998,
-        "total": 155.29799999999997,
-        "homeMargin": 4.561199999999985,
-        "possessions": 72.39999999999998,
+        "away": 75.26430000000003,
+        "home": 79.81920000000002,
+        "total": 155.08350000000007,
+        "homeMargin": 4.554899999999989,
+        "possessions": 72.30000000000001,
         "awayEfficiency": 104.10000000000002,
         "homeEfficiency": 110.4,
         "homeAdvantagePoints": 0.0
@@ -13903,10 +14035,10 @@
         "home": "Central Arkansas"
       },
       "firstHalf": {
-        "away": 34.508525759872356,
-        "home": 36.05399834024895,
-        "total": 70.56252410012131,
-        "homeMargin": 1.5454725803765967,
+        "away": 34.460862050259294,
+        "home": 36.00420000000001,
+        "total": 70.4650620502593,
+        "homeMargin": 1.5433379497407174,
         "awayScoringShare": 0.457864645658822,
         "homeScoringShare": 0.4510719225449516,
         "modelVersion": "first-half-timing-v1",
@@ -14321,12 +14453,12 @@
       "homeId": "251",
       "location": "Home",
       "model": {
-        "away": 59.825300000000006,
+        "away": 59.75500000000001,
         "home": 89.84340000000002,
-        "total": 149.66870000000003,
-        "homeMargin": 30.01810000000001,
+        "total": 149.59840000000003,
+        "homeMargin": 30.088400000000007,
         "possessions": 70.30000000000001,
-        "awayEfficiency": 85.1,
+        "awayEfficiency": 85.0,
         "homeEfficiency": 127.80000000000001,
         "homeAdvantagePoints": 0.0
       },
@@ -14335,10 +14467,10 @@
         "home": "Texas"
       },
       "firstHalf": {
-        "away": 29.13005159883721,
+        "away": 29.095821220930237,
         "home": 42.56419396551725,
-        "total": 71.69424556435446,
-        "homeMargin": 13.434142366680039,
+        "total": 71.66001518644748,
+        "homeMargin": 13.468372744587011,
         "awayScoringShare": 0.48691860465116277,
         "homeScoringShare": 0.47375983061101024,
         "modelVersion": "first-half-timing-v1",
@@ -14754,12 +14886,12 @@
       "location": "Neutral",
       "model": {
         "away": 82.0192,
-        "home": 79.85319999999997,
-        "total": 161.87239999999997,
-        "homeMargin": -2.1660000000000252,
+        "home": 79.78099999999999,
+        "total": 161.8002,
+        "homeMargin": -2.238200000000006,
         "possessions": 72.19999999999999,
         "awayEfficiency": 113.60000000000002,
-        "homeEfficiency": 110.6,
+        "homeEfficiency": 110.5,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -14768,9 +14900,9 @@
       },
       "firstHalf": {
         "away": 42.82908456790123,
-        "home": 37.4402940342679,
-        "total": 80.26937860216913,
-        "homeMargin": -5.388790533633333,
+        "home": 37.40644205051179,
+        "total": 80.23552661841302,
+        "homeMargin": -5.422642517389441,
         "awayScoringShare": 0.5221836419753086,
         "homeScoringShare": 0.4688640409434802,
         "modelVersion": "first-half-timing-v1",
@@ -15075,12 +15207,12 @@
       "homeId": "167",
       "location": "Home",
       "model": {
-        "away": 71.874,
-        "home": 84.2886,
-        "total": 156.1626,
-        "homeMargin": 12.414600000000007,
-        "possessions": 72.6,
-        "awayEfficiency": 99.0,
+        "away": 71.70249999999999,
+        "home": 84.17250000000001,
+        "total": 155.875,
+        "homeMargin": 12.470000000000027,
+        "possessions": 72.5,
+        "awayEfficiency": 98.89999999999998,
         "homeEfficiency": 116.10000000000002,
         "homeAdvantagePoints": 0.0
       },
@@ -15089,10 +15221,10 @@
         "home": "New Mexico"
       },
       "firstHalf": {
-        "away": 35.786045566614916,
-        "home": 38.481967824540604,
-        "total": 74.26801339115552,
-        "homeMargin": 2.6959222579256874,
+        "away": 35.700655762030856,
+        "home": 38.42896235921755,
+        "total": 74.1296181212484,
+        "homeMargin": 2.7283065971866947,
         "awayScoringShare": 0.49789973518400144,
         "homeScoringShare": 0.45655008891523413,
         "modelVersion": "first-half-timing-v1",
@@ -15207,11 +15339,11 @@
       "homeId": "254",
       "location": "Home",
       "model": {
-        "away": 67.0236,
-        "home": 80.6687,
-        "total": 147.6923,
-        "homeMargin": 13.6451,
-        "possessions": 70.69999999999999,
+        "away": 66.9288,
+        "home": 80.55460000000001,
+        "total": 147.48340000000002,
+        "homeMargin": 13.625800000000012,
+        "possessions": 70.6,
         "awayEfficiency": 94.80000000000001,
         "homeEfficiency": 114.10000000000002,
         "homeAdvantagePoints": 0.0
@@ -15221,10 +15353,10 @@
         "home": "Utah"
       },
       "firstHalf": {
-        "away": 34.2278641025641,
-        "home": 33.81257765410959,
-        "total": 68.04044175667369,
-        "homeMargin": -0.4152864484545091,
+        "away": 34.179451282051275,
+        "home": 33.7647522260274,
+        "total": 67.94420350807867,
+        "homeMargin": -0.4146990560238777,
         "awayScoringShare": 0.5106837606837606,
         "homeScoringShare": 0.41915362035225046,
         "modelVersion": "first-half-timing-v1",
@@ -15339,12 +15471,12 @@
       "homeId": "135",
       "location": "Home",
       "model": {
-        "away": 61.87719999999999,
+        "away": 61.808599999999984,
         "home": 84.37799999999999,
-        "total": 146.25519999999997,
-        "homeMargin": 22.500799999999998,
+        "total": 146.18659999999997,
+        "homeMargin": 22.5694,
         "possessions": 68.6,
-        "awayEfficiency": 90.19999999999999,
+        "awayEfficiency": 90.1,
         "homeEfficiency": 123.0,
         "homeAdvantagePoints": 0.0
       },
@@ -15353,10 +15485,10 @@
         "home": "Minnesota"
       },
       "firstHalf": {
-        "away": 29.127626222027196,
+        "away": 29.095333953488364,
         "home": 43.83324919032196,
-        "total": 72.96087541234915,
-        "homeMargin": 14.705622968294762,
+        "total": 72.92858314381033,
+        "homeMargin": 14.737915236833594,
         "awayScoringShare": 0.4707327775340061,
         "homeScoringShare": 0.5194867049506028,
         "modelVersion": "first-half-timing-v1",
@@ -16553,12 +16685,12 @@
       "location": "Home",
       "model": {
         "away": 70.18,
-        "home": 84.7525,
-        "total": 154.9325,
-        "homeMargin": 14.572499999999991,
+        "home": 84.68,
+        "total": 154.86,
+        "homeMargin": 14.5,
         "possessions": 72.5,
         "awayEfficiency": 96.80000000000001,
-        "homeEfficiency": 116.9,
+        "homeEfficiency": 116.80000000000001,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -16567,9 +16699,9 @@
       },
       "firstHalf": {
         "away": 32.94214495431987,
-        "home": 31.221968161239637,
-        "total": 64.1641131155595,
-        "homeMargin": -1.7201767930802347,
+        "home": 31.1952598907852,
+        "total": 64.13740484510507,
+        "homeMargin": -1.7468850635346733,
         "awayScoringShare": 0.4693950549204883,
         "homeScoringShare": 0.36838993730261216,
         "modelVersion": "first-half-timing-v1",
@@ -16697,12 +16829,12 @@
       "location": "Home",
       "model": {
         "away": 68.50490000000002,
-        "home": 78.40840000000001,
-        "total": 146.91330000000005,
-        "homeMargin": 9.903499999999994,
+        "home": 78.3401,
+        "total": 146.84500000000003,
+        "homeMargin": 9.835199999999986,
         "possessions": 68.30000000000001,
         "awayEfficiency": 100.30000000000001,
-        "homeEfficiency": 114.80000000000001,
+        "homeEfficiency": 114.69999999999999,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -16711,9 +16843,9 @@
       },
       "firstHalf": {
         "away": 31.63253822342005,
-        "home": 41.23051557217441,
-        "total": 72.86305379559445,
-        "homeMargin": 9.597977348754362,
+        "home": 41.194600488923385,
+        "total": 72.82713871234344,
+        "homeMargin": 9.562062265503336,
         "awayScoringShare": 0.4617558484636871,
         "homeScoringShare": 0.5258430929871596,
         "modelVersion": "first-half-timing-v1",
@@ -16852,12 +16984,12 @@
       "homeId": "2539",
       "location": "Home",
       "model": {
-        "away": 75.02999999999999,
+        "away": 74.95679999999999,
         "home": 79.56839999999998,
-        "total": 154.59839999999997,
-        "homeMargin": 4.538399999999996,
+        "total": 154.52519999999998,
+        "homeMargin": 4.611599999999996,
         "possessions": 73.19999999999999,
-        "awayEfficiency": 102.5,
+        "awayEfficiency": 102.4,
         "homeEfficiency": 108.69999999999999,
         "homeAdvantagePoints": 0.0
       },
@@ -16866,10 +16998,10 @@
         "home": "San Francisco"
       },
       "firstHalf": {
-        "away": 34.52294515103338,
+        "away": 34.489264228934815,
         "home": 33.93461337777266,
-        "total": 68.45755852880605,
-        "homeMargin": -0.5883317732607196,
+        "total": 68.42387760670748,
+        "homeMargin": -0.5546508511621511,
         "awayScoringShare": 0.4601218865924748,
         "homeScoringShare": 0.42648354595257254,
         "modelVersion": "first-half-timing-v1",
@@ -17318,11 +17450,11 @@
       "homeId": "2541",
       "location": "Home",
       "model": {
-        "away": 70.56,
-        "home": 80.92000000000002,
-        "total": 151.48000000000002,
-        "homeMargin": 10.360000000000014,
-        "possessions": 70.0,
+        "away": 70.45920000000001,
+        "home": 80.80440000000003,
+        "total": 151.26360000000005,
+        "homeMargin": 10.34520000000002,
+        "possessions": 69.9,
         "awayEfficiency": 100.80000000000001,
         "homeEfficiency": 115.60000000000002,
         "homeAdvantagePoints": 0.0
@@ -17332,10 +17464,10 @@
         "home": "Santa Clara"
       },
       "firstHalf": {
-        "away": 32.79367879203844,
-        "home": 38.792513826940244,
-        "total": 71.58619261897869,
-        "homeMargin": 5.998835034901802,
+        "away": 32.746830679478386,
+        "home": 38.73709595004462,
+        "total": 71.48392662952301,
+        "homeMargin": 5.990265270566233,
         "awayScoringShare": 0.4647630214291162,
         "homeScoringShare": 0.4793933987511151,
         "modelVersion": "first-half-timing-v1",
@@ -17618,12 +17750,12 @@
       "homeId": "302",
       "location": "Home",
       "model": {
-        "away": 69.5888,
+        "away": 69.51750000000001,
         "home": 76.71880000000002,
-        "total": 146.30760000000004,
-        "homeMargin": 7.13000000000001,
+        "total": 146.23630000000003,
+        "homeMargin": 7.201300000000003,
         "possessions": 71.30000000000001,
-        "awayEfficiency": 97.6,
+        "awayEfficiency": 97.5,
         "homeEfficiency": 107.6,
         "homeAdvantagePoints": 0.0
       },
@@ -17632,10 +17764,10 @@
         "home": "UC Davis"
       },
       "firstHalf": {
-        "away": 31.587677677853335,
+        "away": 31.555313254003078,
         "home": 33.85161981132076,
-        "total": 65.4392974891741,
-        "homeMargin": 2.263942133467424,
+        "total": 65.40693306532384,
+        "homeMargin": 2.2963065573176813,
         "awayScoringShare": 0.4539189880821818,
         "homeScoringShare": 0.4412428219852338,
         "modelVersion": "first-half-timing-v1",
@@ -17919,12 +18051,12 @@
       "location": "Home",
       "model": {
         "away": 68.35600000000001,
-        "home": 89.16000000000003,
-        "total": 157.51600000000002,
-        "homeMargin": 20.804000000000016,
+        "home": 89.08570000000002,
+        "total": 157.44170000000003,
+        "homeMargin": 20.72970000000001,
         "possessions": 74.30000000000001,
         "awayEfficiency": 92.0,
-        "homeEfficiency": 120.0,
+        "homeEfficiency": 119.9,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -17933,9 +18065,9 @@
       },
       "firstHalf": {
         "away": 31.779906157361083,
-        "home": 45.970771069441604,
-        "total": 77.75067722680268,
-        "homeMargin": 14.19086491208052,
+        "home": 45.93246209355039,
+        "total": 77.71236825091148,
+        "homeMargin": 14.152555936189309,
         "awayScoringShare": 0.46491758086138857,
         "homeScoringShare": 0.515598598804863,
         "modelVersion": "first-half-timing-v1",
