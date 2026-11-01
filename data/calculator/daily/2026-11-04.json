@@ -1,10 +1,10 @@
 {
   "date": "2026-11-04",
-  "preparedAt": "2026-11-01T08:56:09.982758+00:00",
-  "ratingsFetchedAt": "2026-11-01T08:56:08.517319+00:00",
+  "preparedAt": "2026-11-01T09:22:22.792827+00:00",
+  "ratingsFetchedAt": "2026-11-01T09:22:21.503166+00:00",
   "ratingSource": "https://kenpom.com/",
   "scheduleSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?groups=50&limit=1000&dates=20261104",
-  "scheduleFetchedAt": "2026-11-01T08:56:09.982758+00:00",
+  "scheduleFetchedAt": "2026-11-01T09:22:22.792827+00:00",
   "season": 2027,
   "ratedTeams": 365,
   "config": {
@@ -17,6 +17,7 @@
     "modelVersion": "additive-matchup-v1"
   },
   "calculatedGames": 10,
+  "firstHalfGames": 10,
   "matchups": [
     {
       "id": "401920232",
@@ -29,7 +30,9 @@
         "away": null,
         "home": "Dartmouth"
       },
-      "error": "Source identity or D-I rating unavailable: Framingham State Rams"
+      "error": "Source identity or D-I rating unavailable: Framingham State Rams",
+      "firstHalf": null,
+      "firstHalfStatus": "Full-game matchup ratings unavailable."
     },
     {
       "id": "401929450",
@@ -42,7 +45,9 @@
         "away": null,
         "home": "Old Dominion"
       },
-      "error": "Source identity or D-I rating unavailable: Regent Regent Royals"
+      "error": "Source identity or D-I rating unavailable: Regent Regent Royals",
+      "firstHalf": null,
+      "firstHalfStatus": "Full-game matchup ratings unavailable."
     },
     {
       "id": "401929438",
@@ -55,7 +60,9 @@
         "away": null,
         "home": "Appalachian St."
       },
-      "error": "Source identity or D-I rating unavailable: Christendom Crusaders"
+      "error": "Source identity or D-I rating unavailable: Christendom Crusaders",
+      "firstHalf": null,
+      "firstHalfStatus": "Full-game matchup ratings unavailable."
     },
     {
       "id": "401928853",
@@ -68,7 +75,9 @@
         "away": null,
         "home": "Morgan St."
       },
-      "error": "Source identity or D-I rating unavailable: Virginia Lynchburg Dragons"
+      "error": "Source identity or D-I rating unavailable: Virginia Lynchburg Dragons",
+      "firstHalf": null,
+      "firstHalfStatus": "Full-game matchup ratings unavailable."
     },
     {
       "id": "401926142",
@@ -81,7 +90,9 @@
         "away": null,
         "home": "SIUE"
       },
-      "error": "Source identity or D-I rating unavailable: Concordia Chicago Cougars"
+      "error": "Source identity or D-I rating unavailable: Concordia Chicago Cougars",
+      "firstHalf": null,
+      "firstHalfStatus": "Full-game matchup ratings unavailable."
     },
     {
       "id": "401922290",
@@ -94,7 +105,9 @@
         "away": null,
         "home": "UNC Asheville"
       },
-      "error": "Source identity or D-I rating unavailable: Erskine Flying Fleet"
+      "error": "Source identity or D-I rating unavailable: Erskine Flying Fleet",
+      "firstHalf": null,
+      "firstHalfStatus": "Full-game matchup ratings unavailable."
     },
     {
       "id": "401920410",
@@ -115,7 +128,116 @@
       "matchedTeams": {
         "away": "Maryland Eastern Shore",
         "home": "High Point"
-      }
+      },
+      "firstHalf": {
+        "away": 28.622148911951783,
+        "home": 37.53322029352226,
+        "total": 66.15536920547405,
+        "homeMargin": 8.91107138157048,
+        "awayScoringShare": 0.4621454875890765,
+        "homeScoringShare": 0.43231275303643724,
+        "modelVersion": "first-half-timing-v1",
+        "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+        "awayProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.46798029556650245,
+          "allowingShare": 0.39903846153846156,
+          "firstScoredAverage": 31.666666666666668,
+          "firstAllowedAverage": 27.666666666666668,
+          "samples": [
+            {
+              "id": "401851474",
+              "date": "2026-03-13T01:10Z",
+              "firstScored": 40.0,
+              "secondScored": 34.0,
+              "firstAllowed": 34.0,
+              "secondAllowed": 40.0
+            },
+            {
+              "id": "401823056",
+              "date": "2026-03-06T01:00Z",
+              "firstScored": 25.0,
+              "secondScored": 31.0,
+              "firstAllowed": 26.0,
+              "secondAllowed": 31.0
+            },
+            {
+              "id": "401823055",
+              "date": "2026-03-03T00:00Z",
+              "firstScored": 30.0,
+              "secondScored": 43.0,
+              "firstAllowed": 23.0,
+              "secondAllowed": 54.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851474",
+              "fetchedAt": "2026-10-30T13:19:28.928775+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401823056",
+              "fetchedAt": "2026-10-30T13:19:26.769135+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401823055",
+              "fetchedAt": "2026-10-30T13:19:29.153371+00:00"
+            }
+          ],
+          "priorSeason": true
+        },
+        "homeProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.46558704453441296,
+          "allowingShare": 0.4563106796116505,
+          "firstScoredAverage": 38.333333333333336,
+          "firstAllowedAverage": 31.333333333333332,
+          "samples": [
+            {
+              "id": "401851353",
+              "date": "2026-03-08T16:00Z",
+              "firstScored": 39.0,
+              "secondScored": 52.0,
+              "firstAllowed": 33.0,
+              "secondAllowed": 43.0
+            },
+            {
+              "id": "401851351",
+              "date": "2026-03-07T17:00Z",
+              "firstScored": 33.0,
+              "secondScored": 42.0,
+              "firstAllowed": 34.0,
+              "secondAllowed": 37.0
+            },
+            {
+              "id": "401851347",
+              "date": "2026-03-06T17:00Z",
+              "firstScored": 43.0,
+              "secondScored": 38.0,
+              "firstAllowed": 27.0,
+              "secondAllowed": 32.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851353",
+              "fetchedAt": "2026-10-30T13:02:43.120897+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851351",
+              "fetchedAt": "2026-10-30T13:02:48.780440+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851347",
+              "fetchedAt": "2026-10-30T13:02:53.499211+00:00"
+            }
+          ],
+          "priorSeason": true
+        }
+      },
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
     },
     {
       "id": "401920191",
@@ -136,7 +258,116 @@
       "matchedTeams": {
         "away": "Longwood",
         "home": "Saint Joseph's"
-      }
+      },
+      "firstHalf": {
+        "away": 32.73048853080569,
+        "home": 35.482118257995985,
+        "total": 68.21260678880168,
+        "homeMargin": 2.7516297271902985,
+        "awayScoringShare": 0.45355450236966827,
+        "homeScoringShare": 0.45590896573429324,
+        "modelVersion": "first-half-timing-v1",
+        "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+        "awayProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.4,
+          "allowingShare": 0.5109170305676856,
+          "firstScoredAverage": 32.666666666666664,
+          "firstAllowedAverage": 39.0,
+          "samples": [
+            {
+              "id": "401851349",
+              "date": "2026-03-06T23:00Z",
+              "firstScored": 36.0,
+              "secondScored": 37.0,
+              "firstAllowed": 40.0,
+              "secondAllowed": 33.0
+            },
+            {
+              "id": "401823965",
+              "date": "2026-02-28T20:00Z",
+              "firstScored": 34.0,
+              "secondScored": 56.0,
+              "firstAllowed": 37.0,
+              "secondAllowed": 37.0
+            },
+            {
+              "id": "401823954",
+              "date": "2026-02-21T21:00Z",
+              "firstScored": 28.0,
+              "secondScored": 54.0,
+              "firstAllowed": 40.0,
+              "secondAllowed": 42.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851349",
+              "fetchedAt": "2026-10-30T13:19:28.235366+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401823965",
+              "fetchedAt": "2026-10-30T13:19:28.348710+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401823954",
+              "fetchedAt": "2026-10-30T13:19:28.471657+00:00"
+            }
+          ],
+          "priorSeason": true
+        },
+        "homeProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.4009009009009009,
+          "allowingShare": 0.5071090047393365,
+          "firstScoredAverage": 29.666666666666668,
+          "firstAllowedAverage": 35.666666666666664,
+          "samples": [
+            {
+              "id": "401851276",
+              "date": "2026-03-14T20:00Z",
+              "firstScored": 21.0,
+              "secondScored": 43.0,
+              "firstAllowed": 44.0,
+              "secondAllowed": 33.0
+            },
+            {
+              "id": "401851274",
+              "date": "2026-03-13T23:30Z",
+              "firstScored": 33.0,
+              "secondScored": 37.0,
+              "firstAllowed": 29.0,
+              "secondAllowed": 29.0
+            },
+            {
+              "id": "401828468",
+              "date": "2026-03-07T18:00Z",
+              "firstScored": 35.0,
+              "secondScored": 53.0,
+              "firstAllowed": 34.0,
+              "secondAllowed": 42.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851276",
+              "fetchedAt": "2026-10-30T13:19:32.416254+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851274",
+              "fetchedAt": "2026-10-30T13:19:26.375990+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401828468",
+              "fetchedAt": "2026-10-30T13:19:27.988106+00:00"
+            }
+          ],
+          "priorSeason": true
+        }
+      },
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
     },
     {
       "id": "401902276",
@@ -157,7 +388,116 @@
       "matchedTeams": {
         "away": "Fairleigh Dickinson",
         "home": "Butler"
-      }
+      },
+      "firstHalf": {
+        "away": 31.050719701213822,
+        "home": 41.17574759358289,
+        "total": 72.22646729479672,
+        "homeMargin": 10.125027892369069,
+        "awayScoringShare": 0.47126517273576096,
+        "homeScoringShare": 0.496524064171123,
+        "modelVersion": "first-half-timing-v1",
+        "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+        "awayProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.5055555555555555,
+          "allowingShare": 0.4636363636363636,
+          "firstScoredAverage": 30.333333333333332,
+          "firstAllowedAverage": 34.0,
+          "samples": [
+            {
+              "id": "401851515",
+              "date": "2026-03-05T00:00Z",
+              "firstScored": 28.0,
+              "secondScored": 33.0,
+              "firstAllowed": 35.0,
+              "secondAllowed": 35.0
+            },
+            {
+              "id": "401812332",
+              "date": "2026-02-28T18:00Z",
+              "firstScored": 30.0,
+              "secondScored": 30.0,
+              "firstAllowed": 31.0,
+              "secondAllowed": 43.0
+            },
+            {
+              "id": "401812331",
+              "date": "2026-02-27T00:00Z",
+              "firstScored": 33.0,
+              "secondScored": 26.0,
+              "firstAllowed": 36.0,
+              "secondAllowed": 40.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851515",
+              "fetchedAt": "2026-10-30T13:19:24.036256+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401812332",
+              "fetchedAt": "2026-10-30T13:19:24.139268+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401812331",
+              "fetchedAt": "2026-10-30T13:19:24.264778+00:00"
+            }
+          ],
+          "priorSeason": true
+        },
+        "homeProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.5294117647058824,
+          "allowingShare": 0.4369747899159664,
+          "firstScoredAverage": 39.0,
+          "firstAllowedAverage": 34.666666666666664,
+          "samples": [
+            {
+              "id": "401851308",
+              "date": "2026-03-11T20:00Z",
+              "firstScored": 42.0,
+              "secondScored": 39.0,
+              "firstAllowed": 40.0,
+              "secondAllowed": 51.0
+            },
+            {
+              "id": "401822975",
+              "date": "2026-03-07T17:00Z",
+              "firstScored": 39.0,
+              "secondScored": 42.0,
+              "firstAllowed": 32.0,
+              "secondAllowed": 39.0
+            },
+            {
+              "id": "401822969",
+              "date": "2026-03-04T23:00Z",
+              "firstScored": 36.0,
+              "secondScored": 23.0,
+              "firstAllowed": 32.0,
+              "secondAllowed": 44.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851308",
+              "fetchedAt": "2026-10-30T13:19:25.688797+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401822975",
+              "fetchedAt": "2026-10-30T13:19:25.781535+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401822969",
+              "fetchedAt": "2026-10-30T13:19:24.173248+00:00"
+            }
+          ],
+          "priorSeason": true
+        }
+      },
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
     },
     {
       "id": "401927361",
@@ -170,7 +510,9 @@
         "away": null,
         "home": "Drake"
       },
-      "error": "Source identity or D-I rating unavailable: Central College Dutch"
+      "error": "Source identity or D-I rating unavailable: Central College Dutch",
+      "firstHalf": null,
+      "firstHalfStatus": "Full-game matchup ratings unavailable."
     },
     {
       "id": "401926214",
@@ -183,7 +525,9 @@
         "away": null,
         "home": "Tennessee Tech"
       },
-      "error": "Source identity or D-I rating unavailable: Blue Mountain Christian Toppers"
+      "error": "Source identity or D-I rating unavailable: Blue Mountain Christian Toppers",
+      "firstHalf": null,
+      "firstHalfStatus": "Full-game matchup ratings unavailable."
     },
     {
       "id": "401926151",
@@ -196,7 +540,9 @@
         "away": null,
         "home": "Southeast Missouri"
       },
-      "error": "Source identity or D-I rating unavailable: Webster Gorloks"
+      "error": "Source identity or D-I rating unavailable: Webster Gorloks",
+      "firstHalf": null,
+      "firstHalfStatus": "Full-game matchup ratings unavailable."
     },
     {
       "id": "401926111",
@@ -209,7 +555,9 @@
         "away": null,
         "home": "Furman"
       },
-      "error": "Source identity or D-I rating unavailable: Bob Jones Bruins"
+      "error": "Source identity or D-I rating unavailable: Bob Jones Bruins",
+      "firstHalf": null,
+      "firstHalfStatus": "Full-game matchup ratings unavailable."
     },
     {
       "id": "401919028",
@@ -230,7 +578,152 @@
       "matchedTeams": {
         "away": "CSUN",
         "home": "Wichita St."
-      }
+      },
+      "firstHalf": {
+        "away": 35.36281560942761,
+        "home": 40.63958193542569,
+        "total": 76.0023975448533,
+        "homeMargin": 5.276766325998082,
+        "awayScoringShare": 0.46085297418630755,
+        "homeScoringShare": 0.46989237614237617,
+        "modelVersion": "first-half-timing-v1",
+        "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+        "awayProfile": {
+          "season": 2026,
+          "games": 5,
+          "scoringShare": 0.4271604938271605,
+          "allowingShare": 0.45601851851851855,
+          "firstScoredAverage": 34.6,
+          "firstAllowedAverage": 39.4,
+          "samples": [
+            {
+              "id": "401851395",
+              "date": "2026-03-14T01:00Z",
+              "firstScored": 37.0,
+              "secondScored": 41.0,
+              "firstAllowed": 49.0,
+              "secondAllowed": 44.0
+            },
+            {
+              "id": "401851393",
+              "date": "2026-03-13T01:00Z",
+              "firstScored": 32.0,
+              "secondScored": 48.0,
+              "firstAllowed": 36.0,
+              "secondAllowed": 34.0
+            },
+            {
+              "id": "401823186",
+              "date": "2026-03-08T01:00Z",
+              "firstScored": 36.0,
+              "secondScored": 41.0,
+              "firstAllowed": 39.0,
+              "secondAllowed": 51.0
+            },
+            {
+              "id": "401823271",
+              "date": "2026-03-06T02:30Z",
+              "firstScored": 36.0,
+              "secondScored": 50.0,
+              "firstAllowed": 34.0,
+              "secondAllowed": 50.0
+            },
+            {
+              "id": "401823270",
+              "date": "2026-03-01T01:00Z",
+              "firstScored": 32.0,
+              "secondScored": 52.0,
+              "firstAllowed": 39.0,
+              "secondAllowed": 56.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851395",
+              "fetchedAt": "2026-10-30T13:19:34.184243+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851393",
+              "fetchedAt": "2026-10-30T13:19:33.426341+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401823186",
+              "fetchedAt": "2026-10-30T13:19:27.602413+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401823271",
+              "fetchedAt": "2026-11-01T08:29:31.583906+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401823270",
+              "fetchedAt": "2026-10-30T13:19:32.946045+00:00"
+            }
+          ],
+          "priorSeason": true
+        },
+        "homeProfile": {
+          "season": 2026,
+          "games": 4,
+          "scoringShare": 0.4837662337662338,
+          "allowingShare": 0.49454545454545457,
+          "firstScoredAverage": 37.25,
+          "firstAllowedAverage": 34.0,
+          "samples": [
+            {
+              "id": "401851229",
+              "date": "2026-03-15T19:15Z",
+              "firstScored": 26.0,
+              "secondScored": 29.0,
+              "firstAllowed": 33.0,
+              "secondAllowed": 37.0
+            },
+            {
+              "id": "401851228",
+              "date": "2026-03-14T21:40Z",
+              "firstScored": 39.0,
+              "secondScored": 42.0,
+              "firstAllowed": 33.0,
+              "secondAllowed": 35.0
+            },
+            {
+              "id": "401828261",
+              "date": "2026-03-07T21:00Z",
+              "firstScored": 43.0,
+              "secondScored": 45.0,
+              "firstAllowed": 41.0,
+              "secondAllowed": 29.0
+            },
+            {
+              "id": "401828255",
+              "date": "2026-03-02T01:00Z",
+              "firstScored": 41.0,
+              "secondScored": 43.0,
+              "firstAllowed": 29.0,
+              "secondAllowed": 38.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851229",
+              "fetchedAt": "2026-10-30T13:19:35.409821+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851228",
+              "fetchedAt": "2026-10-30T13:19:25.116506+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401828261",
+              "fetchedAt": "2026-10-30T13:19:27.445596+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401828255",
+              "fetchedAt": "2026-10-30T13:19:32.204198+00:00"
+            }
+          ],
+          "priorSeason": true
+        }
+      },
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
     },
     {
       "id": "401917977",
@@ -243,7 +736,9 @@
         "away": null,
         "home": "Louisiana Monroe"
       },
-      "error": "Source identity or D-I rating unavailable: Champion Christian Tigers"
+      "error": "Source identity or D-I rating unavailable: Champion Christian Tigers",
+      "firstHalf": null,
+      "firstHalfStatus": "Full-game matchup ratings unavailable."
     },
     {
       "id": "401928811",
@@ -264,7 +759,116 @@
       "matchedTeams": {
         "away": "Northern Kentucky",
         "home": "South Dakota"
-      }
+      },
+      "firstHalf": {
+        "away": 37.53731453756052,
+        "home": 35.50622520946197,
+        "total": 73.04353974702249,
+        "homeMargin": -2.0310893280985525,
+        "awayScoringShare": 0.4704543146348894,
+        "homeScoringShare": 0.4556344426124701,
+        "modelVersion": "first-half-timing-v1",
+        "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+        "awayProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.4317343173431734,
+          "allowingShare": 0.4068441064638783,
+          "firstScoredAverage": 39.0,
+          "firstAllowedAverage": 35.666666666666664,
+          "samples": [
+            {
+              "id": "401851432",
+              "date": "2026-03-09T23:00Z",
+              "firstScored": 44.0,
+              "secondScored": 46.0,
+              "firstAllowed": 46.0,
+              "secondAllowed": 57.0
+            },
+            {
+              "id": "401851431",
+              "date": "2026-03-08T19:30Z",
+              "firstScored": 36.0,
+              "secondScored": 60.0,
+              "firstAllowed": 30.0,
+              "secondAllowed": 46.0
+            },
+            {
+              "id": "401851428",
+              "date": "2026-03-05T00:00Z",
+              "firstScored": 37.0,
+              "secondScored": 48.0,
+              "firstAllowed": 31.0,
+              "secondAllowed": 53.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851432",
+              "fetchedAt": "2026-10-30T13:19:33.133160+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851431",
+              "fetchedAt": "2026-10-30T13:19:32.879621+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851428",
+              "fetchedAt": "2026-10-30T13:19:30.296212+00:00"
+            }
+          ],
+          "priorSeason": true
+        },
+        "homeProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.504424778761062,
+          "allowingShare": 0.5091743119266054,
+          "firstScoredAverage": 38.0,
+          "firstAllowedAverage": 37.0,
+          "samples": [
+            {
+              "id": "401851621",
+              "date": "2026-03-07T00:00Z",
+              "firstScored": 31.0,
+              "secondScored": 31.0,
+              "firstAllowed": 34.0,
+              "secondAllowed": 42.0
+            },
+            {
+              "id": "401818437",
+              "date": "2026-02-28T19:00Z",
+              "firstScored": 38.0,
+              "secondScored": 37.0,
+              "firstAllowed": 42.0,
+              "secondAllowed": 28.0
+            },
+            {
+              "id": "401818434",
+              "date": "2026-02-26T00:00Z",
+              "firstScored": 45.0,
+              "secondScored": 44.0,
+              "firstAllowed": 35.0,
+              "secondAllowed": 37.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851621",
+              "fetchedAt": "2026-10-30T13:19:28.088885+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401818437",
+              "fetchedAt": "2026-10-30T13:19:28.614881+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401818434",
+              "fetchedAt": "2026-10-30T13:19:28.701617+00:00"
+            }
+          ],
+          "priorSeason": true
+        }
+      },
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
     },
     {
       "id": "401925893",
@@ -277,7 +881,9 @@
         "away": null,
         "home": "Norfolk St."
       },
-      "error": "Source identity or D-I rating unavailable: Randolph Wildcats"
+      "error": "Source identity or D-I rating unavailable: Randolph Wildcats",
+      "firstHalf": null,
+      "firstHalfStatus": "Full-game matchup ratings unavailable."
     },
     {
       "id": "401923391",
@@ -290,7 +896,9 @@
         "away": null,
         "home": "Southern Indiana"
       },
-      "error": "Source identity or D-I rating unavailable: Saint Mary of the Woods Pomeroys"
+      "error": "Source identity or D-I rating unavailable: Saint Mary of the Woods Pomeroys",
+      "firstHalf": null,
+      "firstHalfStatus": "Full-game matchup ratings unavailable."
     },
     {
       "id": "401920798",
@@ -311,7 +919,128 @@
       "matchedTeams": {
         "away": "Southeastern Louisiana",
         "home": "Auburn"
-      }
+      },
+      "firstHalf": {
+        "away": 30.674481725601137,
+        "home": 39.117320587334234,
+        "total": 69.79180231293537,
+        "homeMargin": 8.442838861733097,
+        "awayScoringShare": 0.4795615275813295,
+        "homeScoringShare": 0.4537835353844807,
+        "modelVersion": "first-half-timing-v1",
+        "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+        "awayProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.49047619047619045,
+          "allowingShare": 0.4794520547945205,
+          "firstScoredAverage": 34.333333333333336,
+          "firstAllowedAverage": 35.0,
+          "samples": [
+            {
+              "id": "401808917",
+              "date": "2026-03-03T01:00Z",
+              "firstScored": 40.0,
+              "secondScored": 42.0,
+              "firstAllowed": 32.0,
+              "secondAllowed": 46.0
+            },
+            {
+              "id": "401808933",
+              "date": "2026-02-28T21:45Z",
+              "firstScored": 31.0,
+              "secondScored": 29.0,
+              "firstAllowed": 33.0,
+              "secondAllowed": 35.0
+            },
+            {
+              "id": "401808965",
+              "date": "2026-02-24T00:00Z",
+              "firstScored": 32.0,
+              "secondScored": 36.0,
+              "firstAllowed": 40.0,
+              "secondAllowed": 33.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401808917",
+              "fetchedAt": "2026-10-30T13:19:29.871742+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401808933",
+              "fetchedAt": "2026-10-31T09:35:13.179488+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401808965",
+              "fetchedAt": "2026-10-31T09:35:13.385762+00:00"
+            }
+          ],
+          "priorSeason": true
+        },
+        "homeProfile": {
+          "season": 2026,
+          "games": 4,
+          "scoringShare": 0.4281150159744409,
+          "allowingShare": 0.46864686468646866,
+          "firstScoredAverage": 33.5,
+          "firstAllowedAverage": 35.5,
+          "samples": [
+            {
+              "id": "401851562",
+              "date": "2026-03-12T19:25Z",
+              "firstScored": 32.0,
+              "secondScored": 30.0,
+              "firstAllowed": 25.0,
+              "secondAllowed": 47.0
+            },
+            {
+              "id": "401851558",
+              "date": "2026-03-11T19:15Z",
+              "firstScored": 30.0,
+              "secondScored": 49.0,
+              "firstAllowed": 33.0,
+              "secondAllowed": 28.0
+            },
+            {
+              "id": "401808288",
+              "date": "2026-03-08T01:30Z",
+              "firstScored": 31.0,
+              "secondScored": 53.0,
+              "firstAllowed": 50.0,
+              "secondAllowed": 46.0
+            },
+            {
+              "id": "401808276",
+              "date": "2026-03-04T03:00Z",
+              "firstScored": 41.0,
+              "secondScored": 47.0,
+              "firstAllowed": 34.0,
+              "secondAllowed": 40.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851562",
+              "fetchedAt": "2026-10-30T13:19:32.151532+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851558",
+              "fetchedAt": "2026-10-30T13:19:34.876762+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401808288",
+              "fetchedAt": "2026-10-30T13:19:34.744159+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401808276",
+              "fetchedAt": "2026-10-30T13:19:36.083719+00:00"
+            }
+          ],
+          "priorSeason": true
+        }
+      },
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
     },
     {
       "id": "401929171",
@@ -324,7 +1053,9 @@
         "away": null,
         "home": "Boise St."
       },
-      "error": "Source identity or D-I rating unavailable: West Coast Baptist Eagles"
+      "error": "Source identity or D-I rating unavailable: West Coast Baptist Eagles",
+      "firstHalf": null,
+      "firstHalfStatus": "Full-game matchup ratings unavailable."
     },
     {
       "id": "401925939",
@@ -337,7 +1068,9 @@
         "away": null,
         "home": "Utah Tech"
       },
-      "error": "Source identity or D-I rating unavailable: Grace University Lancers"
+      "error": "Source identity or D-I rating unavailable: Grace University Lancers",
+      "firstHalf": null,
+      "firstHalfStatus": "Full-game matchup ratings unavailable."
     },
     {
       "id": "401922030",
@@ -350,7 +1083,9 @@
         "away": null,
         "home": "Montana"
       },
-      "error": "Source identity or D-I rating unavailable: Salish Kootenai Bison"
+      "error": "Source identity or D-I rating unavailable: Salish Kootenai Bison",
+      "firstHalf": null,
+      "firstHalfStatus": "Full-game matchup ratings unavailable."
     },
     {
       "id": "401918052",
@@ -371,7 +1106,116 @@
       "matchedTeams": {
         "away": "Radford",
         "home": "California"
-      }
+      },
+      "firstHalf": {
+        "away": 34.079539949324335,
+        "home": 35.61426176656504,
+        "total": 69.69380171588938,
+        "homeMargin": 1.5347218172407082,
+        "awayScoringShare": 0.4609797297297298,
+        "homeScoringShare": 0.4157246969584294,
+        "modelVersion": "first-half-timing-v1",
+        "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+        "awayProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.4594594594594595,
+          "allowingShare": 0.40707964601769914,
+          "firstScoredAverage": 34.0,
+          "firstAllowedAverage": 30.666666666666668,
+          "samples": [
+            {
+              "id": "401851350",
+              "date": "2026-03-07T02:30Z",
+              "firstScored": 36.0,
+              "secondScored": 41.0,
+              "firstAllowed": 28.0,
+              "secondAllowed": 49.0
+            },
+            {
+              "id": "401823965",
+              "date": "2026-02-28T20:00Z",
+              "firstScored": 37.0,
+              "secondScored": 37.0,
+              "firstAllowed": 34.0,
+              "secondAllowed": 56.0
+            },
+            {
+              "id": "401823960",
+              "date": "2026-02-27T00:00Z",
+              "firstScored": 29.0,
+              "secondScored": 42.0,
+              "firstAllowed": 30.0,
+              "secondAllowed": 29.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851350",
+              "fetchedAt": "2026-10-30T13:19:30.689149+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401823965",
+              "fetchedAt": "2026-10-30T13:19:28.348710+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401823960",
+              "fetchedAt": "2026-10-30T13:19:30.854398+00:00"
+            }
+          ],
+          "priorSeason": true
+        },
+        "homeProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.42436974789915966,
+          "allowingShare": 0.4625,
+          "firstScoredAverage": 33.666666666666664,
+          "firstAllowedAverage": 37.0,
+          "samples": [
+            {
+              "id": "401851175",
+              "date": "2026-03-11T23:00Z",
+              "firstScored": 32.0,
+              "secondScored": 57.0,
+              "firstAllowed": 46.0,
+              "secondAllowed": 49.0
+            },
+            {
+              "id": "401820795",
+              "date": "2026-03-07T21:00Z",
+              "firstScored": 37.0,
+              "secondScored": 36.0,
+              "firstAllowed": 29.0,
+              "secondAllowed": 51.0
+            },
+            {
+              "id": "401820780",
+              "date": "2026-03-05T00:00Z",
+              "firstScored": 32.0,
+              "secondScored": 44.0,
+              "firstAllowed": 36.0,
+              "secondAllowed": 29.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851175",
+              "fetchedAt": "2026-10-30T13:19:30.315612+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401820795",
+              "fetchedAt": "2026-10-30T13:19:23.940107+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401820780",
+              "fetchedAt": "2026-10-30T13:19:30.478002+00:00"
+            }
+          ],
+          "priorSeason": true
+        }
+      },
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
     },
     {
       "id": "401917514",
@@ -392,7 +1236,128 @@
       "matchedTeams": {
         "away": "Queens",
         "home": "Loyola Marymount"
-      }
+      },
+      "firstHalf": {
+        "away": 38.56577321374078,
+        "home": 37.38227975945878,
+        "total": 75.94805297319957,
+        "homeMargin": -1.1834934542820008,
+        "awayScoringShare": 0.49954952991266693,
+        "homeScoringShare": 0.46574793284891003,
+        "modelVersion": "first-half-timing-v1",
+        "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+        "awayProfile": {
+          "season": 2026,
+          "games": 4,
+          "scoringShare": 0.45722713864306785,
+          "allowingShare": 0.48534201954397393,
+          "firstScoredAverage": 38.75,
+          "firstAllowedAverage": 37.25,
+          "samples": [
+            {
+              "id": "401851251",
+              "date": "2026-03-08T18:00Z",
+              "firstScored": 30.0,
+              "secondScored": 52.0,
+              "firstAllowed": 34.0,
+              "secondAllowed": 48.0
+            },
+            {
+              "id": "401851250",
+              "date": "2026-03-08T00:45Z",
+              "firstScored": 47.0,
+              "secondScored": 43.0,
+              "firstAllowed": 40.0,
+              "secondAllowed": 43.0
+            },
+            {
+              "id": "401851248",
+              "date": "2026-03-07T00:30Z",
+              "firstScored": 33.0,
+              "secondScored": 38.0,
+              "firstAllowed": 25.0,
+              "secondAllowed": 38.0
+            },
+            {
+              "id": "401807757",
+              "date": "2026-02-26T00:00Z",
+              "firstScored": 45.0,
+              "secondScored": 51.0,
+              "firstAllowed": 50.0,
+              "secondAllowed": 29.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851251",
+              "fetchedAt": "2026-10-30T13:19:25.881159+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851250",
+              "fetchedAt": "2026-10-30T13:19:25.334576+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851248",
+              "fetchedAt": "2026-10-30T13:19:30.650237+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401807757",
+              "fetchedAt": "2026-10-30T13:19:26.946903+00:00"
+            }
+          ],
+          "priorSeason": true
+        },
+        "homeProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.4461538461538462,
+          "allowingShare": 0.541871921182266,
+          "firstScoredAverage": 29.0,
+          "firstAllowedAverage": 36.666666666666664,
+          "samples": [
+            {
+              "id": "401851746",
+              "date": "2026-03-06T04:30Z",
+              "firstScored": 31.0,
+              "secondScored": 31.0,
+              "firstAllowed": 42.0,
+              "secondAllowed": 24.0
+            },
+            {
+              "id": "401829269",
+              "date": "2026-03-01T02:00Z",
+              "firstScored": 32.0,
+              "secondScored": 34.0,
+              "firstAllowed": 29.0,
+              "secondAllowed": 42.0
+            },
+            {
+              "id": "401829264",
+              "date": "2026-02-26T04:00Z",
+              "firstScored": 24.0,
+              "secondScored": 43.0,
+              "firstAllowed": 39.0,
+              "secondAllowed": 27.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851746",
+              "fetchedAt": "2026-10-30T13:19:33.960475+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401829269",
+              "fetchedAt": "2026-10-30T13:19:31.373926+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401829264",
+              "fetchedAt": "2026-10-30T13:19:32.406656+00:00"
+            }
+          ],
+          "priorSeason": true
+        }
+      },
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
     },
     {
       "id": "401917513",
@@ -413,7 +1378,140 @@
       "matchedTeams": {
         "away": "Milwaukee",
         "home": "Santa Clara"
-      }
+      },
+      "firstHalf": {
+        "away": 34.00125322174044,
+        "home": 43.05438315789473,
+        "total": 77.05563637963517,
+        "homeMargin": 9.053129936154292,
+        "awayScoringShare": 0.46523016033074516,
+        "homeScoringShare": 0.48993135011441646,
+        "modelVersion": "first-half-timing-v1",
+        "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+        "awayProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.4597156398104265,
+          "allowingShare": 0.4956521739130435,
+          "firstScoredAverage": 32.333333333333336,
+          "firstAllowedAverage": 38.0,
+          "samples": [
+            {
+              "id": "401851426",
+              "date": "2026-03-05T00:00Z",
+              "firstScored": 24.0,
+              "secondScored": 39.0,
+              "firstAllowed": 38.0,
+              "secondAllowed": 46.0
+            },
+            {
+              "id": "401817685",
+              "date": "2026-02-26T01:00Z",
+              "firstScored": 39.0,
+              "secondScored": 39.0,
+              "firstAllowed": 35.0,
+              "secondAllowed": 30.0
+            },
+            {
+              "id": "401817677",
+              "date": "2026-02-22T20:00Z",
+              "firstScored": 34.0,
+              "secondScored": 36.0,
+              "firstAllowed": 41.0,
+              "secondAllowed": 40.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851426",
+              "fetchedAt": "2026-10-30T13:19:32.722334+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401817685",
+              "fetchedAt": "2026-10-30T13:19:32.868484+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401817677",
+              "fetchedAt": "2026-10-30T13:19:32.964884+00:00"
+            }
+          ],
+          "priorSeason": true
+        },
+        "homeProfile": {
+          "season": 2026,
+          "games": 5,
+          "scoringShare": 0.4842105263157895,
+          "allowingShare": 0.47074468085106386,
+          "firstScoredAverage": 36.8,
+          "firstAllowedAverage": 35.4,
+          "samples": [
+            {
+              "id": "401851762",
+              "date": "2026-03-11T01:07Z",
+              "firstScored": 33.0,
+              "secondScored": 35.0,
+              "firstAllowed": 29.0,
+              "secondAllowed": 50.0
+            },
+            {
+              "id": "401851760",
+              "date": "2026-03-10T03:45Z",
+              "firstScored": 32.0,
+              "secondScored": 44.0,
+              "firstAllowed": 35.0,
+              "secondAllowed": 36.0
+            },
+            {
+              "id": "401851757",
+              "date": "2026-03-09T03:20Z",
+              "firstScored": 45.0,
+              "secondScored": 31.0,
+              "firstAllowed": 38.0,
+              "secondAllowed": 30.0
+            },
+            {
+              "id": "401829266",
+              "date": "2026-03-01T01:00Z",
+              "firstScored": 38.0,
+              "secondScored": 55.0,
+              "firstAllowed": 33.0,
+              "secondAllowed": 39.0
+            },
+            {
+              "id": "401829262",
+              "date": "2026-02-26T04:00Z",
+              "firstScored": 36.0,
+              "secondScored": 31.0,
+              "firstAllowed": 42.0,
+              "secondAllowed": 44.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851762",
+              "fetchedAt": "2026-10-30T13:19:27.454248+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851760",
+              "fetchedAt": "2026-10-30T13:19:31.143683+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851757",
+              "fetchedAt": "2026-10-30T13:19:31.256191+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401829266",
+              "fetchedAt": "2026-10-30T13:19:25.583026+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401829262",
+              "fetchedAt": "2026-10-30T13:19:31.796555+00:00"
+            }
+          ],
+          "priorSeason": true
+        }
+      },
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
     },
     {
       "id": "401917512",
@@ -434,7 +1532,116 @@
       "matchedTeams": {
         "away": "North Dakota St.",
         "home": "Saint Mary's"
-      }
+      },
+      "firstHalf": {
+        "away": 35.07148064806481,
+        "home": 36.082026058388706,
+        "total": 71.15350670645351,
+        "homeMargin": 1.0105454103238998,
+        "awayScoringShare": 0.5165166516651665,
+        "homeScoringShare": 0.4622937355334876,
+        "modelVersion": "first-half-timing-v1",
+        "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+        "awayProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.5181818181818182,
+          "allowingShare": 0.4576271186440678,
+          "firstScoredAverage": 38.0,
+          "firstAllowedAverage": 27.0,
+          "samples": [
+            {
+              "id": "401851629",
+              "date": "2026-03-09T01:00Z",
+              "firstScored": 38.0,
+              "secondScored": 32.0,
+              "firstAllowed": 30.0,
+              "secondAllowed": 32.0
+            },
+            {
+              "id": "401851626",
+              "date": "2026-03-08T01:00Z",
+              "firstScored": 40.0,
+              "secondScored": 34.0,
+              "firstAllowed": 25.0,
+              "secondAllowed": 25.0
+            },
+            {
+              "id": "401851620",
+              "date": "2026-03-06T00:00Z",
+              "firstScored": 36.0,
+              "secondScored": 40.0,
+              "firstAllowed": 26.0,
+              "secondAllowed": 39.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851629",
+              "fetchedAt": "2026-10-30T13:19:23.868117+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851626",
+              "fetchedAt": "2026-10-30T13:19:29.772310+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851620",
+              "fetchedAt": "2026-10-30T13:19:24.766880+00:00"
+            }
+          ],
+          "priorSeason": true
+        },
+        "homeProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.4669603524229075,
+          "allowingShare": 0.5148514851485149,
+          "firstScoredAverage": 35.333333333333336,
+          "firstAllowedAverage": 34.666666666666664,
+          "samples": [
+            {
+              "id": "401851760",
+              "date": "2026-03-10T03:45Z",
+              "firstScored": 35.0,
+              "secondScored": 36.0,
+              "firstAllowed": 32.0,
+              "secondAllowed": 44.0
+            },
+            {
+              "id": "401829265",
+              "date": "2026-03-01T03:30Z",
+              "firstScored": 29.0,
+              "secondScored": 41.0,
+              "firstAllowed": 36.0,
+              "secondAllowed": 23.0
+            },
+            {
+              "id": "401829262",
+              "date": "2026-02-26T04:00Z",
+              "firstScored": 42.0,
+              "secondScored": 44.0,
+              "firstAllowed": 36.0,
+              "secondAllowed": 31.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851760",
+              "fetchedAt": "2026-10-30T13:19:31.143683+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401829265",
+              "fetchedAt": "2026-10-30T13:19:27.554643+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401829262",
+              "fetchedAt": "2026-10-30T13:19:31.796555+00:00"
+            }
+          ],
+          "priorSeason": true
+        }
+      },
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
     }
   ],
   "evidenceLabel": "Calculated at retrieval time; not certified pre-tipoff evidence"
