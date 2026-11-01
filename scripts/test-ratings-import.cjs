@@ -1,0 +1,17 @@
+const assert=require('node:assert/strict');
+const {parse,match,calculate}=require('../calculator/import.js');
+const t=parse('Rk\tTeam\tConf\tW-L\tNetRtg\tORtg\tRank\tDRtg\tRank\tAdjT\tRank\n84\tNotre Dame\tACC\t0-0\t10.8\t110.6\t94\t99.8\t72\t69.8\t310\n33\tVillanova\tBE\t0-0\t20.7\t119\t23\t98.3\t51\t70.4\t270');
+assert.equal(t.length,2);assert.equal(t[0].offense,110.6);assert.equal(t[1].tempo,70.4);
+assert.equal(parse('Team,AdjOE,AdjDE,AdjTempo\n"Miami, FL",110,99,70')[0].name,'Miami, FL');
+assert.equal(parse('Notre Dame\t110.6\t99.8\t69.8')[0].defense,99.8);
+assert.throws(()=>parse('Team\tAdjOE\tAdjDE\tAdjT\nBad\t0\t100\t70'));
+assert.throws(()=>parse('Team\tAdjOE\tAdjDE\tAdjT\nBad\t110\t100\tNaN'));
+assert.throws(()=>parse('A\t110\t100\t70\nA\t111\t100\t71'),/duplicate/);
+assert.throws(()=>parse('a b c d e f'));
+assert.equal(match({id:'87',displayName:'Notre Dame Fighting Irish',shortDisplayName:'Notre Dame'},t).name,'Notre Dame');
+assert.equal(match({id:'87',displayName:'Notre Dame Fighting Irish'},t),null);
+assert.equal(match({id:'87',displayName:'Notre Dame Fighting Irish'},t,{'87':'Notre Dame'}).name,'Notre Dame');
+assert.equal(match({id:'87',shortDisplayName:'Notre Dame'},[...t,{...t[0],name:'Notre-Dame'}]),null);
+const m=calculate(t[0],t[1],106,71.5);assert.ok(Math.abs(m.total-148.1859)<1e-8);
+assert.throws(()=>calculate(t[0],t[1],0,71.5));
+console.log('13 ratings import, identity and calculation checks passed.');

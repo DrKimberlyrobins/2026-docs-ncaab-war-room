@@ -1,3 +1,11 @@
+## Personal paste import — no API key
+
+Open `calculator/`, copy your KenPom ratings table with its header, and paste it in the import box. Select the ratings date and season ending year (2027 for 2026–27). Preview the parsed entries, then save. Recognized column headers include Team, AdjOE/AdjO/ORtg, AdjDE/AdjD/DRtg, and AdjT/AdjTempo. Tab-separated tables and CSV are supported. A headerless table must contain exactly four columns: team, offense, defense, tempo. Invalid values and ambiguous columns fail visibly rather than shifting data into guessed columns.
+
+Imported ratings, national averages and user-confirmed ESPN team mappings live only in localStorage on the current browser/device. No import is uploaded to GitHub or any service. Clearing browser site data removes it; imports are not automatically shared between devices. The game schedule uses ESPN with repository snapshots as a fallback. Exact normalized names match automatically; unmatched identities require a user-selected imported team. Missing ratings remain explicit. Saved ratings are not automatically refreshed.
+
+The calculator blocks a selected schedule from a different season and blocks ratings dated after the selected game date. These are current calculations, not certified pregame evidence. Ratings dates are user-entered, not independently verified timestamps. Home-court effects remain unmodeled. Raw pasted text is cleared after saving, and never committed. No KenPom API key is needed for this mode.
+
 # KenPom matchup calculator
 
 Open `calculator/` from the War Room navigation. The manual calculator works immediately. Automated calculations use KenPom's official API, with both ratings and FanMatch team names coming from the same provider; no ESPN name guessing is involved.
