@@ -1,0 +1,51 @@
+name: Publish War Room
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - index.html
+      - app.js
+      - style.css
+      - calculator/**
+      - data/**
+      - .github/workflows/publish-pages.yml
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: docs-war-room-pages
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify calculator before publishing
+        run: |
+          node --check app.js
+          node --check calculator/calculator.js
+          node --check calculator/import.js
+          node scripts/test-ratings-import.cjs
+          node scripts/test-calculator-flow.cjs
+          python -m unittest discover -s scripts -p test_kenpom_calculator.py
+      - name: Package public site files
+        run: |
+          mkdir -p _site
+          cp index.html app.js style.css _site/
+          cp -R calculator data _site/
+          touch _site/.nojekyll
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Publish verified site
+        id: deployment
+        uses: actions/deploy-pages@v5
