@@ -1,0 +1,13 @@
+const assert=require('node:assert/strict'),vm=require('node:vm'),fs=require('node:fs');
+const now=new Date(),date=now.toISOString().slice(0,10),future=new Date(+now+3600000).toISOString();
+const outcome=(teamId,line,price)=>({teamId,line,price});
+const markets={full:{},half:{spread:{outcomes:[outcome('87',3.5,-109),outcome('222',-3.5,-120)]},total:{outcomes:[{side:'over',line:67.5,price:-122},{side:'under',line:67.5,price:-108}]},moneyline:{outcomes:[outcome('87',null,180),outcome('222',null,-240)]}}};
+const game={fetchedAt:now.toISOString(),start:future,state:'NOT_STARTED',sourceUrl:'https://example.com',periods:markets};
+const snapshot={date,offering:'pivusmsrl-bil',market:'US-MS',games:{g:game}};
+const ctx=vm.createContext({window:{},Date,Number,String,Map,JSON,AbortSignal,fetch:async u=>({ok:true,json:async()=>u.includes('health')?{status:'READY'}:snapshot})});
+vm.runInContext(fs.readFileSync('kambi.js','utf8'),ctx);
+(async()=>{const k=ctx.window.DocKambi;await k.load(date);const p={half:{homeMargin:4,total:67.7}};const frozen=JSON.stringify(p);
+ let html=k.render('g',date,p,'87','222','Notre Dame','Villanova');assert.match(html,/\+0.5 points toward Villanova/);assert.match(html,/\+0.2 points vs total/);assert.match(html,/-240/);assert.match(html,/NO MARKET/);assert.equal(JSON.stringify(p),frozen);
+ game.fetchedAt=new Date(+now-7200000).toISOString();html=k.render('g',date,p,'87','222','Notre Dame','Villanova');assert.match(html,/Comparison withheld/);assert.ok(!html.includes('+0.5 points toward'));
+ game.fetchedAt=now.toISOString();game.start=new Date(+now-1000).toISOString();assert.match(k.render('g',date,p,'87','222','Notre Dame','Villanova'),/TIPOFF HAS PASSED/);
+ assert.match(k.render('missing',date,p),/NO EXACT KAMBI EVENT MATCH/);console.log('Kambi comparison arithmetic, isolation and stale/tipoff guards passed.');})().catch(e=>{console.error(e);process.exitCode=1;});

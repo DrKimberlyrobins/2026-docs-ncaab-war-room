@@ -92,6 +92,8 @@ def build(events, directory, ratings, config, reviewed):
         item = {'id': str(event['id']), 'date': event.get('date'),
                 'awayName': (a or {}).get('team', {}).get('displayName', 'Away team unavailable'),
                 'homeName': (h or {}).get('team', {}).get('displayName', 'Home team unavailable'),
+                'awayId': str((a or {}).get('team', {}).get('id', '')),
+                'homeId': str((h or {}).get('team', {}).get('id', '')),
                 'location': 'Neutral' if comp.get('neutralSite') else 'Home',
                 'model': None}
         if not a or not h:
