@@ -1,0 +1,43 @@
+name: Test Pinnodds NCAA basketball coverage
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probe prematch basketball feed (no secret printed)
+        env:
+          PINNODDS_API_KEY: ${{ secrets.PINNODDS_API_KEY }}
+        run: |
+          python - <<'PY'
+          import os,json,urllib.request,urllib.error,sys
+          key=os.getenv("PINNODDS_API_KEY")
+          if not key:
+              sys.exit("PINNODDS_API_KEY missing from Actions secrets")
+          req=urllib.request.Request(
+              "https://pinnodds.com/kit/v1/prematch/fixtures?sport_id=3",
+              headers={"x-portal-apikey":key,"Accept":"application/json"})
+          try:
+              with urllib.request.urlopen(req,timeout=25) as resp:
+                  status=resp.headers.get("X-Data-Status","unknown")
+                  data=json.load(resp)
+          except urllib.error.HTTPError as e:
+              sys.exit("API returned HTTP "+str(e.code))
+          except Exception as e:
+              sys.exit("API request failed: "+type(e).__name__)
+          events=data.get("events",[])
+          if not isinstance(events,list):
+              sys.exit("Unexpected response: events not a list")
+          ncaa=[e for e in events if any(t in str(e.get("league_name","")).lower() for t in ("ncaa","college","ncaab"))]
+          halves=sum(bool(e.get("periods",{}).get("num_1")) for e in ncaa)
+          full=sum(bool(e.get("periods",{}).get("num_0")) for e in ncaa)
+          print("Basketball feed status:",status)
+          print("All basketball events:",len(events))
+          print("NCAA/college-labelled events:",len(ncaa))
+          print("College full-game markets:",full)
+          print("College first-half periods:",halves)
+          print("Sample college league names:",sorted({str(e.get("league_name","")) for e in ncaa})[:12])
+          print("No key or individual market prices logged.")
+          PY
