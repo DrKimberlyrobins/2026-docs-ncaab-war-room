@@ -36,7 +36,7 @@ window.DocArchive=(()=>{
  }
  async function render(mode,date,filter,container){
   const now=new Date(),q=filter.toLowerCase();
-  const games=index.filter(g=>(mode!=='previous'||new Date(g.tipoff)<now)&&(!date||g.date===date)&&(g.awayName+' '+g.homeName).toLowerCase().includes(q)).sort((a,b)=>new Date(b.tipoff)-new Date(a.tipoff));
+  const games=index.filter(g=>(mode!=='previous'||new Date(g.tipoff)<now)&&(!date||g.date===date)&&(g.awayName+' '+g.homeName).toLowerCase().includes(q)).sort((a,b)=>new Date(a.tipoff)-new Date(b.tipoff));
   container.innerHTML=`<article><p>${esc(health)}</p><p>Automatic first pregame save; no manual entry. Original projections, model settings, source timing samples, Game Room baselines, and available Kambi prices are retained. Games missed before tipoff are not reconstructed.</p></article>`+games.map(g=>`<article><h2>${esc(g.awayName)} vs. ${esc(g.homeName)}</h2><p>${esc(stamp(g.tipoff))} · ${g.final?'Final':'Result pending'}</p><details data-receipt="${esc(g.id)}"><summary>Saved projection vs. actual · open comparison</summary><div class="receipt-body">Loading saved receipt…</div></details></article>`).join('')+(games.length?'':'<article>No saved pregame receipts for this selection yet.</article>');
   container.querySelectorAll('[data-receipt]').forEach(el=>{el.ontoggle=async()=>{if(!el.open)return;const body=el.querySelector('.receipt-body'),id=el.dataset.receipt;try{const record=await json('games/'+encodeURIComponent(id)+'.json');if(String(record.snapshot?.id)!==id)throw Error('Receipt identity check failed');records.set(id,record);body.innerHTML=comparison(record);}catch(e){body.textContent=e.message;}};});
  }
