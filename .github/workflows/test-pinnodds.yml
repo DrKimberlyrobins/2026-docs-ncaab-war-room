@@ -39,5 +39,15 @@ jobs:
           print("College full-game markets:",full)
           print("College first-half periods:",halves)
           print("Sample college league names:",sorted({str(e.get("league_name","")) for e in ncaa})[:12])
+          def game_text(e):
+              return " ".join(str(v) for k,v in e.items() if k not in ("periods","odds","markets","prices","bookmakers","metadata")).lower()
+          matched=[e for e in events if ("winthrop" in game_text(e) and "queens" in game_text(e))]
+          print("QUEENS vs WINTHROP FOUND:", "YES" if matched else "NO")
+          for e in matched[:3]:
+              print("Matched event ID:",str(e.get("id",e.get("event_id","unavailable"))))
+              print("League:",str(e.get("league_name","unavailable")))
+              print("Start time:",str(e.get("starts",e.get("start_time",e.get("start","unavailable")))))
+              periods=e.get("periods") or {}
+              print("Period keys:",list(periods.keys()) if isinstance(periods,dict) else "unavailable")
           print("No key or individual market prices logged.")
           PY
