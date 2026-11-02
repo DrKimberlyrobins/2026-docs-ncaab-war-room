@@ -1,0 +1,65 @@
+name: Publish Pinnodds basketball coverage
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: pinnodds-coverage
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Retrieve and publish safe event inventory
+        env:
+          PINNODDS_API_KEY: ${{ secrets.PINNODDS_API_KEY }}
+        run: |
+          python - <<'PY'
+          import os, json, datetime, urllib.request, urllib.error, sys, pathlib
+          key=os.environ.get('PINNODDS_API_KEY')
+          if not key: sys.exit('Missing PINNODDS_API_KEY')
+          url='https://pinnodds.com/kit/v1/prematch/fixtures?sport_id=3'
+          req=urllib.request.Request(url,headers={'x-portal-apikey':key,'Accept':'application/json'})
+          try:
+              with urllib.request.urlopen(req,timeout=30) as response:
+                  feed=json.load(response)
+                  status=response.headers.get('X-Data-Status','unknown')
+          except urllib.error.HTTPError as error:
+              sys.exit('Pinnodds returned HTTP '+str(error.code))
+          events=feed.get('events',[])
+          if not isinstance(events,list):sys.exit('Unexpected feed schema')
+          def short(value):
+              return str(value or '')[:160] if isinstance(value,(str,int,float)) else ''
+          def participant(value):
+              if isinstance(value,str):return short(value)
+              if isinstance(value,dict):
+                  return next((short(value.get(k)) for k in ('name','team_name','display_name','team','participant_name') if isinstance(value.get(k),(str,int,float))), '')
+              return ''
+          output=[]
+          for e in events:
+              if not isinstance(e,dict):continue
+              home=next((participant(e.get(k)) for k in ('home','home_name','home_team','team_home','homeTeam') if participant(e.get(k))), '')
+              away=next((participant(e.get(k)) for k in ('away','away_name','away_team','team_away','awayTeam') if participant(e.get(k))), '')
+              if not home or not away:
+                  parts=e.get('participants') or e.get('teams') or []
+                  if isinstance(parts,list) and len(parts)>=2:
+                      away=away or participant(parts[0]);home=home or participant(parts[1])
+              periods=e.get('periods') or {}
+              period_keys=list(periods.keys()) if isinstance(periods,dict) else []
+              output.append({'league':short(e.get('league_name') or e.get('league')),'home':home,'away':away,'start':short(e.get('starts') or e.get('start_time') or e.get('start') or e.get('date')),'event_id':short(e.get('id') or e.get('event_id')),'full_game':'num_0' in period_keys,'first_half':'num_1' in period_keys,'period_keys':period_keys[:15]})
+          result={'fetched_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'feed_status':status,'sport':'basketball','count':len(events),'events':output,'notice':'Live inventory snapshot, not guaranteed NCAA D-I or odds display rights. No credentials or market prices included.'}
+          pathlib.Path('data').mkdir(exist_ok=True)
+          pathlib.Path('data/pinnodds-coverage.json').write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n')
+          print('Published basketball event inventory:',len(output))
+          print('Queens/Winthrop matches:',sum('queens' in (x['home']+' '+x['away']).lower() and 'winthrop' in (x['home']+' '+x['away']).lower() for x in output))
+          PY
+      - name: Commit updated coverage snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/pinnodds-coverage.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh Pinnodds basketball coverage inventory"
+            git push
+          fi
