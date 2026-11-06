@@ -27,3 +27,18 @@ Every event returned for a selected date appears on its own card with precompute
 
 ## Canonical membership
 The All Teams directory uses the NCAA's sport-specific 2026–27 Division I men's basketball membership roster: 365 unique institution IDs. Membership count and duplicates are checked during refresh. ESPN's 362-team discovery response is not used as the canonical directory. Scoreboard event counts describe games on selected dates, not total membership.
+
+## Kambi pregame quote history
+
+New collector runs retain append-only observations under
+`data/kambi/history/<Central game date>/<UTC collection run>.json`.
+Each observation keeps the offering, region, market criterion, both quoted
+prices, provider update time when supplied, and the actual retrieval time.
+Only successful exact event matches with open pregame offers collected strictly
+before both scheduled start times enter this history. Existing daily snapshots
+and projections keep their original formats. The collection uses the existing
+30-minute best-effort workflow.
+
+These are observed quotes. The earliest observed quote is not a verified
+opener. The latest observation alone does not establish a verified closing
+price. No older rolling snapshot is backfilled into the forward history.

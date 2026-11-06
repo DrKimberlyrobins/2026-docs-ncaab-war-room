@@ -107,6 +107,33 @@ def write(path, value):
  path.parent.mkdir(parents=True, exist_ok=True)
  tmp = path.with_suffix('.tmp'); tmp.write_text(json.dumps(value, indent=2, allow_nan=False)+'\n');tmp.replace(path)
 
+def archive_pregame(folder, snapshot, games):
+ """Retain successful observations independently of the rolling date board."""
+ cutoff_by_id = {str(g['id']): instant(g['date']) for g in games}
+ observed = {}
+ for game_id, record in snapshot['games'].items():
+  if record.get('error') or record.get('state') != 'NOT_STARTED':
+   continue
+  if not any(record['periods'].values()):
+   continue
+  fetched = instant(record['fetchedAt'])
+  cutoff = min(cutoff_by_id[game_id], instant(record['start']))
+  if fetched >= cutoff:
+   continue
+  observed[game_id] = {**record, 'scheduledCutoff': cutoff.isoformat()}
+ if not observed:
+  return
+ date = snapshot['date']
+ key = instant(snapshot['fetchedAt']).astimezone(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
+ path = folder / 'history' / date / (key+'.json')
+ data = {**snapshot, 'games': observed, 'evidenceType': 'observed_pregame_quotes'}
+ if path.exists():
+  if json.loads(path.read_text()) != data:
+   raise ValueError('Conflicting market observation at an existing timestamp')
+  return
+ write(path, data)
+
+
 def main():
  stamp = datetime.now(timezone.utc).isoformat()
  today = instant(stamp).astimezone(ZoneInfo('America/Chicago')).date()
@@ -147,9 +174,11 @@ def main():
    else: record['error'] = 'Pregame market unavailable: event is ' + str(event.get('state'))
    by_game[str(g['id'])] = record
   for day, games in slates.items():
-   write(folder / (day+'.json'), {'date': day, 'fetchedAt': stamp, 'source': 'Kambi',
+   snapshot = {'date': day, 'fetchedAt': stamp, 'source': 'Kambi',
     'offering': 'pivusmsrl-bil', 'market': 'US-MS', 'discoveryUrl': DISCOVERY,
-    'games': {str(g['id']): by_game.get(str(g['id']), {'error': 'NO EXACT KAMBI EVENT MATCH', 'fetchedAt': stamp}) for g in games}})
+    'games': {str(g['id']): by_game.get(str(g['id']), {'error': 'NO EXACT KAMBI EVENT MATCH', 'fetchedAt': stamp}) for g in games}}
+   archive_pregame(folder, snapshot, games)
+   write(folder / (day+'.json'), snapshot)
   write(folder/'health.json', {'status': 'PARTIAL' if errors else 'READY', 'checkedAt': datetime.now(timezone.utc).isoformat(),
     'eventsDiscovered': len(data['events']), 'matchedGames': len(by_game), 'eventErrors': errors, 'unmatchedEventIds': unmatched})
   print(json.dumps({'events': len(data['events']), 'matched':len(by_game), 'errors': errors}))
