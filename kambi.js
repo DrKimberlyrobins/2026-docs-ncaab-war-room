@@ -11,6 +11,23 @@ window.DocKambi=(()=>{
   try{const [r,h]=await Promise.all([fetch(prefix+'data/kambi/'+date+'.json',{cache:'no-store',signal:AbortSignal.timeout(25000)}),fetch(prefix+'data/kambi/health.json',{cache:'no-store',signal:AbortSignal.timeout(25000)})]);if(!r.ok)throw Error('No market snapshot for this date');const d=await r.json();if(d.date!==date||!d.games)throw Error('Market snapshot failed date check');snapshots.set(date,d);status='';if(h.ok){const health=await h.json();if(health.status!=='READY')status='Latest Kambi refresh: '+health.status+' · '+(health.message||'some event markets unavailable');}}
   catch(e){status=e.message; snapshots.delete(date);}
  }
+ async function loadHistory(date){
+  const panel=document.getElementById('market-history');
+  if(!panel)return;
+  panel.dataset.date=date;
+  panel.textContent='Loading captured Kambi quotes for '+date+'…';
+  try{
+   const base='data/kambi/history/'+date+'/';
+   const r=await fetch(base+'index.json',{cache:'no-store',signal:AbortSignal.timeout(10000)});
+   if(!r.ok)throw Error();
+   const {latestByGame}=await r.json();
+   const files=[...new Set(Object.values(latestByGame))].filter(x=>/^\d{8}T\d{12}Z$/.test(x)).sort().reverse();
+   if(!files.length)throw Error();
+   if(panel.dataset.date!==date)return;
+   panel.innerHTML='<p>'+Object.keys(latestByGame).length+' games with archived pregame quotes on '+esc(date)+'.</p>'+
+    '<ul>'+files.map(key=>'<li><a href="'+base+key+'.json" target="_blank" rel="noopener">View captured lines and prices · '+esc(stamp(key.replace(/^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2}).*Z$/,'$1-$2-$3T$4:$5:$6Z')))+'</a></li>').join('')+'</ul>';
+  }catch{if(panel.dataset.date===date)panel.textContent='No archived Kambi quotes are available for '+date+'.';}
+ }
  function render(id,date,projection,awayId,homeId,awayName,homeName){
   const d=snapshots.get(date),g=d?.games?.[id];
   if(!g||g.error)return `<section class="kambi"><h3>Kambi sportsbook comparison</h3><p>${esc(g?.error||status||'NO EXACT KAMBI EVENT MATCH')}</p></section>`;
@@ -35,5 +52,5 @@ window.DocKambi=(()=>{
   }).join('');
   return `<section class="kambi"><h3>Kambi sportsbook comparison</h3><p>${projection?.full?.possessions!==undefined?'KenPom-based model':'Game Room scoring baseline'} shown above; sportsbook prices never change these projections.</p><p class="muted">Kambi · offering ${esc(d.offering)} · ${esc(d.market)} · retrieved ${esc(stamp(g.fetchedAt))} · ${esc(g.state)}${stale?' · SNAPSHOT OVER 1 HOUR OLD':''}${started?' · SCHEDULED TIPOFF HAS PASSED':''}</p>${status?'<p>'+esc(status)+'</p>':''}<div class="scroll"><table><tr><th>Period</th><th>Market</th><th>Kambi line (American odds)</th><th>Our projection</th><th>Point difference</th></tr>${rows}</table></div><p class="muted">Positive spread difference favors ${esc(homeName)}; negative favors ${esc(awayName)}. Differences are arithmetic comparisons, not validated betting edges. Moneyline prices do not imply a model win probability. Snapshots refresh on a 30-minute schedule; they are not live quotes.</p><details><summary>Kambi market evidence</summary><p><a href="${esc(g.sourceUrl)}" target="_blank" rel="noopener">Kambi event ${esc(g.eventId)}</a></p><pre>${esc(JSON.stringify(g.periods,null,2))}</pre></details></section>`;
  }
- return {load,render};
+ return {load,loadHistory,render};
 })();

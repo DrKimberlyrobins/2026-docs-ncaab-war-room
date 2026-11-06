@@ -130,8 +130,15 @@ def archive_pregame(folder, snapshot, games):
  if path.exists():
   if json.loads(path.read_text()) != data:
    raise ValueError('Conflicting market observation at an existing timestamp')
-  return
- write(path, data)
+ else:
+  write(path, data)
+ index = path.parent / 'index.json'
+ existing = json.loads(index.read_text()) if index.exists() else {}
+ latest = existing.get('latestByGame', {})
+ for game_id in observed:
+  if key > latest.get(game_id, ''):
+   latest[game_id] = key
+ write(index, {'latestByGame': latest})
 
 
 def main():

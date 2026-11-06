@@ -21,7 +21,7 @@ class QuoteHistoryTest(unittest.TestCase):
                    'games': {'1': self.record}, 'offering': 'example'}
 
  def files(self):
-  return sorted(self.folder.rglob('*.json'))
+  return sorted(self.folder.rglob('*Z.json'))
 
  def test_preserves_price_only_changes_and_duplicate_is_idempotent(self):
   archive_pregame(self.folder, self.snapshot, self.games)
