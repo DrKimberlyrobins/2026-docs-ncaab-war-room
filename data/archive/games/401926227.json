@@ -1,0 +1,455 @@
+{
+  "snapshot": {
+    "version": 1,
+    "id": "401926227",
+    "savedAt": "2026-11-06T21:15:58.680585+00:00",
+    "scheduledTipoff": "2026-11-08T00:30Z",
+    "gameDate": "2026-11-07",
+    "matchup": {
+      "id": "401926227",
+      "date": "2026-11-08T00:30Z",
+      "awayName": "Denver Pioneers",
+      "homeName": "UC Riverside Highlanders",
+      "awayId": "2172",
+      "homeId": "27",
+      "location": "Home",
+      "model": {
+        "away": 75.1746,
+        "home": 74.88740000000001,
+        "total": 150.062,
+        "homeMargin": -0.28719999999998436,
+        "possessions": 71.80000000000001,
+        "awayEfficiency": 104.69999999999999,
+        "homeEfficiency": 104.30000000000001,
+        "homeAdvantagePoints": 0.0
+      },
+      "matchedTeams": {
+        "away": "Denver",
+        "home": "UC Riverside"
+      },
+      "firstHalf": {
+        "away": 34.05404196736382,
+        "home": 35.89501071996028,
+        "total": 69.9490526873241,
+        "homeMargin": 1.84096875259646,
+        "awayScoringShare": 0.45299931050333253,
+        "homeScoringShare": 0.47931976166832174,
+        "modelVersion": "first-half-timing-v1",
+        "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+        "awayProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.43231441048034935,
+          "allowingShare": 0.4981132075471698,
+          "firstScoredAverage": 33.0,
+          "firstAllowedAverage": 44.0,
+          "samples": [
+            {
+              "id": "401851624",
+              "date": "2026-03-07T02:30Z",
+              "firstScored": 29.0,
+              "secondScored": 38.0,
+              "firstAllowed": 42.0,
+              "secondAllowed": 41.0
+            },
+            {
+              "id": "401818435",
+              "date": "2026-02-27T01:00Z",
+              "firstScored": 33.0,
+              "secondScored": 47.0,
+              "firstAllowed": 51.0,
+              "secondAllowed": 51.0
+            },
+            {
+              "id": "401818430",
+              "date": "2026-02-21T23:00Z",
+              "firstScored": 37.0,
+              "secondScored": 45.0,
+              "firstAllowed": 39.0,
+              "secondAllowed": 41.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851624",
+              "fetchedAt": "2026-10-30T13:19:24.216773+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401818435",
+              "fetchedAt": "2026-10-30T13:19:26.518116+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401818430",
+              "fetchedAt": "2026-10-30T13:19:26.869493+00:00"
+            }
+          ],
+          "priorSeason": true
+        },
+        "homeProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.4605263157894737,
+          "allowingShare": 0.47368421052631576,
+          "firstScoredAverage": 35.0,
+          "firstAllowedAverage": 39.0,
+          "samples": [
+            {
+              "id": "401809151",
+              "date": "2026-03-06T04:59Z",
+              "firstScored": 39.0,
+              "secondScored": 35.0,
+              "firstAllowed": 46.0,
+              "secondAllowed": 47.0
+            },
+            {
+              "id": "401823270",
+              "date": "2026-03-01T01:00Z",
+              "firstScored": 39.0,
+              "secondScored": 56.0,
+              "firstAllowed": 32.0,
+              "secondAllowed": 52.0
+            },
+            {
+              "id": "401826049",
+              "date": "2026-02-27T02:00Z",
+              "firstScored": 27.0,
+              "secondScored": 32.0,
+              "firstAllowed": 39.0,
+              "secondAllowed": 31.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401809151",
+              "fetchedAt": "2026-10-30T13:19:32.748291+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401823270",
+              "fetchedAt": "2026-10-30T13:19:32.946045+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401826049",
+              "fetchedAt": "2026-10-30T13:19:33.075659+00:00"
+            }
+          ],
+          "priorSeason": true
+        }
+      },
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+    },
+    "config": {
+      "season": 2027,
+      "nationalEfficiency": 106.0,
+      "nationalTempo": 71.5,
+      "baselineAsOf": "2026-11-01",
+      "baselineSource": "User-provided KenPom beginning-of-season screenshots",
+      "homeAdvantagePoints": 0.0,
+      "modelVersion": "additive-matchup-v1"
+    },
+    "ratingsFetchedAt": "2026-11-06T21:14:21.918188+00:00",
+    "preparedAt": "2026-11-06T21:14:22.914663+00:00",
+    "ratingSource": "https://kenpom.com/",
+    "scheduleSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?groups=50&limit=1000&dates=20261107",
+    "verification": "ESPN pregame state and future tipoff checked at server save time",
+    "gameRoomBaseline": {
+      "simulation": null,
+      "simulationStatus": "No verified adjusted-efficiency ratings feed configured.",
+      "id": "401926227",
+      "date": "2026-11-08T00:30Z",
+      "name": "Denver Pioneers at UC Riverside Highlanders",
+      "preparedAt": "2026-11-06T21:14:02.337084+00:00",
+      "season": 2026,
+      "priorSeason": true,
+      "modelVersion": "score-baseline-v1",
+      "model": {
+        "full": {
+          "away": 79.94999999999999,
+          "home": 76.75,
+          "total": 156.7,
+          "homeMargin": -3.1999999999999886,
+          "nAway": 10,
+          "nHome": 10
+        },
+        "half": {
+          "away": 36.0,
+          "home": 39.5,
+          "total": 75.5,
+          "homeMargin": 3.5,
+          "nAway": 3,
+          "nHome": 3
+        }
+      },
+      "samples": {
+        "away": [
+          {
+            "id": "401851624",
+            "date": "2026-03-07T02:30Z",
+            "pf": 67.0,
+            "pa": 83.0,
+            "hf": 29.0,
+            "ha": 42.0,
+            "opponent": "North Dakota Fighting Hawks",
+            "site": "Neutral"
+          },
+          {
+            "id": "401818435",
+            "date": "2026-02-27T01:00Z",
+            "pf": 80.0,
+            "pa": 102.0,
+            "hf": 33.0,
+            "ha": 51.0,
+            "opponent": "Oral Roberts Golden Eagles",
+            "site": "away"
+          },
+          {
+            "id": "401818430",
+            "date": "2026-02-21T23:00Z",
+            "pf": 82.0,
+            "pa": 80.0,
+            "hf": 37.0,
+            "ha": 39.0,
+            "opponent": "St. Thomas Tommies",
+            "site": "home"
+          },
+          {
+            "id": "401818426",
+            "date": "2026-02-20T02:00Z",
+            "pf": 90.0,
+            "pa": 70.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "South Dakota Coyotes",
+            "site": "home"
+          },
+          {
+            "id": "401818423",
+            "date": "2026-02-15T18:00Z",
+            "pf": 76.0,
+            "pa": 83.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Omaha Mavericks",
+            "site": "away"
+          },
+          {
+            "id": "401818417",
+            "date": "2026-02-13T02:00Z",
+            "pf": 79.0,
+            "pa": 61.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "South Dakota State Jackrabbits",
+            "site": "home"
+          },
+          {
+            "id": "401818415",
+            "date": "2026-02-07T19:00Z",
+            "pf": 98.0,
+            "pa": 79.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "North Dakota Fighting Hawks",
+            "site": "away"
+          },
+          {
+            "id": "401818411",
+            "date": "2026-02-06T01:00Z",
+            "pf": 78.0,
+            "pa": 71.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "North Dakota State Bison",
+            "site": "away"
+          },
+          {
+            "id": "401818406",
+            "date": "2026-01-31T21:00Z",
+            "pf": 82.0,
+            "pa": 84.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Omaha Mavericks",
+            "site": "home"
+          },
+          {
+            "id": "401818402",
+            "date": "2026-01-29T01:00Z",
+            "pf": 69.0,
+            "pa": 61.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Kansas City Roos",
+            "site": "away"
+          }
+        ],
+        "home": [
+          {
+            "id": "401809151",
+            "date": "2026-03-06T04:59Z",
+            "pf": 74.0,
+            "pa": 93.0,
+            "hf": 39.0,
+            "ha": 46.0,
+            "opponent": "Hawai'i Rainbow Warriors",
+            "site": "away"
+          },
+          {
+            "id": "401823270",
+            "date": "2026-03-01T01:00Z",
+            "pf": 95.0,
+            "pa": 84.0,
+            "hf": 39.0,
+            "ha": 32.0,
+            "opponent": "Cal State Northridge Matadors",
+            "site": "home"
+          },
+          {
+            "id": "401826049",
+            "date": "2026-02-27T02:00Z",
+            "pf": 59.0,
+            "pa": 70.0,
+            "hf": 27.0,
+            "ha": 39.0,
+            "opponent": "UC Santa Barbara Gauchos",
+            "site": "away"
+          },
+          {
+            "id": "401809136",
+            "date": "2026-02-21T22:00Z",
+            "pf": 73.0,
+            "pa": 78.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "UC Davis Aggies",
+            "site": "home"
+          },
+          {
+            "id": "401823743",
+            "date": "2026-02-20T03:00Z",
+            "pf": 93.0,
+            "pa": 65.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Cal State Bakersfield Roadrunners",
+            "site": "home"
+          },
+          {
+            "id": "401809099",
+            "date": "2026-02-15T03:00Z",
+            "pf": 66.0,
+            "pa": 72.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "UC San Diego Tritons",
+            "site": "away"
+          },
+          {
+            "id": "401826048",
+            "date": "2026-02-13T03:00Z",
+            "pf": 68.0,
+            "pa": 76.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "UC Santa Barbara Gauchos",
+            "site": "home"
+          },
+          {
+            "id": "401823267",
+            "date": "2026-02-07T21:00Z",
+            "pf": 74.0,
+            "pa": 88.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Cal State Northridge Matadors",
+            "site": "away"
+          },
+          {
+            "id": "401823182",
+            "date": "2026-02-06T03:00Z",
+            "pf": 72.0,
+            "pa": 78.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Cal State Fullerton Titans",
+            "site": "away"
+          },
+          {
+            "id": "401809160",
+            "date": "2026-02-01T01:00Z",
+            "pf": 87.0,
+            "pa": 94.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Cal Poly Mustangs",
+            "site": "home"
+          }
+        ]
+      },
+      "source": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/teams/2172/schedule?season=2026",
+          "fetchedAt": "2026-11-06T21:13:23.395039+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851624",
+          "fetchedAt": "2026-10-30T13:19:24.216773+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401818435",
+          "fetchedAt": "2026-10-30T13:19:26.518116+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401818430",
+          "fetchedAt": "2026-10-30T13:19:26.869493+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/teams/27/schedule?season=2026",
+          "fetchedAt": "2026-11-06T21:13:28.682443+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401809151",
+          "fetchedAt": "2026-10-30T13:19:32.748291+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401823270",
+          "fetchedAt": "2026-10-30T13:19:32.946045+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401826049",
+          "fetchedAt": "2026-10-30T13:19:33.075659+00:00"
+        }
+      ],
+      "state": "ready",
+      "reason": null
+    },
+    "kambi": null,
+    "marketStatus": "No verified fresh pregame market available at save time"
+  },
+  "result": null,
+  "reportEvidence": {
+    "articles": [
+      {
+        "id": "espn-50397948",
+        "title": "Denver takes on UC Riverside following Johnson's 27-point showing",
+        "url": "http://www.espn.com/ncb/preview?gameId=401926227",
+        "publisher": "ESPN",
+        "kind": "National coverage / syndicated report",
+        "author": "Byline not provided by feed",
+        "publishedAt": "2026-11-06T09:44:45Z",
+        "retrievedAt": "2026-11-06T18:30:48.673984+00:00",
+        "teamIds": [
+          "2172",
+          "27"
+        ],
+        "eventIds": [
+          "401926227"
+        ],
+        "headlineOnly": true,
+        "notes": [],
+        "discoverySource": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/news?limit=100",
+        "evidenceId": "06ba1aa103ccce5721f9db2356953310786d087928a702fd9205dbb9f74f602e",
+        "savedAt": "2026-11-06T21:15:58.238847+00:00"
+      }
+    ]
+  }
+}

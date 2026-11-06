@@ -1,0 +1,665 @@
+{
+  "snapshot": {
+    "version": 1,
+    "id": "401921774",
+    "savedAt": "2026-11-06T21:15:59.818999+00:00",
+    "scheduledTipoff": "2026-11-11T00:00Z",
+    "gameDate": "2026-11-10",
+    "matchup": {
+      "id": "401921774",
+      "date": "2026-11-11T00:00Z",
+      "awayName": "La Salle Explorers",
+      "homeName": "Villanova Wildcats",
+      "awayId": "2325",
+      "homeId": "222",
+      "location": "Home",
+      "model": {
+        "away": 65.7516,
+        "home": 81.45660000000001,
+        "total": 147.2082,
+        "homeMargin": 15.705000000000013,
+        "possessions": 69.80000000000001,
+        "awayEfficiency": 94.19999999999999,
+        "homeEfficiency": 116.69999999999999,
+        "homeAdvantagePoints": 0.0
+      },
+      "matchedTeams": {
+        "away": "La Salle",
+        "home": "Villanova"
+      },
+      "firstHalf": {
+        "away": 29.33345303425491,
+        "home": 35.842283275027555,
+        "total": 65.17573630928246,
+        "homeMargin": 6.508830240772646,
+        "awayScoringShare": 0.446125311540022,
+        "homeScoringShare": 0.4400169326368588,
+        "modelVersion": "first-half-timing-v1",
+        "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+        "awayProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.46502057613168724,
+          "allowingShare": 0.44280442804428044,
+          "firstScoredAverage": 37.666666666666664,
+          "firstAllowedAverage": 40.0,
+          "samples": [
+            {
+              "id": "401851258",
+              "date": "2026-03-11T15:30Z",
+              "firstScored": 33.0,
+              "secondScored": 47.0,
+              "firstAllowed": 48.0,
+              "secondAllowed": 51.0
+            },
+            {
+              "id": "401828468",
+              "date": "2026-03-07T18:00Z",
+              "firstScored": 34.0,
+              "secondScored": 42.0,
+              "firstAllowed": 35.0,
+              "secondAllowed": 53.0
+            },
+            {
+              "id": "401828459",
+              "date": "2026-03-04T23:30Z",
+              "firstScored": 46.0,
+              "secondScored": 41.0,
+              "firstAllowed": 37.0,
+              "secondAllowed": 47.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851258",
+              "fetchedAt": "2026-10-30T13:19:24.661181+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401828468",
+              "fetchedAt": "2026-10-30T13:19:27.988106+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401828459",
+              "fetchedAt": "2026-10-30T13:19:27.373595+00:00"
+            }
+          ],
+          "priorSeason": true
+        },
+        "homeProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.43722943722943725,
+          "allowingShare": 0.4272300469483568,
+          "firstScoredAverage": 33.666666666666664,
+          "firstAllowedAverage": 30.333333333333332,
+          "samples": [
+            {
+              "id": "401851314",
+              "date": "2026-03-13T01:30Z",
+              "firstScored": 31.0,
+              "secondScored": 33.0,
+              "firstAllowed": 35.0,
+              "secondAllowed": 43.0
+            },
+            {
+              "id": "401822974",
+              "date": "2026-03-07T17:00Z",
+              "firstScored": 44.0,
+              "secondScored": 47.0,
+              "firstAllowed": 32.0,
+              "secondAllowed": 46.0
+            },
+            {
+              "id": "401822970",
+              "date": "2026-03-05T01:00Z",
+              "firstScored": 26.0,
+              "secondScored": 50.0,
+              "firstAllowed": 24.0,
+              "secondAllowed": 33.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851314",
+              "fetchedAt": "2026-10-30T13:02:43.104079+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401822974",
+              "fetchedAt": "2026-10-30T13:02:48.787371+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401822970",
+              "fetchedAt": "2026-10-30T13:02:53.519506+00:00"
+            }
+          ],
+          "priorSeason": true
+        }
+      },
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+    },
+    "config": {
+      "season": 2027,
+      "nationalEfficiency": 106.0,
+      "nationalTempo": 71.5,
+      "baselineAsOf": "2026-11-01",
+      "baselineSource": "User-provided KenPom beginning-of-season screenshots",
+      "homeAdvantagePoints": 0.0,
+      "modelVersion": "additive-matchup-v1"
+    },
+    "ratingsFetchedAt": "2026-11-06T21:14:21.918188+00:00",
+    "preparedAt": "2026-11-06T21:14:23.936119+00:00",
+    "ratingSource": "https://kenpom.com/",
+    "scheduleSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?groups=50&limit=1000&dates=20261110",
+    "verification": "ESPN pregame state and future tipoff checked at server save time",
+    "gameRoomBaseline": {
+      "simulation": null,
+      "simulationStatus": "No verified adjusted-efficiency ratings feed configured.",
+      "id": "401921774",
+      "date": "2026-11-11T00:00Z",
+      "name": "La Salle Explorers at Villanova Wildcats",
+      "preparedAt": "2026-11-06T21:14:02.337084+00:00",
+      "season": 2026,
+      "priorSeason": true,
+      "modelVersion": "score-baseline-v1",
+      "model": {
+        "full": {
+          "away": 72.19999999999999,
+          "home": 77.30000000000001,
+          "total": 149.5,
+          "homeMargin": 5.100000000000023,
+          "nAway": 10,
+          "nHome": 10
+        },
+        "half": {
+          "away": 34.0,
+          "home": 36.83333333333333,
+          "total": 70.83333333333333,
+          "homeMargin": 2.8333333333333286,
+          "nAway": 3,
+          "nHome": 3
+        }
+      },
+      "samples": {
+        "away": [
+          {
+            "id": "401851258",
+            "date": "2026-03-11T15:30Z",
+            "pf": 80.0,
+            "pa": 99.0,
+            "hf": 33.0,
+            "ha": 48.0,
+            "opponent": "St. Bonaventure Bonnies",
+            "site": "Neutral"
+          },
+          {
+            "id": "401828468",
+            "date": "2026-03-07T18:00Z",
+            "pf": 76.0,
+            "pa": 88.0,
+            "hf": 34.0,
+            "ha": 35.0,
+            "opponent": "Saint Joseph's Hawks",
+            "site": "away"
+          },
+          {
+            "id": "401828459",
+            "date": "2026-03-04T23:30Z",
+            "pf": 87.0,
+            "pa": 84.0,
+            "hf": 46.0,
+            "ha": 37.0,
+            "opponent": "Fordham Rams",
+            "site": "home"
+          },
+          {
+            "id": "401828454",
+            "date": "2026-03-01T17:00Z",
+            "pf": 64.0,
+            "pa": 71.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Davidson Wildcats",
+            "site": "away"
+          },
+          {
+            "id": "401828444",
+            "date": "2026-02-24T23:30Z",
+            "pf": 77.0,
+            "pa": 104.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "George Washington Revolutionaries",
+            "site": "home"
+          },
+          {
+            "id": "401828440",
+            "date": "2026-02-21T19:30Z",
+            "pf": 59.0,
+            "pa": 46.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Rhode Island Rams",
+            "site": "home"
+          },
+          {
+            "id": "401828434",
+            "date": "2026-02-19T00:00Z",
+            "pf": 61.0,
+            "pa": 62.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Duquesne Dukes",
+            "site": "away"
+          },
+          {
+            "id": "401828423",
+            "date": "2026-02-11T23:30Z",
+            "pf": 68.0,
+            "pa": 77.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "VCU Rams",
+            "site": "home"
+          },
+          {
+            "id": "401828418",
+            "date": "2026-02-07T20:00Z",
+            "pf": 58.0,
+            "pa": 82.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Saint Louis Billikens",
+            "site": "away"
+          },
+          {
+            "id": "401828410",
+            "date": "2026-02-04T01:00Z",
+            "pf": 61.0,
+            "pa": 71.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Loyola Chicago Ramblers",
+            "site": "away"
+          }
+        ],
+        "home": [
+          {
+            "id": "401851314",
+            "date": "2026-03-13T01:30Z",
+            "pf": 64.0,
+            "pa": 78.0,
+            "hf": 31.0,
+            "ha": 35.0,
+            "opponent": "Georgetown Hoyas",
+            "site": "Neutral"
+          },
+          {
+            "id": "401822974",
+            "date": "2026-03-07T17:00Z",
+            "pf": 91.0,
+            "pa": 78.0,
+            "hf": 44.0,
+            "ha": 32.0,
+            "opponent": "Xavier Musketeers",
+            "site": "home"
+          },
+          {
+            "id": "401822970",
+            "date": "2026-03-05T01:00Z",
+            "pf": 76.0,
+            "pa": 57.0,
+            "hf": 26.0,
+            "ha": 24.0,
+            "opponent": "DePaul Blue Demons",
+            "site": "away"
+          },
+          {
+            "id": "401822962",
+            "date": "2026-03-01T01:00Z",
+            "pf": 57.0,
+            "pa": 89.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "St. John's Red Storm",
+            "site": "away"
+          },
+          {
+            "id": "401822961",
+            "date": "2026-02-26T00:00Z",
+            "pf": 82.0,
+            "pa": 73.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Butler Bulldogs",
+            "site": "home"
+          },
+          {
+            "id": "401822953",
+            "date": "2026-02-21T22:30Z",
+            "pf": 63.0,
+            "pa": 73.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "UConn Huskies",
+            "site": "home"
+          },
+          {
+            "id": "401822947",
+            "date": "2026-02-17T23:30Z",
+            "pf": 92.0,
+            "pa": 89.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Xavier Musketeers",
+            "site": "away"
+          },
+          {
+            "id": "401822944",
+            "date": "2026-02-14T19:30Z",
+            "pf": 80.0,
+            "pa": 69.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Creighton Bluejays",
+            "site": "away"
+          },
+          {
+            "id": "401822938",
+            "date": "2026-02-11T00:30Z",
+            "pf": 77.0,
+            "pa": 74.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Marquette Golden Eagles",
+            "site": "home"
+          },
+          {
+            "id": "401822934",
+            "date": "2026-02-07T17:00Z",
+            "pf": 80.0,
+            "pa": 73.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Georgetown Hoyas",
+            "site": "away"
+          }
+        ]
+      },
+      "source": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/teams/2325/schedule?season=2026",
+          "fetchedAt": "2026-11-06T21:13:24.371912+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851258",
+          "fetchedAt": "2026-10-30T13:19:24.661181+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401828468",
+          "fetchedAt": "2026-10-30T13:19:27.988106+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401828459",
+          "fetchedAt": "2026-10-30T13:19:27.373595+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/teams/222/schedule?season=2026",
+          "fetchedAt": "2026-11-06T16:44:36.595274+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851314",
+          "fetchedAt": "2026-10-30T13:02:43.104079+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401822974",
+          "fetchedAt": "2026-10-30T13:02:48.787371+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401822970",
+          "fetchedAt": "2026-10-30T13:02:53.519506+00:00"
+        }
+      ],
+      "state": "ready",
+      "reason": null
+    },
+    "kambi": null,
+    "marketStatus": "No verified fresh pregame market available at save time"
+  },
+  "result": null,
+  "reportEvidence": {
+    "articles": [
+      {
+        "id": "eb2d11785544503ce1e1",
+        "title": "Villanova vs Holy Cross: Game Preview",
+        "url": "https://www.vuhoops.com/villanova-basketball/35483/villanova-vs-holy-cross-game-preview",
+        "publisher": "VU Hoops",
+        "kind": "Community team coverage",
+        "author": "Matt",
+        "publishedAt": "2026-11-05T22:00:00+00:00",
+        "retrievedAt": "2026-11-06T18:30:48.673984+00:00",
+        "teamIds": [
+          "222"
+        ],
+        "categories": [
+          "Villanova Basketball",
+          "Villanova Basketball Previews"
+        ],
+        "headlineOnly": true,
+        "notes": [],
+        "discoverySource": "https://www.vuhoops.com/rss/index.xml",
+        "evidenceId": "44a9bd4d380f3956c16b1c0b46d9358d12bcea7996e8dbeb8355e07204399db2",
+        "savedAt": "2026-11-06T21:15:58.238847+00:00"
+      },
+      {
+        "id": "18520d9009532b5991af",
+        "title": "Villanova Graduate Pope Leo XIV Lands On Sports Illustrated Cover",
+        "url": "https://phlsportsnow.com/villanova-graduate-pope-leo-xiv-lands-on-sports-illustrated-cover/",
+        "publisher": "Philadelphia Sports Now",
+        "kind": "Local sports reporting",
+        "author": "Griffin Floyd",
+        "publishedAt": "2026-11-05T16:24:28+00:00",
+        "retrievedAt": "2026-11-06T18:30:48.673984+00:00",
+        "teamIds": [
+          "222"
+        ],
+        "categories": [
+          "Villanova",
+          "Featured",
+          "Pope Leo XIV",
+          "Villanova Basketball"
+        ],
+        "headlineOnly": true,
+        "notes": [],
+        "discoverySource": "https://phlsportsnow.com/feed/",
+        "evidenceId": "6532aad7c8fb1db803775d237653d8a6871361ad20382039c44d7bbe808eaf4c",
+        "savedAt": "2026-11-06T21:15:58.238847+00:00"
+      },
+      {
+        "id": "9cdd59544822fd472119",
+        "title": "How former Villanova transfers fared in their debuts with new teams",
+        "url": "https://www.vuhoops.com/villanova-basketball/35465/how-former-villanova-transfers-fared-in-their-debuts-with-new-teams",
+        "publisher": "VU Hoops",
+        "kind": "Community team coverage",
+        "author": "Matt Sidney",
+        "publishedAt": "2026-11-05T14:34:07+00:00",
+        "retrievedAt": "2026-11-06T18:30:48.673984+00:00",
+        "teamIds": [
+          "222"
+        ],
+        "categories": [
+          "Villanova Basketball"
+        ],
+        "headlineOnly": true,
+        "notes": [],
+        "discoverySource": "https://www.vuhoops.com/rss/index.xml",
+        "evidenceId": "7b585cfa9575a4a25ae44c4cd72121556dff631040c594af9cabfc1a17fd929d",
+        "savedAt": "2026-11-06T21:15:58.238847+00:00"
+      },
+      {
+        "id": "b404cf3c3c0305339a16",
+        "title": "Villanova Preview: Chance to Find Footing Against Holy Cross",
+        "url": "https://phlsportsnow.com/villanova-preview-chance-to-find-footing-against-holy-cross/",
+        "publisher": "Philadelphia Sports Now",
+        "kind": "Local sports reporting",
+        "author": "Griffin Floyd",
+        "publishedAt": "2026-11-05T14:27:53+00:00",
+        "retrievedAt": "2026-11-06T18:30:48.673984+00:00",
+        "teamIds": [
+          "222"
+        ],
+        "categories": [
+          "Villanova Men's Basketball",
+          "Buddy Simmons II",
+          "Devin Royal",
+          "Elijah Crawford",
+          "Featured",
+          "Jake Fiegen",
+          "Kevin Willard",
+          "Kwame Evans Jr.",
+          "Luigi Suigo",
+          "Tyler Perkins"
+        ],
+        "headlineOnly": true,
+        "notes": [],
+        "discoverySource": "https://phlsportsnow.com/feed/",
+        "evidenceId": "fe3ed8526303fe8cb0d58f7bbf82bf5391dcb5bc28593ebb9b0675eb869d45fd",
+        "savedAt": "2026-11-06T21:15:58.238847+00:00"
+      },
+      {
+        "id": "f63559d517a4bcb15ef0",
+        "title": "Are You Concerned About Luigi Suigo? Don\u2019t Be",
+        "url": "https://www.vuhoops.com/villanova-basketball/35460/are-you-concerned-about-luigi-suigo-dont-be",
+        "publisher": "VU Hoops",
+        "kind": "Community team coverage",
+        "author": "Greg Patuto",
+        "publishedAt": "2026-11-04T21:00:00+00:00",
+        "retrievedAt": "2026-11-06T18:30:48.673984+00:00",
+        "teamIds": [
+          "222"
+        ],
+        "categories": [
+          "Villanova Basketball"
+        ],
+        "headlineOnly": true,
+        "notes": [],
+        "discoverySource": "https://www.vuhoops.com/rss/index.xml",
+        "evidenceId": "cee963a94999c114c50558c5d2bd86b2d0a8571d62419707ad59b51f1c00d2d5",
+        "savedAt": "2026-11-06T21:15:58.238847+00:00"
+      },
+      {
+        "id": "b257b0206aa79baf4a44",
+        "title": "Villanova Offers Trio of 2028 Wing Prospects",
+        "url": "https://phlsportsnow.com/villanova-offers-trio-of-2028-wing-prospects/",
+        "publisher": "Philadelphia Sports Now",
+        "kind": "Local sports reporting",
+        "author": "Griffin Floyd",
+        "publishedAt": "2026-11-04T14:00:34+00:00",
+        "retrievedAt": "2026-11-06T18:30:48.673984+00:00",
+        "teamIds": [
+          "222"
+        ],
+        "categories": [
+          "Villanova Men\u2019s Basketball Recruiting",
+          "Featured",
+          "Kevin Willard",
+          "Mikey Matthews",
+          "Trey Edwards",
+          "Villanova Men's Basketball Recruiting",
+          "Xavier Skipworth"
+        ],
+        "headlineOnly": true,
+        "notes": [],
+        "discoverySource": "https://phlsportsnow.com/feed/",
+        "evidenceId": "e3fe48f2ab34f44d968eb187314aec4c3377cdbd9af9ccd389e1b83bb04ece76",
+        "savedAt": "2026-11-06T21:15:58.238847+00:00"
+      },
+      {
+        "id": "d6af270157ead8e96b84",
+        "title": "Villanova has 20 reasons to feel better about its season-opening loss",
+        "url": "https://www.vuhoops.com/villanova-basketball/35433/villanova-has-20-reasons-to-feel-better-about-its-season-opening-loss",
+        "publisher": "VU Hoops",
+        "kind": "Community team coverage",
+        "author": "Matt Sidney",
+        "publishedAt": "2026-11-04T13:00:00+00:00",
+        "retrievedAt": "2026-11-06T18:30:48.673984+00:00",
+        "teamIds": [
+          "222"
+        ],
+        "categories": [
+          "Villanova Basketball"
+        ],
+        "headlineOnly": true,
+        "notes": [],
+        "discoverySource": "https://www.vuhoops.com/rss/index.xml",
+        "evidenceId": "dfd7377a04dfd2f59d7dc696da9ec062e62c6cb5e428ec6ff99cf3a94fe1cb5b",
+        "savedAt": "2026-11-06T21:15:58.238847+00:00"
+      },
+      {
+        "id": "0710ea6fd3a161b15f49",
+        "title": "Report: Villanova in Middle of the Pack in High-Major NIL Spending",
+        "url": "https://phlsportsnow.com/report-villanova-in-middle-of-the-pack-in-high-major-nil-spending/",
+        "publisher": "Philadelphia Sports Now",
+        "kind": "Local sports reporting",
+        "author": "Griffin Floyd",
+        "publishedAt": "2026-11-04T11:00:23+00:00",
+        "retrievedAt": "2026-11-06T18:30:48.673984+00:00",
+        "teamIds": [
+          "222"
+        ],
+        "categories": [
+          "Villanova Men's Basketball",
+          "Featured",
+          "Villanova Men\u2019s Basketball"
+        ],
+        "headlineOnly": true,
+        "notes": [],
+        "discoverySource": "https://phlsportsnow.com/feed/",
+        "evidenceId": "47c70f46858f5f859ff9af4d735aff44487567a971c960bba8dc1ce2c49fbed2",
+        "savedAt": "2026-11-06T21:15:58.238847+00:00"
+      },
+      {
+        "id": "f2b7b1f735eaaae98761",
+        "title": "An individual look at how each player fared in the Eternal City Tip-Off",
+        "url": "https://www.vuhoops.com/villanova-basketball/35409/35409",
+        "publisher": "VU Hoops",
+        "kind": "Community team coverage",
+        "author": "Matt",
+        "publishedAt": "2026-11-03T17:00:00+00:00",
+        "retrievedAt": "2026-11-06T18:30:48.673984+00:00",
+        "teamIds": [
+          "222"
+        ],
+        "categories": [
+          "Villanova Basketball",
+          "Villanova Basketball Game Recaps"
+        ],
+        "headlineOnly": true,
+        "notes": [],
+        "discoverySource": "https://www.vuhoops.com/rss/index.xml",
+        "evidenceId": "05377f53f8a71a72fc5d5416263b9cdfacbab15f9f8359154c473a101e291bd0",
+        "savedAt": "2026-11-06T21:15:58.238847+00:00"
+      },
+      {
+        "id": "3be6a5211fc7f9caa587",
+        "title": "Villanova Looked Brand New In Season Opener: How Long Will It Take To Work?",
+        "url": "https://www.vuhoops.com/villanova-basketball/35406/villanova-looked-brand-new-in-season-opener-how-long-will-it-take-to-work",
+        "publisher": "VU Hoops",
+        "kind": "Community team coverage",
+        "author": "Greg Patuto",
+        "publishedAt": "2026-11-02T17:48:54+00:00",
+        "retrievedAt": "2026-11-06T18:30:48.673984+00:00",
+        "teamIds": [
+          "222"
+        ],
+        "categories": [
+          "Villanova Basketball"
+        ],
+        "headlineOnly": true,
+        "notes": [],
+        "discoverySource": "https://www.vuhoops.com/rss/index.xml",
+        "evidenceId": "e6cc39e7dcac61722390a310a9ac5cb46a20571b622815c1451ef6f87f663aef",
+        "savedAt": "2026-11-06T21:15:58.238847+00:00"
+      }
+    ]
+  }
+}

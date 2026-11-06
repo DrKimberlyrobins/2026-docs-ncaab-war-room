@@ -1,0 +1,429 @@
+{
+  "snapshot": {
+    "version": 1,
+    "id": "401913101",
+    "savedAt": "2026-11-06T21:15:59.822798+00:00",
+    "scheduledTipoff": "2026-11-11T00:00Z",
+    "gameDate": "2026-11-10",
+    "matchup": {
+      "id": "401913101",
+      "date": "2026-11-11T00:00Z",
+      "awayName": "Wyoming Cowboys",
+      "homeName": "North Carolina Tar Heels",
+      "awayId": "2751",
+      "homeId": "153",
+      "location": "Home",
+      "model": {
+        "away": 68.76480000000004,
+        "home": 77.95200000000003,
+        "total": 146.71680000000006,
+        "homeMargin": 9.18719999999999,
+        "possessions": 69.60000000000002,
+        "awayEfficiency": 98.80000000000001,
+        "homeEfficiency": 112.0,
+        "homeAdvantagePoints": 0.0
+      },
+      "matchedTeams": {
+        "away": "Wyoming",
+        "home": "North Carolina"
+      },
+      "firstHalf": {
+        "away": 35.35956137099985,
+        "home": 36.11466666666668,
+        "total": 71.47422803766653,
+        "homeMargin": 0.75510529566683,
+        "awayScoringShare": 0.5142101972375377,
+        "homeScoringShare": 0.4632936507936508,
+        "modelVersion": "first-half-timing-v1",
+        "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+        "awayProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.5352697095435685,
+          "allowingShare": 0.48214285714285715,
+          "firstScoredAverage": 43.0,
+          "firstAllowedAverage": 36.0,
+          "samples": [
+            {
+              "id": "401851495",
+              "date": "2026-03-11T19:00Z",
+              "firstScored": 31.0,
+              "secondScored": 39.0,
+              "firstAllowed": 44.0,
+              "secondAllowed": 29.0
+            },
+            {
+              "id": "401829334",
+              "date": "2026-03-07T22:00Z",
+              "firstScored": 49.0,
+              "secondScored": 39.0,
+              "firstAllowed": 36.0,
+              "secondAllowed": 42.0
+            },
+            {
+              "id": "401829322",
+              "date": "2026-03-04T03:00Z",
+              "firstScored": 49.0,
+              "secondScored": 34.0,
+              "firstAllowed": 28.0,
+              "secondAllowed": 45.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851495",
+              "fetchedAt": "2026-10-30T13:19:29.824585+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401829334",
+              "fetchedAt": "2026-10-30T13:19:28.425897+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401829322",
+              "fetchedAt": "2026-10-30T13:19:33.055040+00:00"
+            }
+          ],
+          "priorSeason": true
+        },
+        "homeProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.4444444444444444,
+          "allowingShare": 0.4931506849315068,
+          "firstScoredAverage": 30.666666666666668,
+          "firstAllowedAverage": 36.0,
+          "samples": [
+            {
+              "id": "401851180",
+              "date": "2026-03-13T01:30Z",
+              "firstScored": 31.0,
+              "secondScored": 48.0,
+              "firstAllowed": 39.0,
+              "secondAllowed": 41.0
+            },
+            {
+              "id": "401820788",
+              "date": "2026-03-07T23:30Z",
+              "firstScored": 34.0,
+              "secondScored": 27.0,
+              "firstAllowed": 39.0,
+              "secondAllowed": 37.0
+            },
+            {
+              "id": "401820779",
+              "date": "2026-03-04T00:00Z",
+              "firstScored": 27.0,
+              "secondScored": 40.0,
+              "firstAllowed": 30.0,
+              "secondAllowed": 33.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851180",
+              "fetchedAt": "2026-10-30T13:19:24.425898+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401820788",
+              "fetchedAt": "2026-10-30T13:19:24.553466+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401820779",
+              "fetchedAt": "2026-10-30T13:19:24.707096+00:00"
+            }
+          ],
+          "priorSeason": true
+        }
+      },
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+    },
+    "config": {
+      "season": 2027,
+      "nationalEfficiency": 106.0,
+      "nationalTempo": 71.5,
+      "baselineAsOf": "2026-11-01",
+      "baselineSource": "User-provided KenPom beginning-of-season screenshots",
+      "homeAdvantagePoints": 0.0,
+      "modelVersion": "additive-matchup-v1"
+    },
+    "ratingsFetchedAt": "2026-11-06T21:14:21.918188+00:00",
+    "preparedAt": "2026-11-06T21:14:23.936119+00:00",
+    "ratingSource": "https://kenpom.com/",
+    "scheduleSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?groups=50&limit=1000&dates=20261110",
+    "verification": "ESPN pregame state and future tipoff checked at server save time",
+    "gameRoomBaseline": {
+      "simulation": null,
+      "simulationStatus": "No verified adjusted-efficiency ratings feed configured.",
+      "id": "401913101",
+      "date": "2026-11-11T00:00Z",
+      "name": "Wyoming Cowboys at North Carolina Tar Heels",
+      "preparedAt": "2026-11-06T21:14:02.337084+00:00",
+      "season": 2026,
+      "priorSeason": true,
+      "modelVersion": "score-baseline-v1",
+      "model": {
+        "full": {
+          "away": 73.7,
+          "home": 73.25,
+          "total": 146.95,
+          "homeMargin": -0.45000000000000284,
+          "nAway": 10,
+          "nHome": 10
+        },
+        "half": {
+          "away": 39.5,
+          "home": 33.333333333333336,
+          "total": 72.83333333333334,
+          "homeMargin": -6.166666666666664,
+          "nAway": 3,
+          "nHome": 3
+        }
+      },
+      "samples": {
+        "away": [
+          {
+            "id": "401851495",
+            "date": "2026-03-11T19:00Z",
+            "pf": 70.0,
+            "pa": 73.0,
+            "hf": 31.0,
+            "ha": 44.0,
+            "opponent": "UNLV Rebels",
+            "site": "Neutral"
+          },
+          {
+            "id": "401829334",
+            "date": "2026-03-07T22:00Z",
+            "pf": 88.0,
+            "pa": 78.0,
+            "hf": 49.0,
+            "ha": 36.0,
+            "opponent": "San Jos\u00e9 State Spartans",
+            "site": "away"
+          },
+          {
+            "id": "401829322",
+            "date": "2026-03-04T03:00Z",
+            "pf": 83.0,
+            "pa": 73.0,
+            "hf": 49.0,
+            "ha": 28.0,
+            "opponent": "Nevada Wolf Pack",
+            "site": "home"
+          },
+          {
+            "id": "401830777",
+            "date": "2026-02-28T21:00Z",
+            "pf": 66.0,
+            "pa": 62.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Air Force Falcons",
+            "site": "home"
+          },
+          {
+            "id": "401823832",
+            "date": "2026-02-25T02:00Z",
+            "pf": 62.0,
+            "pa": 72.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Boise State Broncos",
+            "site": "away"
+          },
+          {
+            "id": "401823803",
+            "date": "2026-02-22T01:00Z",
+            "pf": 70.0,
+            "pa": 65.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Grand Canyon Lopes",
+            "site": "away"
+          },
+          {
+            "id": "401828933",
+            "date": "2026-02-18T01:30Z",
+            "pf": 92.0,
+            "pa": 82.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Fresno State Bulldogs",
+            "site": "home"
+          },
+          {
+            "id": "401830826",
+            "date": "2026-02-14T21:00Z",
+            "pf": 68.0,
+            "pa": 79.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Colorado State Rams",
+            "site": "away"
+          },
+          {
+            "id": "401829338",
+            "date": "2026-02-08T01:00Z",
+            "pf": 83.0,
+            "pa": 85.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Utah State Aggies",
+            "site": "home"
+          },
+          {
+            "id": "401823780",
+            "date": "2026-02-04T04:00Z",
+            "pf": 63.0,
+            "pa": 72.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "San Diego State Aztecs",
+            "site": "away"
+          }
+        ],
+        "home": [
+          {
+            "id": "401851180",
+            "date": "2026-03-13T01:30Z",
+            "pf": 79.0,
+            "pa": 80.0,
+            "hf": 31.0,
+            "ha": 39.0,
+            "opponent": "Clemson Tigers",
+            "site": "Neutral"
+          },
+          {
+            "id": "401820788",
+            "date": "2026-03-07T23:30Z",
+            "pf": 61.0,
+            "pa": 76.0,
+            "hf": 34.0,
+            "ha": 39.0,
+            "opponent": "Duke Blue Devils",
+            "site": "away"
+          },
+          {
+            "id": "401820779",
+            "date": "2026-03-04T00:00Z",
+            "pf": 67.0,
+            "pa": 63.0,
+            "hf": 27.0,
+            "ha": 30.0,
+            "opponent": "Clemson Tigers",
+            "site": "home"
+          },
+          {
+            "id": "401820774",
+            "date": "2026-03-01T01:30Z",
+            "pf": 89.0,
+            "pa": 82.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Virginia Tech Hokies",
+            "site": "home"
+          },
+          {
+            "id": "401820762",
+            "date": "2026-02-24T00:00Z",
+            "pf": 77.0,
+            "pa": 74.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Louisville Cardinals",
+            "site": "home"
+          },
+          {
+            "id": "401820759",
+            "date": "2026-02-21T18:00Z",
+            "pf": 77.0,
+            "pa": 64.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Syracuse Orange",
+            "site": "away"
+          },
+          {
+            "id": "401820752",
+            "date": "2026-02-18T00:00Z",
+            "pf": 58.0,
+            "pa": 82.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "NC State Wolfpack",
+            "site": "away"
+          },
+          {
+            "id": "401820742",
+            "date": "2026-02-14T19:00Z",
+            "pf": 79.0,
+            "pa": 65.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Pittsburgh Panthers",
+            "site": "home"
+          },
+          {
+            "id": "401820731",
+            "date": "2026-02-11T00:00Z",
+            "pf": 66.0,
+            "pa": 75.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Miami Hurricanes",
+            "site": "away"
+          },
+          {
+            "id": "401820724",
+            "date": "2026-02-07T23:30Z",
+            "pf": 71.0,
+            "pa": 68.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Duke Blue Devils",
+            "site": "home"
+          }
+        ]
+      },
+      "source": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/teams/2751/schedule?season=2026",
+          "fetchedAt": "2026-11-06T21:13:28.941525+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851495",
+          "fetchedAt": "2026-10-30T13:19:29.824585+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401829334",
+          "fetchedAt": "2026-10-30T13:19:28.425897+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401829322",
+          "fetchedAt": "2026-10-30T13:19:33.055040+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/teams/153/schedule?season=2026",
+          "fetchedAt": "2026-11-06T21:13:22.180703+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851180",
+          "fetchedAt": "2026-10-30T13:19:24.425898+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401820788",
+          "fetchedAt": "2026-10-30T13:19:24.553466+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401820779",
+          "fetchedAt": "2026-10-30T13:19:24.707096+00:00"
+        }
+      ],
+      "state": "ready",
+      "reason": null
+    },
+    "kambi": null,
+    "marketStatus": "No verified fresh pregame market available at save time"
+  },
+  "result": null
+}

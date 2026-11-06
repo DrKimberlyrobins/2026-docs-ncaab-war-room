@@ -1,0 +1,455 @@
+{
+  "snapshot": {
+    "version": 1,
+    "id": "401924843",
+    "savedAt": "2026-11-06T21:15:58.678116+00:00",
+    "scheduledTipoff": "2026-11-07T23:30Z",
+    "gameDate": "2026-11-07",
+    "matchup": {
+      "id": "401924843",
+      "date": "2026-11-07T23:30Z",
+      "awayName": "Morgan State Bears",
+      "homeName": "Niagara Purple Eagles",
+      "awayId": "2415",
+      "homeId": "315",
+      "location": "Home",
+      "model": {
+        "away": 73.1538,
+        "home": 76.29100000000001,
+        "total": 149.44480000000001,
+        "homeMargin": 3.137200000000007,
+        "possessions": 71.30000000000001,
+        "awayEfficiency": 102.6,
+        "homeEfficiency": 107.0,
+        "homeAdvantagePoints": 0.0
+      },
+      "matchedTeams": {
+        "away": "Morgan St.",
+        "home": "Niagara"
+      },
+      "firstHalf": {
+        "away": 31.27900460664336,
+        "home": 32.91671207482994,
+        "total": 64.1957166814733,
+        "homeMargin": 1.63770746818658,
+        "awayScoringShare": 0.42757867132867133,
+        "homeScoringShare": 0.4314625850340136,
+        "modelVersion": "first-half-timing-v1",
+        "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+        "awayProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.42727272727272725,
+          "allowingShare": 0.41904761904761906,
+          "firstScoredAverage": 31.333333333333332,
+          "firstAllowedAverage": 29.333333333333332,
+          "samples": [
+            {
+              "id": "401851472",
+              "date": "2026-03-11T22:00Z",
+              "firstScored": 15.0,
+              "secondScored": 45.0,
+              "firstAllowed": 27.0,
+              "secondAllowed": 33.0
+            },
+            {
+              "id": "401822780",
+              "date": "2026-03-06T01:30Z",
+              "firstScored": 34.0,
+              "secondScored": 36.0,
+              "firstAllowed": 32.0,
+              "secondAllowed": 34.0
+            },
+            {
+              "id": "401828717",
+              "date": "2026-03-02T23:00Z",
+              "firstScored": 45.0,
+              "secondScored": 45.0,
+              "firstAllowed": 29.0,
+              "secondAllowed": 55.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851472",
+              "fetchedAt": "2026-10-30T13:19:26.541687+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401822780",
+              "fetchedAt": "2026-10-30T13:19:26.251323+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401828717",
+              "fetchedAt": "2026-10-30T13:19:29.364769+00:00"
+            }
+          ],
+          "priorSeason": true
+        },
+        "homeProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.44387755102040816,
+          "allowingShare": 0.42788461538461536,
+          "firstScoredAverage": 29.0,
+          "firstAllowedAverage": 29.666666666666668,
+          "samples": [
+            {
+              "id": "401813396",
+              "date": "2026-03-01T19:00Z",
+              "firstScored": 28.0,
+              "secondScored": 38.0,
+              "firstAllowed": 30.0,
+              "secondAllowed": 43.0
+            },
+            {
+              "id": "401813395",
+              "date": "2026-02-27T23:30Z",
+              "firstScored": 31.0,
+              "secondScored": 37.0,
+              "firstAllowed": 32.0,
+              "secondAllowed": 36.0
+            },
+            {
+              "id": "401813394",
+              "date": "2026-02-22T17:00Z",
+              "firstScored": 28.0,
+              "secondScored": 34.0,
+              "firstAllowed": 27.0,
+              "secondAllowed": 40.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401813396",
+              "fetchedAt": "2026-10-30T13:19:34.400939+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401813395",
+              "fetchedAt": "2026-10-30T13:19:30.787702+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401813394",
+              "fetchedAt": "2026-10-30T13:19:31.098835+00:00"
+            }
+          ],
+          "priorSeason": true
+        }
+      },
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+    },
+    "config": {
+      "season": 2027,
+      "nationalEfficiency": 106.0,
+      "nationalTempo": 71.5,
+      "baselineAsOf": "2026-11-01",
+      "baselineSource": "User-provided KenPom beginning-of-season screenshots",
+      "homeAdvantagePoints": 0.0,
+      "modelVersion": "additive-matchup-v1"
+    },
+    "ratingsFetchedAt": "2026-11-06T21:14:21.918188+00:00",
+    "preparedAt": "2026-11-06T21:14:22.914663+00:00",
+    "ratingSource": "https://kenpom.com/",
+    "scheduleSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?groups=50&limit=1000&dates=20261107",
+    "verification": "ESPN pregame state and future tipoff checked at server save time",
+    "gameRoomBaseline": {
+      "simulation": null,
+      "simulationStatus": "No verified adjusted-efficiency ratings feed configured.",
+      "id": "401924843",
+      "date": "2026-11-07T23:30Z",
+      "name": "Morgan State Bears at Niagara Purple Eagles",
+      "preparedAt": "2026-11-06T21:14:02.337084+00:00",
+      "season": 2026,
+      "priorSeason": true,
+      "modelVersion": "score-baseline-v1",
+      "model": {
+        "full": {
+          "away": 73.6,
+          "home": 71.1,
+          "total": 144.7,
+          "homeMargin": -2.5,
+          "nAway": 10,
+          "nHome": 10
+        },
+        "half": {
+          "away": 30.5,
+          "home": 29.166666666666664,
+          "total": 59.666666666666664,
+          "homeMargin": -1.3333333333333357,
+          "nAway": 3,
+          "nHome": 3
+        }
+      },
+      "samples": {
+        "away": [
+          {
+            "id": "401851472",
+            "date": "2026-03-11T22:00Z",
+            "pf": 70.0,
+            "pa": 75.0,
+            "hf": 15.0,
+            "ha": 27.0,
+            "opponent": "Delaware State Hornets",
+            "site": "Neutral"
+          },
+          {
+            "id": "401822780",
+            "date": "2026-03-06T01:30Z",
+            "pf": 70.0,
+            "pa": 66.0,
+            "hf": 34.0,
+            "ha": 32.0,
+            "opponent": "Coppin State Eagles",
+            "site": "home"
+          },
+          {
+            "id": "401828717",
+            "date": "2026-03-02T23:00Z",
+            "pf": 90.0,
+            "pa": 84.0,
+            "hf": 45.0,
+            "ha": 29.0,
+            "opponent": "Norfolk State Spartans",
+            "site": "home"
+          },
+          {
+            "id": "401828716",
+            "date": "2026-02-28T21:00Z",
+            "pf": 59.0,
+            "pa": 84.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Howard Bison",
+            "site": "home"
+          },
+          {
+            "id": "401861277",
+            "date": "2026-02-25T23:00Z",
+            "pf": 90.0,
+            "pa": 83.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "South Carolina State Bulldogs",
+            "site": "away"
+          },
+          {
+            "id": "401828715",
+            "date": "2026-02-21T22:00Z",
+            "pf": 82.0,
+            "pa": 68.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Delaware State Hornets",
+            "site": "home"
+          },
+          {
+            "id": "401828694",
+            "date": "2026-02-17T00:00Z",
+            "pf": 76.0,
+            "pa": 80.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "North Carolina Central Eagles",
+            "site": "away"
+          },
+          {
+            "id": "401823051",
+            "date": "2026-02-07T21:45Z",
+            "pf": 79.0,
+            "pa": 71.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Maryland Eastern Shore Hawks",
+            "site": "home"
+          },
+          {
+            "id": "401822773",
+            "date": "2026-01-31T21:30Z",
+            "pf": 89.0,
+            "pa": 80.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Coppin State Eagles",
+            "site": "away"
+          },
+          {
+            "id": "401828692",
+            "date": "2026-01-27T00:00Z",
+            "pf": 79.0,
+            "pa": 78.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Norfolk State Spartans",
+            "site": "away"
+          }
+        ],
+        "home": [
+          {
+            "id": "401813396",
+            "date": "2026-03-01T19:00Z",
+            "pf": 66.0,
+            "pa": 73.0,
+            "hf": 28.0,
+            "ha": 30.0,
+            "opponent": "Merrimack Warriors",
+            "site": "home"
+          },
+          {
+            "id": "401813395",
+            "date": "2026-02-27T23:30Z",
+            "pf": 78.0,
+            "pa": 76.0,
+            "hf": 31.0,
+            "ha": 32.0,
+            "opponent": "Quinnipiac Bobcats",
+            "site": "home"
+          },
+          {
+            "id": "401813394",
+            "date": "2026-02-22T17:00Z",
+            "pf": 62.0,
+            "pa": 67.0,
+            "hf": 28.0,
+            "ha": 27.0,
+            "opponent": "Rider Broncs",
+            "site": "away"
+          },
+          {
+            "id": "401813393",
+            "date": "2026-02-21T00:00Z",
+            "pf": 63.0,
+            "pa": 76.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Mount St. Mary's Mountaineers",
+            "site": "away"
+          },
+          {
+            "id": "401813392",
+            "date": "2026-02-15T19:00Z",
+            "pf": 70.0,
+            "pa": 68.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Iona Gaels",
+            "site": "home"
+          },
+          {
+            "id": "401813316",
+            "date": "2026-02-13T23:30Z",
+            "pf": 69.0,
+            "pa": 76.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Manhattan Jaspers",
+            "site": "home"
+          },
+          {
+            "id": "401813391",
+            "date": "2026-02-07T19:00Z",
+            "pf": 55.0,
+            "pa": 56.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Quinnipiac Bobcats",
+            "site": "away"
+          },
+          {
+            "id": "401813366",
+            "date": "2026-02-03T23:30Z",
+            "pf": 65.0,
+            "pa": 56.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Canisius Golden Griffins",
+            "site": "home"
+          },
+          {
+            "id": "401813338",
+            "date": "2026-02-01T19:00Z",
+            "pf": 46.0,
+            "pa": 58.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Marist Red Foxes",
+            "site": "home"
+          },
+          {
+            "id": "401813390",
+            "date": "2026-01-30T23:30Z",
+            "pf": 79.0,
+            "pa": 82.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Siena Saints",
+            "site": "home"
+          }
+        ]
+      },
+      "source": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/teams/2415/schedule?season=2026",
+          "fetchedAt": "2026-11-06T21:13:25.155752+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851472",
+          "fetchedAt": "2026-10-30T13:19:26.541687+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401822780",
+          "fetchedAt": "2026-10-30T13:19:26.251323+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401828717",
+          "fetchedAt": "2026-10-30T13:19:29.364769+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/teams/315/schedule?season=2026",
+          "fetchedAt": "2026-11-06T21:13:30.416973+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401813396",
+          "fetchedAt": "2026-10-30T13:19:34.400939+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401813395",
+          "fetchedAt": "2026-10-30T13:19:30.787702+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401813394",
+          "fetchedAt": "2026-10-30T13:19:31.098835+00:00"
+        }
+      ],
+      "state": "ready",
+      "reason": null
+    },
+    "kambi": null,
+    "marketStatus": "No verified fresh pregame market available at save time"
+  },
+  "result": null,
+  "reportEvidence": {
+    "articles": [
+      {
+        "id": "espn-50397916",
+        "title": "Worrell leads Morgan State against Niagara after 20-point game",
+        "url": "http://www.espn.com/ncb/preview?gameId=401924843",
+        "publisher": "ESPN",
+        "kind": "National coverage / syndicated report",
+        "author": "Byline not provided by feed",
+        "publishedAt": "2026-11-06T09:44:47Z",
+        "retrievedAt": "2026-11-06T18:30:48.673984+00:00",
+        "teamIds": [
+          "2415",
+          "315"
+        ],
+        "eventIds": [
+          "401924843"
+        ],
+        "headlineOnly": true,
+        "notes": [],
+        "discoverySource": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/news?limit=100",
+        "evidenceId": "374cad1929a6f7a1f94d28c440512db0191a090c846b01e3c90c89f7612d3b2e",
+        "savedAt": "2026-11-06T21:15:58.238847+00:00"
+      }
+    ]
+  }
+}

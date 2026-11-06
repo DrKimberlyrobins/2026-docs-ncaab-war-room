@@ -1,0 +1,562 @@
+{
+  "snapshot": {
+    "version": 1,
+    "id": "401920894",
+    "savedAt": "2026-11-06T21:15:58.535194+00:00",
+    "scheduledTipoff": "2026-11-07T00:30Z",
+    "gameDate": "2026-11-06",
+    "matchup": {
+      "id": "401920894",
+      "date": "2026-11-07T00:30Z",
+      "awayName": "Delaware Blue Hens",
+      "homeName": "Wisconsin Badgers",
+      "awayId": "48",
+      "homeId": "275",
+      "location": "Home",
+      "model": {
+        "away": 63.36220000000001,
+        "home": 81.47560000000001,
+        "total": 144.83780000000002,
+        "homeMargin": 18.113400000000006,
+        "possessions": 69.4,
+        "awayEfficiency": 91.30000000000001,
+        "homeEfficiency": 117.4,
+        "homeAdvantagePoints": 0.0
+      },
+      "matchedTeams": {
+        "away": "Delaware",
+        "home": "Wisconsin"
+      },
+      "firstHalf": {
+        "away": 25.963525280874606,
+        "home": 38.00927572167471,
+        "total": 63.97280100254932,
+        "homeMargin": 12.045750440800106,
+        "awayScoringShare": 0.4097636332209835,
+        "homeScoringShare": 0.4665111483889005,
+        "modelVersion": "first-half-timing-v1",
+        "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+        "awayProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.39408866995073893,
+          "allowingShare": 0.4900398406374502,
+          "firstScoredAverage": 26.666666666666668,
+          "firstAllowedAverage": 41.0,
+          "samples": [
+            {
+              "id": "401804964",
+              "date": "2026-03-07T17:00Z",
+              "firstScored": 22.0,
+              "secondScored": 16.0,
+              "firstAllowed": 40.0,
+              "secondAllowed": 41.0
+            },
+            {
+              "id": "401804957",
+              "date": "2026-03-06T00:00Z",
+              "firstScored": 33.0,
+              "secondScored": 50.0,
+              "firstAllowed": 33.0,
+              "secondAllowed": 47.0
+            },
+            {
+              "id": "401804956",
+              "date": "2026-02-28T22:00Z",
+              "firstScored": 25.0,
+              "secondScored": 57.0,
+              "firstAllowed": 50.0,
+              "secondAllowed": 40.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401804964",
+              "fetchedAt": "2026-10-30T13:19:35.276358+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401804957",
+              "fetchedAt": "2026-10-30T13:19:35.430913+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401804956",
+              "fetchedAt": "2026-10-30T13:19:35.521616+00:00"
+            }
+          ],
+          "priorSeason": true
+        },
+        "homeProfile": {
+          "season": 2026,
+          "games": 3,
+          "scoringShare": 0.44298245614035087,
+          "allowingShare": 0.42543859649122806,
+          "firstScoredAverage": 33.666666666666664,
+          "firstAllowedAverage": 32.333333333333336,
+          "samples": [
+            {
+              "id": "401851384",
+              "date": "2026-03-14T17:00Z",
+              "firstScored": 28.0,
+              "secondScored": 37.0,
+              "firstAllowed": 28.0,
+              "secondAllowed": 40.0
+            },
+            {
+              "id": "401851381",
+              "date": "2026-03-13T18:30Z",
+              "firstScored": 30.0,
+              "secondScored": 48.0,
+              "firstAllowed": 36.0,
+              "secondAllowed": 42.0
+            },
+            {
+              "id": "401851376",
+              "date": "2026-03-12T18:30Z",
+              "firstScored": 43.0,
+              "secondScored": 42.0,
+              "firstAllowed": 33.0,
+              "secondAllowed": 49.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851384",
+              "fetchedAt": "2026-10-30T13:19:23.433958+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851381",
+              "fetchedAt": "2026-10-30T13:19:33.000701+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851376",
+              "fetchedAt": "2026-10-30T13:19:32.188848+00:00"
+            }
+          ],
+          "priorSeason": true
+        }
+      },
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+    },
+    "config": {
+      "season": 2027,
+      "nationalEfficiency": 106.0,
+      "nationalTempo": 71.5,
+      "baselineAsOf": "2026-11-01",
+      "baselineSource": "User-provided KenPom beginning-of-season screenshots",
+      "homeAdvantagePoints": 0.0,
+      "modelVersion": "additive-matchup-v1"
+    },
+    "ratingsFetchedAt": "2026-11-06T21:14:21.918188+00:00",
+    "preparedAt": "2026-11-06T21:14:22.440941+00:00",
+    "ratingSource": "https://kenpom.com/",
+    "scheduleSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?groups=50&limit=1000&dates=20261106",
+    "verification": "ESPN pregame state and future tipoff checked at server save time",
+    "gameRoomBaseline": {
+      "simulation": null,
+      "simulationStatus": "No verified adjusted-efficiency ratings feed configured.",
+      "id": "401920894",
+      "date": "2026-11-07T00:30Z",
+      "name": "Delaware Blue Hens at Wisconsin Badgers",
+      "preparedAt": "2026-11-06T21:14:02.337084+00:00",
+      "season": 2026,
+      "priorSeason": true,
+      "modelVersion": "score-baseline-v1",
+      "model": {
+        "full": {
+          "away": 74.5,
+          "home": 80.75,
+          "total": 155.25,
+          "homeMargin": 6.25,
+          "nAway": 10,
+          "nHome": 10
+        },
+        "half": {
+          "away": 29.5,
+          "home": 37.33333333333333,
+          "total": 66.83333333333333,
+          "homeMargin": 7.833333333333329,
+          "nAway": 3,
+          "nHome": 3
+        }
+      },
+      "samples": {
+        "away": [
+          {
+            "id": "401804964",
+            "date": "2026-03-07T17:00Z",
+            "pf": 38.0,
+            "pa": 81.0,
+            "hf": 22.0,
+            "ha": 40.0,
+            "opponent": "Louisiana Tech Bulldogs",
+            "site": "home"
+          },
+          {
+            "id": "401804957",
+            "date": "2026-03-06T00:00Z",
+            "pf": 83.0,
+            "pa": 80.0,
+            "hf": 33.0,
+            "ha": 33.0,
+            "opponent": "Sam Houston Bearkats",
+            "site": "home"
+          },
+          {
+            "id": "401804956",
+            "date": "2026-02-28T22:00Z",
+            "pf": 82.0,
+            "pa": 90.0,
+            "hf": 25.0,
+            "ha": 50.0,
+            "opponent": "Kennesaw State Owls",
+            "site": "away"
+          },
+          {
+            "id": "401804950",
+            "date": "2026-02-27T00:00Z",
+            "pf": 70.0,
+            "pa": 80.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Jacksonville State Gamecocks",
+            "site": "away"
+          },
+          {
+            "id": "401804944",
+            "date": "2026-02-21T19:00Z",
+            "pf": 66.0,
+            "pa": 78.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Middle Tennessee Blue Raiders",
+            "site": "away"
+          },
+          {
+            "id": "401804936",
+            "date": "2026-02-19T00:00Z",
+            "pf": 87.0,
+            "pa": 88.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Western Kentucky Hilltoppers",
+            "site": "home"
+          },
+          {
+            "id": "401804933",
+            "date": "2026-02-14T20:00Z",
+            "pf": 76.0,
+            "pa": 67.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Missouri State Bears",
+            "site": "away"
+          },
+          {
+            "id": "401804927",
+            "date": "2026-02-13T00:00Z",
+            "pf": 68.0,
+            "pa": 66.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Florida International Panthers",
+            "site": "away"
+          },
+          {
+            "id": "401804920",
+            "date": "2026-02-07T18:00Z",
+            "pf": 89.0,
+            "pa": 88.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Middle Tennessee Blue Raiders",
+            "site": "home"
+          },
+          {
+            "id": "401804916",
+            "date": "2026-02-05T00:00Z",
+            "pf": 69.0,
+            "pa": 75.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Liberty Flames",
+            "site": "home"
+          }
+        ],
+        "home": [
+          {
+            "id": "401851384",
+            "date": "2026-03-14T17:00Z",
+            "pf": 65.0,
+            "pa": 68.0,
+            "hf": 28.0,
+            "ha": 28.0,
+            "opponent": "Michigan Wolverines",
+            "site": "Neutral"
+          },
+          {
+            "id": "401851381",
+            "date": "2026-03-13T18:30Z",
+            "pf": 91.0,
+            "pa": 88.0,
+            "hf": 30.0,
+            "ha": 36.0,
+            "opponent": "Illinois Fighting Illini",
+            "site": "Neutral"
+          },
+          {
+            "id": "401851376",
+            "date": "2026-03-12T18:30Z",
+            "pf": 85.0,
+            "pa": 82.0,
+            "hf": 43.0,
+            "ha": 33.0,
+            "opponent": "Washington Huskies",
+            "site": "Neutral"
+          },
+          {
+            "id": "401825565",
+            "date": "2026-03-07T21:00Z",
+            "pf": 97.0,
+            "pa": 93.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Purdue Boilermakers",
+            "site": "away"
+          },
+          {
+            "id": "401825559",
+            "date": "2026-03-05T01:00Z",
+            "pf": 78.0,
+            "pa": 45.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Maryland Terrapins",
+            "site": "home"
+          },
+          {
+            "id": "401825549",
+            "date": "2026-02-28T21:00Z",
+            "pf": 90.0,
+            "pa": 73.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Washington Huskies",
+            "site": "away"
+          },
+          {
+            "id": "401825542",
+            "date": "2026-02-26T04:00Z",
+            "pf": 71.0,
+            "pa": 85.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Oregon Ducks",
+            "site": "away"
+          },
+          {
+            "id": "401825535",
+            "date": "2026-02-22T21:00Z",
+            "pf": 84.0,
+            "pa": 71.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Iowa Hawkeyes",
+            "site": "home"
+          },
+          {
+            "id": "401825522",
+            "date": "2026-02-18T01:30Z",
+            "pf": 69.0,
+            "pa": 86.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Ohio State Buckeyes",
+            "site": "away"
+          },
+          {
+            "id": "401825512",
+            "date": "2026-02-14T01:00Z",
+            "pf": 92.0,
+            "pa": 71.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Michigan State Spartans",
+            "site": "home"
+          }
+        ]
+      },
+      "source": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/teams/48/schedule?season=2026",
+          "fetchedAt": "2026-11-06T21:13:31.472584+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401804964",
+          "fetchedAt": "2026-10-30T13:19:35.276358+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401804957",
+          "fetchedAt": "2026-10-30T13:19:35.430913+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401804956",
+          "fetchedAt": "2026-10-30T13:19:35.521616+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/teams/275/schedule?season=2026",
+          "fetchedAt": "2026-11-06T21:13:28.819117+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851384",
+          "fetchedAt": "2026-10-30T13:19:23.433958+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851381",
+          "fetchedAt": "2026-10-30T13:19:33.000701+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851376",
+          "fetchedAt": "2026-10-30T13:19:32.188848+00:00"
+        }
+      ],
+      "state": "ready",
+      "reason": null
+    },
+    "kambi": {
+      "eventId": "1028626290",
+      "name": "Delaware @ Wisconsin",
+      "start": "2026-11-07T00:30:00Z",
+      "awayId": "48",
+      "homeId": "275",
+      "state": "NOT_STARTED",
+      "fetchedAt": "2026-11-06T21:13:20.974308+00:00",
+      "periods": {
+        "full": {
+          "total": {
+            "id": "2713881029",
+            "criterionId": "1001159509",
+            "label": "Total Points - Including Overtime",
+            "period": "full",
+            "kind": "total",
+            "outcomes": [
+              {
+                "id": "4406487178",
+                "price": -106,
+                "changedAt": "2026-11-06T19:15:48Z",
+                "side": "over",
+                "line": 155.5
+              },
+              {
+                "id": "4406487179",
+                "price": -113,
+                "changedAt": "2026-11-06T19:15:48Z",
+                "side": "under",
+                "line": 155.5
+              }
+            ],
+            "main": true
+          },
+          "spread": {
+            "id": "2713661070",
+            "criterionId": "1001159512",
+            "label": "Point Spread",
+            "period": "full",
+            "kind": "spread",
+            "outcomes": [
+              {
+                "id": "4405863416",
+                "price": -113,
+                "changedAt": "2026-11-06T19:15:48Z",
+                "teamId": "275",
+                "line": -24.5
+              },
+              {
+                "id": "4405863417",
+                "price": -108,
+                "changedAt": "2026-11-06T19:15:48Z",
+                "teamId": "48",
+                "line": 24.5
+              }
+            ],
+            "main": true
+          }
+        },
+        "half": {
+          "total": {
+            "id": "2713860628",
+            "criterionId": "1001159947",
+            "label": "Total Points - 1st Half",
+            "period": "half",
+            "kind": "total",
+            "outcomes": [
+              {
+                "id": "4406478403",
+                "price": -122,
+                "changedAt": "2026-11-06T19:15:48Z",
+                "side": "over",
+                "line": 74.5
+              },
+              {
+                "id": "4406478404",
+                "price": -112,
+                "changedAt": "2026-11-06T19:15:48Z",
+                "side": "under",
+                "line": 74.5
+              }
+            ],
+            "main": true
+          },
+          "spread": {
+            "id": "2713881035",
+            "criterionId": "1001159940",
+            "label": "Spread - 1st Half",
+            "period": "half",
+            "kind": "spread",
+            "outcomes": [
+              {
+                "id": "4406487190",
+                "price": -125,
+                "changedAt": "2026-11-06T18:42:12Z",
+                "teamId": "275",
+                "line": -13.5
+              },
+              {
+                "id": "4406487191",
+                "price": -108,
+                "changedAt": "2026-11-06T18:42:12Z",
+                "teamId": "48",
+                "line": 13.5
+              }
+            ],
+            "main": true
+          },
+          "moneyline": {
+            "id": "2713889857",
+            "criterionId": "1001159815",
+            "label": "Moneyline - 1st Half",
+            "period": "half",
+            "kind": "moneyline",
+            "outcomes": [
+              {
+                "id": "4406525849",
+                "price": -3335,
+                "changedAt": "2026-11-06T18:42:12Z",
+                "teamId": "275"
+              },
+              {
+                "id": "4406525850",
+                "price": 1050,
+                "changedAt": "2026-11-06T18:42:12Z",
+                "teamId": "48"
+              }
+            ],
+            "main": false
+          }
+        }
+      },
+      "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028626290.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+    },
+    "marketStatus": "Frozen with pregame receipt"
+  },
+  "result": null
+}
