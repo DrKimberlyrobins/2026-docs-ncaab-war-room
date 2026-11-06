@@ -32,11 +32,19 @@ class ArchiveTests(unittest.TestCase):
   self.assertIsNone(archive.result(d,freeze(),NOW.isoformat())['half'])
  def test_repeat_run_preserves_original_receipt(self):
   with tempfile.TemporaryDirectory() as tmp:
-   root=Path(tmp);p=root/'data/calculator/daily/2099-11-01.json';p.parent.mkdir(parents=True)
-   payload=copy.deepcopy(PAYLOAD);payload['date']='2099-11-01';payload['matchups'][0]['date']='2099-11-01T14:30:00Z'
-   event=copy.deepcopy(EVENT);event['date']=payload['matchups'][0]['date'];p.write_text(json.dumps(payload))
-   with patch.object(archive,'ROOT',root),patch.object(archive,'fetch',return_value={'events':[event]}):
-    archive.main();target=root/'data/archive/games/1.json';before=json.loads(target.read_text())['snapshot'];payload['matchups'][0]['model']['total']=999;p.write_text(json.dumps(payload));archive.main();after=json.loads(target.read_text())['snapshot'];self.assertEqual(before,after)
+   root=Path(tmp);p=root/'data/calculator/daily/2026-11-01.json';p.parent.mkdir(parents=True)
+   payload=copy.deepcopy(PAYLOAD);p.write_text(json.dumps(payload))
+   with (patch.object(archive,'ROOT',root), patch.object(archive,'datetime') as clock,
+         patch.object(archive,'fetch',return_value={'events':[EVENT]})):
+    clock.now.return_value=NOW
+    clock.fromisoformat.side_effect=datetime.fromisoformat
+    archive.main()
+    target=root/'data/archive/games/1.json'
+    before=json.loads(target.read_text())['snapshot']
+    payload['matchups'][0]['model']['total']=999
+    p.write_text(json.dumps(payload))
+    archive.main()
+    self.assertEqual(before,json.loads(target.read_text())['snapshot'])
  def test_later_opened_market_is_saved_separately_once(self):
   with tempfile.TemporaryDirectory() as tmp:
    root=Path(tmp);folder=root/'data/archive/games';folder.mkdir(parents=True)

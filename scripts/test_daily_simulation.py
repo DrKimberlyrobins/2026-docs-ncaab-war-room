@@ -3,7 +3,7 @@ import unittest
 from prepare import ratings_for
 
 def game():
-    return {'competitions':[{'competitors':[
+    return {'date':'2026-11-01T14:30:00Z','competitions':[{'competitors':[
         {'id':'1','homeAway':'away','team':{'displayName':'Away'}},
         {'id':'2','homeAway':'home','team':{'displayName':'Home'}}
     ]}]}
@@ -14,11 +14,11 @@ class DailyRatingsTests(unittest.TestCase):
         self.assertIsNone(pair)
         self.assertIn('No verified',reason)
     def test_missing_team_blocks(self):
-        pair,reason=ratings_for(game(),{'source':'test','fetchedAt':'2026-10-31','teams':{'1':{'adj_off':110,'adj_def':100,'adj_tempo':70}}})
+        pair,reason=ratings_for(game(),{'source':'test','fetchedAt':'2026-10-31T12:00:00Z','teams':{'1':{'adj_off':110,'adj_def':100,'adj_tempo':70}}})
         self.assertIsNone(pair)
         self.assertIn('missing',reason)
     def test_valid_pair(self):
-        data={'source':'test fixture','fetchedAt':'2026-10-31','teams':{
+        data={'source':'test fixture','fetchedAt':'2026-10-31T12:00:00Z','teams':{
             '1':{'adj_off':110,'adj_def':100,'adj_tempo':70},
             '2':{'adj_off':115,'adj_def':95,'adj_tempo':72}}}
         pair,reason=ratings_for(game(),data)

@@ -42,3 +42,14 @@ and projections keep their original formats. The collection uses the existing
 These are observed quotes. The earliest observed quote is not a verified
 opener. The latest observation alone does not establish a verified closing
 price. No older rolling snapshot is backfilled into the forward history.
+
+`python scripts/closing_value.py quotes.json --max-age-seconds 120` evaluates
+a manually supplied pair with `entry`, `close` and `start` keys. Supply the
+same event, sportsbook, region, period, rules, kind, market, selection and
+direction on both quotes, with a source reference, American price, and
+timezone-aware `observedAt`. Spreads use the selected team's signed line.
+Totals and props use the quoted threshold. Moneylines omit the line. Mark
+`close.verifiedClose` only when independently confirmed and supply
+`close.oppositePrice` only for the exact opposite side at the same threshold.
+The command reports no-vig closing value only when both comparable prices
+exist. It does not infer a verified close from the rolling Kambi history.
