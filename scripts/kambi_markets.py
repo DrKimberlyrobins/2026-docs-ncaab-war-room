@@ -135,10 +135,18 @@ def archive_pregame(folder, snapshot, games):
  index = path.parent / 'index.json'
  existing = json.loads(index.read_text()) if index.exists() else {}
  latest = existing.get('latestByGame', {})
+ first = existing.get('firstByGame')
+ if first is None:
+  first = {}
+  for saved in sorted(path.parent.glob('*Z.json')):
+   for game_id in json.loads(saved.read_text())['games']:
+    first.setdefault(game_id, saved.stem)
  for game_id in observed:
+  if key < first.get(game_id, '~'):
+   first[game_id] = key
   if key > latest.get(game_id, ''):
    latest[game_id] = key
- write(index, {'latestByGame': latest})
+ write(index, {'latestByGame': latest, 'firstByGame': first})
 
 
 def main():
