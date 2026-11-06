@@ -82,7 +82,7 @@ window.DocKambi=(()=>{
   window.localStorage.setItem(entryKey,JSON.stringify(rows));
   return entry;
  }
- if(typeof document!=='undefined')document.addEventListener('click',event=>{
+ if(typeof document!=='undefined')document.addEventListener?.('click',event=>{
   const button=event.target.closest?.('button[data-kambi-entry]');
   if(!button)return;
   const ticket=tickets.get(button.dataset.kambiEntry);
