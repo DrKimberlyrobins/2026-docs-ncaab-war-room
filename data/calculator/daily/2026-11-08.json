@@ -1,10 +1,10 @@
 {
   "date": "2026-11-08",
-  "preparedAt": "2026-11-07T09:55:50.656761+00:00",
-  "ratingsFetchedAt": "2026-11-07T09:55:49.819029+00:00",
+  "preparedAt": "2026-11-07T12:56:34.165501+00:00",
+  "ratingsFetchedAt": "2026-11-07T12:56:32.963182+00:00",
   "ratingSource": "https://kenpom.com/",
   "scheduleSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?groups=50&limit=1000&dates=20261108",
-  "scheduleFetchedAt": "2026-11-07T09:55:50.656761+00:00",
+  "scheduleFetchedAt": "2026-11-07T12:56:34.165501+00:00",
   "season": 2027,
   "ratedTeams": 365,
   "config": {
@@ -3492,62 +3492,62 @@
         "home": "Cal St. Bakersfield"
       },
       "firstHalf": {
-        "away": 38.50729044487427,
-        "home": 34.53610696493515,
-        "total": 73.04339740980942,
-        "homeMargin": -3.9711834799391212,
-        "awayScoringShare": 0.5108639587362991,
-        "homeScoringShare": 0.4676799560831675,
+        "away": 34.96176645136778,
+        "home": 35.26493115409606,
+        "total": 70.22669760546384,
+        "homeMargin": 0.30316470272828155,
+        "awayScoringShare": 0.46382662107396144,
+        "homeScoringShare": 0.47754952433315007,
         "modelVersion": "first-half-timing-v1",
         "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
         "awayProfile": {
-          "season": 2026,
+          "season": 2027,
           "games": 3,
-          "scoringShare": 0.5181818181818182,
-          "allowingShare": 0.4576271186440678,
-          "firstScoredAverage": 38.0,
-          "firstAllowedAverage": 27.0,
+          "scoringShare": 0.42410714285714285,
+          "allowingShare": 0.4773662551440329,
+          "firstScoredAverage": 31.666666666666668,
+          "firstAllowedAverage": 38.666666666666664,
           "samples": [
             {
-              "id": "401851629",
-              "date": "2026-03-09T01:00Z",
+              "id": "401921061",
+              "date": "2026-11-07T03:00Z",
+              "firstScored": 31.0,
+              "secondScored": 39.0,
+              "firstAllowed": 45.0,
+              "secondAllowed": 34.0
+            },
+            {
+              "id": "401917512",
+              "date": "2026-11-05T03:00Z",
+              "firstScored": 26.0,
+              "secondScored": 38.0,
+              "firstAllowed": 45.0,
+              "secondAllowed": 60.0
+            },
+            {
+              "id": "401929391",
+              "date": "2026-11-03T01:00Z",
               "firstScored": 38.0,
-              "secondScored": 32.0,
-              "firstAllowed": 30.0,
-              "secondAllowed": 32.0
-            },
-            {
-              "id": "401851626",
-              "date": "2026-03-08T01:00Z",
-              "firstScored": 40.0,
-              "secondScored": 34.0,
-              "firstAllowed": 25.0,
-              "secondAllowed": 25.0
-            },
-            {
-              "id": "401851620",
-              "date": "2026-03-06T00:00Z",
-              "firstScored": 36.0,
-              "secondScored": 40.0,
+              "secondScored": 52.0,
               "firstAllowed": 26.0,
-              "secondAllowed": 39.0
+              "secondAllowed": 33.0
             }
           ],
           "sources": [
             {
-              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851629",
-              "fetchedAt": "2026-10-30T13:19:23.868117+00:00"
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401921061",
+              "fetchedAt": "2026-11-07T12:56:11.956561+00:00"
             },
             {
-              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851626",
-              "fetchedAt": "2026-10-30T13:19:29.772310+00:00"
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401917512",
+              "fetchedAt": "2026-11-05T17:22:46.212042+00:00"
             },
             {
-              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401851620",
-              "fetchedAt": "2026-10-30T13:19:24.766880+00:00"
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401929391",
+              "fetchedAt": "2026-11-03T17:00:27.817916+00:00"
             }
           ],
-          "priorSeason": true
+          "priorSeason": false
         },
         "homeProfile": {
           "season": 2026,
