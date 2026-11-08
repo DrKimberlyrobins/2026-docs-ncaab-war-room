@@ -1,0 +1,289 @@
+{
+  "snapshot": {
+    "version": 1,
+    "id": "401920412",
+    "savedAt": "2026-11-08T10:16:17.368514+00:00",
+    "scheduledTipoff": "2026-11-13T00:00Z",
+    "gameDate": "2026-11-12",
+    "matchup": {
+      "id": "401920412",
+      "date": "2026-11-13T00:00Z",
+      "awayName": "Southern Utah Thunderbirds",
+      "homeName": "High Point Panthers",
+      "awayId": "253",
+      "homeId": "2272",
+      "location": "Home",
+      "model": {
+        "away": 68.9276,
+        "home": 83.63599999999998,
+        "total": 152.56359999999998,
+        "homeMargin": 14.708399999999983,
+        "possessions": 72.1,
+        "awayEfficiency": 95.6,
+        "homeEfficiency": 116.0,
+        "homeAdvantagePoints": 0.0
+      },
+      "matchedTeams": {
+        "away": "Southern Utah",
+        "home": "High Point"
+      },
+      "firstHalf": {
+        "away": 33.77190009063718,
+        "home": 39.23564483073125,
+        "total": 73.00754492136844,
+        "homeMargin": 5.4637447400940715,
+        "awayScoringShare": 0.48996193238466423,
+        "homeScoringShare": 0.46912388003648264,
+        "modelVersion": "first-half-timing-v1",
+        "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+        "awayProfile": {
+          "season": 2027,
+          "games": 3,
+          "scoringShare": 0.5053475935828877,
+          "allowingShare": 0.47953216374269003,
+          "firstScoredAverage": 63.0,
+          "firstAllowedAverage": 27.333333333333332,
+          "samples": [
+            {
+              "id": "401931055",
+              "date": "2026-11-08T01:30Z",
+              "firstScored": 73.0,
+              "secondScored": 70.0,
+              "firstAllowed": 24.0,
+              "secondAllowed": 25.0
+            },
+            {
+              "id": "401925922",
+              "date": "2026-11-06T01:30Z",
+              "firstScored": 45.0,
+              "secondScored": 52.0,
+              "firstAllowed": 23.0,
+              "secondAllowed": 30.0
+            },
+            {
+              "id": "401925921",
+              "date": "2026-11-03T03:00Z",
+              "firstScored": 71.0,
+              "secondScored": 63.0,
+              "firstAllowed": 35.0,
+              "secondAllowed": 34.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401931055",
+              "fetchedAt": "2026-11-08T10:15:39.002990+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401925922",
+              "fetchedAt": "2026-11-06T06:38:08.984750+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401925921",
+              "fetchedAt": "2026-11-03T17:00:21.868071+00:00"
+            }
+          ],
+          "priorSeason": false
+        },
+        "homeProfile": {
+          "season": 2027,
+          "games": 3,
+          "scoringShare": 0.45871559633027525,
+          "allowingShare": 0.4745762711864407,
+          "firstScoredAverage": 33.333333333333336,
+          "firstAllowedAverage": 28.0,
+          "samples": [
+            {
+              "id": "401920411",
+              "date": "2026-11-07T22:00Z",
+              "firstScored": 32.0,
+              "secondScored": 51.0,
+              "firstAllowed": 31.0,
+              "secondAllowed": 40.0
+            },
+            {
+              "id": "401920410",
+              "date": "2026-11-05T00:00Z",
+              "firstScored": 31.0,
+              "secondScored": 32.0,
+              "firstAllowed": 19.0,
+              "secondAllowed": 30.0
+            },
+            {
+              "id": "401920409",
+              "date": "2026-11-02T04:59Z",
+              "firstScored": 37.0,
+              "secondScored": 35.0,
+              "firstAllowed": 34.0,
+              "secondAllowed": 23.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401920411",
+              "fetchedAt": "2026-11-08T10:15:37.351827+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401920410",
+              "fetchedAt": "2026-11-05T17:22:45.472708+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401920409",
+              "fetchedAt": "2026-11-02T21:41:47.734182+00:00"
+            }
+          ],
+          "priorSeason": false
+        }
+      },
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+    },
+    "config": {
+      "season": 2027,
+      "nationalEfficiency": 106.0,
+      "nationalTempo": 71.5,
+      "baselineAsOf": "2026-11-01",
+      "baselineSource": "User-provided KenPom beginning-of-season screenshots",
+      "homeAdvantagePoints": 0.0,
+      "modelVersion": "additive-matchup-v1"
+    },
+    "ratingsFetchedAt": "2026-11-08T10:16:01.454627+00:00",
+    "preparedAt": "2026-11-08T10:16:03.112892+00:00",
+    "ratingSource": "https://kenpom.com/",
+    "scheduleSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?groups=50&limit=1000&dates=20261112",
+    "verification": "ESPN pregame state and future tipoff checked at server save time",
+    "gameRoomBaseline": {
+      "simulation": null,
+      "simulationStatus": "No verified adjusted-efficiency ratings feed configured.",
+      "id": "401920412",
+      "date": "2026-11-13T00:00Z",
+      "name": "Southern Utah Thunderbirds at High Point Panthers",
+      "preparedAt": "2026-11-08T10:15:42.233052+00:00",
+      "season": 2027,
+      "priorSeason": false,
+      "modelVersion": "score-baseline-v1",
+      "model": {
+        "full": {
+          "away": 91.83333333333334,
+          "home": 64.83333333333334,
+          "total": 156.66666666666669,
+          "homeMargin": -27.0,
+          "nAway": 3,
+          "nHome": 3
+        },
+        "half": {
+          "away": 45.5,
+          "home": 30.333333333333336,
+          "total": 75.83333333333334,
+          "homeMargin": -15.166666666666664,
+          "nAway": 3,
+          "nHome": 3
+        }
+      },
+      "samples": {
+        "away": [
+          {
+            "id": "401931055",
+            "date": "2026-11-08T01:30Z",
+            "pf": 143.0,
+            "pa": 49.0,
+            "hf": 73.0,
+            "ha": 24.0,
+            "opponent": "Bethesda Flames",
+            "site": "home"
+          },
+          {
+            "id": "401925922",
+            "date": "2026-11-06T01:30Z",
+            "pf": 97.0,
+            "pa": 53.0,
+            "hf": 45.0,
+            "ha": 23.0,
+            "opponent": "Grace University Lancers",
+            "site": "home"
+          },
+          {
+            "id": "401925921",
+            "date": "2026-11-03T03:00Z",
+            "pf": 134.0,
+            "pa": 69.0,
+            "hf": 71.0,
+            "ha": 35.0,
+            "opponent": "West Coast Baptist Eagles",
+            "site": "home"
+          }
+        ],
+        "home": [
+          {
+            "id": "401920411",
+            "date": "2026-11-07T22:00Z",
+            "pf": 83.0,
+            "pa": 71.0,
+            "hf": 32.0,
+            "ha": 31.0,
+            "opponent": "Washington State Cougars",
+            "site": "home"
+          },
+          {
+            "id": "401920410",
+            "date": "2026-11-05T00:00Z",
+            "pf": 63.0,
+            "pa": 49.0,
+            "hf": 31.0,
+            "ha": 19.0,
+            "opponent": "Maryland Eastern Shore Hawks",
+            "site": "home"
+          },
+          {
+            "id": "401920409",
+            "date": "2026-11-02T04:59Z",
+            "pf": 72.0,
+            "pa": 57.0,
+            "hf": 37.0,
+            "ha": 34.0,
+            "opponent": "Liberty Flames",
+            "site": "Neutral"
+          }
+        ]
+      },
+      "source": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/teams/253/schedule?season=2027",
+          "fetchedAt": "2026-11-08T10:15:38.896548+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401931055",
+          "fetchedAt": "2026-11-08T10:15:39.002990+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401925922",
+          "fetchedAt": "2026-11-06T06:38:08.984750+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401925921",
+          "fetchedAt": "2026-11-03T17:00:21.868071+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/teams/2272/schedule?season=2027",
+          "fetchedAt": "2026-11-08T10:15:37.216737+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401920411",
+          "fetchedAt": "2026-11-08T10:15:37.351827+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401920410",
+          "fetchedAt": "2026-11-05T17:22:45.472708+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401920409",
+          "fetchedAt": "2026-11-02T21:41:47.734182+00:00"
+        }
+      ],
+      "state": "ready",
+      "reason": null
+    },
+    "kambi": null,
+    "marketStatus": "No verified fresh pregame market available at save time"
+  },
+  "result": null
+}
