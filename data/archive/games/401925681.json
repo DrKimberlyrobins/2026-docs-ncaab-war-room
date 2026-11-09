@@ -463,5 +463,64 @@
         "savedAt": "2026-11-08T13:32:05.253376+00:00"
       }
     ]
+  },
+  "additionalMarkets": {
+    "half": {},
+    "full": {
+      "spread": {
+        "id": "2714891872",
+        "criterionId": "1001159512",
+        "label": "Point Spread",
+        "period": "full",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4409679318",
+            "price": -106,
+            "changedAt": "2026-11-09T02:49:32Z",
+            "teamId": "87",
+            "line": -28.5
+          },
+          {
+            "id": "4409679319",
+            "price": -115,
+            "changedAt": "2026-11-09T02:49:32Z",
+            "teamId": "2197",
+            "line": 28.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-09T09:36:58.494202+00:00",
+        "quoteSavedAt": "2026-11-09T09:39:30.109107+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029176074.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "total": {
+        "id": "2714906177",
+        "criterionId": "1001159509",
+        "label": "Total Points - Including Overtime",
+        "period": "full",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4409707747",
+            "price": -105,
+            "changedAt": "2026-11-09T02:49:32Z",
+            "side": "over",
+            "line": 142.5
+          },
+          {
+            "id": "4409707748",
+            "price": -117,
+            "changedAt": "2026-11-09T02:49:32Z",
+            "side": "under",
+            "line": 142.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-09T09:36:58.494202+00:00",
+        "quoteSavedAt": "2026-11-09T09:39:30.109107+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029176074.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    }
   }
 }
