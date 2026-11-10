@@ -127,13 +127,24 @@ def main():
                                       "gradedAt": datetime.now(timezone.utc).isoformat()},
                                      indent=2, allow_nan=False) + "\n")
         all_grades.extend(daily)
+    # Preserve all earlier daily grades, not just the last eight days.
+    historical = {}
+    for path in (root / "data/calculator/grades").glob("????-??-??.json"):
+        try:
+            report = json.loads(path.read_text())
+            for item in report.get("games", []):
+                historical[item["gameId"]] = item
+        except (ValueError, OSError, KeyError):
+            continue
+    lifetime = list(historical.values())
     index = root / "data/calculator/grades/index.json"
     index.parent.mkdir(parents=True, exist_ok=True)
     index.write_text(json.dumps({"gradedAt": datetime.now(timezone.utc).isoformat(),
-                                 "games": len(all_grades),
-                                 "summary": summarize(all_grades),
-                                 "dates": dates}, indent=2, allow_nan=False) + "\n")
-    print("Graded games:", len(all_grades), summarize(all_grades))
+                                 "games": len(lifetime),
+                                 "summary": summarize(lifetime),
+                                 "dates": sorted({g["date"][:10] for g in lifetime}, reverse=True)},
+                                indent=2, allow_nan=False) + "\\n")
+    print("Lifetime graded games:", len(lifetime), summarize(lifetime))
 
 
 if __name__ == "__main__":
