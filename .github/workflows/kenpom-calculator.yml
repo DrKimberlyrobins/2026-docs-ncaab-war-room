@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['scripts/automatic_matchups.py', 'scripts/test_automatic_matchups.py', 'scripts/first_half.py', 'scripts/test_first_half.py', 'config/kenpom-calculator.json', 'config/kenpom-team-aliases.json', '.github/workflows/kenpom-calculator.yml']
+    paths: ['scripts/automatic_matchups.py', 'scripts/test_automatic_matchups.py', 'scripts/first_half.py', 'scripts/test_first_half.py', 'scripts/first_half_efficiency.py', 'scripts/grade_independent_1h.py', 'config/kenpom-calculator.json', 'config/kenpom-team-aliases.json', '.github/workflows/kenpom-calculator.yml']
   workflow_run:
     workflows: ['Refresh NCAAB evidence']
     types: [completed]
