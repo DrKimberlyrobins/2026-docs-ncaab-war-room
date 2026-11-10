@@ -1,0 +1,61 @@
+name: Validate and prepare independent 1H forecasts
+on:
+  push:
+    branches: [feature/independent-1h-efficiency-v1]
+    paths:
+      - 'scripts/**'
+      - 'calculator/**'
+      - 'config/**'
+      - '.github/workflows/test-independent-1h.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  test-and-prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/independent-1h-efficiency-v1
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fast checks
+        run: |
+          python -m unittest discover -s scripts -p 'test_first_half*.py' -q
+          python -m unittest discover -s scripts -p 'test_automatic_matchups.py' -q
+          node --check calculator/calculator.js
+      - name: Produce actual matchup forecasts from existing authorized public source
+        run: python scripts/automatic_matchups.py
+      - name: Check independent score arithmetic and availability
+        run: |
+          python - <<'PY'
+          import json
+          from datetime import datetime
+          from pathlib import Path
+          files=sorted(Path('data/calculator/daily').glob('*.json'))
+          assert files, 'No prepared slate'
+          count=0
+          for path in files:
+              slate=json.loads(path.read_text())
+              for game in slate['matchups']:
+                  p=game.get('independentFirstHalf')
+                  if not p: continue
+                  assert p['status']=='BASELINE_UNCALIBRATED'
+                  assert abs(p['total']-p['away']-p['home'])<1e-8
+                  assert abs(p['homeMargin']-p['home']+p['away'])<1e-8
+                  assert datetime.fromisoformat(p['ratingsAt'])<datetime.fromisoformat(p['tipoffAt'].replace('Z','+00:00'))
+                  count+=1
+          assert count>0, 'No independent pre-tipoff forecasts were produced'
+          print(f'VALIDATED_INDEPENDENT_1H_FORECASTS={count}')
+          PY
+      - name: Save development forecasts without touching main
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/calculator
+          if ! git diff --cached --quiet; then
+            git commit -m 'Record independent 1H development forecasts'
+            git push origin HEAD:feature/independent-1h-efficiency-v1
+          fi

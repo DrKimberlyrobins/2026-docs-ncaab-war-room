@@ -1,10 +1,10 @@
 {
   "date": "2026-11-13",
-  "preparedAt": "2026-11-10T07:05:40.644453+00:00",
-  "ratingsFetchedAt": "2026-11-10T07:05:39.587227+00:00",
+  "preparedAt": "2026-11-10T09:02:36.570873+00:00",
+  "ratingsFetchedAt": "2026-11-10T09:02:35.495803+00:00",
   "ratingSource": "https://kenpom.com/",
   "scheduleSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?groups=50&limit=1000&dates=20261113",
-  "scheduleFetchedAt": "2026-11-10T07:05:40.644453+00:00",
+  "scheduleFetchedAt": "2026-11-10T09:02:36.570873+00:00",
   "season": 2027,
   "ratedTeams": 365,
   "config": {
@@ -18,6 +18,7 @@
   },
   "calculatedGames": 55,
   "firstHalfGames": 54,
+  "independentFirstHalfGames": 55,
   "matchups": [
     {
       "id": "401928807",
@@ -34,7 +35,9 @@
       },
       "error": "Source identity or D-I rating unavailable: Viterbo V-Hawks",
       "firstHalf": null,
-      "firstHalfStatus": "Full-game matchup ratings unavailable."
+      "firstHalfStatus": "Full-game matchup ratings unavailable.",
+      "independentFirstHalf": null,
+      "independentFirstHalfStatus": "Verified pre-tipoff ratings or matched teams unavailable."
     },
     {
       "id": "401926203",
@@ -51,7 +54,9 @@
       },
       "error": "Source identity or D-I rating unavailable: Mary Baldwin Fighting Squirrels",
       "firstHalf": null,
-      "firstHalfStatus": "Full-game matchup ratings unavailable."
+      "firstHalfStatus": "Full-game matchup ratings unavailable.",
+      "independentFirstHalf": null,
+      "independentFirstHalfStatus": "Verified pre-tipoff ratings or matched teams unavailable."
     },
     {
       "id": "401921167",
@@ -76,7 +81,32 @@
         "home": "Cleveland St."
       },
       "firstHalf": null,
-      "firstHalfStatus": "Requires at least three completed games with both regulation halves for each team; no fixed 50% substitute used."
+      "firstHalfStatus": "Requires at least three completed games with both regulation halves for each team; no fixed 50% substitute used.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 38.100099666122155,
+        "home": 40.35152292509956,
+        "homeMargin": 2.251423258977404,
+        "total": 78.4516225912217,
+        "firstHalfPossessions": 35.59827945280502,
+        "awayEfficiency": 107.02792452830188,
+        "homeEfficiency": 113.35245283018868,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-13T20:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": true,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401921721",
@@ -220,7 +250,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 31.02691016582663,
+        "home": 42.31559574528242,
+        "homeMargin": 11.288685579455791,
+        "total": 73.34250591110906,
+        "firstHalfPossessions": 35.473017915029445,
+        "awayEfficiency": 87.46622641509434,
+        "homeEfficiency": 119.2895283018868,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-13T22:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401909696",
@@ -388,7 +443,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 33.258060234426566,
+        "home": 39.949520518374904,
+        "homeMargin": 6.691460283948338,
+        "total": 73.20758075280148,
+        "firstHalfPossessions": 35.6087770079232,
+        "awayEfficiency": 93.39849056603774,
+        "homeEfficiency": 112.19009433962266,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-13T22:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401923270",
@@ -532,7 +612,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 32.11568306653817,
+        "home": 40.83539465025345,
+        "homeMargin": 8.71971158371528,
+        "total": 72.95107771679162,
+        "firstHalfPossessions": 35.27499114103361,
+        "awayEfficiency": 91.04377358490565,
+        "homeEfficiency": 115.76301886792454,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-13T23:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401909515",
@@ -543,11 +648,11 @@
       "homeId": "228",
       "location": "Home",
       "model": {
-        "away": 72.90720000000002,
-        "home": 72.50880000000001,
-        "total": 145.41600000000003,
-        "homeMargin": -0.3984000000000094,
-        "possessions": 66.4,
+        "away": 72.79740000000001,
+        "home": 72.3996,
+        "total": 145.197,
+        "homeMargin": -0.3978000000000037,
+        "possessions": 66.30000000000001,
         "awayEfficiency": 109.80000000000001,
         "homeEfficiency": 109.19999999999999,
         "homeAdvantagePoints": 0.0
@@ -557,10 +662,10 @@
         "home": "Clemson"
       },
       "firstHalf": {
-        "away": 32.52232941176471,
-        "home": 33.38990044603033,
-        "total": 65.91222985779504,
-        "homeMargin": 0.8675710342656231,
+        "away": 32.47335,
+        "home": 33.339614451382694,
+        "total": 65.8129644513827,
+        "homeMargin": 0.8662644513826905,
         "awayScoringShare": 0.446078431372549,
         "homeScoringShare": 0.4604944564801835,
         "modelVersion": "first-half-timing-v1",
@@ -700,7 +805,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 37.75785119433628,
+        "home": 37.407259289526245,
+        "homeMargin": -0.3505919048100381,
+        "total": 75.16511048386252,
+        "firstHalfPossessions": 34.44822201507648,
+        "awayEfficiency": 109.60754716981131,
+        "homeEfficiency": 108.58981132075472,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-13T23:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401902278",
@@ -832,7 +962,32 @@
           "priorSeason": false
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 39.13468922364293,
+        "home": 37.37038538492115,
+        "homeMargin": -1.76430383872178,
+        "total": 76.50507460856409,
+        "firstHalfPossessions": 35.98610843089316,
+        "awayEfficiency": 108.74943396226415,
+        "homeEfficiency": 103.84669811320755,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-13T23:30Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401906772",
@@ -976,7 +1131,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 29.35036488537274,
+        "home": 43.657163410355906,
+        "homeMargin": 14.306798524983165,
+        "total": 73.00752829572865,
+        "firstHalfPossessions": 34.57166469813104,
+        "awayEfficiency": 84.89716981132077,
+        "homeEfficiency": 126.28018867924527,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T00:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401913528",
@@ -1120,7 +1300,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 33.92317158197962,
+        "home": 45.96859689719535,
+        "homeMargin": 12.04542531521573,
+        "total": 79.89176847917497,
+        "firstHalfPossessions": 36.52499144421529,
+        "awayEfficiency": 92.8766037735849,
+        "homeEfficiency": 125.85518867924527,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T00:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401925755",
@@ -1276,7 +1481,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 32.27418316037736,
+        "home": 42.956653018867925,
+        "homeMargin": 10.682469858490563,
+        "total": 75.23083617924529,
+        "firstHalfPossessions": 35.35,
+        "awayEfficiency": 91.29896226415094,
+        "homeEfficiency": 121.51811320754717,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T00:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401906850",
@@ -1420,7 +1650,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 32.02759594288546,
+        "home": 42.40848516985684,
+        "homeMargin": 10.380889226971377,
+        "total": 74.4360811127423,
+        "firstHalfPossessions": 36.005832860801874,
+        "awayEfficiency": 88.95113207547169,
+        "homeEfficiency": 117.78226415094339,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T00:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401921825",
@@ -1564,7 +1819,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 29.91448358106462,
+        "home": 44.31742040605446,
+        "homeMargin": 14.40293682498984,
+        "total": 74.23190398711908,
+        "firstHalfPossessions": 35.69968487255875,
+        "awayEfficiency": 83.79481132075472,
+        "homeEfficiency": 124.13952830188678,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T00:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401921803",
@@ -1720,7 +2000,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 33.69410451259685,
+        "home": 45.39792379235633,
+        "homeMargin": 11.703819279759479,
+        "total": 79.09202830495317,
+        "firstHalfPossessions": 34.642928571354936,
+        "awayEfficiency": 97.2611320754717,
+        "homeEfficiency": 131.0452830188679,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T00:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401929386",
@@ -1737,7 +2042,9 @@
       },
       "error": "Source identity or D-I rating unavailable: Kentucky State Thorobreds",
       "firstHalf": null,
-      "firstHalfStatus": "Full-game matchup ratings unavailable."
+      "firstHalfStatus": "Full-game matchup ratings unavailable.",
+      "independentFirstHalf": null,
+      "independentFirstHalfStatus": "Verified pre-tipoff ratings or matched teams unavailable."
     },
     {
       "id": "401926732",
@@ -1754,7 +2061,9 @@
       },
       "error": "Source identity or D-I rating unavailable: Champion Christian Tigers",
       "firstHalf": null,
-      "firstHalfStatus": "Full-game matchup ratings unavailable."
+      "firstHalfStatus": "Full-game matchup ratings unavailable.",
+      "independentFirstHalf": null,
+      "independentFirstHalfStatus": "Verified pre-tipoff ratings or matched teams unavailable."
     },
     {
       "id": "401926133",
@@ -1898,7 +2207,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 35.00244824399143,
+        "home": 41.63518062179385,
+        "homeMargin": 6.632732377802419,
+        "total": 76.63762886578527,
+        "firstHalfPossessions": 34.649675323154185,
+        "awayEfficiency": 101.01811320754717,
+        "homeEfficiency": 120.16037735849056,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T00:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401925820",
@@ -2054,7 +2388,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 33.377583786557054,
+        "home": 36.77800758931796,
+        "homeMargin": 3.400423802760905,
+        "total": 70.15559137587502,
+        "firstHalfPossessions": 33.61606758679545,
+        "awayEfficiency": 99.29056603773586,
+        "homeEfficiency": 109.40603773584907,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T00:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401924796",
@@ -2186,7 +2545,32 @@
           "priorSeason": false
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 33.28520406748479,
+        "home": 33.84958823934102,
+        "homeMargin": 0.5643841718562257,
+        "total": 67.1347923068258,
+        "firstHalfPossessions": 34.97499106504532,
+        "awayEfficiency": 95.16858490566038,
+        "homeEfficiency": 96.78226415094339,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T00:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401924704",
@@ -2330,7 +2714,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 38.45429937618721,
+        "home": 34.87026097259267,
+        "homeMargin": -3.5840384035945405,
+        "total": 73.32456034877987,
+        "firstHalfPossessions": 34.79967672263638,
+        "awayEfficiency": 110.50188679245284,
+        "homeEfficiency": 100.20283018867924,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T00:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401922211",
@@ -2341,11 +2750,11 @@
       "homeId": "526",
       "location": "Home",
       "model": {
-        "away": 75.65039999999998,
-        "home": 75.43709999999999,
-        "total": 151.08749999999998,
-        "homeMargin": -0.2132999999999896,
-        "possessions": 71.1,
+        "away": 75.43759999999999,
+        "home": 75.22489999999999,
+        "total": 150.66249999999997,
+        "homeMargin": -0.2126999999999981,
+        "possessions": 70.9,
         "awayEfficiency": 106.39999999999998,
         "homeEfficiency": 106.1,
         "homeAdvantagePoints": 0.0
@@ -2355,10 +2764,10 @@
         "home": "Florida Gulf Coast"
       },
       "firstHalf": {
-        "away": 35.617058633674006,
-        "home": 34.66331154222765,
-        "total": 70.28037017590165,
-        "homeMargin": -0.9537470914463526,
+        "away": 35.51687000179307,
+        "home": 34.56580574323405,
+        "total": 70.08267574502713,
+        "homeMargin": -0.9510642585590219,
         "awayScoringShare": 0.47081124004200925,
         "homeScoringShare": 0.45949952400380795,
         "modelVersion": "first-half-timing-v1",
@@ -2486,7 +2895,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 37.824222222744055,
+        "home": 37.75781021761281,
+        "homeMargin": -0.06641200513124801,
+        "total": 75.58203244035687,
+        "firstHalfPossessions": 35.589851081452984,
+        "awayEfficiency": 106.27811320754716,
+        "homeEfficiency": 106.09150943396226,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T00:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401921191",
@@ -2642,7 +3076,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 33.90944888462645,
+        "home": 35.700053294696524,
+        "homeMargin": 1.790604410070074,
+        "total": 69.60950217932297,
+        "firstHalfPossessions": 34.52238404282068,
+        "awayEfficiency": 98.22452830188679,
+        "homeEfficiency": 103.41132075471698,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T00:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401920973",
@@ -2774,7 +3233,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 38.2859235529401,
+        "home": 39.59196892616305,
+        "homeMargin": 1.3060453732229504,
+        "total": 77.87789247910314,
+        "firstHalfPossessions": 35.122998163596456,
+        "awayEfficiency": 109.00528301886791,
+        "homeEfficiency": 112.72377358490567,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T00:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401920747",
@@ -2930,7 +3414,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 41.130084432394,
+        "home": 37.125104654263986,
+        "homeMargin": -4.004979778130014,
+        "total": 78.25518908665799,
+        "firstHalfPossessions": 35.32962637787159,
+        "awayEfficiency": 116.41811320754717,
+        "homeEfficiency": 105.0820754716981,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T00:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401920379",
@@ -3074,7 +3583,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 31.59639876916006,
+        "home": 41.73283784623313,
+        "homeMargin": 10.13643907707307,
+        "total": 73.3292366153932,
+        "firstHalfPossessions": 35.59968398736146,
+        "awayEfficiency": 88.75471698113208,
+        "homeEfficiency": 117.22811320754717,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T00:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401918958",
@@ -3085,11 +3619,11 @@
       "homeId": "152",
       "location": "Home",
       "model": {
-        "away": 67.71599999999998,
-        "home": 79.48079999999996,
-        "total": 147.19679999999994,
-        "homeMargin": 11.76479999999998,
-        "possessions": 68.39999999999998,
+        "away": 67.617,
+        "home": 79.36460000000001,
+        "total": 146.98160000000001,
+        "homeMargin": 11.747600000000006,
+        "possessions": 68.30000000000001,
         "awayEfficiency": 99.0,
         "homeEfficiency": 116.19999999999999,
         "homeAdvantagePoints": 0.0
@@ -3099,10 +3633,10 @@
         "home": "N.C. State"
       },
       "firstHalf": {
-        "away": 32.681732867577,
-        "home": 35.611855447223384,
-        "total": 68.29358831480039,
-        "homeMargin": 2.930122579646387,
+        "away": 32.633952556367106,
+        "home": 35.559791331072496,
+        "total": 68.19374388743961,
+        "homeMargin": 2.92583877470539,
         "awayScoringShare": 0.48262940616068595,
         "homeScoringShare": 0.44805607703021866,
         "modelVersion": "first-half-timing-v1",
@@ -3218,7 +3752,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 34.63938431699794,
+        "home": 40.647135069941775,
+        "homeMargin": 6.007750752943835,
+        "total": 75.28651938693972,
+        "firstHalfPossessions": 34.94967811010568,
+        "awayEfficiency": 99.11216981132075,
+        "homeEfficiency": 116.30188679245283,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T00:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401911210",
@@ -3362,7 +3921,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 34.78926771155147,
+        "home": 36.920452451307476,
+        "homeMargin": 2.1311847397560086,
+        "total": 71.70972016285894,
+        "firstHalfPossessions": 34.91747413545258,
+        "awayEfficiency": 99.63283018867926,
+        "homeEfficiency": 105.73632075471697,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T00:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401911197",
@@ -3494,7 +4078,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 33.17864988837433,
+        "home": 38.276992655656315,
+        "homeMargin": 5.098342767281984,
+        "total": 71.45564254403064,
+        "firstHalfPossessions": 35.473017915029445,
+        "awayEfficiency": 93.5320754716981,
+        "homeEfficiency": 107.90452830188678,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T00:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401906782",
@@ -3626,7 +4235,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 38.61490901987985,
+        "home": 40.16764228223906,
+        "homeMargin": 1.5527332623592045,
+        "total": 78.78255130211892,
+        "firstHalfPossessions": 35.94996522946858,
+        "awayEfficiency": 107.41292452830189,
+        "homeEfficiency": 111.7320754716981,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T00:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401916316",
@@ -3782,7 +4416,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 35.63666632140737,
+        "home": 38.37198403901912,
+        "homeMargin": 2.73531771761175,
+        "total": 74.00865036042649,
+        "firstHalfPossessions": 35.04825245286846,
+        "awayEfficiency": 101.67886792452829,
+        "homeEfficiency": 109.48330188679245,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T00:30Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401927363",
@@ -3914,7 +4573,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 37.374773641999724,
+        "home": 40.78918934852148,
+        "homeMargin": 3.4144157065217584,
+        "total": 78.16396299052121,
+        "firstHalfPossessions": 36.3144599298957,
+        "awayEfficiency": 102.91981132075472,
+        "homeEfficiency": 112.32216981132076,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T00:30Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401926794",
@@ -4070,7 +4754,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 32.620123546450806,
+        "home": 38.446987211102574,
+        "homeMargin": 5.826863664651768,
+        "total": 71.06711075755338,
+        "firstHalfPossessions": 34.398219430662394,
+        "awayEfficiency": 94.83084905660377,
+        "homeEfficiency": 111.77028301886791,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T00:30Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401926152",
@@ -4202,7 +4911,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 35.42163537897144,
+        "home": 37.26153980332979,
+        "homeMargin": 1.8399044243583518,
+        "total": 72.68317518230123,
+        "firstHalfPossessions": 35.764297840164566,
+        "awayEfficiency": 99.04188679245281,
+        "homeEfficiency": 104.18641509433961,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T00:30Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401909565",
@@ -4346,7 +5080,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 29.11763127863605,
+        "home": 45.22394793219041,
+        "homeMargin": 16.106316653554362,
+        "total": 74.34157921082647,
+        "firstHalfPossessions": 34.97177433302463,
+        "awayEfficiency": 83.26037735849056,
+        "homeEfficiency": 129.31556603773583,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T01:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401916297",
@@ -4478,7 +5237,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 40.409512853782346,
+        "home": 35.70913690307455,
+        "homeMargin": -4.7003759507077945,
+        "total": 76.1186497568569,
+        "firstHalfPossessions": 35.29985835665634,
+        "awayEfficiency": 114.47500000000001,
+        "homeEfficiency": 101.15943396226415,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T01:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401917916",
@@ -4634,7 +5418,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 34.94798973563363,
+        "home": 43.034550956275694,
+        "homeMargin": 8.086561220642068,
+        "total": 77.98254069190932,
+        "firstHalfPossessions": 36.02395036638819,
+        "awayEfficiency": 97.01320754716983,
+        "homeEfficiency": 119.46094339622643,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T01:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401929199",
@@ -4802,7 +5611,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 34.35031341458813,
+        "home": 39.1263616006176,
+        "homeMargin": 4.77604818602947,
+        "total": 73.47667501520573,
+        "firstHalfPossessions": 35.13847606257278,
+        "awayEfficiency": 97.75698113207547,
+        "homeEfficiency": 111.34905660377359,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T01:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401927380",
@@ -4813,11 +5647,11 @@
       "homeId": "93",
       "location": "Home",
       "model": {
-        "away": 68.89890000000003,
-        "home": 87.51610000000001,
-        "total": 156.41500000000002,
-        "homeMargin": 18.617199999999983,
-        "possessions": 76.30000000000001,
+        "away": 68.8086,
+        "home": 87.40139999999998,
+        "total": 156.20999999999998,
+        "homeMargin": 18.592799999999983,
+        "possessions": 76.19999999999999,
         "awayEfficiency": 90.30000000000001,
         "homeEfficiency": 114.69999999999999,
         "homeAdvantagePoints": 0.0
@@ -4827,10 +5661,10 @@
         "home": "Murray St."
       },
       "firstHalf": {
-        "away": 32.85598766974781,
-        "home": 40.113782242783124,
-        "total": 72.96976991253094,
-        "homeMargin": 7.257794573035312,
+        "away": 32.812926086956516,
+        "home": 40.0612084783758,
+        "total": 72.87413456533231,
+        "homeMargin": 7.248282391419281,
         "awayScoringShare": 0.4768724561603712,
         "homeScoringShare": 0.45835888759648935,
         "modelVersion": "first-half-timing-v1",
@@ -4934,7 +5768,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 33.511672633996824,
+        "home": 42.41134292319603,
+        "homeMargin": 8.899670289199207,
+        "total": 75.92301555719285,
+        "firstHalfPossessions": 36.9197101830445,
+        "awayEfficiency": 90.76905660377359,
+        "homeEfficiency": 114.8745283018868,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T01:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401927374",
@@ -5078,7 +5937,32 @@
           "priorSeason": false
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 40.778594073519585,
+        "home": 36.35399741136212,
+        "homeMargin": -4.424596662157462,
+        "total": 77.13259148488171,
+        "firstHalfPossessions": 34.523904761773395,
+        "awayEfficiency": 118.11698113207547,
+        "homeEfficiency": 105.30094339622642,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T01:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401926117",
@@ -5089,11 +5973,11 @@
       "homeId": "2535",
       "location": "Home",
       "model": {
-        "away": 82.66940000000001,
-        "home": 76.1466,
-        "total": 158.81600000000003,
-        "homeMargin": -6.522800000000004,
-        "possessions": 70.9,
+        "away": 82.5528,
+        "home": 76.03920000000002,
+        "total": 158.59200000000004,
+        "homeMargin": -6.5135999999999825,
+        "possessions": 70.80000000000001,
         "awayEfficiency": 116.6,
         "homeEfficiency": 107.4,
         "homeAdvantagePoints": 0.0
@@ -5103,10 +5987,10 @@
         "home": "Samford"
       },
       "firstHalf": {
-        "away": 39.97425461861862,
-        "home": 37.8268008973194,
-        "total": 77.80105551593803,
-        "homeMargin": -2.1474537212992217,
+        "away": 39.917873441441444,
+        "home": 37.77344856883236,
+        "total": 77.69132201027381,
+        "homeMargin": -2.144424872609086,
         "awayScoringShare": 0.48354354354354356,
         "homeScoringShare": 0.4967628350749659,
         "modelVersion": "first-half-timing-v1",
@@ -5222,7 +6106,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 41.57334733758857,
+        "home": 38.20791864771327,
+        "homeMargin": -3.3654286898753014,
+        "total": 79.78126598530184,
+        "firstHalfPossessions": 35.57393708882951,
+        "awayEfficiency": 116.86462264150943,
+        "homeEfficiency": 107.40424528301887,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T01:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401925686",
@@ -5366,7 +6275,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 36.534575588318724,
+        "home": 39.78283090194693,
+        "homeMargin": 3.2482553136282064,
+        "total": 76.31740649026565,
+        "firstHalfPossessions": 35.749965034947934,
+        "awayEfficiency": 102.19471698113209,
+        "homeEfficiency": 111.28075471698114,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T01:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401924953",
@@ -5383,7 +6317,9 @@
       },
       "error": "Source identity or D-I rating unavailable: College of Biblical Studies Ambassadors",
       "firstHalf": null,
-      "firstHalfStatus": "Full-game matchup ratings unavailable."
+      "firstHalfStatus": "Full-game matchup ratings unavailable.",
+      "independentFirstHalf": null,
+      "independentFirstHalfStatus": "Verified pre-tipoff ratings or matched teams unavailable."
     },
     {
       "id": "401921026",
@@ -5575,7 +6511,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 34.97246409669577,
+        "home": 42.9713805099065,
+        "homeMargin": 7.998916413210736,
+        "total": 77.94384460660227,
+        "firstHalfPossessions": 36.19913673003819,
+        "awayEfficiency": 96.61132075471698,
+        "homeEfficiency": 118.70830188679246,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T01:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401919049",
@@ -5719,7 +6680,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 32.80124532833993,
+        "home": 42.925906938337306,
+        "homeMargin": 10.124661609997375,
+        "total": 75.72715226667724,
+        "firstHalfPossessions": 35.849686191095174,
+        "awayEfficiency": 91.4966037735849,
+        "homeEfficiency": 119.73858490566039,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T01:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401906804",
@@ -5875,7 +6861,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 31.342559433962265,
+        "home": 42.107726037735844,
+        "homeMargin": 10.76516660377358,
+        "total": 73.45028547169811,
+        "firstHalfPossessions": 34.65,
+        "awayEfficiency": 90.45471698113208,
+        "homeEfficiency": 121.52301886792453,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T01:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401929040",
@@ -6007,7 +7018,32 @@
           "priorSeason": false
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 37.04421979809102,
+        "home": 37.68798956574868,
+        "homeMargin": 0.643769767657659,
+        "total": 74.7322093638397,
+        "firstHalfPossessions": 36.26871930465701,
+        "awayEfficiency": 102.13820754716981,
+        "homeEfficiency": 103.9132075471698,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T01:45Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401909741",
@@ -6163,7 +7199,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 39.15662226307456,
+        "home": 38.05763182533754,
+        "homeMargin": -1.0989904377370223,
+        "total": 77.2142540884121,
+        "firstHalfPossessions": 36.165591381864616,
+        "awayEfficiency": 108.27037735849056,
+        "homeEfficiency": 105.2316037735849,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T02:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401906760",
@@ -6174,11 +7235,11 @@
       "homeId": "333",
       "location": "Home",
       "model": {
-        "away": 72.03,
-        "home": 82.32,
-        "total": 154.35,
-        "homeMargin": 10.289999999999992,
-        "possessions": 73.5,
+        "away": 71.93199999999997,
+        "home": 82.20799999999997,
+        "total": 154.13999999999993,
+        "homeMargin": 10.275999999999996,
+        "possessions": 73.39999999999998,
         "awayEfficiency": 98.0,
         "homeEfficiency": 112.0,
         "homeAdvantagePoints": 0.0
@@ -6188,10 +7249,10 @@
         "home": "Alabama"
       },
       "firstHalf": {
-        "away": 33.40657791845094,
-        "home": 39.30793721730669,
-        "total": 72.71451513575764,
-        "homeMargin": 5.901359298855745,
+        "away": 33.361126792031264,
+        "home": 39.254457030616464,
+        "total": 72.61558382264772,
+        "homeMargin": 5.8933302385852,
         "awayScoringShare": 0.46378700428225655,
         "homeScoringShare": 0.47750166687690343,
         "modelVersion": "first-half-timing-v1",
@@ -6295,7 +7356,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 35.40908154106797,
+        "home": 39.90487265936053,
+        "homeMargin": 4.4957911182925585,
+        "total": 75.3139542004285,
+        "firstHalfPossessions": 36.17381649757183,
+        "awayEfficiency": 97.88594339622641,
+        "homeEfficiency": 110.31424528301886,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T02:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401921728",
@@ -6427,7 +7513,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 37.76311403110515,
+        "home": 36.21975926026406,
+        "homeMargin": -1.5433547708410842,
+        "total": 73.9828732913692,
+        "firstHalfPossessions": 35.644073841243234,
+        "awayEfficiency": 105.94500000000001,
+        "homeEfficiency": 101.61509433962263,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T02:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401920719",
@@ -6444,7 +7555,9 @@
       },
       "error": "Source identity or D-I rating unavailable: Corban Warriors",
       "firstHalf": null,
-      "firstHalfStatus": "Full-game matchup ratings unavailable."
+      "firstHalfStatus": "Full-game matchup ratings unavailable.",
+      "independentFirstHalf": null,
+      "independentFirstHalfStatus": "Verified pre-tipoff ratings or matched teams unavailable."
     },
     {
       "id": "401920123",
@@ -6576,7 +7689,32 @@
           "priorSeason": false
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 40.41126202865124,
+        "home": 37.829723295056034,
+        "homeMargin": -2.5815387335952025,
+        "total": 78.24098532370726,
+        "firstHalfPossessions": 36.7251957108468,
+        "awayEfficiency": 110.03688679245283,
+        "homeEfficiency": 103.00754716981132,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T02:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401917980",
@@ -6708,7 +7846,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 32.899483694570215,
+        "home": 43.19785760276208,
+        "homeMargin": 10.298373908191863,
+        "total": 76.09734129733229,
+        "firstHalfPossessions": 35.04996433664377,
+        "awayEfficiency": 93.86452830188679,
+        "homeEfficiency": 123.24650943396227,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T02:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401911014",
@@ -6840,7 +8003,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 33.5310772551277,
+        "home": 40.0039256783707,
+        "homeMargin": 6.472848423243001,
+        "total": 73.53500293349839,
+        "firstHalfPossessions": 35.75730694557407,
+        "awayEfficiency": 93.7740566037736,
+        "homeEfficiency": 111.87622641509434,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T02:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401909503",
@@ -6984,7 +8172,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 36.67983958869309,
+        "home": 34.95280088069132,
+        "homeMargin": -1.7270387080017713,
+        "total": 71.63264046938441,
+        "firstHalfPossessions": 34.346360797033505,
+        "awayEfficiency": 106.79396226415095,
+        "homeEfficiency": 101.7656603773585,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T02:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401906794",
@@ -6995,11 +8208,11 @@
       "homeId": "344",
       "location": "Neutral",
       "model": {
-        "away": 80.43799999999999,
-        "home": 77.7,
-        "total": 158.13799999999998,
-        "homeMargin": -2.7379999999999853,
-        "possessions": 74.0,
+        "away": 80.32929999999999,
+        "home": 77.59500000000001,
+        "total": 157.92430000000002,
+        "homeMargin": -2.734299999999976,
+        "possessions": 73.9,
         "awayEfficiency": 108.69999999999999,
         "homeEfficiency": 105.0,
         "homeAdvantagePoints": 0.0
@@ -7009,10 +8222,10 @@
         "home": "Mississippi St."
       },
       "firstHalf": {
-        "away": 33.67523279098873,
-        "home": 38.264156323381414,
-        "total": 71.93938911437014,
-        "homeMargin": 4.588923532392684,
+        "away": 33.62972571964956,
+        "home": 38.2124480040255,
+        "total": 71.84217372367505,
+        "homeMargin": 4.58272228437594,
         "awayScoringShare": 0.418648310387985,
         "homeScoringShare": 0.49246018434210315,
         "modelVersion": "first-half-timing-v1",
@@ -7116,7 +8329,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 39.31485321238167,
+        "home": 37.850808620259976,
+        "homeMargin": -1.4640445921216951,
+        "total": 77.16566183264165,
+        "firstHalfPossessions": 36.3422618998873,
+        "awayEfficiency": 108.17943396226416,
+        "homeEfficiency": 104.15094339622641,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T02:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": true,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401925739",
@@ -7248,7 +8486,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 32.02433818430748,
+        "home": 44.51971737505753,
+        "homeMargin": 12.49537919075005,
+        "total": 76.544055559365,
+        "firstHalfPossessions": 35.34713566896192,
+        "awayEfficiency": 90.5995283018868,
+        "homeEfficiency": 125.94999999999999,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T02:30Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401917526",
@@ -7380,7 +8643,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 33.790701403632525,
+        "home": 38.786489772636585,
+        "homeMargin": 4.99578836900406,
+        "total": 72.57719117626911,
+        "firstHalfPossessions": 35.39985875678037,
+        "awayEfficiency": 95.45433962264148,
+        "homeEfficiency": 109.5667924528302,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T02:30Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401920372",
@@ -7524,7 +8812,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 35.886365779568706,
+        "home": 38.847351221620755,
+        "homeMargin": 2.960985442052049,
+        "total": 74.73371700118946,
+        "firstHalfPossessions": 34.874991039425375,
+        "awayEfficiency": 102.89999999999999,
+        "homeEfficiency": 111.39028301886792,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T03:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401917527",
@@ -7535,13 +8848,13 @@
       "homeId": "2501",
       "location": "Home",
       "model": {
-        "away": 74.48840000000001,
-        "home": 75.92640000000002,
-        "total": 150.4148,
-        "homeMargin": 1.4380000000000024,
-        "possessions": 71.9,
-        "awayEfficiency": 103.60000000000002,
-        "homeEfficiency": 105.60000000000002,
+        "away": 72.3008,
+        "home": 75.328,
+        "total": 147.6288,
+        "homeMargin": 3.0272000000000077,
+        "possessions": 70.4,
+        "awayEfficiency": 102.69999999999999,
+        "homeEfficiency": 107.0,
         "homeAdvantagePoints": 0.0
       },
       "matchedTeams": {
@@ -7549,10 +8862,10 @@
         "home": "Portland"
       },
       "firstHalf": {
-        "away": 34.72548262401975,
-        "home": 36.13897854406131,
-        "total": 70.86446116808105,
-        "homeMargin": 1.4134959200415622,
+        "away": 33.70565315005727,
+        "home": 35.8541558109834,
+        "total": 69.55980896104067,
+        "homeMargin": 2.148502660926127,
         "awayScoringShare": 0.46618644814521104,
         "homeScoringShare": 0.47597381864623245,
         "modelVersion": "first-half-timing-v1",
@@ -7656,7 +8969,32 @@
           "priorSeason": false
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 36.39336399949859,
+        "home": 37.95479578954291,
+        "homeMargin": 1.5614317900443169,
+        "total": 74.34815978904149,
+        "firstHalfPossessions": 35.471115009257886,
+        "awayEfficiency": 102.60000000000001,
+        "homeEfficiency": 107.00198113207546,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T03:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401917525",
@@ -7667,11 +9005,11 @@
       "homeId": "2608",
       "location": "Home",
       "model": {
-        "away": 71.86270000000002,
-        "home": 76.4101,
-        "total": 148.27280000000002,
-        "homeMargin": 4.547399999999982,
-        "possessions": 68.9,
+        "away": 71.75840000000002,
+        "home": 76.2992,
+        "total": 148.05760000000004,
+        "homeMargin": 4.540799999999976,
+        "possessions": 68.80000000000001,
         "awayEfficiency": 104.30000000000001,
         "homeEfficiency": 110.89999999999998,
         "homeAdvantagePoints": 0.0
@@ -7681,10 +9019,10 @@
         "home": "Saint Mary's"
       },
       "firstHalf": {
-        "away": 36.41249461302212,
-        "home": 35.05664173695291,
-        "total": 71.46913634997503,
-        "homeMargin": -1.355852876069207,
+        "away": 36.359646289926296,
+        "home": 35.005761269990714,
+        "total": 71.365407559917,
+        "homeMargin": -1.353885019935582,
         "awayScoringShare": 0.5066953316953317,
         "homeScoringShare": 0.4587959148980686,
         "modelVersion": "first-half-timing-v1",
@@ -7800,7 +9138,32 @@
           "priorSeason": false
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 36.486209800625204,
+        "home": 38.82908160876487,
+        "homeMargin": 2.3428718081396624,
+        "total": 75.31529140939007,
+        "firstHalfPossessions": 35.073921936390285,
+        "awayEfficiency": 104.02660377358491,
+        "homeEfficiency": 110.70641509433962,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T03:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     },
     {
       "id": "401920345",
@@ -7944,7 +9307,32 @@
           "priorSeason": true
         }
       },
-      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled."
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 35.5193196089987,
+        "home": 38.74234372474592,
+        "homeMargin": 3.223024115747222,
+        "total": 74.26166333374462,
+        "firstHalfPossessions": 35.961785272703025,
+        "awayEfficiency": 98.76962264150946,
+        "homeEfficiency": 107.73198113207548,
+        "ratingsAt": "2026-11-10T09:02:35.495803+00:00",
+        "tipoffAt": "2026-11-14T03:30Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
     }
   ],
   "evidenceLabel": "Calculated at retrieval time; not certified pre-tipoff evidence"
