@@ -84,3 +84,57 @@ def summarize(grades):
                          "totalMAE": sum(abs(x["totalError"]) for x in rows) / n,
                          "marginBias": sum(x["marginError"] for x in rows) / n}
     return results
+
+def main():
+    """Refresh completed game grades using only frozen pregame receipts."""
+    import urllib.request
+    from datetime import datetime, timedelta, timezone
+    from zoneinfo import ZoneInfo
+    root = Path(__file__).resolve().parents[1]
+    today = datetime.now(timezone.utc).astimezone(ZoneInfo("America/Chicago")).date()
+    dates = [(today - timedelta(days=n)).isoformat() for n in range(8)]
+    all_grades = []
+    for date in dates:
+        folder = root / "data/calculator/pregame" / date
+        if not folder.exists():
+            continue
+        url = ("https://site.api.espn.com/apis/site/v2/sports/basketball/"
+               "mens-college-basketball/scoreboard?groups=50&limit=1000&dates="
+               + date.replace("-", ""))
+        request = urllib.request.Request(url, headers={"User-Agent": "Docs-NCAAB-Grader/1.0"})
+        with urllib.request.urlopen(request, timeout=35) as response:
+            events = json.load(response).get("events", [])
+        by_id = {str(event["id"]): event for event in events}
+        daily = []
+        for file in sorted(folder.glob("*.json")):
+            receipt = json.loads(file.read_text())
+            event = by_id.get(str(receipt.get("id")))
+            if not event:
+                continue
+            try:
+                result = grade(receipt, event)
+            except (ValueError, KeyError, TypeError):
+                continue
+            if result:
+                result["pregamePreparedAt"] = receipt["preparedAt"]
+                result["ratingsFetchedAt"] = receipt["ratingsFetchedAt"]
+                result["resultSource"] = url
+                daily.append(result)
+        output = root / "data/calculator/grades" / (date + ".json")
+        output.parent.mkdir(parents=True, exist_ok=True)
+        output.write_text(json.dumps({"date": date, "games": daily,
+                                      "summary": summarize(daily),
+                                      "gradedAt": datetime.now(timezone.utc).isoformat()},
+                                     indent=2, allow_nan=False) + "\n")
+        all_grades.extend(daily)
+    index = root / "data/calculator/grades/index.json"
+    index.parent.mkdir(parents=True, exist_ok=True)
+    index.write_text(json.dumps({"gradedAt": datetime.now(timezone.utc).isoformat(),
+                                 "games": len(all_grades),
+                                 "summary": summarize(all_grades),
+                                 "dates": dates}, indent=2, allow_nan=False) + "\n")
+    print("Graded games:", len(all_grades), summarize(all_grades))
+
+
+if __name__ == "__main__":
+    main()
