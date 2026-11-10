@@ -173,6 +173,19 @@ def main():
                            'firstHalfGames': sum(m.get('firstHalf') is not None for m in matchups),
                            'independentFirstHalfGames': sum(m.get('independentFirstHalf') is not None for m in matchups),
                            'matchups': matchups, 'evidenceLabel': 'Calculated at retrieval time; not certified pre-tipoff evidence'}
+                # Freeze the first verified pre-tipoff forecast per game.
+                # Later refreshes must never overwrite the evidence used for grading.
+                for matchup in matchups:
+                    if not matchup.get('independentFirstHalf'):
+                        continue
+                    if datetime.fromisoformat(matchup['date'].replace('Z', '+00:00')) <= datetime.fromisoformat(stamp):
+                        continue
+                    receipt = ROOT / 'data/calculator/pregame' / day.isoformat() / (str(matchup['id']) + '.json')
+                    if not receipt.exists():
+                        write(receipt, dict(matchup, ratingsFetchedAt=fetched,
+                                            preparedAt=stamp, scheduleSource=url,
+                                            ratingSource=KENPOM,
+                                            evidenceLabel='First saved pre-tipoff model receipt'))
                 write(ROOT / f'data/calculator/daily/{day}.json', payload)
                 days.append({'date': str(day), 'games': len(matchups), 'calculated': payload['calculatedGames'], 'firstHalf': payload['firstHalfGames']})
             except Exception as exc:
