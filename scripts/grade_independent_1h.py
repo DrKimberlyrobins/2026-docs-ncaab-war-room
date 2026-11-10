@@ -34,7 +34,7 @@ def grade(matchup, completed_event):
     """Return a grade or None; caller must retain immutable source snapshot."""
     if str(matchup.get("id")) != str(completed_event.get("id")):
         return None
-    if stamp(matchup["ratingsFetchedAt"]) >= stamp(matchup["date"]):
+    if stamp(matchup["ratingsFetchedAt"]) >= stamp(matchup["date"]) or stamp(matchup["preparedAt"]) >= stamp(matchup["date"]):
         return None
     competition = (completed_event.get("competitions") or [{}])[0]
     if not competition.get("status", {}).get("type", {}).get("completed"):
