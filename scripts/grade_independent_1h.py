@@ -143,7 +143,7 @@ def main():
                                  "games": len(lifetime),
                                  "summary": summarize(lifetime),
                                  "dates": sorted({g["date"][:10] for g in lifetime}, reverse=True)},
-                                indent=2, allow_nan=False) + "\\n")
+                                indent=2, allow_nan=False) + "\n")
     print("Lifetime graded games:", len(lifetime), summarize(lifetime))
 
 
