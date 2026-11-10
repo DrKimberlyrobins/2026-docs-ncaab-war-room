@@ -1,0 +1,24 @@
+name: Test independent 1H engine (development)
+on:
+  push:
+    branches:
+      - feature/independent-1h-efficiency-v1
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run first-half unit tests
+        run: |
+          python -m unittest discover -s scripts -p 'test_first_half*.py' -v
+          python -m unittest discover -s scripts -p 'test_automatic_matchups.py' -v
+      - name: Check frontend syntax
+        run: node --check calculator/calculator.js
+      - name: Check Python syntax
+        run: python -m compileall -q scripts/first_half_efficiency.py scripts/automatic_matchups.py
