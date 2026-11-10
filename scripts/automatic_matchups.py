@@ -13,6 +13,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 from kenpom_calculator import calculate, finite
 from first_half import attach
+from first_half_efficiency import project as independent_first_half
 
 ROOT = Path(__file__).resolve().parents[1]
 KENPOM = 'https://kenpom.com/'
@@ -150,12 +151,27 @@ def main():
                 matchups = build(slate['events'], directory, ratings, config, reviewed)
                 for matchup, event in zip(matchups, slate['events']):
                     attach(matchup, event, season, stamp)
+                    matchup['independentFirstHalf'] = None
+                    matchup['independentFirstHalfStatus'] = 'Verified pre-tipoff ratings or matched teams unavailable.'
+                    names = matchup.get('matchedTeams') or {}
+                    if names.get('away') and names.get('home'):
+                        try:
+                            matchup['independentFirstHalf'] = independent_first_half(
+                                ratings[names['away']], ratings[names['home']],
+                                national_efficiency=config['nationalEfficiency'],
+                                ratings_at=fetched, tipoff_at=event['date'],
+                                neutral=matchup['location'] == 'Neutral',
+                                home_advantage_full_game=config['homeAdvantagePoints'])
+                            matchup['independentFirstHalfStatus'] = 'Uncalibrated independent efficiency baseline.'
+                        except (ValueError, KeyError, TypeError) as exc:
+                            matchup['independentFirstHalfStatus'] = str(exc)
                 payload = {'date': day.isoformat(), 'preparedAt': stamp,
                            'ratingsFetchedAt': fetched, 'ratingSource': KENPOM,
                            'scheduleSource': url, 'scheduleFetchedAt': stamp,
                            'season': season, 'ratedTeams': len(ratings), 'config': config,
                            'calculatedGames': sum(m['model'] is not None for m in matchups),
                            'firstHalfGames': sum(m.get('firstHalf') is not None for m in matchups),
+                           'independentFirstHalfGames': sum(m.get('independentFirstHalf') is not None for m in matchups),
                            'matchups': matchups, 'evidenceLabel': 'Calculated at retrieval time; not certified pre-tipoff evidence'}
                 write(ROOT / f'data/calculator/daily/{day}.json', payload)
                 days.append({'date': str(day), 'games': len(matchups), 'calculated': payload['calculatedGames'], 'firstHalf': payload['firstHalfGames']})
