@@ -195,7 +195,87 @@
     ]
   },
   "additionalMarkets": {
-    "half": {},
+    "half": {
+      "moneyline": {
+        "id": "2715968632",
+        "criterionId": "1001159815",
+        "label": "Moneyline - 1st Half",
+        "period": "half",
+        "kind": "moneyline",
+        "outcomes": [
+          {
+            "id": "4412960540",
+            "price": 120,
+            "changedAt": "2026-11-11T14:08:17Z",
+            "teamId": "2534"
+          },
+          {
+            "id": "4412960541",
+            "price": -165,
+            "changedAt": "2026-11-11T14:08:17Z",
+            "teamId": "2492"
+          }
+        ],
+        "main": false,
+        "quoteFetchedAt": "2026-11-11T16:03:34.135614+00:00",
+        "quoteSavedAt": "2026-11-11T16:03:51.797375+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029304940.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "total": {
+        "id": "2715982397",
+        "criterionId": "1001159947",
+        "label": "Total Points - 1st Half",
+        "period": "half",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4412954959",
+            "price": -122,
+            "changedAt": "2026-11-11T15:34:48Z",
+            "side": "over",
+            "line": 75.5
+          },
+          {
+            "id": "4412954960",
+            "price": -112,
+            "changedAt": "2026-11-11T15:34:48Z",
+            "side": "under",
+            "line": 75.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-11T16:03:34.135614+00:00",
+        "quoteSavedAt": "2026-11-11T16:03:51.797375+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029304940.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "spread": {
+        "id": "2715983221",
+        "criterionId": "1001159940",
+        "label": "Spread - 1st Half",
+        "period": "half",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4413005809",
+            "price": -110,
+            "changedAt": "2026-11-11T14:08:17Z",
+            "teamId": "2534",
+            "line": 1.5
+          },
+          {
+            "id": "4413005810",
+            "price": -124,
+            "changedAt": "2026-11-11T14:08:17Z",
+            "teamId": "2492",
+            "line": -1.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-11T16:03:34.135614+00:00",
+        "quoteSavedAt": "2026-11-11T16:03:51.797375+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029304940.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    },
     "full": {
       "total": {
         "id": "2715746347",
