@@ -387,5 +387,64 @@
         "savedAt": "2026-11-10T23:45:40.891648+00:00"
       }
     ]
+  },
+  "additionalMarkets": {
+    "half": {},
+    "full": {
+      "spread": {
+        "id": "2715777380",
+        "criterionId": "1001159512",
+        "label": "Point Spread",
+        "period": "full",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4412391525",
+            "price": -110,
+            "changedAt": "2026-11-11T05:15:17Z",
+            "teamId": "2670",
+            "line": -29.5
+          },
+          {
+            "id": "4412391526",
+            "price": -110,
+            "changedAt": "2026-11-11T05:15:17Z",
+            "teamId": "2885",
+            "line": 29.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-11T07:41:24.382852+00:00",
+        "quoteSavedAt": "2026-11-11T07:41:41.785952+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029102604.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "total": {
+        "id": "2715814928",
+        "criterionId": "1001159509",
+        "label": "Total Points - Including Overtime",
+        "period": "full",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4412422487",
+            "price": -108,
+            "changedAt": "2026-11-11T05:15:20Z",
+            "side": "over",
+            "line": 148.5
+          },
+          {
+            "id": "4412422488",
+            "price": -113,
+            "changedAt": "2026-11-11T05:15:20Z",
+            "side": "under",
+            "line": 148.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-11T07:41:24.382852+00:00",
+        "quoteSavedAt": "2026-11-11T07:41:41.785952+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029102604.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    }
   }
 }
