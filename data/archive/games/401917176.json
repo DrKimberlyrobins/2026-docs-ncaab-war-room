@@ -451,5 +451,89 @@
         "savedAt": "2026-11-11T11:06:00.431089+00:00"
       }
     ]
+  },
+  "additionalMarkets": {
+    "half": {},
+    "full": {
+      "spread": {
+        "id": "2716202831",
+        "criterionId": "1001159512",
+        "label": "Point Spread",
+        "period": "full",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4413688471",
+            "price": -108,
+            "changedAt": "2026-11-11T23:58:06Z",
+            "teamId": "213",
+            "line": -20.5
+          },
+          {
+            "id": "4413688472",
+            "price": -113,
+            "changedAt": "2026-11-11T23:58:06Z",
+            "teamId": "2385",
+            "line": 20.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-12T03:44:36.472517+00:00",
+        "quoteSavedAt": "2026-11-12T03:44:51.137593+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028752242.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "total": {
+        "id": "2716202832",
+        "criterionId": "1001159509",
+        "label": "Total Points - Including Overtime",
+        "period": "full",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4413688473",
+            "price": -110,
+            "changedAt": "2026-11-11T23:58:03Z",
+            "side": "over",
+            "line": 147.5
+          },
+          {
+            "id": "4413688474",
+            "price": -110,
+            "changedAt": "2026-11-11T23:58:03Z",
+            "side": "under",
+            "line": 147.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-12T03:44:36.472517+00:00",
+        "quoteSavedAt": "2026-11-12T03:44:51.137593+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028752242.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "moneyline": {
+        "id": "2716202833",
+        "criterionId": "1001159732",
+        "label": "Moneyline",
+        "period": "full",
+        "kind": "moneyline",
+        "outcomes": [
+          {
+            "id": "4413688475",
+            "price": -5000,
+            "changedAt": "2026-11-11T23:58:03Z",
+            "teamId": "213"
+          },
+          {
+            "id": "4413688476",
+            "price": 1600,
+            "changedAt": "2026-11-11T23:58:03Z",
+            "teamId": "2385"
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-12T03:44:36.472517+00:00",
+        "quoteSavedAt": "2026-11-12T03:44:51.137593+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028752242.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    }
   }
 }
