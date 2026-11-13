@@ -767,5 +767,64 @@
         "savedAt": "2026-11-12T17:08:10.606458+00:00"
       }
     ]
+  },
+  "additionalMarkets": {
+    "half": {},
+    "full": {
+      "spread": {
+        "id": "2716739849",
+        "criterionId": "1001159512",
+        "label": "Point Spread",
+        "period": "full",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4415322287",
+            "price": -107,
+            "changedAt": "2026-11-13T06:06:24Z",
+            "teamId": "52",
+            "line": -22.5
+          },
+          {
+            "id": "4415322288",
+            "price": -114,
+            "changedAt": "2026-11-13T06:06:24Z",
+            "teamId": "357",
+            "line": 22.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-13T08:41:38.513546+00:00",
+        "quoteSavedAt": "2026-11-13T08:42:00.125884+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028664054.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "total": {
+        "id": "2716739850",
+        "criterionId": "1001159509",
+        "label": "Total Points - Including Overtime",
+        "period": "full",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4415322289",
+            "price": -103,
+            "changedAt": "2026-11-13T06:06:25Z",
+            "side": "over",
+            "line": 149.5
+          },
+          {
+            "id": "4415322290",
+            "price": -120,
+            "changedAt": "2026-11-13T06:06:25Z",
+            "side": "under",
+            "line": 149.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-13T08:41:38.513546+00:00",
+        "quoteSavedAt": "2026-11-13T08:42:00.125884+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028664054.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    }
   }
 }
