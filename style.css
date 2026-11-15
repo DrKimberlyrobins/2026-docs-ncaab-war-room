@@ -24,45 +24,42 @@
 }
 
 
-/* DOC'S PROFESSIONAL TRADING DESK — visual-only enhancement, Nov 2026 */
-:root{--desk-navy:#0b1728;--desk-panel:#14253c;--desk-accent:#29c68a;--desk-blue:#4aa3f0;--desk-gold:#e6bf67;--desk-line:#d9e4ee}
-body{background:linear-gradient(180deg,#e8eff7 0,#f5f8fc 440px);color:#15283f}
-header{position:relative;overflow:hidden;background:radial-gradient(circle at 90% 0%,#22476c 0%,transparent 40%),linear-gradient(115deg,#081728,#142e4b);border-bottom:4px solid var(--desk-accent);box-shadow:0 10px 30px #0a24452b}
-header:after{content:"";position:absolute;right:-80px;top:-110px;width:330px;height:330px;border:1px solid #8ccfff25;border-radius:50%;pointer-events:none}
-header h1{font-weight:850;letter-spacing:.055em;text-shadow:0 2px 18px #0003}
-header .eyebrow{color:#80e2bf;font-weight:750}
-header p{color:#c7d9eb}
-main{max-width:1440px;padding:24px clamp(14px,3vw,38px)}
-nav{position:sticky;top:0;z-index:15;background:#10243b;border:1px solid #294664;box-shadow:0 8px 25px #10243b29;padding:11px;border-radius:14px;align-items:center;gap:7px}
-nav a,nav button{display:inline-flex;align-items:center;min-height:37px;margin:0;padding:9px 12px;background:#1a344f;color:#eaf4ff;border:1px solid #31516f;border-radius:8px;text-decoration:none;font-size:13px;font-weight:700;transition:background .15s,transform .15s}
-nav a:hover,nav button:hover,nav button.active{background:#186d65;color:#fff;border-color:#39bb96;transform:translateY(-1px)}
-h2,h3{color:#153858;letter-spacing:.015em}
-article,.card{border:1px solid var(--desk-line);border-radius:15px;box-shadow:0 5px 18px #1b3a5b0b;background:#fff}
-.card{border-top:3px solid #2f82bd;transition:box-shadow .15s,transform .15s}
-.card:hover{box-shadow:0 12px 26px #183c6120;transform:translateY(-2px)}
-#market-advantages article{background:linear-gradient(115deg,#0e2942,#163e56);color:#eaf6ff;border:1px solid #286d74;border-left:5px solid var(--desk-accent)}
-#market-advantages h2{color:#8bf2cc}
-#market-advantages p{color:#d4e5f2}
-#health{background:#e7f4f0;border:1px solid #a9d8c7;border-left:5px solid #2ca97f;color:#164b3e;font-weight:650}
-.toolbar{background:#fff;border:1px solid var(--desk-line);border-radius:12px;padding:15px;box-shadow:0 4px 15px #1232520a}
-button{font-weight:700;border-color:#afc3d4;transition:background .15s,transform .15s}
-button:hover{transform:translateY(-1px)}
-#load,#today,#export,#grade{background:#135e5c;color:#fff;border-color:#135e5c}
-#load:hover,#today:hover,#export:hover,#grade:hover{background:#0f8174}
-input:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid #44bba7;outline-offset:2px}
-.match{color:#10395b;line-height:1.3}
-.stat{background:#edf5fa;border:1px solid #d9e8f2;border-radius:10px}
-.stat strong{color:#123d5b;font-variant-numeric:tabular-nums}
-.badge{background:#dff5eb;color:#145942;font-weight:750;border:1px solid #bce4d2;border-radius:7px}
+
+/* DOC'S LIGHT PROFESSIONAL WAR ROOM — light canvas, color in controls and data */
+:root{--navy:#143d62;--blue:#1c75b7;--green:#13875f;--gold:#d4a536;--line:#d8e4ef}
+body{background:#f7fafd;color:#19334a}
+header{background:#ffffff;color:#143d62;border-bottom:5px solid #27a77b;box-shadow:0 4px 18px #183d6112;padding-top:25px;padding-bottom:25px}
+header h1{color:#164e80;font-weight:850;letter-spacing:.025em}
+header .eyebrow{color:#0b8a70;font-weight:800}
+header p{color:#54728c}
+main{max-width:1440px;padding:22px clamp(14px,3vw,36px)}
+nav{position:sticky;top:0;z-index:15;background:#e9f3fc;border:1px solid #c5dcee;box-shadow:0 5px 15px #163c6117;border-radius:12px;padding:11px;align-items:center;gap:8px}
+nav a,nav button{display:inline-flex;align-items:center;min-height:37px;margin:0;padding:9px 12px;background:#fff;color:#14517f;border:1px solid #bad5e9;border-radius:8px;text-decoration:none;font-size:13px;font-weight:750}
+nav a:hover,nav button:hover,nav button.active{background:#1779b8;color:#fff;border-color:#1779b8}
+h2,h3{color:#165887}
+article,.card{background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 4px 14px #204b7010}
+.card{border-top:4px solid #248bc1}
+#market-advantages article{background:#edf8f3;color:#174b3c;border:1px solid #b9dfd0;border-left:5px solid #22a375}
+#market-advantages h2{color:#12674e}
+#market-advantages p{color:#315f51}
+#health{background:#e7f6f0;border:1px solid #b2ddcc;border-left:5px solid #22996d;color:#16563e;font-weight:650}
+.toolbar{background:#fff;border:1px solid #d4e4f0;border-radius:12px;padding:15px}
+button{font-weight:700;border-color:#b5ccdd}
+button:hover{background:#176c9f;color:#fff}
+#load,#today,#export,#grade{background:#147f67;color:#fff;border-color:#147f67}
+#load:hover,#today:hover,#export:hover,#grade:hover{background:#106e59}
+.match{color:#134e7a}
+.stat{background:#eaf4fc;border:1px solid #d2e5f4;border-radius:9px}
+.stat strong{color:#135e87;font-variant-numeric:tabular-nums}
+.badge{background:#dff4e9;color:#126344;border:1px solid #b8dfcb;border-radius:7px;font-weight:750}
 table{font-variant-numeric:tabular-nums}
-th{background:#17324e;color:#fff;position:sticky;top:0}
-td{border-color:#e2ebf2}
-tr:nth-child(even) td{background:#f5f9fc}
-dialog{border:1px solid #96b5ca;box-shadow:0 25px 75px #06182b66}
-a{color:#0e6a91;font-weight:650}
-a:hover{text-decoration-thickness:2px}
-#slateStatus,#dailyStatus{font-size:13px;font-weight:650;color:#2b526e}
-.forecast-score,.forecast-key,.forecast-result,.forecast-toggle{color:#126344}
-.forecast-key,.forecast-result{background:#d5f3e4}
-@media(max-width:720px){nav{position:static}nav a,nav button{font-size:12px}main{padding:14px}header{padding:24px 18px}.toolbar{align-items:stretch}}
-@media print{body{background:#fff!important;color:#000!important}header{background:#fff!important;color:#000!important;border-bottom:1px solid #aaa;box-shadow:none}header h1,header p,header .eyebrow,h2,h3,.match,.stat strong{color:#000!important}article,.card,.stat,.toolbar{background:#fff!important;color:#000!important;box-shadow:none!important;border:1px solid #aaa!important}th{position:static;background:#fff!important;color:#000!important}tr:nth-child(even) td{background:#fff!important}#market-advantages article,#market-advantages h2,#market-advantages p,#health{background:#fff!important;color:#000!important;border-color:#aaa!important}.badge{background:#fff!important;color:#000!important;border:1px solid #888!important}}
+th{background:#d9ebf8;color:#174d72}
+td{border-color:#e0eaf2}
+tr:nth-child(even) td{background:#f5faff}
+dialog{border:1px solid #9fbdd2;box-shadow:0 20px 60px #17334e30}
+a{color:#126a9e;font-weight:650}
+#slateStatus,#dailyStatus{color:#245b7d;font-weight:650}
+.forecast-score,.forecast-key,.forecast-result,.forecast-toggle{color:#116844}
+.forecast-key,.forecast-result{background:#d6f2e2}
+@media(max-width:720px){nav{position:static}nav a,nav button{font-size:12px}main{padding:14px}header{padding:22px 18px}}
+@media print{body,header,article,.card,.stat,.toolbar,#market-advantages article,#health{background:white!important;color:black!important;box-shadow:none!important}header h1,header p,header .eyebrow,h2,h3,.match,.stat strong,#market-advantages h2,#market-advantages p{color:black!important}th,tr:nth-child(even) td{background:white!important;color:black!important}}
