@@ -105,6 +105,7 @@ def build(events, directory, ratings, config, reviewed):
             item['matchedTeams'] = {'away': an, 'home': hn}
             if an and hn:
                 item['model'] = calculate(ratings[an], ratings[hn], config, item['location'])
+                item['model']['modelVersion'] = 'kenpom-additive-efficiency-v1'
             else:
                 missing = [item['awayName'] if not an else '', item['homeName'] if not hn else '']
                 item['error'] = 'Source identity or D-I rating unavailable: ' + ', '.join(filter(None, missing))
@@ -150,11 +151,22 @@ def main():
                 stamp = datetime.now(timezone.utc).isoformat()
                 matchups = build(slate['events'], directory, ratings, config, reviewed)
                 for matchup, event in zip(matchups, slate['events']):
+                    competition = (event.get('competitions') or [{}])[0]
+                    status = competition.get('status', event.get('status', {})).get('type', {})
+                    tipoff = datetime.fromisoformat(event['date'].replace('Z', '+00:00'))
+                    if status.get('state') != 'pre' or status.get('completed') or tipoff <= datetime.fromisoformat(stamp):
+                        saved = ROOT / 'data/archive/games' / (matchup['id'] + '.json')
+                        if saved.exists():
+                            frozen = json.loads(saved.read_text())['snapshot']['matchup']
+                            matchup.update(frozen, usingFrozenPregame=True)
+                        else:
+                            matchup.update(model=None, error='Game started before a pregame projection was saved.')
+                        continue
                     attach(matchup, event, season, stamp)
                     matchup['independentFirstHalf'] = None
                     matchup['independentFirstHalfStatus'] = 'Verified pre-tipoff ratings or matched teams unavailable.'
                     names = matchup.get('matchedTeams') or {}
-                    if names.get('away') and names.get('home'):
+                    if matchup.get('model') and names.get('away') and names.get('home'):
                         try:
                             matchup['independentFirstHalf'] = independent_first_half(
                                 ratings[names['away']], ratings[names['home']],
@@ -176,7 +188,7 @@ def main():
                 # Freeze the first verified pre-tipoff forecast per game.
                 # Later refreshes must never overwrite the evidence used for grading.
                 for matchup in matchups:
-                    if not matchup.get('independentFirstHalf'):
+                    if matchup.get('usingFrozenPregame') or not matchup.get('independentFirstHalf'):
                         continue
                     if datetime.fromisoformat(matchup['date'].replace('Z', '+00:00')) <= datetime.fromisoformat(stamp):
                         continue

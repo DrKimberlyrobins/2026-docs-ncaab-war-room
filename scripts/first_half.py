@@ -59,11 +59,20 @@ def pair(comp, team_id):
     return values
 
 
+def known_by(evidence, cutoff):
+    try:
+        return bool(evidence) and moment(evidence['fetchedAt']) <= cutoff
+    except (ValueError, TypeError, KeyError, AttributeError):
+        return False
+
+
 def season_profile(team_id, season, cutoff):
     schedule = read(Path(f'data/schedules/{season}/{team_id}.json'))
     if not schedule:
         return None
     limit = moment(cutoff)
+    if not known_by(schedule, limit):
+        return None
     candidates = []
     for event in schedule.get('data', {}).get('events', []):
         try:
@@ -86,7 +95,7 @@ def season_profile(team_id, season, cutoff):
         if halves is None:
             summary = read(Path(f"data/summaries/{event['id']}.json"))
             sc = ((summary or {}).get('data', {}).get('header', {}).get('competitions') or [{}])[0]
-            if sc.get('status', {}).get('type', {}).get('completed'):
+            if known_by(summary, limit) and sc.get('status', {}).get('type', {}).get('completed'):
                 halves = pair(sc, team_id)
                 evidence = summary
         if halves is None:
