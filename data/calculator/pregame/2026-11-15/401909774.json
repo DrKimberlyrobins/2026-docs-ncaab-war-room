@@ -1,0 +1,162 @@
+{
+  "id": "401909774",
+  "date": "2026-11-15T18:00Z",
+  "awayName": "Niagara Purple Eagles",
+  "homeName": "Iowa State Cyclones",
+  "awayId": "315",
+  "homeId": "66",
+  "location": "Home",
+  "model": {
+    "away": 57.201,
+    "home": 85.76700000000001,
+    "total": 142.96800000000002,
+    "homeMargin": 28.56600000000001,
+    "possessions": 69.0,
+    "awayEfficiency": 82.9,
+    "homeEfficiency": 124.30000000000001,
+    "homeAdvantagePoints": 0.0
+  },
+  "matchedTeams": {
+    "away": "Niagara",
+    "home": "Iowa St."
+  },
+  "firstHalf": {
+    "away": 27.8989751984127,
+    "home": 44.18815674603175,
+    "total": 72.08713194444445,
+    "homeMargin": 16.28918154761905,
+    "awayScoringShare": 0.4877357948010122,
+    "homeScoringShare": 0.5152116402116402,
+    "modelVersion": "first-half-timing-v1",
+    "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+    "awayProfile": {
+      "season": 2027,
+      "games": 3,
+      "scoringShare": 0.5026455026455027,
+      "allowingShare": 0.5119047619047619,
+      "firstScoredAverage": 31.666666666666668,
+      "firstAllowedAverage": 43.0,
+      "samples": [
+        {
+          "id": "401911013",
+          "date": "2026-11-13T00:00Z",
+          "firstScored": 31.0,
+          "secondScored": 45.0,
+          "firstAllowed": 44.0,
+          "secondAllowed": 44.0
+        },
+        {
+          "id": "401924843",
+          "date": "2026-11-07T23:30Z",
+          "firstScored": 34.0,
+          "secondScored": 33.0,
+          "firstAllowed": 42.0,
+          "secondAllowed": 31.0
+        },
+        {
+          "id": "401921766",
+          "date": "2026-11-03T00:00Z",
+          "firstScored": 30.0,
+          "secondScored": 16.0,
+          "firstAllowed": 43.0,
+          "secondAllowed": 48.0
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401911013",
+          "fetchedAt": "2026-11-13T10:55:00.378405+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401924843",
+          "fetchedAt": "2026-11-08T10:15:38.231920+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401921766",
+          "fetchedAt": "2026-11-03T17:00:31.122207+00:00"
+        }
+      ],
+      "priorSeason": false
+    },
+    "homeProfile": {
+      "season": 2027,
+      "games": 3,
+      "scoringShare": 0.5185185185185185,
+      "allowingShare": 0.47282608695652173,
+      "firstScoredAverage": 42.0,
+      "firstAllowedAverage": 29.0,
+      "samples": [
+        {
+          "id": "401909773",
+          "date": "2026-11-11T01:00Z",
+          "firstScored": 41.0,
+          "secondScored": 43.0,
+          "firstAllowed": 18.0,
+          "secondAllowed": 29.0
+        },
+        {
+          "id": "401909772",
+          "date": "2026-11-07T01:00Z",
+          "firstScored": 46.0,
+          "secondScored": 37.0,
+          "firstAllowed": 29.0,
+          "secondAllowed": 28.0
+        },
+        {
+          "id": "401909771",
+          "date": "2026-11-03T00:00Z",
+          "firstScored": 39.0,
+          "secondScored": 37.0,
+          "firstAllowed": 40.0,
+          "secondAllowed": 40.0
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401909773",
+          "fetchedAt": "2026-11-11T10:53:10.123590+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401909772",
+          "fetchedAt": "2026-11-07T12:56:12.910759+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401909771",
+          "fetchedAt": "2026-11-03T17:00:26.609367+00:00"
+        }
+      ],
+      "priorSeason": false
+    }
+  },
+  "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+  "independentFirstHalf": {
+    "modelVersion": "independent-1h-efficiency-v1",
+    "away": 29.51873053136951,
+    "home": 43.92956522103559,
+    "homeMargin": 14.410834689666078,
+    "total": 73.4482957524051,
+    "firstHalfPossessions": 35.12477757936696,
+    "awayEfficiency": 84.03962264150944,
+    "homeEfficiency": 125.06716981132074,
+    "ratingsAt": "2026-11-15T10:48:05.365647+00:00",
+    "tipoffAt": "2026-11-15T18:00Z",
+    "assumptions": {
+      "nationalEfficiency": 106.0,
+      "tempoMethod": "geometric",
+      "firstHalfPaceFactor": 0.5,
+      "homeAdvantageFullGame": 0.0,
+      "neutral": false,
+      "earlyPaceCorrectionCalibrated": false,
+      "uncertaintyCalibrated": false
+    },
+    "firstTenMinutes": null,
+    "coverProbability": null,
+    "status": "BASELINE_UNCALIBRATED"
+  },
+  "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline.",
+  "ratingsFetchedAt": "2026-11-15T10:48:05.365647+00:00",
+  "preparedAt": "2026-11-15T10:48:05.589183+00:00",
+  "scheduleSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?groups=50&limit=1000&dates=20261115",
+  "ratingSource": "https://kenpom.com/",
+  "evidenceLabel": "First saved pre-tipoff model receipt"
+}
