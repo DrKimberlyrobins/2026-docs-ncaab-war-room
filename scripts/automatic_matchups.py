@@ -157,8 +157,8 @@ def main():
                     if status.get('state') != 'pre' or status.get('completed') or tipoff <= datetime.fromisoformat(stamp):
                         saved = ROOT / 'data/archive/games' / (matchup['id'] + '.json')
                         if saved.exists():
-                            frozen = json.loads(saved.read_text())['snapshot']['matchup']
-                            matchup.update(frozen, usingFrozenPregame=True)
+                            frozen = json.loads(saved.read_text())['snapshot']
+                            matchup.update(frozen['matchup'], usingFrozenPregame=True, frozenConfig=frozen['config'])
                         else:
                             matchup.update(model=None, error='Game started before a pregame projection was saved.')
                         continue

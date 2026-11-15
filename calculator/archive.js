@@ -56,13 +56,39 @@ window.DocArchive=(()=>{
    return `<tr><td>${row.period==='half'?'1H':'Full game'}</td><td>${esc(row.label)}</td><td>${esc(row.answer)}</td><td>${fmt(row.ask*100)}¢</td><td>${actual?((value>row.line)===(row.answer==='yes')?'WIN':'LOSS'):'Pending'}</td></tr>`;
   }).join('')}</table></div></details>`;
  }
+ function projectionMath(game,config){
+  const m=game.model,h=game.firstHalf;
+  if(!m)return '';
+  const n=(x,d=2)=>Number.isFinite(x)?x.toFixed(d):'Unavailable';
+  const pct=x=>n(x*100,2)+'%';
+  const baseline=Number.isFinite(config?.nationalTempo)&&Number.isFinite(config?.nationalEfficiency);
+  const home=Number.isFinite(m.homeAdvantagePoints)?m.homeAdvantagePoints:0;
+  const rows=['away','home'].map(side=>{
+   const name=esc(game[side+'Name']);
+   const efficiency=m[side+'Efficiency'];
+   if(!Number.isFinite(efficiency)||!Number.isFinite(m.possessions))return '';
+   const adjustment=(side==='home'?1:-1)*home/2;
+   const inputs=baseline?`${n(efficiency+config.nationalEfficiency,1)} − ${n(config.nationalEfficiency,1)} = `:'';
+   const points=`${n(m.possessions,1)} × ${n(efficiency/100,3)}${adjustment?(adjustment>0?' + ':' − ')+n(Math.abs(adjustment)):''} = ${n(m[side])}`;
+   return `<tr><td>${name}</td><td>${inputs}${n(efficiency,1)}</td><td>${n(efficiency/100,3)}</td><td>${points}</td></tr>`;
+  }).join('');
+  const halves=['away','home'].map(side=>{
+   const opponent=side==='away'?'home':'away';
+   const own=h?.[side+'Profile']?.scoringShare,allowed=h?.[opponent+'Profile']?.allowingShare,share=h?.[side+'ScoringShare'];
+   if(![own,allowed,share,h?.[side]].every(Number.isFinite))return '';
+   return `<tr><td>${esc(game[side+'Name'])}</td><td>(${pct(own)} + ${pct(allowed)}) ÷ 2 = ${pct(share)}</td><td>${n(m[side])} × ${pct(share)} = ${n(h[side])}</td></tr>`;
+  }).join('');
+  const summary=score=>`<p>Combined total: ${n(score.away)} + ${n(score.home)} = <b>${n(score.total)}</b>. ${esc(game.homeName)} margin: ${n(score.home)} − ${n(score.away)} = <b>${n(score.homeMargin)}</b>.</p>`;
+  const pace=baseline&&Number.isFinite(m.possessions)?`<p>Expected possessions per team: ${n(m.possessions+config.nationalTempo,1)} (both adjusted tempos combined) − ${n(config.nationalTempo,1)} = <b>${n(m.possessions,1)}</b>.</p>`:'';
+  return `<details><summary>Show projection math</summary><h3>Full game</h3>${pace}${rows?`<div class="scroll"><table><tr><th>Team</th><th>Offense + opponent defense − national baseline (per 100 possessions)</th><th>Points per possession</th><th>Projected points</th></tr>${rows}</table></div>`:''}${summary(m)}<h3>First half</h3>${halves?`<div class="scroll"><table><tr><th>Team</th><th>Own 1H scoring share and opponent’s 1H allowed share</th><th>Projected points</th></tr>${halves}</table></div>${summary(h)}`:'<p>First-half calculation inputs are unavailable for this receipt.</p>'}<p class="muted">Calculations use unrounded values. The individual KenPom ratings are not retained in these projections.</p></details>`;
+ }
  function comparison(record,check){
   const s=record.snapshot,r=record.result,g=s.matchup;
   let rows='';for(const [key,label,model] of [['half','1H',g.firstHalf],['full','Full game',g.model]]){
    const a=r?.[key];
    for(const [field,name] of [['away',g.awayName],['home',g.homeName],['total','Total'],['homeMargin',g.homeName+' margin']])rows+=`<tr><td>${label}</td><td>${esc(name)}</td><td>${fmt(model?.[field])}</td><td>${fmt(a?.[field])}</td><td>${model&&a?signed(a[field]-model[field]):'—'}</td></tr>`;
   }
-  return `<p><b>Frozen pregame receipt</b> · saved ${esc(stamp(s.savedAt))} · ${r?'Final result retrieved '+esc(stamp(r.fetchedAt)):'Awaiting completed game'}</p><p>Saved scores and prices stay unchanged. Error = actual minus projected; positive means the actual value was higher. Accuracy is separate from whether a sportsbook side won.</p><div class="scroll"><table><tr><th>Period</th><th>Measure</th><th>Saved projection</th><th>Actual</th><th>Error</th></tr>${rows}</table></div>${r&&!r.half?'<p>Actual first-half score unavailable; 1H grading remains pending.</p>':''}${check?.exclude?'<p>Excluded from forecast performance. The saved receipt is retained below.</p>':marketRows(s,r,record.additionalMarkets)+savedMarkets(record)+savedExchange(record,check)}${window.DocReports?.evidence(record.reportEvidence)||''}${r?`<p><a href="${esc(r.sourceUrl)}" target="_blank" rel="noopener">ESPN final-score evidence</a></p>`:''}<details><summary>Original projection, timing samples & source evidence</summary><pre>${esc(JSON.stringify({snapshot:s,additionalMarkets:record.additionalMarkets},null,2))}</pre></details>`;
+  return `<p><b>Frozen pregame receipt</b> · saved ${esc(stamp(s.savedAt))} · ${r?'Final result retrieved '+esc(stamp(r.fetchedAt)):'Awaiting completed game'}</p><p>Saved scores and prices stay unchanged. Error = actual minus projected; positive means the actual value was higher. Accuracy is separate from whether a sportsbook side won.</p><div class="scroll"><table><tr><th>Period</th><th>Measure</th><th>Saved projection</th><th>Actual</th><th>Error</th></tr>${rows}</table></div>${projectionMath(g,s.config)}${r&&!r.half?'<p>Actual first-half score unavailable; 1H grading remains pending.</p>':''}${check?.exclude?'<p>Excluded from forecast performance. The saved receipt is retained below.</p>':marketRows(s,r,record.additionalMarkets)+savedMarkets(record)+savedExchange(record,check)}${window.DocReports?.evidence(record.reportEvidence)||''}${r?`<p><a href="${esc(r.sourceUrl)}" target="_blank" rel="noopener">ESPN final-score evidence</a></p>`:''}<details><summary>Original projection, timing samples & source evidence</summary><pre>${esc(JSON.stringify({snapshot:s,additionalMarkets:record.additionalMarkets},null,2))}</pre></details>`;
  }
  async function render(mode,date,filter,container){
   const now=new Date(),q=filter.toLowerCase();
@@ -70,5 +96,5 @@ window.DocArchive=(()=>{
   container.innerHTML=`<article><p>${esc(health)}</p><p>Automatic first pregame save; no manual entry. Original projections, model settings, source timing samples, Game Room baselines, and available Kambi prices are retained. Games missed before tipoff are not reconstructed.</p>${performance(date)}</article>`+games.map(g=>`<article><h2>${esc(g.awayName)} vs. ${esc(g.homeName)}</h2><p>${esc(stamp(g.tipoff))} · ${g.scheduleCheck?esc(g.scheduleCheck.label)+(g.scheduleCheck.revisedTipoff?' · '+esc(stamp(g.scheduleCheck.revisedTipoff)):''):g.final?'Final':'Result pending'}</p><details data-receipt="${esc(g.id)}"><summary>Saved projection vs. actual · open comparison</summary><div class="receipt-body">Loading saved receipt…</div></details></article>`).join('')+(games.length?'':'<article>No saved pregame receipts for this selection yet.</article>');
   container.querySelectorAll('[data-receipt]').forEach(el=>{el.ontoggle=async()=>{if(!el.open)return;const body=el.querySelector('.receipt-body'),id=el.dataset.receipt;try{const record=await json('games/'+encodeURIComponent(id)+'.json');if(String(record.snapshot?.id)!==id)throw Error('Receipt identity check failed');records.set(id,record);body.innerHTML=comparison(record,index.find(x=>x.id===id)?.scheduleCheck);if(record.result?.full&&!index.find(x=>x.id===id)?.scheduleCheck){const heading=el.previousElementSibling;if(heading&&heading.tagName==='P')heading.textContent=stamp(record.snapshot.matchup?.date||record.snapshot.tipoff||new Date())+' · Final '+record.result.full.away+'–'+record.result.full.home;}}catch(e){body.textContent=e.message;}};if(date&&index.find(x=>x.id===el.dataset.receipt)?.final)el.open=true;});
  }
- return {load,badge,render,comparison,settle};
+ return {load,badge,render,comparison,settle,projectionMath};
 })();
