@@ -79,3 +79,17 @@ exist. It does not infer a verified close from the rolling Kambi history.
 **Immutable pregame receipt:** Save game ID, both team IDs, source versions, source timestamps, calculation timestamp, tipoff, every raw model input, all intermediate computations (possessions, each PPP, first-half timing factors), model version, forecast outputs, matched market quotes and market timestamps. Store receipts in a shared append-only archive rather than only browser storage. Never replace an old receipt after a model revision. Grade against final regulation and full-game scores separately; record MAE, bias, coverage, and out-of-sample performance by season and market.
 
 **Versioning:** Any formula or assumption change creates a new model version. Old predictions must remain reproducible from their original inputs. Do not claim this draft is operational until the connected ratings source, persistence pipeline and tests prove it.
+
+
+## Complete-game intelligence scope (Nov 2026 requirement)
+
+This War Room must not prioritize first-half markets at the expense of full-game coverage. For **every automatically preloaded matchup**, display a consistent, inspectable research report:
+
+1. **Full game:** projected away/home regulation scores, projected winner and margin, market spreads (both sides), total, and both full-game team totals.
+2. **First half:** projected away/home 1H scores, 1H margin, 1H total, and each team's 1H team total.
+3. **Second half:** projected away/home 2H scores, 2H margin, 2H total, and both 2H team totals. Reconcile 1H + 2H to regulation full-game estimates; clearly separate 2H live/in-game forecasts from pregame forecasts.
+4. **Efficiency and matchup evidence:** each team's dated AdjO, AdjD, AdjT, strength-of-schedule context if available, expected possessions, matchup PPP, scoring and allowed profiles, home/away, rest, and data completeness. Missing information stays visibly missing.
+5. **Market intelligence:** comparable Kambi and Kalshi market snapshots by exact game, period, side, line, price and timestamp. Compute point differences with explicit sign conventions and separate probabilities/EV only when calibrated and fee-aware.
+6. **Evidence and audit:** source provenance, as-of timestamps, model version, intermediate calculations, sample sizes, frozen pregame receipts, results, and historical out-of-sample grading by market and period.
+
+**Daily navigation:** Previous, Today, Upcoming, and Saved must work from automatically collected date-indexed slates without user imports. Maintain the light-background colorful design. Preserve historical data and collector integrations. A scope specification is not proof these capabilities are already implemented or validated.
