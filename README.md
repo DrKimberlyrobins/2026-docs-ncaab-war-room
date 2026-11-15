@@ -53,3 +53,29 @@ Totals and props use the quoted threshold. Moneylines omit the line. Mark
 `close.oppositePrice` only for the exact opposite side at the same threshold.
 The command reports no-vig closing value only when both comparable prices
 exist. It does not infer a verified close from the rolling Kambi history.
+
+
+## Permanent mathematical model specification (draft v1; not yet activated)
+
+**Purpose:** Preserve the mathematics, assumptions and evidence requirements across seasons. This specification is a proposed replacement engine; the current production calculator may use different formulas. Do not present these equations as validated predictions until implemented, unit-tested, backtested and calibrated.
+
+**Inputs:** For each team and date, adjusted offensive efficiency AdjO (points per 100 possessions), adjusted defensive efficiency AdjD (points allowed per 100 possessions), adjusted tempo AdjT (possessions per 40 minutes), dated national efficiency baseline L (points per 100 possessions), home/away designation, rating source, rating vintage and actual retrieval timestamp. Only use inputs available strictly before scheduled tipoff for frozen forecasts. Never fill missing KenPom values with fabricated numbers.
+
+**Initial full-game model (neutral court, uncalibrated):**
+- possessions = (AdjT_away + AdjT_home) / 2.
+- matchup_PPP_away = (AdjO_away * AdjD_home) / (100 * L).
+- matchup_PPP_home = (AdjO_home * AdjD_away) / (100 * L).
+- projected_away = possessions * matchup_PPP_away.
+- projected_home = possessions * matchup_PPP_home.
+- projected_total = projected_away + projected_home.
+- projected_home_margin = projected_home - projected_away.
+- Projected team totals are the individual projected scores.
+- Home-court, schedule, lineup and injury adjustments are explicitly **not** included in this initial neutral-court version. Any future adjustment must have its own version, data provenance, and held-out validation. Do not silently apply an arbitrary points bonus.
+
+**First-half model:** Do not use a fixed 50% split. Use each team's observed regulation first-half scored/allowed share and (when reliably available) half-specific possession rates, with a predeclared minimum sample and explicit season label. A candidate first-half estimate may apply a documented, opponent-matched half-share to the full-game expected score. Calibrate and backtest against actual 1H outcomes separately. Exclude overtime from regulation first-half evidence. Derive second-half estimates consistently so projected 1H + projected 2H = projected regulation total, or clearly label differences in model definitions.
+
+**Market comparison:** Market inputs from Kambi and Kalshi are comparison data, never projection inputs. Preserve provider, market, selection, period, quoted threshold, price, fees when applicable, source update time, collection time, tipoff time and matching confidence. For totals, projected_total - market_total; for home spread, compare projected_home_margin to the market-implied home margin with a consistent sign convention. A numerical point difference is not automatically a profitable bet or a calibrated probability.
+
+**Immutable pregame receipt:** Save game ID, both team IDs, source versions, source timestamps, calculation timestamp, tipoff, every raw model input, all intermediate computations (possessions, each PPP, first-half timing factors), model version, forecast outputs, matched market quotes and market timestamps. Store receipts in a shared append-only archive rather than only browser storage. Never replace an old receipt after a model revision. Grade against final regulation and full-game scores separately; record MAE, bias, coverage, and out-of-sample performance by season and market.
+
+**Versioning:** Any formula or assumption change creates a new model version. Old predictions must remain reproducible from their original inputs. Do not claim this draft is operational until the connected ratings source, persistence pipeline and tests prove it.
