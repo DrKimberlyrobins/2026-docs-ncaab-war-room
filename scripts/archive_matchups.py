@@ -8,6 +8,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from grade_frozen_scores import grade, pregame, residuals, schedule_check
 from rank_matchup_markets import load_history, markets, replay, settle, VERSION
+from kalshi_markets import collect as collect_kalshi
 
 ROOT = Path(__file__).resolve().parents[1]
 ESPN = 'https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball'
@@ -82,7 +83,7 @@ def write(path,value):
  path.parent.mkdir(parents=True,exist_ok=True)
  temp=path.with_suffix('.tmp');temp.write_text(json.dumps(value,indent=2,allow_nan=False)+'\n');temp.replace(path)
 
-def main():
+def main(include_kalshi=False):
  folder=ROOT/'data/archive';folder.mkdir(parents=True,exist_ok=True)
  now=datetime.now(timezone.utc);errors=[];saved=0;graded=0
  # The cached ESPN evidence index includes moved games on their revised dates.
@@ -193,10 +194,26 @@ def main():
   current={**snap,'savedAt':now.isoformat()}
   rows=markets(current,quote,residuals(report,current))
   board.setdefault(snap['gameDate'],{})[snap['id']]={'markets':rows,'tipoff':snap['scheduledTipoff']}
+ if include_kalshi:
+  candidates=[r['snapshot'] for r in records
+              if time(r['snapshot']['scheduledTipoff'])>now and not r.get('result')
+              and not schedule_check(r,events) and pregame(r['snapshot'])]
+  exchange=collect_kalshi(candidates,report,residuals) if candidates else {'status':{},'dates':{}}
+  for games in exchange['dates'].values():
+   for game_id,game in games.items():
+    path=folder/'games'/(game_id+'.json')
+    record=read(path)
+    evidence=record.setdefault('kalshiEvidence',{'version':VERSION,'markets':[]})
+    known={(row['ticker'],row['answer']) for row in evidence['markets']}
+    newly_observed=[row for row in game['markets'] if (row['ticker'],row['answer']) not in known]
+    if newly_observed:
+     evidence['markets'].extend(newly_observed)
+     write(path,record)
+  write(folder/'kalshi-board.json',exchange)
  write(folder/'market-board.json',{'updatedAt':now.isoformat(),'modelVersion':VERSION,'dates':board})
  write(folder/'index.json',{'updatedAt':datetime.now(timezone.utc).isoformat(),'games':index})
  write(folder/'health.json',{'status':'PARTIAL' if errors else 'READY','checkedAt':datetime.now(timezone.utc).isoformat(),
   'savedThisRun':saved,'gradedThisRun':graded,'totalSaved':len(index),'errors':errors})
  print(json.dumps({'saved':saved,'graded':graded,'total':len(index),'errors':errors}))
  if errors:raise SystemExit(1)
-if __name__=='__main__':main()
+if __name__=='__main__':main(include_kalshi=True)

@@ -46,13 +46,23 @@ window.DocArchive=(()=>{
    return `<tr><td>${x.period==='half'?'1H':'Full game'}</td><td>${esc(label)}</td><td>${esc(x.price)}</td><td>${pct(x.probability)}</td><td>${pct(x.expectedValue)}</td><td>${diff===null?'Pending':settle(diff)}</td></tr>`;
   }).join('')}</table></div></details>`;
  }
+ function savedExchange(record,check){
+  const rows=record.kalshiEvidence?.markets;
+  if(!rows?.length)return '';
+  const cutoff=Math.min(Date.parse(record.snapshot.scheduledTipoff),Date.parse(check?.revisedTipoff||record.snapshot.scheduledTipoff));
+  return `<details><summary>Saved Kalshi contract quotes</summary><p>Results derived from ESPN scores. Exchange settlements can differ under contract cancellation rules.</p><div class="scroll"><table><tr><th>Period</th><th>Contract</th><th>Answer</th><th>First ask</th><th>ESPN result</th></tr>${rows.filter(row=>Date.parse(row.quoteFetchedAt)<cutoff).map(row=>{
+   const actual=record.result?.[row.period], margin=row.teamSide==='home'?actual?.homeMargin:-actual?.homeMargin;
+   const value=row.kind==='total'?actual?.total:row.kind==='spread'?margin:actual?.[row.teamSide];
+   return `<tr><td>${row.period==='half'?'1H':'Full game'}</td><td>${esc(row.label)}</td><td>${esc(row.answer)}</td><td>${fmt(row.ask*100)}¢</td><td>${actual?((value>row.line)===(row.answer==='yes')?'WIN':'LOSS'):'Pending'}</td></tr>`;
+  }).join('')}</table></div></details>`;
+ }
  function comparison(record,check){
   const s=record.snapshot,r=record.result,g=s.matchup;
   let rows='';for(const [key,label,model] of [['half','1H',g.firstHalf],['full','Full game',g.model]]){
    const a=r?.[key];
    for(const [field,name] of [['away',g.awayName],['home',g.homeName],['total','Total'],['homeMargin',g.homeName+' margin']])rows+=`<tr><td>${label}</td><td>${esc(name)}</td><td>${fmt(model?.[field])}</td><td>${fmt(a?.[field])}</td><td>${model&&a?signed(a[field]-model[field]):'—'}</td></tr>`;
   }
-  return `<p><b>Frozen pregame receipt</b> · saved ${esc(stamp(s.savedAt))} · ${r?'Final result retrieved '+esc(stamp(r.fetchedAt)):'Awaiting completed game'}</p><p>Saved scores and prices stay unchanged. Error = actual minus projected; positive means the actual value was higher. Accuracy is separate from whether a sportsbook side won.</p><div class="scroll"><table><tr><th>Period</th><th>Measure</th><th>Saved projection</th><th>Actual</th><th>Error</th></tr>${rows}</table></div>${r&&!r.half?'<p>Actual first-half score unavailable; 1H grading remains pending.</p>':''}${check?.exclude?'<p>Excluded from forecast performance. The saved receipt is retained below.</p>':marketRows(s,r,record.additionalMarkets)+savedMarkets(record)}${window.DocReports?.evidence(record.reportEvidence)||''}${r?`<p><a href="${esc(r.sourceUrl)}" target="_blank" rel="noopener">ESPN final-score evidence</a></p>`:''}<details><summary>Original projection, timing samples & source evidence</summary><pre>${esc(JSON.stringify({snapshot:s,additionalMarkets:record.additionalMarkets},null,2))}</pre></details>`;
+  return `<p><b>Frozen pregame receipt</b> · saved ${esc(stamp(s.savedAt))} · ${r?'Final result retrieved '+esc(stamp(r.fetchedAt)):'Awaiting completed game'}</p><p>Saved scores and prices stay unchanged. Error = actual minus projected; positive means the actual value was higher. Accuracy is separate from whether a sportsbook side won.</p><div class="scroll"><table><tr><th>Period</th><th>Measure</th><th>Saved projection</th><th>Actual</th><th>Error</th></tr>${rows}</table></div>${r&&!r.half?'<p>Actual first-half score unavailable; 1H grading remains pending.</p>':''}${check?.exclude?'<p>Excluded from forecast performance. The saved receipt is retained below.</p>':marketRows(s,r,record.additionalMarkets)+savedMarkets(record)+savedExchange(record,check)}${window.DocReports?.evidence(record.reportEvidence)||''}${r?`<p><a href="${esc(r.sourceUrl)}" target="_blank" rel="noopener">ESPN final-score evidence</a></p>`:''}<details><summary>Original projection, timing samples & source evidence</summary><pre>${esc(JSON.stringify({snapshot:s,additionalMarkets:record.additionalMarkets},null,2))}</pre></details>`;
  }
  async function render(mode,date,filter,container){
   const now=new Date(),q=filter.toLowerCase();
