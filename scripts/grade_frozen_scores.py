@@ -1,9 +1,11 @@
 """Score the existing War Room from immutable forecasts and sourced actuals."""
 from collections import defaultdict
 from math import isclose
+from zoneinfo import ZoneInfo
 
 from first_half import moment
 
+CENTRAL = ZoneInfo('America/Chicago')
 FIELDS = ('away', 'home', 'total', 'homeMargin')
 PERIODS = {'half': 'firstHalf', 'full': 'model'}
 
@@ -44,20 +46,23 @@ def summarize(cases):
     }
 
 
-def grade(records):
+def grade(records, events=None):
     all_cases = defaultdict(list)
     dates = {}
     for record in records:
         snapshot = record['snapshot']
         day = dates.setdefault(snapshot['gameDate'], {
             'receipts': 0, 'finals': 0, 'excludedReceipts': 0,
-            'cases': defaultdict(list), 'forecastErrors': {},
+            'cases': defaultdict(list), 'forecastErrors': {}, 'scheduleChecks': {},
         })
         day['receipts'] += 1
         actual = record.get('result')
         if actual:
             day['finals'] += 1
-        if not pregame(snapshot):
+        check = schedule_check(record, events or {})
+        if check:
+            day['scheduleChecks'][snapshot['id']] = check
+        if (check and check['exclude']) or not pregame(snapshot):
             day['excludedReceipts'] += 1
             continue
         if not actual or actual.get('status') != 'Final':
@@ -98,3 +103,37 @@ def residuals(report, cutoff):
                 if period in game:
                     errors[period].append(game[period])
     return errors
+
+
+def schedule_check(record, event_index):
+    """Reconcile a frozen matchup with ESPN's latest scoreboard identities."""
+    snapshot = record['snapshot']
+    game = snapshot['matchup']
+    event = event_index.get(snapshot['id'])
+    if event is None:
+        return None
+    comp = (event.get('competitions') or [{}])[0]
+    teams = {side['homeAway']: side for side in comp.get('competitors', [])
+             if 'homeAway' in side and side.get('team', {}).get('id')}
+    if set(teams) != {'away', 'home'}:
+        return None
+    ids = {key: str(team['team']['id']) for key, team in teams.items()}
+    expected = {key: str(game[key + 'Id']) for key in teams}
+    if ids != expected:
+        label = 'ESPN changed home/away assignment' if set(ids.values()) == set(expected.values()) else 'ESPN changed the scheduled matchup'
+        return {'label': label, 'exclude': True}
+    status = comp.get('status', event.get('status', {})).get('type', {})
+    if status.get('name') in ('STATUS_POSTPONED', 'STATUS_CANCELED', 'STATUS_CANCELLED'):
+        return {'label': status['name'].split('_', 1)[1].capitalize(), 'exclude': True}
+    revised = moment(event['date'])
+    if moment(snapshot['savedAt']) >= revised:
+        return {'label': 'Revised tipoff is at or before the forecast save time', 'exclude': True}
+    actual = record.get('result')
+    if actual and status.get('completed') and all(team.get('score') is not None for team in teams.values()):
+        if any(float(team['score']) != actual['full'][key] for key, team in teams.items()):
+            return {'label': 'ESPN scoreboard and saved final scores disagree', 'exclude': True}
+    if revised != moment(snapshot['scheduledTipoff']):
+        moved_date = snapshot['gameDate'] != revised.astimezone(CENTRAL).date().isoformat()
+        return {'label': 'Rescheduled to a different date' if moved_date else 'ESPN revised the tipoff time',
+                'exclude': moved_date, 'revisedTipoff': event['date']}
+    return None

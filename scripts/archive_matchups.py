@@ -6,7 +6,7 @@ import math
 import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
-from grade_frozen_scores import grade, pregame, residuals
+from grade_frozen_scores import grade, pregame, residuals, schedule_check
 from rank_matchup_markets import load_history, markets, replay, settle, VERSION
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -53,6 +53,10 @@ def result(summary, snapshot, fetched_at):
  competitors={str(c.get('id',c.get('team',{}).get('id'))):c for c in comp.get('competitors',[])}
  g=snapshot['matchup'];a=competitors.get(g['awayId']);h=competitors.get(g['homeId'])
  if not a or not h:return None
+ for team,side in ((a,'away'),(h,'home')):
+  if team.get('homeAway') and team['homeAway']!=side:return None
+ if comp.get('date') and time(comp['date'])<=time(snapshot['savedAt']):return None
+ if fetched_at and comp.get('date') and time(comp['date'])>=time(fetched_at):return None
  av,hv=score(a.get('score')),score(h.get('score'))
  if av is None or hv is None:return None
  def values(a,h):return {'away':a,'home':h,'total':a+h,'homeMargin':h-a}
@@ -81,7 +85,17 @@ def write(path,value):
 def main():
  folder=ROOT/'data/archive';folder.mkdir(parents=True,exist_ok=True)
  now=datetime.now(timezone.utc);errors=[];saved=0;graded=0
- history=grade(read(p) for p in (folder/'games').glob('*.json'))
+ # The cached ESPN evidence index includes moved games on their revised dates.
+ event_index={}
+ for path in sorted((ROOT/'data/slates').glob('*.json')):
+  evidence=read(path,{})
+  for event in evidence.get('data',{}).get('events',[]):
+   key=str(event['id'])
+   stamp=evidence.get('fetchedAt','')
+   if key not in event_index or stamp>event_index[key][0]:
+    event_index[key]=(stamp,event)
+ events={key:pair[1] for key,pair in event_index.items()}
+ history=grade((read(p) for p in (folder/'games').glob('*.json')),events)
  for p in sorted((ROOT/'data/calculator/daily').glob('*.json')):
   payload=read(p)
   if not any(time(g['date'])>now and g.get('model') and not (folder/'games'/(g['id']+'.json')).exists() for g in payload['matchups']):continue
@@ -99,7 +113,7 @@ def main():
      path.parent.mkdir(parents=True,exist_ok=True)
      decisions=markets(snap,snap['kambi'],residuals(history,snap))
      with path.open('x') as f:
-      json.dump({'snapshot':snap,'result':None,'decisionEvidence':{'version':VERSION,'markets':decisions}},f,indent=2,allow_nan=False)
+      json.dump({'snapshot':snap,'result':None,'decisionEvidence':{'version':VERSION,'markets':[{**row,'evaluatedAt':snap['savedAt']} for row in decisions]}},f,indent=2,allow_nan=False)
       f.write('\n')
      saved+=1
   except Exception as exc:errors.append({'date':payload['date'],'message':str(exc)})
@@ -133,7 +147,8 @@ def main():
     if fingerprint not in known:
      retained['articles'].append({**copy.deepcopy(article),'evidenceId':fingerprint,'savedAt':now.isoformat()});known.add(fingerprint);changed=True
    if changed:write(p,record)
-  if time(snap['scheduledTipoff'])>now and pregame(snap):
+  check=schedule_check(record,events)
+  if time(snap['scheduledTipoff'])>now and not check and pregame(snap):
    quote=read(ROOT/'data/kambi'/(snap['gameDate']+'.json'),{}).get('games',{}).get(snap['id'])
    current={**snap,'savedAt':now.isoformat()}
    rows=markets(current,quote,residuals(history,current))
@@ -146,7 +161,7 @@ def main():
      evidence['markets'].extend(new)
      write(p,record)
   previous=record.get('result')
-  if (not previous or not previous.get('half')) and time(snap['scheduledTipoff'])<now:
+  if not (check and check['exclude']) and (not previous or not previous.get('half')) and time(snap['scheduledTipoff'])<now:
    try:
     actual=result(fetch(ESPN+'/summary?event='+snap['id']),snap,datetime.now(timezone.utc).isoformat())
     if actual and (not previous or actual.get('half')):
@@ -156,19 +171,24 @@ def main():
   g=snap['matchup']
   index.append({'id':snap['id'],'date':snap['gameDate'],'tipoff':snap['scheduledTipoff'],
    'awayName':g['awayName'],'homeName':g['homeName'],'savedAt':snap['savedAt'],
-   'final':bool(record.get('result'))})
- report=grade(records)
+   'final':bool(record.get('result')),'scheduleCheck':check})
+ report=grade(records,events)
  for record in records:
   if record.get('result') and record.get('decisionEvidence'):
    snap=record['snapshot']
-   games=report['dates'][snap['gameDate']].setdefault('marketResults',{})
-   games[snap['id']]=list(settle(record['decisionEvidence']['markets'],snap,record['result']))
+   day=report['dates'][snap['gameDate']]
+   if snap['id'] not in day['forecastErrors']:continue
+   check=day['scheduleChecks'].get(snap['id'],{})
+   cutoff=min(time(snap['scheduledTipoff']),time(check.get('revisedTipoff',snap['scheduledTipoff'])))
+   timely=[row for row in record['decisionEvidence']['markets']
+           if time(row.get('evaluatedAt',row['quoteFetchedAt']))<cutoff]
+   day.setdefault('marketResults',{})[snap['id']]=list(settle(timely,snap,record['result']))
  report['marketReplay']=replay(records,report,load_history(ROOT/'data/kambi/history'))
  write(folder/'score-grades.json',report)
  board={}
  for record in records:
   snap=record['snapshot']
-  if time(snap['scheduledTipoff'])<=now or record.get('result') or not pregame(snap):continue
+  if time(snap['scheduledTipoff'])<=now or record.get('result') or schedule_check(record,events) or not pregame(snap):continue
   quote=read(ROOT/'data/kambi'/(snap['gameDate']+'.json'),{}).get('games',{}).get(snap['id'])
   current={**snap,'savedAt':now.isoformat()}
   rows=markets(current,quote,residuals(report,current))

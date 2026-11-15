@@ -98,10 +98,15 @@ def replay(records, report, histories):
         if not actual or not pregame(snapshot):
             continue
         date = snapshot['gameDate']
+        if snapshot['id'] not in report['dates'][date]['forecastErrors']:
+            continue
+        check = report['dates'][date]['scheduleChecks'].get(snapshot['id'], {})
+        tipoff = min(moment(snapshot['scheduledTipoff']),
+                     moment(check.get('revisedTipoff', snapshot['scheduledTipoff'])))
         observations = histories.get(date, {}).get(snapshot['id'], [])
         for quote in observations:
             observed = moment(quote['fetchedAt'])
-            if not moment(snapshot['savedAt']) <= observed < moment(snapshot['scheduledTipoff']):
+            if not moment(snapshot['savedAt']) <= observed < tipoff:
                 continue
             cutoff = {**snapshot, 'savedAt': quote['fetchedAt']}
             rows = markets(cutoff, quote, residuals(report, cutoff))
