@@ -1,0 +1,336 @@
+{
+  "snapshot": {
+    "version": 1,
+    "id": "401906851",
+    "savedAt": "2026-11-15T10:48:23.671379+00:00",
+    "scheduledTipoff": "2026-11-18T02:00Z",
+    "gameDate": "2026-11-17",
+    "matchup": {
+      "id": "401906851",
+      "date": "2026-11-18T02:00Z",
+      "awayName": "Michigan State Spartans",
+      "homeName": "Tennessee Volunteers",
+      "awayId": "127",
+      "homeId": "2633",
+      "location": "Home",
+      "model": {
+        "away": 77.91000000000001,
+        "home": 70.21000000000001,
+        "total": 148.12,
+        "homeMargin": -7.700000000000003,
+        "possessions": 70.0,
+        "awayEfficiency": 111.30000000000001,
+        "homeEfficiency": 100.30000000000001,
+        "homeAdvantagePoints": 0.0
+      },
+      "matchedTeams": {
+        "away": "Michigan St.",
+        "home": "Tennessee"
+      },
+      "firstHalf": {
+        "away": 39.688024193548394,
+        "home": 31.37834762015685,
+        "total": 71.06637181370525,
+        "homeMargin": -8.309676573391545,
+        "awayScoringShare": 0.5094086021505376,
+        "homeScoringShare": 0.44692134482490875,
+        "modelVersion": "first-half-timing-v1",
+        "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+        "awayProfile": {
+          "season": 2027,
+          "games": 4,
+          "scoringShare": 0.5188172043010753,
+          "allowingShare": 0.44528301886792454,
+          "firstScoredAverage": 48.25,
+          "firstAllowedAverage": 29.5,
+          "samples": [
+            {
+              "id": "401925755",
+              "date": "2026-11-14T00:00Z",
+              "firstScored": 59.0,
+              "secondScored": 47.0,
+              "firstAllowed": 44.0,
+              "secondAllowed": 28.0
+            },
+            {
+              "id": "401909564",
+              "date": "2026-11-11T00:00Z",
+              "firstScored": 34.0,
+              "secondScored": 45.0,
+              "firstAllowed": 25.0,
+              "secondAllowed": 48.0
+            },
+            {
+              "id": "401925754",
+              "date": "2026-11-06T01:00Z",
+              "firstScored": 48.0,
+              "secondScored": 43.0,
+              "firstAllowed": 25.0,
+              "secondAllowed": 36.0
+            },
+            {
+              "id": "401924856",
+              "date": "2026-11-03T00:00Z",
+              "firstScored": 52.0,
+              "secondScored": 44.0,
+              "firstAllowed": 24.0,
+              "secondAllowed": 35.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401925755",
+              "fetchedAt": "2026-11-14T17:58:14.404527+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401909564",
+              "fetchedAt": "2026-11-11T10:53:06.272688+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401925754",
+              "fetchedAt": "2026-11-06T06:38:05.587325+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401924856",
+              "fetchedAt": "2026-11-03T17:00:22.261635+00:00"
+            }
+          ],
+          "priorSeason": false
+        },
+        "homeProfile": {
+          "season": 2027,
+          "games": 3,
+          "scoringShare": 0.448559670781893,
+          "allowingShare": 0.5,
+          "firstScoredAverage": 36.333333333333336,
+          "firstAllowedAverage": 30.666666666666668,
+          "samples": [
+            {
+              "id": "401906850",
+              "date": "2026-11-14T00:00Z",
+              "firstScored": 42.0,
+              "secondScored": 41.0,
+              "firstAllowed": 37.0,
+              "secondAllowed": 41.0
+            },
+            {
+              "id": "401906849",
+              "date": "2026-11-10T00:00Z",
+              "firstScored": 33.0,
+              "secondScored": 37.0,
+              "firstAllowed": 24.0,
+              "secondAllowed": 23.0
+            },
+            {
+              "id": "401906848",
+              "date": "2026-11-03T23:00Z",
+              "firstScored": 34.0,
+              "secondScored": 56.0,
+              "firstAllowed": 31.0,
+              "secondAllowed": 28.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401906850",
+              "fetchedAt": "2026-11-14T17:58:18.129816+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401906849",
+              "fetchedAt": "2026-11-10T09:07:33.116627+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401906848",
+              "fetchedAt": "2026-11-04T06:13:28.640323+00:00"
+            }
+          ],
+          "priorSeason": false
+        }
+      },
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 38.85165717176156,
+        "home": 34.964242233477655,
+        "homeMargin": -3.8874149382839036,
+        "total": 73.81589940523921,
+        "firstHalfPossessions": 35.373507035633324,
+        "awayEfficiency": 109.83264150943398,
+        "homeEfficiency": 98.84301886792453,
+        "ratingsAt": "2026-11-15T10:48:05.365647+00:00",
+        "tipoffAt": "2026-11-18T02:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": false,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
+    },
+    "config": {
+      "season": 2027,
+      "nationalEfficiency": 106.0,
+      "nationalTempo": 71.5,
+      "baselineAsOf": "2026-11-01",
+      "baselineSource": "User-provided KenPom beginning-of-season screenshots",
+      "homeAdvantagePoints": 0.0,
+      "modelVersion": "additive-matchup-v1"
+    },
+    "ratingsFetchedAt": "2026-11-15T10:48:05.365647+00:00",
+    "preparedAt": "2026-11-15T10:48:06.065501+00:00",
+    "ratingSource": "https://kenpom.com/",
+    "scheduleSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?groups=50&limit=1000&dates=20261117",
+    "verification": "ESPN pregame state and future tipoff checked at server save time",
+    "gameRoomBaseline": {
+      "simulation": null,
+      "simulationStatus": "No verified adjusted-efficiency ratings feed configured.",
+      "id": "401906851",
+      "date": "2026-11-18T02:00Z",
+      "name": "Michigan State Spartans at Tennessee Volunteers",
+      "preparedAt": "2026-11-15T10:47:47.188667+00:00",
+      "season": 2027,
+      "priorSeason": false,
+      "modelVersion": "score-baseline-v1",
+      "model": {
+        "full": {
+          "away": 77.16666666666667,
+          "home": 73.625,
+          "total": 150.79166666666669,
+          "homeMargin": -3.5416666666666714,
+          "nAway": 4,
+          "nHome": 3
+        },
+        "half": {
+          "away": 38.833333333333336,
+          "home": 33.833333333333336,
+          "total": 72.66666666666667,
+          "homeMargin": -5.0,
+          "nAway": 3,
+          "nHome": 3
+        }
+      },
+      "samples": {
+        "away": [
+          {
+            "id": "401925755",
+            "date": "2026-11-14T00:00Z",
+            "pf": 106.0,
+            "pa": 72.0,
+            "hf": 59.0,
+            "ha": 44.0,
+            "opponent": "Northern Iowa Panthers",
+            "site": "home"
+          },
+          {
+            "id": "401909564",
+            "date": "2026-11-11T00:00Z",
+            "pf": 79.0,
+            "pa": 73.0,
+            "hf": 34.0,
+            "ha": 25.0,
+            "opponent": "Duke Blue Devils",
+            "site": "Neutral"
+          },
+          {
+            "id": "401925754",
+            "date": "2026-11-06T01:00Z",
+            "pf": 91.0,
+            "pa": 61.0,
+            "hf": 48.0,
+            "ha": 25.0,
+            "opponent": "Toledo Rockets",
+            "site": "home"
+          },
+          {
+            "id": "401924856",
+            "date": "2026-11-03T00:00Z",
+            "pf": 96.0,
+            "pa": 59.0,
+            "hf": null,
+            "ha": null,
+            "opponent": "Quinnipiac Bobcats",
+            "site": "home"
+          }
+        ],
+        "home": [
+          {
+            "id": "401906850",
+            "date": "2026-11-14T00:00Z",
+            "pf": 83.0,
+            "pa": 78.0,
+            "hf": 42.0,
+            "ha": 37.0,
+            "opponent": "Tennessee State Tigers",
+            "site": "home"
+          },
+          {
+            "id": "401906849",
+            "date": "2026-11-10T00:00Z",
+            "pf": 70.0,
+            "pa": 47.0,
+            "hf": 33.0,
+            "ha": 24.0,
+            "opponent": "Radford Highlanders",
+            "site": "home"
+          },
+          {
+            "id": "401906848",
+            "date": "2026-11-03T23:00Z",
+            "pf": 90.0,
+            "pa": 59.0,
+            "hf": 34.0,
+            "ha": 31.0,
+            "opponent": "Wofford Terriers",
+            "site": "home"
+          }
+        ]
+      },
+      "source": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/teams/127/schedule?season=2027",
+          "fetchedAt": "2026-11-15T06:24:03.571146+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401925755",
+          "fetchedAt": "2026-11-14T17:58:14.404527+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401909564",
+          "fetchedAt": "2026-11-11T10:53:06.272688+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401925754",
+          "fetchedAt": "2026-11-06T06:38:05.587325+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/teams/2633/schedule?season=2027",
+          "fetchedAt": "2026-11-15T06:24:06.803180+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401906850",
+          "fetchedAt": "2026-11-14T17:58:18.129816+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401906849",
+          "fetchedAt": "2026-11-10T09:07:33.116627+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401906848",
+          "fetchedAt": "2026-11-04T06:13:28.640323+00:00"
+        }
+      ],
+      "state": "ready",
+      "reason": null
+    },
+    "kambi": null,
+    "marketStatus": "No verified fresh pregame market available at save time"
+  },
+  "result": null
+}
