@@ -426,7 +426,87 @@
     ]
   },
   "additionalMarkets": {
-    "half": {},
+    "half": {
+      "moneyline": {
+        "id": "2718155605",
+        "criterionId": "1001159815",
+        "label": "Moneyline - 1st Half",
+        "period": "half",
+        "kind": "moneyline",
+        "outcomes": [
+          {
+            "id": "4419826169",
+            "price": 105,
+            "changedAt": "2026-11-16T14:58:52Z",
+            "teamId": "2378"
+          },
+          {
+            "id": "4419826170",
+            "price": -143,
+            "changedAt": "2026-11-16T14:58:52Z",
+            "teamId": "314"
+          }
+        ],
+        "main": false,
+        "quoteFetchedAt": "2026-11-16T18:20:44.798604+00:00",
+        "quoteSavedAt": "2026-11-16T18:21:07.876673+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028813475.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "total": {
+        "id": "2718155610",
+        "criterionId": "1001159947",
+        "label": "Total Points - 1st Half",
+        "period": "half",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4419826179",
+            "price": -122,
+            "changedAt": "2026-11-16T14:58:52Z",
+            "side": "over",
+            "line": 67.5
+          },
+          {
+            "id": "4419826180",
+            "price": -112,
+            "changedAt": "2026-11-16T14:58:52Z",
+            "side": "under",
+            "line": 67.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-16T18:20:44.798604+00:00",
+        "quoteSavedAt": "2026-11-16T18:21:07.876673+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028813475.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "spread": {
+        "id": "2718155630",
+        "criterionId": "1001159940",
+        "label": "Spread - 1st Half",
+        "period": "half",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4419826219",
+            "price": -129,
+            "changedAt": "2026-11-16T14:37:48Z",
+            "teamId": "2378",
+            "line": 1.5
+          },
+          {
+            "id": "4419826220",
+            "price": -106,
+            "changedAt": "2026-11-16T14:37:48Z",
+            "teamId": "314",
+            "line": -1.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-16T18:20:44.798604+00:00",
+        "quoteSavedAt": "2026-11-16T18:21:07.876673+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028813475.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    },
     "full": {
       "spread": {
         "id": "2717936700",
@@ -603,6 +683,190 @@
         "sampleSize": 610,
         "pushProbability": 0.0,
         "evaluatedAt": "2026-11-16T00:55:03.627926+00:00"
+      },
+      {
+        "period": "half",
+        "kind": "spread",
+        "line": 1.5,
+        "price": -129,
+        "outcomeId": "4419826219",
+        "offerId": "2718155630",
+        "teamId": "2378",
+        "side": null,
+        "pointDifference": 1.411019693040032,
+        "breakEven": 0.5633187772925764,
+        "probability": 0.6790322580645162,
+        "expectedValue": 0.20541385346336588,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-16T18:20:44.798604+00:00",
+        "score": {
+          "away": 34.10872392713801,
+          "home": 34.01974362017804
+        },
+        "sampleSize": 620,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 144.5,
+        "price": -107,
+        "outcomeId": "4419814320",
+        "offerId": "2718188278",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": -0.10960000000000036,
+        "breakEven": 0.5169082125603864,
+        "probability": 0.5120385232744783,
+        "expectedValue": -0.00942080076806527,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-16T18:20:44.798604+00:00",
+        "score": {
+          "away": 75.25760000000001,
+          "home": 69.1328
+        },
+        "sampleSize": 623,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "half",
+        "kind": "total",
+        "line": 67.5,
+        "price": -122,
+        "outcomeId": "4419826179",
+        "offerId": "2718155610",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": 0.628467547316049,
+        "breakEven": 0.5495495495495496,
+        "probability": 0.5435483870967742,
+        "expectedValue": -0.010920148069804495,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-16T18:20:44.798604+00:00",
+        "score": {
+          "away": 34.10872392713801,
+          "home": 34.01974362017804
+        },
+        "sampleSize": 620,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": 2.5,
+        "price": -114,
+        "outcomeId": "4419063669",
+        "offerId": "2717939313",
+        "teamId": "2378",
+        "side": null,
+        "pointDifference": -3.6248000000000076,
+        "breakEven": 0.5327102803738317,
+        "probability": 0.5152487961476726,
+        "expectedValue": -0.03277857565261452,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-16T18:20:44.798604+00:00",
+        "score": {
+          "away": 75.25760000000001,
+          "home": 69.1328
+        },
+        "sampleSize": 623,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": -2.5,
+        "price": -107,
+        "outcomeId": "4419063670",
+        "offerId": "2717939313",
+        "teamId": "314",
+        "side": null,
+        "pointDifference": 3.6248000000000076,
+        "breakEven": 0.5169082125603864,
+        "probability": 0.48475120385232745,
+        "expectedValue": -0.06221028787446928,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-16T18:20:44.798604+00:00",
+        "score": {
+          "away": 75.25760000000001,
+          "home": 69.1328
+        },
+        "sampleSize": 623,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 144.5,
+        "price": -112,
+        "outcomeId": "4419814321",
+        "offerId": "2718188278",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": 0.10960000000000036,
+        "breakEven": 0.5283018867924528,
+        "probability": 0.48796147672552165,
+        "expectedValue": -0.07635863334097681,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-16T18:20:44.798604+00:00",
+        "score": {
+          "away": 75.25760000000001,
+          "home": 69.1328
+        },
+        "sampleSize": 623,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "half",
+        "kind": "total",
+        "line": 67.5,
+        "price": -112,
+        "outcomeId": "4419826180",
+        "offerId": "2718155610",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": -0.628467547316049,
+        "breakEven": 0.5283018867924528,
+        "probability": 0.45645161290322583,
+        "expectedValue": -0.13600230414746542,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-16T18:20:44.798604+00:00",
+        "score": {
+          "away": 34.10872392713801,
+          "home": 34.01974362017804
+        },
+        "sampleSize": 620,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "half",
+        "kind": "spread",
+        "line": -1.5,
+        "price": -106,
+        "outcomeId": "4419826220",
+        "offerId": "2718155630",
+        "teamId": "314",
+        "side": null,
+        "pointDifference": -1.411019693040032,
+        "breakEven": 0.5145631067961165,
+        "probability": 0.3209677419354839,
+        "expectedValue": -0.37623250152160675,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-16T18:20:44.798604+00:00",
+        "score": {
+          "away": 34.10872392713801,
+          "home": 34.01974362017804
+        },
+        "sampleSize": 620,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
       }
     ]
   },
@@ -1829,6 +2093,131 @@
         "probability": 0.025682182985553772,
         "sampleSize": 623,
         "expectedValue": -0.8270560068312877,
+        "projectedScore": {
+          "away": 75.25760000000001,
+          "home": 69.1328
+        }
+      },
+      {
+        "ticker": "KXNCAAMBSPREAD-26NOV16IONAUMBC-IONA25",
+        "eventTicker": "KXNCAAMBSPREAD-26NOV16IONAUMBC",
+        "period": "full",
+        "kind": "spread",
+        "answer": "no",
+        "line": 24.5,
+        "teamSide": "away",
+        "label": "Iona wins by over 24.5 points",
+        "ask": 0.99,
+        "askSize": 40.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-16T18:21:10.113573+00:00",
+        "rules": "If Iona wins by more than 24.5 points in the Iona vs UMBC men's college basketball game originally scheduled for Nov 16, 2026, then the market resolves to Yes.",
+        "prediction": 6.124800000000008,
+        "pointDifference": 18.375199999999992,
+        "probability": 0.9727126805778491,
+        "sampleSize": 623,
+        "expectedValue": -0.01815617182007765,
+        "projectedScore": {
+          "away": 75.25760000000001,
+          "home": 69.1328
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV16IONAUMBC-124",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV16IONAUMBC",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 123.5,
+        "teamSide": null,
+        "label": "Over 123.5 points",
+        "ask": 0.92,
+        "askSize": 2288.19,
+        "fee": 0.0052,
+        "breakEven": 0.9252,
+        "quoteFetchedAt": "2026-11-16T18:21:10.074668+00:00",
+        "rules": "If over 123.5 total points are scored in the Iona vs UMBC men's college basketball game originally scheduled for Nov 16, 2026, then the market resolves to Yes.",
+        "prediction": 144.3904,
+        "pointDifference": 20.8904,
+        "probability": 0.9069020866773676,
+        "sampleSize": 623,
+        "expectedValue": -0.019777251753818007,
+        "projectedScore": {
+          "away": 75.25760000000001,
+          "home": 69.1328
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV16IONAUMBC-123",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV16IONAUMBC",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 122.5,
+        "teamSide": null,
+        "label": "Over 122.5 points",
+        "ask": 0.95,
+        "askSize": 2.0,
+        "fee": 0.0034,
+        "breakEven": 0.9534,
+        "quoteFetchedAt": "2026-11-16T18:21:10.074668+00:00",
+        "rules": "If over 122.5 total points are scored in the Iona vs UMBC men's college basketball game originally scheduled for Nov 16, 2026, then the market resolves to Yes.",
+        "prediction": 144.3904,
+        "pointDifference": 21.8904,
+        "probability": 0.9165329052969502,
+        "sampleSize": 623,
+        "expectedValue": -0.03866907352952573,
+        "projectedScore": {
+          "away": 75.25760000000001,
+          "home": 69.1328
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV16IONAUMBC-124",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV16IONAUMBC",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 123.5,
+        "teamSide": null,
+        "label": "Over 123.5 points",
+        "ask": 0.11,
+        "askSize": 829.0,
+        "fee": 0.0069,
+        "breakEven": 0.1169,
+        "quoteFetchedAt": "2026-11-16T18:21:10.074668+00:00",
+        "rules": "If over 123.5 total points are scored in the Iona vs UMBC men's college basketball game originally scheduled for Nov 16, 2026, then the market resolves to Yes.",
+        "prediction": 144.3904,
+        "pointDifference": -20.8904,
+        "probability": 0.09309791332263243,
+        "sampleSize": 623,
+        "expectedValue": -0.2036106644770537,
+        "projectedScore": {
+          "away": 75.25760000000001,
+          "home": 69.1328
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV16IONAUMBC-123",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV16IONAUMBC",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 122.5,
+        "teamSide": null,
+        "label": "Over 122.5 points",
+        "ask": 0.1,
+        "askSize": 5.0,
+        "fee": 0.0063,
+        "breakEven": 0.1063,
+        "quoteFetchedAt": "2026-11-16T18:21:10.074668+00:00",
+        "rules": "If over 122.5 total points are scored in the Iona vs UMBC men's college basketball game originally scheduled for Nov 16, 2026, then the market resolves to Yes.",
+        "prediction": 144.3904,
+        "pointDifference": -21.8904,
+        "probability": 0.08346709470304976,
+        "sampleSize": 623,
+        "expectedValue": -0.21479685133537385,
         "projectedScore": {
           "away": 75.25760000000001,
           "home": 69.1328

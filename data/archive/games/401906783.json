@@ -360,7 +360,87 @@
     ]
   },
   "additionalMarkets": {
-    "half": {},
+    "half": {
+      "total": {
+        "id": "2718161917",
+        "criterionId": "1001159947",
+        "label": "Total Points - 1st Half",
+        "period": "half",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4419691977",
+            "price": -120,
+            "changedAt": "2026-11-16T16:20:05Z",
+            "side": "over",
+            "line": 72.5
+          },
+          {
+            "id": "4419691978",
+            "price": -114,
+            "changedAt": "2026-11-16T16:20:05Z",
+            "side": "under",
+            "line": 72.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-16T18:20:45.530642+00:00",
+        "quoteSavedAt": "2026-11-16T18:21:07.876673+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028674301.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "spread": {
+        "id": "2718135679",
+        "criterionId": "1001159940",
+        "label": "Spread - 1st Half",
+        "period": "half",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4419671903",
+            "price": -104,
+            "changedAt": "2026-11-16T16:20:04Z",
+            "teamId": "61",
+            "line": -12.5
+          },
+          {
+            "id": "4419671904",
+            "price": -132,
+            "changedAt": "2026-11-16T16:20:04Z",
+            "teamId": "294",
+            "line": 12.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-16T18:20:45.530642+00:00",
+        "quoteSavedAt": "2026-11-16T18:21:07.876673+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028674301.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "moneyline": {
+        "id": "2718161927",
+        "criterionId": "1001159815",
+        "label": "Moneyline - 1st Half",
+        "period": "half",
+        "kind": "moneyline",
+        "outcomes": [
+          {
+            "id": "4419691997",
+            "price": -2000,
+            "changedAt": "2026-11-16T16:20:04Z",
+            "teamId": "61"
+          },
+          {
+            "id": "4419691998",
+            "price": 800,
+            "changedAt": "2026-11-16T16:20:04Z",
+            "teamId": "294"
+          }
+        ],
+        "main": false,
+        "quoteFetchedAt": "2026-11-16T18:20:45.530642+00:00",
+        "quoteSavedAt": "2026-11-16T18:21:07.876673+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028674301.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    },
     "full": {
       "spread": {
         "id": "2717949433",
@@ -512,6 +592,190 @@
         "sampleSize": 610,
         "pushProbability": 0.0,
         "evaluatedAt": "2026-11-16T00:55:03.627926+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": 22.5,
+        "price": -115,
+        "outcomeId": "4419117910",
+        "offerId": "2717977715",
+        "teamId": "294",
+        "side": null,
+        "pointDifference": 9.278999999999996,
+        "breakEven": 0.5348837209302325,
+        "probability": 0.6548956661316212,
+        "expectedValue": 0.22437015841998756,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-16T18:20:45.530642+00:00",
+        "score": {
+          "away": 67.1898,
+          "home": 80.41080000000001
+        },
+        "sampleSize": 623,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 153.5,
+        "price": -107,
+        "outcomeId": "4419712552",
+        "offerId": "2718132873",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": 5.899399999999986,
+        "breakEven": 0.5169082125603864,
+        "probability": 0.6147672552166934,
+        "expectedValue": 0.18931609186780884,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-16T18:20:45.530642+00:00",
+        "score": {
+          "away": 67.1898,
+          "home": 80.41080000000001
+        },
+        "sampleSize": 623,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "half",
+        "kind": "spread",
+        "line": 12.5,
+        "price": -132,
+        "outcomeId": "4419671904",
+        "offerId": "2718135679",
+        "teamId": "294",
+        "side": null,
+        "pointDifference": 5.579609387917891,
+        "breakEven": 0.5689655172413793,
+        "probability": 0.6048387096774194,
+        "expectedValue": 0.06304985337243388,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-16T18:20:45.530642+00:00",
+        "score": {
+          "away": 32.42961271688251,
+          "home": 39.35000332896462
+        },
+        "sampleSize": 620,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "half",
+        "kind": "total",
+        "line": 72.5,
+        "price": -114,
+        "outcomeId": "4419691978",
+        "offerId": "2718161917",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": 0.7203839541528794,
+        "breakEven": 0.5327102803738317,
+        "probability": 0.5,
+        "expectedValue": -0.06140350877192965,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-16T18:20:45.530642+00:00",
+        "score": {
+          "away": 32.42961271688251,
+          "home": 39.35000332896462
+        },
+        "sampleSize": 620,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "half",
+        "kind": "total",
+        "line": 72.5,
+        "price": -120,
+        "outcomeId": "4419691977",
+        "offerId": "2718161917",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": -0.7203839541528794,
+        "breakEven": 0.5454545454545454,
+        "probability": 0.5,
+        "expectedValue": -0.08333333333333327,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-16T18:20:45.530642+00:00",
+        "score": {
+          "away": 32.42961271688251,
+          "home": 39.35000332896462
+        },
+        "sampleSize": 620,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "half",
+        "kind": "spread",
+        "line": -12.5,
+        "price": -104,
+        "outcomeId": "4419671903",
+        "offerId": "2718135679",
+        "teamId": "61",
+        "side": null,
+        "pointDifference": -5.579609387917891,
+        "breakEven": 0.5098039215686274,
+        "probability": 0.3951612903225806,
+        "expectedValue": -0.22487593052109178,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-16T18:20:45.530642+00:00",
+        "score": {
+          "away": 32.42961271688251,
+          "home": 39.35000332896462
+        },
+        "sampleSize": 620,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 153.5,
+        "price": -112,
+        "outcomeId": "4419712551",
+        "offerId": "2718132873",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": -5.899399999999986,
+        "breakEven": 0.5283018867924528,
+        "probability": 0.3852327447833066,
+        "expectedValue": -0.2708094473744554,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-16T18:20:45.530642+00:00",
+        "score": {
+          "away": 67.1898,
+          "home": 80.41080000000001
+        },
+        "sampleSize": 623,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": -22.5,
+        "price": -106,
+        "outcomeId": "4419117909",
+        "offerId": "2717977715",
+        "teamId": "61",
+        "side": null,
+        "pointDifference": -9.278999999999996,
+        "breakEven": 0.5145631067961165,
+        "probability": 0.3451043338683788,
+        "expectedValue": -0.3293255398406978,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-16T18:20:45.530642+00:00",
+        "score": {
+          "away": 67.1898,
+          "home": 80.41080000000001
+        },
+        "sampleSize": 623,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
       }
     ]
   },
@@ -1763,6 +2027,56 @@
         "probability": 0.1476725521669342,
         "sampleSize": 623,
         "expectedValue": -0.41585224617510214,
+        "projectedScore": {
+          "away": 67.1898,
+          "home": 80.41080000000001
+        }
+      },
+      {
+        "ticker": "KXNCAAMBSPREAD-26NOV16JACUGA-JAC2",
+        "eventTicker": "KXNCAAMBSPREAD-26NOV16JACUGA",
+        "period": "full",
+        "kind": "spread",
+        "answer": "no",
+        "line": 1.5,
+        "teamSide": "away",
+        "label": "Jacksonville wins by over 1.5 points",
+        "ask": 0.99,
+        "askSize": 1998.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-16T18:21:10.113573+00:00",
+        "rules": "If Jacksonville wins by more than 1.5 points in the Jacksonville vs Georgia men's college basketball game originally scheduled for Nov 16, 2026, then the market resolves to Yes.",
+        "prediction": -13.221000000000004,
+        "pointDifference": 14.721000000000004,
+        "probability": 0.9470304975922953,
+        "sampleSize": 623,
+        "expectedValue": -0.04407944121096672,
+        "projectedScore": {
+          "away": 67.1898,
+          "home": 80.41080000000001
+        }
+      },
+      {
+        "ticker": "KXNCAAMBSPREAD-26NOV16JACUGA-JAC2",
+        "eventTicker": "KXNCAAMBSPREAD-26NOV16JACUGA",
+        "period": "full",
+        "kind": "spread",
+        "answer": "yes",
+        "line": 1.5,
+        "teamSide": "away",
+        "label": "Jacksonville wins by over 1.5 points",
+        "ask": 0.06,
+        "askSize": 45.0,
+        "fee": 0.004,
+        "breakEven": 0.064,
+        "quoteFetchedAt": "2026-11-16T18:21:10.113573+00:00",
+        "rules": "If Jacksonville wins by more than 1.5 points in the Jacksonville vs Georgia men's college basketball game originally scheduled for Nov 16, 2026, then the market resolves to Yes.",
+        "prediction": -13.221000000000004,
+        "pointDifference": -14.721000000000004,
+        "probability": 0.052969502407704656,
+        "sampleSize": 623,
+        "expectedValue": -0.17235152487961475,
         "projectedScore": {
           "away": 67.1898,
           "home": 80.41080000000001

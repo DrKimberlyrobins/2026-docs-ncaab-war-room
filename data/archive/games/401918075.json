@@ -382,7 +382,87 @@
     ]
   },
   "additionalMarkets": {
-    "half": {},
+    "half": {
+      "total": {
+        "id": "2718147425",
+        "criterionId": "1001159947",
+        "label": "Total Points - 1st Half",
+        "period": "half",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4419717863",
+            "price": -117,
+            "changedAt": "2026-11-16T17:04:22Z",
+            "side": "over",
+            "line": 67.5
+          },
+          {
+            "id": "4419717864",
+            "price": -117,
+            "changedAt": "2026-11-16T17:04:22Z",
+            "side": "under",
+            "line": 67.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-16T18:20:46.114708+00:00",
+        "quoteSavedAt": "2026-11-16T18:21:07.876673+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028934562.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "spread": {
+        "id": "2718147416",
+        "criterionId": "1001159940",
+        "label": "Spread - 1st Half",
+        "period": "half",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4419666395",
+            "price": -132,
+            "changedAt": "2026-11-16T17:04:22Z",
+            "teamId": "228",
+            "line": -12.5
+          },
+          {
+            "id": "4419666396",
+            "price": -104,
+            "changedAt": "2026-11-16T17:04:22Z",
+            "teamId": "2643",
+            "line": 12.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-16T18:20:46.114708+00:00",
+        "quoteSavedAt": "2026-11-16T18:21:07.876673+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028934562.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "moneyline": {
+        "id": "2718147421",
+        "criterionId": "1001159815",
+        "label": "Moneyline - 1st Half",
+        "period": "half",
+        "kind": "moneyline",
+        "outcomes": [
+          {
+            "id": "4419666405",
+            "price": -3335,
+            "changedAt": "2026-11-16T17:04:22Z",
+            "teamId": "228"
+          },
+          {
+            "id": "4419666406",
+            "price": 1100,
+            "changedAt": "2026-11-16T17:04:22Z",
+            "teamId": "2643"
+          }
+        ],
+        "main": false,
+        "quoteFetchedAt": "2026-11-16T18:20:46.114708+00:00",
+        "quoteSavedAt": "2026-11-16T18:21:07.876673+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028934562.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    },
     "full": {
       "spread": {
         "id": "2717922769",
@@ -534,6 +614,190 @@
         "sampleSize": 610,
         "pushProbability": 0.0,
         "evaluatedAt": "2026-11-16T00:55:03.627926+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": 24.5,
+        "price": -112,
+        "outcomeId": "4419110904",
+        "offerId": "2717922769",
+        "teamId": "2643",
+        "side": null,
+        "pointDifference": 9.323500000000017,
+        "breakEven": 0.5283018867924528,
+        "probability": 0.6677367576243981,
+        "expectedValue": 0.2639302912176107,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-16T18:20:46.114708+00:00",
+        "score": {
+          "away": 63.56350000000001,
+          "home": 78.74
+        },
+        "sampleSize": 623,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "half",
+        "kind": "spread",
+        "line": 12.5,
+        "price": -104,
+        "outcomeId": "4419666396",
+        "offerId": "2718147416",
+        "teamId": "2643",
+        "side": null,
+        "pointDifference": 5.651996651608034,
+        "breakEven": 0.5098039215686274,
+        "probability": 0.614516129032258,
+        "expectedValue": 0.20539702233250634,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-16T18:20:46.114708+00:00",
+        "score": {
+          "away": 29.769365938291717,
+          "home": 36.61736928668368
+        },
+        "sampleSize": 620,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 142.5,
+        "price": -110,
+        "outcomeId": "4419666375",
+        "offerId": "2718147411",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": -0.19649999999998613,
+        "breakEven": 0.5238095238095238,
+        "probability": 0.5104333868378812,
+        "expectedValue": -0.025536261491317803,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-16T18:20:46.114708+00:00",
+        "score": {
+          "away": 63.56350000000001,
+          "home": 78.74
+        },
+        "sampleSize": 623,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "half",
+        "kind": "total",
+        "line": 67.5,
+        "price": -117,
+        "outcomeId": "4419717864",
+        "offerId": "2718147425",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": 1.1132647750246036,
+        "breakEven": 0.5391705069124424,
+        "probability": 0.5129032258064516,
+        "expectedValue": -0.04871794871794867,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-16T18:20:46.114708+00:00",
+        "score": {
+          "away": 29.769365938291717,
+          "home": 36.61736928668368
+        },
+        "sampleSize": 620,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 142.5,
+        "price": -108,
+        "outcomeId": "4419666376",
+        "offerId": "2718147411",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": 0.19649999999998613,
+        "breakEven": 0.5192307692307693,
+        "probability": 0.4895666131621188,
+        "expectedValue": -0.05713096724332682,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-16T18:20:46.114708+00:00",
+        "score": {
+          "away": 63.56350000000001,
+          "home": 78.74
+        },
+        "sampleSize": 623,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "half",
+        "kind": "total",
+        "line": 67.5,
+        "price": -117,
+        "outcomeId": "4419717863",
+        "offerId": "2718147425",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": -1.1132647750246036,
+        "breakEven": 0.5391705069124424,
+        "probability": 0.4870967741935484,
+        "expectedValue": -0.09658119658119664,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-16T18:20:46.114708+00:00",
+        "score": {
+          "away": 29.769365938291717,
+          "home": 36.61736928668368
+        },
+        "sampleSize": 620,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "half",
+        "kind": "spread",
+        "line": -12.5,
+        "price": -132,
+        "outcomeId": "4419666395",
+        "offerId": "2718147416",
+        "teamId": "228",
+        "side": null,
+        "pointDifference": -5.651996651608034,
+        "breakEven": 0.5689655172413793,
+        "probability": 0.38548387096774195,
+        "expectedValue": -0.3224828934506354,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-16T18:20:46.114708+00:00",
+        "score": {
+          "away": 29.769365938291717,
+          "home": 36.61736928668368
+        },
+        "sampleSize": 620,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": -24.5,
+        "price": -109,
+        "outcomeId": "4419110903",
+        "offerId": "2717922769",
+        "teamId": "228",
+        "side": null,
+        "pointDifference": -9.323500000000017,
+        "breakEven": 0.5215311004784688,
+        "probability": 0.33226324237560195,
+        "expectedValue": -0.362908094894488,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-16T18:20:46.114708+00:00",
+        "score": {
+          "away": 63.56350000000001,
+          "home": 78.74
+        },
+        "sampleSize": 623,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
       }
     ]
   },
@@ -1885,6 +2149,56 @@
         "probability": 0.10593900481540931,
         "sampleSize": 623,
         "expectedValue": -0.37499112203298346,
+        "projectedScore": {
+          "away": 63.56350000000001,
+          "home": 78.74
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV16CITCLEM-122",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV16CITCLEM",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 121.5,
+        "teamSide": null,
+        "label": "Over 121.5 points",
+        "ask": 0.94,
+        "askSize": 9.0,
+        "fee": 0.004,
+        "breakEven": 0.944,
+        "quoteFetchedAt": "2026-11-16T18:21:10.074668+00:00",
+        "rules": "If over 121.5 total points are scored in the The Citadel vs Clemson men's college basketball game originally scheduled for Nov 16, 2026, then the market resolves to Yes.",
+        "prediction": 142.3035,
+        "pointDifference": 20.803500000000014,
+        "probability": 0.9020866773675762,
+        "sampleSize": 623,
+        "expectedValue": -0.044399706178414995,
+        "projectedScore": {
+          "away": 63.56350000000001,
+          "home": 78.74
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV16CITCLEM-122",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV16CITCLEM",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 121.5,
+        "teamSide": null,
+        "label": "Over 121.5 points",
+        "ask": 0.11,
+        "askSize": 54.0,
+        "fee": 0.0069,
+        "breakEven": 0.1169,
+        "quoteFetchedAt": "2026-11-16T18:21:10.074668+00:00",
+        "rules": "If over 121.5 total points are scored in the The Citadel vs Clemson men's college basketball game originally scheduled for Nov 16, 2026, then the market resolves to Yes.",
+        "prediction": 142.3035,
+        "pointDifference": -20.803500000000014,
+        "probability": 0.09791332263242375,
+        "sampleSize": 623,
+        "expectedValue": -0.16241811263966,
         "projectedScore": {
           "away": 63.56350000000001,
           "home": 78.74

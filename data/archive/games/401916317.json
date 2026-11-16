@@ -404,7 +404,87 @@
     ]
   },
   "additionalMarkets": {
-    "half": {},
+    "half": {
+      "total": {
+        "id": "2718132784",
+        "criterionId": "1001159947",
+        "label": "Total Points - 1st Half",
+        "period": "half",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4419712301",
+            "price": -109,
+            "changedAt": "2026-11-16T15:09:17Z",
+            "side": "over",
+            "line": 74.5
+          },
+          {
+            "id": "4419712302",
+            "price": -125,
+            "changedAt": "2026-11-16T15:09:17Z",
+            "side": "under",
+            "line": 74.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-16T18:20:45.063659+00:00",
+        "quoteSavedAt": "2026-11-16T18:21:07.876673+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028825919.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "spread": {
+        "id": "2718161825",
+        "criterionId": "1001159940",
+        "label": "Spread - 1st Half",
+        "period": "half",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4419691699",
+            "price": -117,
+            "changedAt": "2026-11-16T15:09:17Z",
+            "teamId": "194",
+            "line": -18.5
+          },
+          {
+            "id": "4419691700",
+            "price": -117,
+            "changedAt": "2026-11-16T15:09:17Z",
+            "teamId": "2504",
+            "line": 18.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-16T18:20:45.063659+00:00",
+        "quoteSavedAt": "2026-11-16T18:21:07.876673+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028825919.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "moneyline": {
+        "id": "2718161839",
+        "criterionId": "1001159815",
+        "label": "Moneyline - 1st Half",
+        "period": "half",
+        "kind": "moneyline",
+        "outcomes": [
+          {
+            "id": "4419691737",
+            "price": -10000,
+            "changedAt": "2026-11-16T15:09:17Z",
+            "teamId": "194"
+          },
+          {
+            "id": "4419691738",
+            "price": 2000,
+            "changedAt": "2026-11-16T15:09:17Z",
+            "teamId": "2504"
+          }
+        ],
+        "main": false,
+        "quoteFetchedAt": "2026-11-16T18:20:45.063659+00:00",
+        "quoteSavedAt": "2026-11-16T18:21:07.876673+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028825919.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    },
     "full": {
       "total": {
         "id": "2717949392",
@@ -556,6 +636,190 @@
         "sampleSize": 610,
         "pushProbability": 0.0,
         "evaluatedAt": "2026-11-16T00:55:03.627926+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": 33.5,
+        "price": -110,
+        "outcomeId": "4419712290",
+        "offerId": "2718132778",
+        "teamId": "2504",
+        "side": null,
+        "pointDifference": 10.685000000000002,
+        "breakEven": 0.5238095238095238,
+        "probability": 0.7014446227929374,
+        "expectedValue": 0.3391215526046986,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-16T18:20:45.063659+00:00",
+        "score": {
+          "away": 64.23299999999999,
+          "home": 87.04799999999999
+        },
+        "sampleSize": 623,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "half",
+        "kind": "spread",
+        "line": 18.5,
+        "price": -117,
+        "outcomeId": "4419691700",
+        "offerId": "2718161825",
+        "teamId": "2504",
+        "side": null,
+        "pointDifference": 5.6955886783776,
+        "breakEven": 0.5391705069124424,
+        "probability": 0.6112903225806452,
+        "expectedValue": 0.1337606837606837,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-16T18:20:45.063659+00:00",
+        "score": {
+          "away": 29.28320493854019,
+          "home": 42.08761626016259
+        },
+        "sampleSize": 620,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 154.5,
+        "price": -109,
+        "outcomeId": "4419671665",
+        "offerId": "2718135587",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": 3.2190000000000225,
+        "breakEven": 0.5215311004784688,
+        "probability": 0.5585874799357945,
+        "expectedValue": 0.071053057858542,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-16T18:20:45.063659+00:00",
+        "score": {
+          "away": 64.23299999999999,
+          "home": 87.04799999999999
+        },
+        "sampleSize": 623,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "half",
+        "kind": "total",
+        "line": 74.5,
+        "price": -125,
+        "outcomeId": "4419712302",
+        "offerId": "2718132784",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": 3.129178801297215,
+        "breakEven": 0.5555555555555556,
+        "probability": 0.5919354838709677,
+        "expectedValue": 0.06548387096774197,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-16T18:20:45.063659+00:00",
+        "score": {
+          "away": 29.28320493854019,
+          "home": 42.08761626016259
+        },
+        "sampleSize": 620,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 154.5,
+        "price": -109,
+        "outcomeId": "4419671664",
+        "offerId": "2718135587",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": -3.2190000000000225,
+        "breakEven": 0.5215311004784688,
+        "probability": 0.44141252006420545,
+        "expectedValue": -0.1536218651979913,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-16T18:20:45.063659+00:00",
+        "score": {
+          "away": 64.23299999999999,
+          "home": 87.04799999999999
+        },
+        "sampleSize": 623,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "half",
+        "kind": "total",
+        "line": 74.5,
+        "price": -109,
+        "outcomeId": "4419712301",
+        "offerId": "2718132784",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": -3.129178801297215,
+        "breakEven": 0.5215311004784688,
+        "probability": 0.4080645161290323,
+        "expectedValue": -0.21756436815625918,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-16T18:20:45.063659+00:00",
+        "score": {
+          "away": 29.28320493854019,
+          "home": 42.08761626016259
+        },
+        "sampleSize": 620,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "half",
+        "kind": "spread",
+        "line": -18.5,
+        "price": -117,
+        "outcomeId": "4419691699",
+        "offerId": "2718161825",
+        "teamId": "194",
+        "side": null,
+        "pointDifference": -5.6955886783776,
+        "breakEven": 0.5391705069124424,
+        "probability": 0.38870967741935486,
+        "expectedValue": -0.279059829059829,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-16T18:20:45.063659+00:00",
+        "score": {
+          "away": 29.28320493854019,
+          "home": 42.08761626016259
+        },
+        "sampleSize": 620,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": -33.5,
+        "price": -110,
+        "outcomeId": "4419712289",
+        "offerId": "2718132778",
+        "teamId": "194",
+        "side": null,
+        "pointDifference": -10.685000000000002,
+        "breakEven": 0.5238095238095238,
+        "probability": 0.2985553772070626,
+        "expectedValue": -0.4300306435137896,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-16T18:20:45.063659+00:00",
+        "score": {
+          "away": 64.23299999999999,
+          "home": 87.04799999999999
+        },
+        "sampleSize": 623,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-16T18:21:07.876673+00:00"
       }
     ]
   },
@@ -1857,6 +2121,106 @@
         "probability": 0.0898876404494382,
         "sampleSize": 623,
         "expectedValue": -0.629176400786146,
+        "projectedScore": {
+          "away": 64.23299999999999,
+          "home": 87.04799999999999
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV16PVOSU-177",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV16PVOSU",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 176.5,
+        "teamSide": null,
+        "label": "Over 176.5 points",
+        "ask": 0.91,
+        "askSize": 1301.0,
+        "fee": 0.0058,
+        "breakEven": 0.9158,
+        "quoteFetchedAt": "2026-11-16T18:21:10.074668+00:00",
+        "rules": "If over 176.5 total points are scored in the Prairie View A&M vs Ohio St. men's college basketball game originally scheduled for Nov 16, 2026, then the market resolves to Yes.",
+        "prediction": 151.28099999999998,
+        "pointDifference": 25.219000000000023,
+        "probability": 0.9181380417335474,
+        "sampleSize": 623,
+        "expectedValue": 0.00255300473198019,
+        "projectedScore": {
+          "away": 64.23299999999999,
+          "home": 87.04799999999999
+        }
+      },
+      {
+        "ticker": "KXNCAAMBSPREAD-26NOV16PVOSU-OSU11",
+        "eventTicker": "KXNCAAMBSPREAD-26NOV16PVOSU",
+        "period": "full",
+        "kind": "spread",
+        "answer": "yes",
+        "line": 10.5,
+        "teamSide": "home",
+        "label": "Ohio St. wins by over 10.5 points",
+        "ask": 0.95,
+        "askSize": 2.0,
+        "fee": 0.0034,
+        "breakEven": 0.9534,
+        "quoteFetchedAt": "2026-11-16T18:21:10.113573+00:00",
+        "rules": "If Ohio St. wins by more than 10.5 points in the Prairie View A&M vs Ohio St. men's college basketball game originally scheduled for Nov 16, 2026, then the market resolves to Yes.",
+        "prediction": 22.814999999999998,
+        "pointDifference": 12.314999999999998,
+        "probability": 0.9245585874799358,
+        "sampleSize": 623,
+        "expectedValue": -0.030251114453602082,
+        "projectedScore": {
+          "away": 64.23299999999999,
+          "home": 87.04799999999999
+        }
+      },
+      {
+        "ticker": "KXNCAAMBSPREAD-26NOV16PVOSU-OSU11",
+        "eventTicker": "KXNCAAMBSPREAD-26NOV16PVOSU",
+        "period": "full",
+        "kind": "spread",
+        "answer": "no",
+        "line": 10.5,
+        "teamSide": "home",
+        "label": "Ohio St. wins by over 10.5 points",
+        "ask": 0.08,
+        "askSize": 406.0,
+        "fee": 0.0052,
+        "breakEven": 0.0852,
+        "quoteFetchedAt": "2026-11-16T18:21:10.113573+00:00",
+        "rules": "If Ohio St. wins by more than 10.5 points in the Prairie View A&M vs Ohio St. men's college basketball game originally scheduled for Nov 16, 2026, then the market resolves to Yes.",
+        "prediction": 22.814999999999998,
+        "pointDifference": -12.314999999999998,
+        "probability": 0.0754414125200642,
+        "sampleSize": 623,
+        "expectedValue": -0.11453741173633566,
+        "projectedScore": {
+          "away": 64.23299999999999,
+          "home": 87.04799999999999
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV16PVOSU-177",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV16PVOSU",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 176.5,
+        "teamSide": null,
+        "label": "Over 176.5 points",
+        "ask": 0.11,
+        "askSize": 1022.0,
+        "fee": 0.0069,
+        "breakEven": 0.1169,
+        "quoteFetchedAt": "2026-11-16T18:21:10.074668+00:00",
+        "rules": "If over 176.5 total points are scored in the Prairie View A&M vs Ohio St. men's college basketball game originally scheduled for Nov 16, 2026, then the market resolves to Yes.",
+        "prediction": 151.28099999999998,
+        "pointDifference": -25.219000000000023,
+        "probability": 0.08186195826645265,
+        "sampleSize": 623,
+        "expectedValue": -0.29972661876430584,
         "projectedScore": {
           "away": 64.23299999999999,
           "home": 87.04799999999999
