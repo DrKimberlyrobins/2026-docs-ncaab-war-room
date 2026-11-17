@@ -356,7 +356,87 @@
   },
   "result": null,
   "additionalMarkets": {
-    "half": {},
+    "half": {
+      "total": {
+        "id": "2718578575",
+        "criterionId": "1001159947",
+        "label": "Total Points - 1st Half",
+        "period": "half",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4421128043",
+            "price": -112,
+            "changedAt": "2026-11-17T19:08:52Z",
+            "side": "over",
+            "line": 74.5
+          },
+          {
+            "id": "4421128044",
+            "price": -122,
+            "changedAt": "2026-11-17T19:08:52Z",
+            "side": "under",
+            "line": 74.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-17T19:44:42.730756+00:00",
+        "quoteSavedAt": "2026-11-17T19:45:10.678348+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029081565.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "moneyline": {
+        "id": "2718590018",
+        "criterionId": "1001159815",
+        "label": "Moneyline - 1st Half",
+        "period": "half",
+        "kind": "moneyline",
+        "outcomes": [
+          {
+            "id": "4421089488",
+            "price": -2000,
+            "changedAt": "2026-11-17T19:08:53Z",
+            "teamId": "2567"
+          },
+          {
+            "id": "4421089489",
+            "price": 750,
+            "changedAt": "2026-11-17T19:08:53Z",
+            "teamId": "198"
+          }
+        ],
+        "main": false,
+        "quoteFetchedAt": "2026-11-17T19:44:42.730756+00:00",
+        "quoteSavedAt": "2026-11-17T19:45:10.678348+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029081565.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "spread": {
+        "id": "2718727903",
+        "criterionId": "1001159940",
+        "label": "Spread - 1st Half",
+        "period": "half",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4421484955",
+            "price": -120,
+            "changedAt": "2026-11-17T19:08:55Z",
+            "teamId": "2567",
+            "line": -12.5
+          },
+          {
+            "id": "4421484956",
+            "price": -114,
+            "changedAt": "2026-11-17T19:08:55Z",
+            "teamId": "198",
+            "line": 12.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-17T19:44:42.730756+00:00",
+        "quoteSavedAt": "2026-11-17T19:45:10.678348+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029081565.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    },
     "full": {
       "total": {
         "id": "2718365493",
@@ -603,6 +683,190 @@
         "sampleSize": 645,
         "pushProbability": 0.0,
         "evaluatedAt": "2026-11-17T10:33:43.466974+00:00"
+      },
+      {
+        "period": "half",
+        "kind": "total",
+        "line": 74.5,
+        "price": -112,
+        "outcomeId": "4421128043",
+        "offerId": "2718578575",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": 2.2062385628211985,
+        "breakEven": 0.5283018867924528,
+        "probability": 0.5903426791277259,
+        "expectedValue": 0.11743435692033818,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-17T19:44:42.730756+00:00",
+        "score": {
+          "away": 32.762189845474616,
+          "home": 43.944048717346575
+        },
+        "sampleSize": 642,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-17T19:45:10.678348+00:00"
+      },
+      {
+        "period": "half",
+        "kind": "spread",
+        "line": -12.5,
+        "price": -120,
+        "outcomeId": "4421484955",
+        "offerId": "2718727903",
+        "teamId": "2567",
+        "side": null,
+        "pointDifference": -1.3181411281280404,
+        "breakEven": 0.5454545454545454,
+        "probability": 0.5778816199376947,
+        "expectedValue": 0.059449636552440406,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-17T19:44:42.730756+00:00",
+        "score": {
+          "away": 32.762189845474616,
+          "home": 43.944048717346575
+        },
+        "sampleSize": 642,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-17T19:45:10.678348+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 155.5,
+        "price": -106,
+        "outcomeId": "4421128055",
+        "offerId": "2718578580",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": 1.0275000000000034,
+        "breakEven": 0.5145631067961165,
+        "probability": 0.5348837209302325,
+        "expectedValue": 0.039491004826678444,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-17T19:44:42.730756+00:00",
+        "score": {
+          "away": 69.165,
+          "home": 87.3625
+        },
+        "sampleSize": 645,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-17T19:45:10.678348+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": 22.5,
+        "price": -107,
+        "outcomeId": "4421089513",
+        "offerId": "2718590030",
+        "teamId": "198",
+        "side": null,
+        "pointDifference": 4.302500000000009,
+        "breakEven": 0.5169082125603864,
+        "probability": 0.5085271317829457,
+        "expectedValue": -0.0162138665507498,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-17T19:44:42.730756+00:00",
+        "score": {
+          "away": 69.165,
+          "home": 87.3625
+        },
+        "sampleSize": 645,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-17T19:45:10.678348+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": -22.5,
+        "price": -114,
+        "outcomeId": "4421089512",
+        "offerId": "2718590030",
+        "teamId": "2567",
+        "side": null,
+        "pointDifference": -4.302500000000009,
+        "breakEven": 0.5327102803738317,
+        "probability": 0.49147286821705427,
+        "expectedValue": -0.07741058071535427,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-17T19:44:42.730756+00:00",
+        "score": {
+          "away": 69.165,
+          "home": 87.3625
+        },
+        "sampleSize": 645,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-17T19:45:10.678348+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 155.5,
+        "price": -113,
+        "outcomeId": "4421128056",
+        "offerId": "2718578580",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": -1.0275000000000034,
+        "breakEven": 0.5305164319248826,
+        "probability": 0.46511627906976744,
+        "expectedValue": -0.12327639431981889,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-17T19:44:42.730756+00:00",
+        "score": {
+          "away": 69.165,
+          "home": 87.3625
+        },
+        "sampleSize": 645,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-17T19:45:10.678348+00:00"
+      },
+      {
+        "period": "half",
+        "kind": "spread",
+        "line": 12.5,
+        "price": -114,
+        "outcomeId": "4421484956",
+        "offerId": "2718727903",
+        "teamId": "198",
+        "side": null,
+        "pointDifference": 1.3181411281280404,
+        "breakEven": 0.5327102803738317,
+        "probability": 0.4221183800623053,
+        "expectedValue": -0.20760233918128648,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-17T19:44:42.730756+00:00",
+        "score": {
+          "away": 32.762189845474616,
+          "home": 43.944048717346575
+        },
+        "sampleSize": 642,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-17T19:45:10.678348+00:00"
+      },
+      {
+        "period": "half",
+        "kind": "total",
+        "line": 74.5,
+        "price": -122,
+        "outcomeId": "4421128044",
+        "offerId": "2718578575",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": -2.2062385628211985,
+        "breakEven": 0.5495495495495496,
+        "probability": 0.40965732087227413,
+        "expectedValue": -0.2545579898881569,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-17T19:44:42.730756+00:00",
+        "score": {
+          "away": 32.762189845474616,
+          "home": 43.944048717346575
+        },
+        "sampleSize": 642,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-17T19:45:10.678348+00:00"
       }
     ]
   },
@@ -2004,6 +2268,106 @@
         "probability": 0.046511627906976744,
         "sampleSize": 645,
         "expectedValue": -0.6021246543457934,
+        "projectedScore": {
+          "away": 69.165,
+          "home": 87.3625
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV17ORUSMU-135",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV17ORUSMU",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 134.5,
+        "teamSide": null,
+        "label": "Over 134.5 points",
+        "ask": 0.94,
+        "askSize": 3.0,
+        "fee": 0.004,
+        "breakEven": 0.944,
+        "quoteFetchedAt": "2026-11-17T19:45:12.576274+00:00",
+        "rules": "If over 134.5 total points are scored in the Oral Roberts vs SMU men's college basketball game originally scheduled for Nov 17, 2026, then the market resolves to Yes.",
+        "prediction": 156.5275,
+        "pointDifference": 22.027500000000003,
+        "probability": 0.9178294573643411,
+        "sampleSize": 645,
+        "expectedValue": -0.027723032453028474,
+        "projectedScore": {
+          "away": 69.165,
+          "home": 87.3625
+        }
+      },
+      {
+        "ticker": "KXNCAAMBSPREAD-26NOV17ORUSMU-SMU2",
+        "eventTicker": "KXNCAAMBSPREAD-26NOV17ORUSMU",
+        "period": "full",
+        "kind": "spread",
+        "answer": "yes",
+        "line": 1.5,
+        "teamSide": "home",
+        "label": "SMU wins by over 1.5 points",
+        "ask": 0.99,
+        "askSize": 2001.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-17T19:45:12.570536+00:00",
+        "rules": "If SMU wins by more than 1.5 points in the Oral Roberts vs SMU men's college basketball game originally scheduled for Nov 17, 2026, then the market resolves to Yes.",
+        "prediction": 18.19749999999999,
+        "pointDifference": 16.69749999999999,
+        "probability": 0.958139534883721,
+        "sampleSize": 645,
+        "expectedValue": -0.032866120032582095,
+        "projectedScore": {
+          "away": 69.165,
+          "home": 87.3625
+        }
+      },
+      {
+        "ticker": "KXNCAAMBSPREAD-26NOV17ORUSMU-SMU2",
+        "eventTicker": "KXNCAAMBSPREAD-26NOV17ORUSMU",
+        "period": "full",
+        "kind": "spread",
+        "answer": "no",
+        "line": 1.5,
+        "teamSide": "home",
+        "label": "SMU wins by over 1.5 points",
+        "ask": 0.06,
+        "askSize": 6.0,
+        "fee": 0.004,
+        "breakEven": 0.064,
+        "quoteFetchedAt": "2026-11-17T19:45:12.570536+00:00",
+        "rules": "If SMU wins by more than 1.5 points in the Oral Roberts vs SMU men's college basketball game originally scheduled for Nov 17, 2026, then the market resolves to Yes.",
+        "prediction": 18.19749999999999,
+        "pointDifference": -16.69749999999999,
+        "probability": 0.04186046511627907,
+        "sampleSize": 645,
+        "expectedValue": -0.34593023255813954,
+        "projectedScore": {
+          "away": 69.165,
+          "home": 87.3625
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV17ORUSMU-135",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV17ORUSMU",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 134.5,
+        "teamSide": null,
+        "label": "Over 134.5 points",
+        "ask": 0.12,
+        "askSize": 288.0,
+        "fee": 0.0074,
+        "breakEven": 0.1274,
+        "quoteFetchedAt": "2026-11-17T19:45:12.576274+00:00",
+        "rules": "If over 134.5 total points are scored in the Oral Roberts vs SMU men's college basketball game originally scheduled for Nov 17, 2026, then the market resolves to Yes.",
+        "prediction": 156.5275,
+        "pointDifference": -22.027500000000003,
+        "probability": 0.08217054263565891,
+        "sampleSize": 645,
+        "expectedValue": -0.3550192885741059,
         "projectedScore": {
           "away": 69.165,
           "home": 87.3625
