@@ -2,33 +2,33 @@
   "version": 1,
   "summary": {
     "half": {
-      "games": 653,
+      "games": 642,
       "mae": {
-        "away": 5.636,
-        "home": 6.517,
-        "total": 8.613,
-        "homeMargin": 8.584
+        "away": 5.645,
+        "home": 6.528,
+        "total": 8.64,
+        "homeMargin": 8.592
       },
-      "projectedWinnerCorrect": 460,
-      "winnerEligibleGames": 640
+      "projectedWinnerCorrect": 453,
+      "winnerEligibleGames": 629
     },
     "full": {
-      "games": 656,
+      "games": 645,
       "mae": {
-        "away": 7.898,
-        "home": 9.236,
-        "total": 13.702,
-        "homeMargin": 10.368
+        "away": 7.923,
+        "home": 9.218,
+        "total": 13.671,
+        "homeMargin": 10.409
       },
-      "projectedWinnerCorrect": 515,
-      "winnerEligibleGames": 655
+      "projectedWinnerCorrect": 509,
+      "winnerEligibleGames": 644
     }
   },
   "dates": {
     "2026-11-02": {
       "receipts": 119,
       "finals": 119,
-      "excludedReceipts": 0,
+      "excludedReceipts": 4,
       "forecastErrors": {
         "401902275": {
           "resultFetchedAt": "2026-11-06T21:16:00.309244+00:00",
@@ -208,21 +208,6 @@
             "home": -8.018,
             "total": -15.425,
             "homeMargin": -0.611
-          }
-        },
-        "401909694": {
-          "resultFetchedAt": "2026-11-06T21:16:04.288938+00:00",
-          "half": {
-            "away": -3.572,
-            "home": 9.228,
-            "total": 5.656,
-            "homeMargin": 12.801
-          },
-          "full": {
-            "away": 1.404,
-            "home": 24.592,
-            "total": 25.996,
-            "homeMargin": 23.189
           }
         },
         "401909705": {
@@ -1320,21 +1305,6 @@
             "homeMargin": -12.91
           }
         },
-        "401920912": {
-          "resultFetchedAt": "2026-11-06T21:16:24.509768+00:00",
-          "half": {
-            "away": 9.23,
-            "home": 0.807,
-            "total": 10.036,
-            "homeMargin": -8.423
-          },
-          "full": {
-            "away": 14.974,
-            "home": 11.825,
-            "total": 26.8,
-            "homeMargin": -3.149
-          }
-        },
         "401920959": {
           "resultFetchedAt": "2026-11-06T21:16:24.866062+00:00",
           "half": {
@@ -1425,21 +1395,6 @@
             "homeMargin": 1.281
           }
         },
-        "401921422": {
-          "resultFetchedAt": "2026-11-06T21:16:26.331111+00:00",
-          "half": {
-            "away": 12.172,
-            "home": -13.855,
-            "total": -1.682,
-            "homeMargin": -26.027
-          },
-          "full": {
-            "away": -2.963,
-            "home": -19.854,
-            "total": -22.816,
-            "homeMargin": -16.891
-          }
-        },
         "401921423": {
           "resultFetchedAt": "2026-11-06T21:16:26.497027+00:00",
           "half": {
@@ -1483,21 +1438,6 @@
             "home": -14.669,
             "total": -18.692,
             "homeMargin": -10.645
-          }
-        },
-        "401921704": {
-          "resultFetchedAt": "2026-11-06T21:16:28.297217+00:00",
-          "half": {
-            "away": -0.772,
-            "home": -3.696,
-            "total": -4.468,
-            "homeMargin": -2.924
-          },
-          "full": {
-            "away": -0.305,
-            "home": -4.747,
-            "total": -5.052,
-            "homeMargin": -4.442
           }
         },
         "401921731": {
@@ -1816,29 +1756,61 @@
           }
         }
       },
-      "scheduleChecks": {},
+      "scheduleChecks": {
+        "401909694": {
+          "label": "ESPN changed home/away assignment",
+          "exclude": true
+        },
+        "401911374": {
+          "label": "ESPN revised the tipoff time",
+          "exclude": false,
+          "revisedTipoff": "2026-11-03T00:45Z"
+        },
+        "401911532": {
+          "label": "ESPN revised the tipoff time",
+          "exclude": false,
+          "revisedTipoff": "2026-11-02T19:30Z"
+        },
+        "401919039": {
+          "label": "ESPN revised the tipoff time",
+          "exclude": false,
+          "revisedTipoff": "2026-11-03T02:00Z"
+        },
+        "401920912": {
+          "label": "ESPN changed home/away assignment",
+          "exclude": true
+        },
+        "401921422": {
+          "label": "ESPN changed home/away assignment",
+          "exclude": true
+        },
+        "401921704": {
+          "label": "ESPN changed home/away assignment",
+          "exclude": true
+        }
+      },
       "scores": {
         "half": {
-          "games": 119,
+          "games": 115,
           "mae": {
-            "away": 5.529,
-            "home": 6.761,
-            "total": 8.43,
-            "homeMargin": 9.09
+            "away": 5.498,
+            "home": 6.756,
+            "total": 8.533,
+            "homeMargin": 8.97
           },
-          "projectedWinnerCorrect": 88,
-          "winnerEligibleGames": 118
+          "projectedWinnerCorrect": 86,
+          "winnerEligibleGames": 114
         },
         "full": {
-          "games": 119,
+          "games": 115,
           "mae": {
-            "away": 7.989,
-            "home": 9.61,
-            "total": 13.733,
-            "homeMargin": 11.117
+            "away": 8.096,
+            "home": 9.414,
+            "total": 13.509,
+            "homeMargin": 11.089
           },
-          "projectedWinnerCorrect": 94,
-          "winnerEligibleGames": 119
+          "projectedWinnerCorrect": 92,
+          "winnerEligibleGames": 115
         }
       }
     },
@@ -2027,7 +1999,7 @@
     "2026-11-08": {
       "receipts": 29,
       "finals": 29,
-      "excludedReceipts": 0,
+      "excludedReceipts": 2,
       "forecastErrors": {
         "401902277": {
           "resultFetchedAt": "2026-11-08T22:00:34.003263+00:00",
@@ -2132,36 +2104,6 @@
             "home": 26.402,
             "total": 52.283,
             "homeMargin": 0.522
-          }
-        },
-        "401918053": {
-          "resultFetchedAt": "2026-11-09T06:20:09.464816+00:00",
-          "half": {
-            "away": 6.132,
-            "home": 1.355,
-            "total": 7.486,
-            "homeMargin": -4.777
-          },
-          "full": {
-            "away": 7.32,
-            "home": 5.858,
-            "total": 13.178,
-            "homeMargin": -1.461
-          }
-        },
-        "401919029": {
-          "resultFetchedAt": "2026-11-09T09:39:30.298431+00:00",
-          "half": {
-            "away": 1.907,
-            "home": 9.957,
-            "total": 11.864,
-            "homeMargin": 8.051
-          },
-          "full": {
-            "away": 13.214,
-            "home": 12.527,
-            "total": 25.741,
-            "homeMargin": -0.688
           }
         },
         "401920134": {
@@ -2465,29 +2407,43 @@
           }
         }
       },
-      "scheduleChecks": {},
+      "scheduleChecks": {
+        "401918053": {
+          "label": "ESPN changed home/away assignment",
+          "exclude": true
+        },
+        "401919029": {
+          "label": "ESPN changed home/away assignment",
+          "exclude": true
+        },
+        "401929002": {
+          "label": "ESPN revised the tipoff time",
+          "exclude": false,
+          "revisedTipoff": "2026-11-09T03:00Z"
+        }
+      },
       "scores": {
         "half": {
-          "games": 29,
+          "games": 27,
           "mae": {
-            "away": 4.474,
-            "home": 7.665,
-            "total": 9.793,
-            "homeMargin": 7.8
+            "away": 4.508,
+            "home": 7.814,
+            "total": 9.802,
+            "homeMargin": 7.903
           },
-          "projectedWinnerCorrect": 17,
-          "winnerEligibleGames": 27
+          "projectedWinnerCorrect": 16,
+          "winnerEligibleGames": 25
         },
         "full": {
-          "games": 29,
+          "games": 27,
           "mae": {
-            "away": 7.254,
-            "home": 11.129,
-            "total": 15.951,
-            "homeMargin": 9.643
+            "away": 7.03,
+            "home": 11.272,
+            "total": 15.691,
+            "homeMargin": 10.278
           },
-          "projectedWinnerCorrect": 21,
-          "winnerEligibleGames": 29
+          "projectedWinnerCorrect": 19,
+          "winnerEligibleGames": 27
         }
       }
     },
@@ -4571,7 +4527,13 @@
           }
         }
       },
-      "scheduleChecks": {},
+      "scheduleChecks": {
+        "401920952": {
+          "label": "ESPN revised the tipoff time",
+          "exclude": false,
+          "revisedTipoff": "2026-11-07T02:15Z"
+        }
+      },
       "scores": {
         "half": {
           "games": 57,
@@ -5113,7 +5075,18 @@
           }
         }
       },
-      "scheduleChecks": {},
+      "scheduleChecks": {
+        "401919733": {
+          "label": "ESPN revised the tipoff time",
+          "exclude": false,
+          "revisedTipoff": "2026-11-10T00:00Z"
+        },
+        "401920887": {
+          "label": "ESPN revised the tipoff time",
+          "exclude": false,
+          "revisedTipoff": "2026-11-10T02:00Z"
+        }
+      },
       "scores": {
         "half": {
           "games": 34,
@@ -5790,7 +5763,13 @@
           }
         }
       },
-      "scheduleChecks": {},
+      "scheduleChecks": {
+        "401919732": {
+          "label": "ESPN revised the tipoff time",
+          "exclude": false,
+          "revisedTipoff": "2026-11-06T00:00Z"
+        }
+      },
       "scores": {
         "half": {
           "games": 43,
@@ -6662,7 +6641,13 @@
           }
         }
       },
-      "scheduleChecks": {},
+      "scheduleChecks": {
+        "401909786": {
+          "label": "ESPN revised the tipoff time",
+          "exclude": false,
+          "revisedTipoff": "2026-11-11T02:58Z"
+        }
+      },
       "scores": {
         "half": {
           "games": 56,
@@ -6691,7 +6676,7 @@
     "2026-11-16": {
       "receipts": 23,
       "finals": 22,
-      "excludedReceipts": 0,
+      "excludedReceipts": 1,
       "forecastErrors": {
         "401906783": {
           "resultFetchedAt": "2026-11-17T02:01:00.185346+00:00",
@@ -7024,7 +7009,18 @@
           }
         }
       },
-      "scheduleChecks": {},
+      "scheduleChecks": {
+        "401926143": {
+          "label": "Rescheduled to a different date",
+          "exclude": true,
+          "revisedTipoff": "2026-11-18T01:00Z"
+        },
+        "401929419": {
+          "label": "ESPN revised the tipoff time",
+          "exclude": false,
+          "revisedTipoff": "2026-11-16T19:00Z"
+        }
+      },
       "scores": {
         "half": {
           "games": 22,
@@ -12683,7 +12679,13 @@
       "finals": 0,
       "excludedReceipts": 0,
       "forecastErrors": {},
-      "scheduleChecks": {},
+      "scheduleChecks": {
+        "401909698": {
+          "label": "ESPN revised the tipoff time",
+          "exclude": false,
+          "revisedTipoff": "2026-11-20T17:00Z"
+        }
+      },
       "scores": {
         "half": {
           "games": 0,
@@ -12723,7 +12725,7 @@
     "2026-11-15": {
       "receipts": 35,
       "finals": 33,
-      "excludedReceipts": 0,
+      "excludedReceipts": 2,
       "forecastErrors": {
         "401906866": {
           "resultFetchedAt": "2026-11-15T22:47:01.769516+00:00",
@@ -13221,7 +13223,16 @@
           }
         }
       },
-      "scheduleChecks": {},
+      "scheduleChecks": {
+        "401909525": {
+          "label": "ESPN changed home/away assignment",
+          "exclude": true
+        },
+        "401926073": {
+          "label": "Postponed",
+          "exclude": true
+        }
+      },
       "scores": {
         "half": {
           "games": 33,
@@ -21892,7 +21903,7 @@
     "2026-11-07": {
       "receipts": 48,
       "finals": 48,
-      "excludedReceipts": 0,
+      "excludedReceipts": 1,
       "forecastErrors": {
         "401909513": {
           "resultFetchedAt": "2026-11-08T05:49:55.232487+00:00",
@@ -22057,21 +22068,6 @@
             "home": -5.435,
             "total": -4.215,
             "homeMargin": -6.656
-          }
-        },
-        "401917962": {
-          "resultFetchedAt": "2026-11-07T21:44:24.231255+00:00",
-          "half": {
-            "away": 1.604,
-            "home": 7.213,
-            "total": 8.817,
-            "homeMargin": 5.609
-          },
-          "full": {
-            "away": 12.883,
-            "home": 11.976,
-            "total": 24.859,
-            "homeMargin": -0.906
           }
         },
         "401918948": {
@@ -22615,29 +22611,34 @@
           }
         }
       },
-      "scheduleChecks": {},
+      "scheduleChecks": {
+        "401917962": {
+          "label": "ESPN scoreboard and saved final scores disagree",
+          "exclude": true
+        }
+      },
       "scores": {
         "half": {
-          "games": 48,
+          "games": 47,
           "mae": {
-            "away": 5.58,
-            "home": 6.588,
-            "total": 9.771,
-            "homeMargin": 6.662
+            "away": 5.665,
+            "home": 6.574,
+            "total": 9.792,
+            "homeMargin": 6.685
           },
-          "projectedWinnerCorrect": 33,
-          "winnerEligibleGames": 47
+          "projectedWinnerCorrect": 32,
+          "winnerEligibleGames": 46
         },
         "full": {
-          "games": 48,
+          "games": 47,
           "mae": {
-            "away": 6.97,
-            "home": 9.684,
-            "total": 14.373,
-            "homeMargin": 7.742
+            "away": 6.845,
+            "home": 9.635,
+            "total": 14.15,
+            "homeMargin": 7.887
           },
-          "projectedWinnerCorrect": 39,
-          "winnerEligibleGames": 48
+          "projectedWinnerCorrect": 38,
+          "winnerEligibleGames": 47
         }
       }
     },
@@ -22665,7 +22666,7 @@
     "2026-11-11": {
       "receipts": 48,
       "finals": 48,
-      "excludedReceipts": 0,
+      "excludedReceipts": 1,
       "forecastErrors": {
         "401909524": {
           "resultFetchedAt": "2026-11-12T02:15:25.641959+00:00",
@@ -22905,21 +22906,6 @@
             "home": -6.578,
             "total": -10.935,
             "homeMargin": -2.221
-          }
-        },
-        "401918992": {
-          "resultFetchedAt": "2026-11-11T22:58:03.073166+00:00",
-          "half": {
-            "away": 5.507,
-            "home": -5.651,
-            "total": -0.145,
-            "homeMargin": -11.158
-          },
-          "full": {
-            "away": 8.645,
-            "home": 1.374,
-            "total": 10.019,
-            "homeMargin": -7.272
           }
         },
         "401919734": {
@@ -23388,36 +23374,56 @@
           }
         }
       },
-      "scheduleChecks": {},
+      "scheduleChecks": {
+        "401917963": {
+          "label": "ESPN revised the tipoff time",
+          "exclude": false,
+          "revisedTipoff": "2026-11-12T01:00Z"
+        },
+        "401918992": {
+          "label": "ESPN changed home/away assignment",
+          "exclude": true
+        },
+        "401921181": {
+          "label": "ESPN revised the tipoff time",
+          "exclude": false,
+          "revisedTipoff": "2026-11-11T22:58Z"
+        },
+        "401930177": {
+          "label": "ESPN revised the tipoff time",
+          "exclude": false,
+          "revisedTipoff": "2026-11-12T02:00Z"
+        }
+      },
       "scores": {
         "half": {
-          "games": 48,
+          "games": 47,
           "mae": {
             "away": 5.503,
-            "home": 6.707,
-            "total": 7.565,
-            "homeMargin": 9.907
+            "home": 6.729,
+            "total": 7.723,
+            "homeMargin": 9.88
           },
           "projectedWinnerCorrect": 28,
-          "winnerEligibleGames": 47
+          "winnerEligibleGames": 46
         },
         "full": {
-          "games": 48,
+          "games": 47,
           "mae": {
-            "away": 8.358,
-            "home": 8.774,
-            "total": 12.132,
-            "homeMargin": 10.753
+            "away": 8.352,
+            "home": 8.931,
+            "total": 12.177,
+            "homeMargin": 10.827
           },
           "projectedWinnerCorrect": 34,
-          "winnerEligibleGames": 48
+          "winnerEligibleGames": 47
         }
       }
     },
     "2026-11-14": {
       "receipts": 61,
       "finals": 56,
-      "excludedReceipts": 0,
+      "excludedReceipts": 6,
       "forecastErrors": {
         "401909534": {
           "resultFetchedAt": "2026-11-15T01:15:47.883463+00:00",
@@ -23644,21 +23650,6 @@
             "homeMargin": 10.548
           }
         },
-        "401917528": {
-          "resultFetchedAt": "2026-11-16T06:23:13.739678+00:00",
-          "half": {
-            "away": 12.013,
-            "home": 6.271,
-            "total": 18.285,
-            "homeMargin": -5.742
-          },
-          "full": {
-            "away": 6.138,
-            "home": -3.429,
-            "total": 2.71,
-            "homeMargin": -9.567
-          }
-        },
         "401917530": {
           "resultFetchedAt": "2026-11-15T06:24:29.820637+00:00",
           "half": {
@@ -23792,21 +23783,6 @@
             "home": 4.276,
             "total": -14.184,
             "homeMargin": 22.737
-          }
-        },
-        "401920074": {
-          "resultFetchedAt": "2026-11-14T21:19:24.568794+00:00",
-          "half": {
-            "away": -1.984,
-            "home": -5.654,
-            "total": -7.638,
-            "homeMargin": -3.67
-          },
-          "full": {
-            "away": -0.049,
-            "home": -9.143,
-            "total": -9.192,
-            "homeMargin": -9.093
           }
         },
         "401920193": {
@@ -24260,29 +24236,75 @@
           }
         }
       },
-      "scheduleChecks": {},
+      "scheduleChecks": {
+        "401917528": {
+          "label": "Rescheduled to a different date",
+          "exclude": true,
+          "revisedTipoff": "2026-11-15T21:00Z"
+        },
+        "401917529": {
+          "label": "Postponed",
+          "exclude": true
+        },
+        "401919847": {
+          "label": "ESPN revised the tipoff time",
+          "exclude": false,
+          "revisedTipoff": "2026-11-14T19:00Z"
+        },
+        "401920074": {
+          "label": "ESPN changed home/away assignment",
+          "exclude": true
+        },
+        "401920567": {
+          "label": "ESPN changed the scheduled matchup",
+          "exclude": true
+        },
+        "401920750": {
+          "label": "ESPN revised the tipoff time",
+          "exclude": false,
+          "revisedTipoff": "2026-11-14T18:00Z"
+        },
+        "401922031": {
+          "label": "ESPN revised the tipoff time",
+          "exclude": false,
+          "revisedTipoff": "2026-11-15T02:00Z"
+        },
+        "401924720": {
+          "label": "Postponed",
+          "exclude": true
+        },
+        "401924921": {
+          "label": "ESPN revised the tipoff time",
+          "exclude": false,
+          "revisedTipoff": "2026-11-14T20:00Z"
+        },
+        "401926864": {
+          "label": "Postponed",
+          "exclude": true
+        }
+      },
       "scores": {
         "half": {
-          "games": 56,
+          "games": 54,
           "mae": {
-            "away": 5.902,
-            "home": 5.694,
-            "total": 8.741,
-            "homeMargin": 7.623
-          },
-          "projectedWinnerCorrect": 35,
-          "winnerEligibleGames": 55
-        },
-        "full": {
-          "games": 56,
-          "mae": {
-            "away": 6.7,
-            "home": 8.801,
-            "total": 13.319,
-            "homeMargin": 9.532
+            "away": 5.861,
+            "home": 5.684,
+            "total": 8.585,
+            "homeMargin": 7.731
           },
           "projectedWinnerCorrect": 33,
-          "winnerEligibleGames": 56
+          "winnerEligibleGames": 53
+        },
+        "full": {
+          "games": 54,
+          "mae": {
+            "away": 6.834,
+            "home": 8.894,
+            "total": 13.592,
+            "homeMargin": 9.539
+          },
+          "projectedWinnerCorrect": 32,
+          "winnerEligibleGames": 54
         }
       }
     },
@@ -24646,7 +24668,13 @@
           }
         }
       },
-      "scheduleChecks": {},
+      "scheduleChecks": {
+        "401922239": {
+          "label": "ESPN revised the tipoff time",
+          "exclude": false,
+          "revisedTipoff": "2026-11-13T00:00Z"
+        }
+      },
       "scores": {
         "half": {
           "games": 23,
@@ -24675,7 +24703,7 @@
     "2026-11-01": {
       "receipts": 2,
       "finals": 2,
-      "excludedReceipts": 0,
+      "excludedReceipts": 1,
       "forecastErrors": {
         "401920409": {
           "resultFetchedAt": "2026-11-02T07:36:06.742430+00:00",
@@ -24691,46 +24719,36 @@
             "total": -26.211,
             "homeMargin": 6.397
           }
-        },
-        "401920982": {
-          "resultFetchedAt": "2026-11-01T17:15:20.136898+00:00",
-          "half": {
-            "away": -0.844,
-            "home": -0.838,
-            "total": -1.682,
-            "homeMargin": 0.006
-          },
-          "full": {
-            "away": 3.308,
-            "home": -7.494,
-            "total": -4.186,
-            "homeMargin": -10.801
-          }
         }
       },
-      "scheduleChecks": {},
+      "scheduleChecks": {
+        "401920982": {
+          "label": "ESPN scoreboard and saved final scores disagree",
+          "exclude": true
+        }
+      },
       "scores": {
         "half": {
-          "games": 2,
+          "games": 1,
           "mae": {
-            "away": 1.659,
-            "home": 1.373,
-            "total": 3.031,
-            "homeMargin": 0.286
-          },
-          "projectedWinnerCorrect": 2,
-          "winnerEligibleGames": 2
-        },
-        "full": {
-          "games": 2,
-          "mae": {
-            "away": 9.806,
-            "home": 8.7,
-            "total": 15.199,
-            "homeMargin": 8.599
+            "away": 2.473,
+            "home": 1.907,
+            "total": 4.381,
+            "homeMargin": 0.566
           },
           "projectedWinnerCorrect": 1,
-          "winnerEligibleGames": 2
+          "winnerEligibleGames": 1
+        },
+        "full": {
+          "games": 1,
+          "mae": {
+            "away": 16.304,
+            "home": 9.907,
+            "total": 26.211,
+            "homeMargin": 6.397
+          },
+          "projectedWinnerCorrect": 1,
+          "winnerEligibleGames": 1
         }
       }
     }
@@ -24740,21 +24758,21 @@
       "quotedGames": 22,
       "marketOutcomes": 104,
       "estimates": 104,
-      "netUnits": -3.876,
-      "WIN": 6,
+      "netUnits": -2.151,
+      "WIN": 8,
       "LOSS": 9,
       "PUSH": 0,
-      "brier": 0.26988678628145296
+      "brier": 0.27081058299979355
     },
     "2026-11-13": {
       "quotedGames": 38,
       "marketOutcomes": 156,
       "estimates": 156,
-      "netUnits": 5.401,
-      "WIN": 20,
-      "LOSS": 13,
+      "netUnits": 5.458,
+      "WIN": 19,
+      "LOSS": 12,
       "PUSH": 0,
-      "brier": 0.2506369940447016
+      "brier": 0.2514377540354364
     },
     "2026-11-06": {
       "quotedGames": 43,
@@ -24764,17 +24782,17 @@
       "WIN": 24,
       "LOSS": 18,
       "PUSH": 0,
-      "brier": 0.2855375226042892
+      "brier": 0.2862682600898424
     },
     "2026-11-09": {
       "quotedGames": 25,
       "marketOutcomes": 100,
       "estimates": 100,
-      "netUnits": 2.608,
-      "WIN": 11,
+      "netUnits": 1.625,
+      "WIN": 10,
       "LOSS": 8,
       "PUSH": 0,
-      "brier": 0.2568494500642022
+      "brier": 0.2564447533816765
     },
     "2026-11-16": {
       "quotedGames": 18,
@@ -24784,57 +24802,57 @@
       "WIN": 3,
       "LOSS": 10,
       "PUSH": 0,
-      "brier": 0.290313946744862
+      "brier": 0.28974793657218156
     },
     "2026-11-10": {
       "quotedGames": 42,
       "marketOutcomes": 196,
       "estimates": 196,
-      "netUnits": -1.561,
-      "WIN": 16,
-      "LOSS": 16,
+      "netUnits": -3.446,
+      "WIN": 15,
+      "LOSS": 17,
       "PUSH": 0,
-      "brier": 0.26710725857517414
+      "brier": 0.26779615085758035
     },
     "2026-11-15": {
       "quotedGames": 24,
       "marketOutcomes": 96,
       "estimates": 96,
-      "netUnits": -0.798,
-      "WIN": 7,
-      "LOSS": 7,
+      "netUnits": -0.889,
+      "WIN": 8,
+      "LOSS": 8,
       "PUSH": 0,
-      "brier": 0.2561340277777778
+      "brier": 0.2563997414536054
     },
     "2026-11-07": {
-      "quotedGames": 39,
-      "marketOutcomes": 156,
-      "estimates": 156,
-      "netUnits": -4.373,
-      "WIN": 15,
+      "quotedGames": 38,
+      "marketOutcomes": 152,
+      "estimates": 152,
+      "netUnits": -5.258,
+      "WIN": 14,
       "LOSS": 18,
       "PUSH": 0,
-      "brier": 0.28047157664042005
+      "brier": 0.272667104074432
     },
     "2026-11-14": {
-      "quotedGames": 43,
-      "marketOutcomes": 172,
-      "estimates": 172,
-      "netUnits": -0.171,
-      "WIN": 15,
-      "LOSS": 14,
+      "quotedGames": 42,
+      "marketOutcomes": 168,
+      "estimates": 168,
+      "netUnits": 2.708,
+      "WIN": 16,
+      "LOSS": 12,
       "PUSH": 0,
-      "brier": 0.25234028661887214
+      "brier": 0.2520763674241905
     },
     "2026-11-11": {
       "quotedGames": 36,
       "marketOutcomes": 148,
       "estimates": 148,
-      "netUnits": -1.199,
-      "WIN": 12,
+      "netUnits": -2.259,
+      "WIN": 11,
       "LOSS": 12,
       "PUSH": 0,
-      "brier": 0.2676220647234159
+      "brier": 0.2682518534378312
     },
     "2026-11-12": {
       "quotedGames": 22,
@@ -24844,7 +24862,7 @@
       "WIN": 8,
       "LOSS": 6,
       "PUSH": 0,
-      "brier": 0.24253098211975377
+      "brier": 0.24270090333847127
     }
   }
 }
