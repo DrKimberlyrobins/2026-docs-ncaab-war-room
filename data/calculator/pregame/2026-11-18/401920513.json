@@ -1,0 +1,175 @@
+{
+  "id": "401920513",
+  "date": "2026-11-18T19:00Z",
+  "awayName": "Rutgers Scarlet Knights",
+  "homeName": "Notre Dame Fighting Irish",
+  "awayId": "164",
+  "homeId": "87",
+  "location": "Neutral",
+  "model": {
+    "away": 73.81919999999998,
+    "home": 75.17119999999998,
+    "total": 148.99039999999997,
+    "homeMargin": 1.3520000000000039,
+    "possessions": 67.6,
+    "awayEfficiency": 109.19999999999999,
+    "homeEfficiency": 111.19999999999999,
+    "homeAdvantagePoints": 0.0,
+    "modelVersion": "kenpom-additive-efficiency-v1"
+  },
+  "matchedTeams": {
+    "away": "Rutgers",
+    "home": "Notre Dame"
+  },
+  "firstHalf": {
+    "away": 34.52804365329819,
+    "home": 35.510925714285705,
+    "total": 70.03896936758389,
+    "homeMargin": 0.9828820609875137,
+    "awayScoringShare": 0.4677379821685713,
+    "homeScoringShare": 0.4724006762468301,
+    "modelVersion": "first-half-timing-v1",
+    "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+    "awayProfile": {
+      "season": 2027,
+      "games": 3,
+      "scoringShare": 0.47244094488188976,
+      "allowingShare": 0.47337278106508873,
+      "firstScoredAverage": 40.0,
+      "firstAllowedAverage": 26.666666666666668,
+      "samples": [
+        {
+          "id": "401923270",
+          "date": "2026-11-13T23:00Z",
+          "firstScored": 35.0,
+          "secondScored": 37.0,
+          "firstAllowed": 31.0,
+          "secondAllowed": 20.0
+        },
+        {
+          "id": "401920866",
+          "date": "2026-11-10T23:30Z",
+          "firstScored": 46.0,
+          "secondScored": 55.0,
+          "firstAllowed": 26.0,
+          "secondAllowed": 38.0
+        },
+        {
+          "id": "401926135",
+          "date": "2026-11-07T00:00Z",
+          "firstScored": 39.0,
+          "secondScored": 42.0,
+          "firstAllowed": 23.0,
+          "secondAllowed": 31.0
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401923270",
+          "fetchedAt": "2026-11-14T01:26:19.073935+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401920866",
+          "fetchedAt": "2026-11-11T10:53:06.966560+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401926135",
+          "fetchedAt": "2026-11-07T05:54:56.299614+00:00"
+        }
+      ],
+      "priorSeason": false
+    },
+    "homeProfile": {
+      "season": 2027,
+      "games": 4,
+      "scoringShare": 0.4714285714285714,
+      "allowingShare": 0.46303501945525294,
+      "firstScoredAverage": 41.25,
+      "firstAllowedAverage": 29.75,
+      "samples": [
+        {
+          "id": "401925682",
+          "date": "2026-11-12T00:00Z",
+          "firstScored": 50.0,
+          "secondScored": 49.0,
+          "firstAllowed": 28.0,
+          "secondAllowed": 31.0
+        },
+        {
+          "id": "401925681",
+          "date": "2026-11-10T00:00Z",
+          "firstScored": 46.0,
+          "secondScored": 48.0,
+          "firstAllowed": 33.0,
+          "secondAllowed": 37.0
+        },
+        {
+          "id": "401919823",
+          "date": "2026-11-06T00:00Z",
+          "firstScored": 38.0,
+          "secondScored": 45.0,
+          "firstAllowed": 23.0,
+          "secondAllowed": 33.0
+        },
+        {
+          "id": "401920982",
+          "date": "2026-11-01T14:30Z",
+          "firstScored": 31.0,
+          "secondScored": 43.0,
+          "firstAllowed": 35.0,
+          "secondAllowed": 37.0
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401925682",
+          "fetchedAt": "2026-11-12T02:15:03.253380+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401925681",
+          "fetchedAt": "2026-11-10T09:07:29.178945+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401919823",
+          "fetchedAt": "2026-11-06T06:38:07.981940+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401920982",
+          "fetchedAt": "2026-11-02T00:41:54.907012+00:00"
+        }
+      ],
+      "priorSeason": false
+    }
+  },
+  "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+  "independentFirstHalf": {
+    "modelVersion": "independent-1h-efficiency-v1",
+    "away": 37.78794401124804,
+    "home": 38.573624289206286,
+    "homeMargin": 0.7856802779582495,
+    "total": 76.36156830045432,
+    "firstHalfPossessions": 34.774775340755255,
+    "awayEfficiency": 108.66481132075472,
+    "homeEfficiency": 110.92415094339621,
+    "ratingsAt": "2026-11-18T00:57:06.403344+00:00",
+    "tipoffAt": "2026-11-18T19:00Z",
+    "assumptions": {
+      "nationalEfficiency": 106.0,
+      "tempoMethod": "geometric",
+      "firstHalfPaceFactor": 0.5,
+      "homeAdvantageFullGame": 0.0,
+      "neutral": true,
+      "earlyPaceCorrectionCalibrated": false,
+      "uncertaintyCalibrated": false
+    },
+    "firstTenMinutes": null,
+    "coverProbability": null,
+    "status": "BASELINE_UNCALIBRATED"
+  },
+  "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline.",
+  "ratingsFetchedAt": "2026-11-18T00:57:06.403344+00:00",
+  "preparedAt": "2026-11-18T00:57:07.367353+00:00",
+  "scheduleSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?groups=50&limit=1000&dates=20261118",
+  "ratingSource": "https://kenpom.com/",
+  "evidenceLabel": "First saved pre-tipoff model receipt"
+}
