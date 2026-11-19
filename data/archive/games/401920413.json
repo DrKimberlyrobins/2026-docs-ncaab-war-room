@@ -1801,5 +1801,186 @@
         }
       }
     ]
+  },
+  "additionalMarkets": {
+    "half": {},
+    "full": {
+      "spread": {
+        "id": "2719403347",
+        "criterionId": "1001159512",
+        "label": "Point Spread",
+        "period": "full",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4423644458",
+            "price": -110,
+            "changedAt": "2026-11-19T08:12:21Z",
+            "teamId": "2272",
+            "line": -13.5
+          },
+          {
+            "id": "4423644459",
+            "price": -110,
+            "changedAt": "2026-11-19T08:12:21Z",
+            "teamId": "147",
+            "line": 13.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-19T09:24:43.167179+00:00",
+        "quoteSavedAt": "2026-11-19T09:25:08.160415+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028921924.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "moneyline": {
+        "id": "2719425937",
+        "criterionId": "1001159732",
+        "label": "Moneyline",
+        "period": "full",
+        "kind": "moneyline",
+        "outcomes": [
+          {
+            "id": "4423594972",
+            "price": -1250,
+            "changedAt": "2026-11-19T08:12:21Z",
+            "teamId": "2272"
+          },
+          {
+            "id": "4423594973",
+            "price": 650,
+            "changedAt": "2026-11-19T08:12:21Z",
+            "teamId": "147"
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-19T09:24:43.167179+00:00",
+        "quoteSavedAt": "2026-11-19T09:25:08.160415+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028921924.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "total": {
+        "id": "2719431894",
+        "criterionId": "1001159509",
+        "label": "Total Points - Including Overtime",
+        "period": "full",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4423586363",
+            "price": -110,
+            "changedAt": "2026-11-19T08:10:48Z",
+            "side": "over",
+            "line": 144.5
+          },
+          {
+            "id": "4423586364",
+            "price": -110,
+            "changedAt": "2026-11-19T08:10:48Z",
+            "side": "under",
+            "line": 144.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-19T09:24:43.167179+00:00",
+        "quoteSavedAt": "2026-11-19T09:25:08.160415+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028921924.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    }
+  },
+  "decisionEvidence": {
+    "version": "empirical-score-residuals-v1",
+    "markets": [
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 144.5,
+        "price": -110,
+        "outcomeId": "4423586363",
+        "offerId": "2719431894",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": 4.160500000000013,
+        "breakEven": 0.5238095238095238,
+        "probability": 0.6276315789473684,
+        "expectedValue": 0.19820574162679425,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-19T09:24:43.167179+00:00",
+        "score": {
+          "away": 70.5425,
+          "home": 78.118
+        },
+        "sampleSize": 760,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-19T09:25:08.160415+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": 13.5,
+        "price": -110,
+        "outcomeId": "4423644459",
+        "offerId": "2719403347",
+        "teamId": "147",
+        "side": null,
+        "pointDifference": 5.924500000000009,
+        "breakEven": 0.5238095238095238,
+        "probability": 0.5657894736842105,
+        "expectedValue": 0.08014354066985642,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-19T09:24:43.167179+00:00",
+        "score": {
+          "away": 70.5425,
+          "home": 78.118
+        },
+        "sampleSize": 760,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-19T09:25:08.160415+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": -13.5,
+        "price": -110,
+        "outcomeId": "4423644458",
+        "offerId": "2719403347",
+        "teamId": "2272",
+        "side": null,
+        "pointDifference": -5.924500000000009,
+        "breakEven": 0.5238095238095238,
+        "probability": 0.4342105263157895,
+        "expectedValue": -0.17105263157894737,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-19T09:24:43.167179+00:00",
+        "score": {
+          "away": 70.5425,
+          "home": 78.118
+        },
+        "sampleSize": 760,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-19T09:25:08.160415+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 144.5,
+        "price": -110,
+        "outcomeId": "4423586364",
+        "offerId": "2719431894",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": -4.160500000000013,
+        "breakEven": 0.5238095238095238,
+        "probability": 0.37236842105263157,
+        "expectedValue": -0.2891148325358852,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-19T09:24:43.167179+00:00",
+        "score": {
+          "away": 70.5425,
+          "home": 78.118
+        },
+        "sampleSize": 760,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-19T09:25:08.160415+00:00"
+      }
+    ]
   }
 }
