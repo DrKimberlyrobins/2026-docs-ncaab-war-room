@@ -2,26 +2,26 @@
   "version": 1,
   "summary": {
     "half": {
-      "games": 785,
+      "games": 787,
       "mae": {
-        "away": 5.756,
+        "away": 5.77,
         "home": 6.551,
-        "total": 8.68,
-        "homeMargin": 8.738
+        "total": 8.704,
+        "homeMargin": 8.728
       },
-      "projectedWinnerCorrect": 554,
-      "winnerEligibleGames": 767
+      "projectedWinnerCorrect": 555,
+      "winnerEligibleGames": 769
     },
     "full": {
-      "games": 788,
+      "games": 790,
       "mae": {
-        "away": 8.048,
-        "home": 9.032,
-        "total": 13.492,
+        "away": 8.045,
+        "home": 9.031,
+        "total": 13.494,
         "homeMargin": 10.385
       },
-      "projectedWinnerCorrect": 616,
-      "winnerEligibleGames": 786
+      "projectedWinnerCorrect": 618,
+      "winnerEligibleGames": 788
     }
   },
   "dates": {
@@ -32495,9 +32495,40 @@
     },
     "2026-11-20": {
       "receipts": 51,
-      "finals": 0,
+      "finals": 2,
       "excludedReceipts": 3,
-      "forecastErrors": {},
+      "forecastErrors": {
+        "401916122": {
+          "resultFetchedAt": "2026-11-20T19:59:51.845346+00:00",
+          "half": {
+            "away": 19.796,
+            "home": 10.169,
+            "total": 29.966,
+            "homeMargin": -9.627
+          },
+          "full": {
+            "away": 12.305,
+            "home": 5.315,
+            "total": 17.62,
+            "homeMargin": -6.99
+          }
+        },
+        "401921418": {
+          "resultFetchedAt": "2026-11-20T19:59:52.069067+00:00",
+          "half": {
+            "away": 3.063,
+            "home": 3.365,
+            "total": 6.428,
+            "homeMargin": 0.302
+          },
+          "full": {
+            "away": -1.104,
+            "home": 12.247,
+            "total": 11.142,
+            "homeMargin": 13.351
+          }
+        }
+      },
       "scheduleChecks": {
         "401909698": {
           "label": "ESPN revised the tipoff time",
@@ -32519,17 +32550,321 @@
       },
       "scores": {
         "half": {
-          "games": 0,
-          "mae": {},
-          "projectedWinnerCorrect": 0,
-          "winnerEligibleGames": 0
+          "games": 2,
+          "mae": {
+            "away": 11.43,
+            "home": 6.767,
+            "total": 18.197,
+            "homeMargin": 4.965
+          },
+          "projectedWinnerCorrect": 1,
+          "winnerEligibleGames": 2
         },
         "full": {
-          "games": 0,
-          "mae": {},
-          "projectedWinnerCorrect": 0,
-          "winnerEligibleGames": 0
+          "games": 2,
+          "mae": {
+            "away": 6.705,
+            "home": 8.781,
+            "total": 14.381,
+            "homeMargin": 10.171
+          },
+          "projectedWinnerCorrect": 2,
+          "winnerEligibleGames": 2
         }
+      },
+      "marketResults": {
+        "401916122": [
+          {
+            "period": "full",
+            "kind": "spread",
+            "line": 2.5,
+            "price": 100,
+            "outcomeId": "4424482272",
+            "offerId": "2719700431",
+            "teamId": "2393",
+            "side": null,
+            "pointDifference": 0.4900000000000091,
+            "breakEven": 0.5,
+            "probability": 0.6351706036745407,
+            "expectedValue": 0.27034120734908135,
+            "qualified": true,
+            "quoteFetchedAt": "2026-11-20T01:10:42.246858+00:00",
+            "score": {
+              "away": 72.695,
+              "home": 70.685
+            },
+            "sampleSize": 762,
+            "pushProbability": 0.0,
+            "evaluatedAt": "2026-11-20T01:10:59.681057+00:00",
+            "result": "LOSS"
+          },
+          {
+            "period": "full",
+            "kind": "total",
+            "line": 146.5,
+            "price": -110,
+            "outcomeId": "4424482271",
+            "offerId": "2719700430",
+            "teamId": null,
+            "side": "under",
+            "pointDifference": 3.1200000000000045,
+            "breakEven": 0.5238095238095238,
+            "probability": 0.55249343832021,
+            "expectedValue": 0.054760200429491646,
+            "qualified": false,
+            "quoteFetchedAt": "2026-11-20T01:10:42.246858+00:00",
+            "score": {
+              "away": 72.695,
+              "home": 70.685
+            },
+            "sampleSize": 762,
+            "pushProbability": 0.0,
+            "evaluatedAt": "2026-11-20T01:10:59.681057+00:00",
+            "result": "LOSS"
+          },
+          {
+            "period": "full",
+            "kind": "total",
+            "line": 146.5,
+            "price": -110,
+            "outcomeId": "4424482270",
+            "offerId": "2719700430",
+            "teamId": null,
+            "side": "over",
+            "pointDifference": -3.1200000000000045,
+            "breakEven": 0.5238095238095238,
+            "probability": 0.44750656167979,
+            "expectedValue": -0.14566929133858267,
+            "qualified": false,
+            "quoteFetchedAt": "2026-11-20T01:10:42.246858+00:00",
+            "score": {
+              "away": 72.695,
+              "home": 70.685
+            },
+            "sampleSize": 762,
+            "pushProbability": 0.0,
+            "evaluatedAt": "2026-11-20T01:10:59.681057+00:00",
+            "result": "WIN"
+          },
+          {
+            "period": "full",
+            "kind": "spread",
+            "line": -2.5,
+            "price": -121,
+            "outcomeId": "4424482273",
+            "offerId": "2719700431",
+            "teamId": "218",
+            "side": null,
+            "pointDifference": -0.4900000000000091,
+            "breakEven": 0.5475113122171946,
+            "probability": 0.3648293963254593,
+            "expectedValue": -0.333658705884905,
+            "qualified": false,
+            "quoteFetchedAt": "2026-11-20T01:10:42.246858+00:00",
+            "score": {
+              "away": 72.695,
+              "home": 70.685
+            },
+            "sampleSize": 762,
+            "pushProbability": 0.0,
+            "evaluatedAt": "2026-11-20T01:10:59.681057+00:00",
+            "result": "WIN"
+          },
+          {
+            "period": "full",
+            "kind": "spread",
+            "line": 2.5,
+            "price": 120,
+            "outcomeId": "4424482272",
+            "offerId": "2719700431",
+            "teamId": "2393",
+            "side": null,
+            "pointDifference": 0.4900000000000091,
+            "breakEven": 0.45454545454545453,
+            "probability": 0.631979695431472,
+            "expectedValue": 0.39035532994923877,
+            "qualified": true,
+            "quoteFetchedAt": "2026-11-20T09:06:03.349609+00:00",
+            "score": {
+              "away": 72.695,
+              "home": 70.685
+            },
+            "sampleSize": 788,
+            "pushProbability": 0.0,
+            "evaluatedAt": "2026-11-20T09:06:31.176942+00:00",
+            "result": "LOSS"
+          },
+          {
+            "period": "full",
+            "kind": "spread",
+            "line": -2.5,
+            "price": -148,
+            "outcomeId": "4424482273",
+            "offerId": "2719700431",
+            "teamId": "218",
+            "side": null,
+            "pointDifference": -0.4900000000000091,
+            "breakEven": 0.5967741935483871,
+            "probability": 0.3680203045685279,
+            "expectedValue": -0.38331732747976405,
+            "qualified": false,
+            "quoteFetchedAt": "2026-11-20T09:06:03.349609+00:00",
+            "score": {
+              "away": 72.695,
+              "home": 70.685
+            },
+            "sampleSize": 788,
+            "pushProbability": 0.0,
+            "evaluatedAt": "2026-11-20T09:06:31.176942+00:00",
+            "result": "WIN"
+          }
+        ],
+        "401921418": [
+          {
+            "period": "full",
+            "kind": "spread",
+            "line": -0.5,
+            "price": -117,
+            "outcomeId": "4424509097",
+            "offerId": "2719688531",
+            "teamId": "135",
+            "side": null,
+            "pointDifference": 1.1488000000000085,
+            "breakEven": 0.5391705069124424,
+            "probability": 0.652230971128609,
+            "expectedValue": 0.20969333961459952,
+            "qualified": true,
+            "quoteFetchedAt": "2026-11-20T01:10:42.361181+00:00",
+            "score": {
+              "away": 71.10449999999999,
+              "home": 72.7533
+            },
+            "sampleSize": 762,
+            "pushProbability": 0.0,
+            "evaluatedAt": "2026-11-20T01:10:59.681057+00:00",
+            "result": "WIN"
+          },
+          {
+            "period": "full",
+            "kind": "total",
+            "line": 146.5,
+            "price": -109,
+            "outcomeId": "4424520827",
+            "offerId": "2719656843",
+            "teamId": null,
+            "side": "under",
+            "pointDifference": 2.6422000000000025,
+            "breakEven": 0.5215311004784688,
+            "probability": 0.5380577427821522,
+            "expectedValue": 0.03168869946302602,
+            "qualified": false,
+            "quoteFetchedAt": "2026-11-20T01:10:42.361181+00:00",
+            "score": {
+              "away": 71.10449999999999,
+              "home": 72.7533
+            },
+            "sampleSize": 762,
+            "pushProbability": 0.0,
+            "evaluatedAt": "2026-11-20T01:10:59.681057+00:00",
+            "result": "LOSS"
+          },
+          {
+            "period": "full",
+            "kind": "total",
+            "line": 146.5,
+            "price": -112,
+            "outcomeId": "4424520826",
+            "offerId": "2719656843",
+            "teamId": null,
+            "side": "over",
+            "pointDifference": -2.6422000000000025,
+            "breakEven": 0.5283018867924528,
+            "probability": 0.46194225721784776,
+            "expectedValue": -0.12560929883764524,
+            "qualified": false,
+            "quoteFetchedAt": "2026-11-20T01:10:42.361181+00:00",
+            "score": {
+              "away": 71.10449999999999,
+              "home": 72.7533
+            },
+            "sampleSize": 762,
+            "pushProbability": 0.0,
+            "evaluatedAt": "2026-11-20T01:10:59.681057+00:00",
+            "result": "WIN"
+          },
+          {
+            "period": "full",
+            "kind": "spread",
+            "line": 0.5,
+            "price": -105,
+            "outcomeId": "4424509096",
+            "offerId": "2719688531",
+            "teamId": "197",
+            "side": null,
+            "pointDifference": -1.1488000000000085,
+            "breakEven": 0.5121951219512195,
+            "probability": 0.34776902887139105,
+            "expectedValue": -0.3210223722034745,
+            "qualified": false,
+            "quoteFetchedAt": "2026-11-20T01:10:42.361181+00:00",
+            "score": {
+              "away": 71.10449999999999,
+              "home": 72.7533
+            },
+            "sampleSize": 762,
+            "pushProbability": 0.0,
+            "evaluatedAt": "2026-11-20T01:10:59.681057+00:00",
+            "result": "LOSS"
+          },
+          {
+            "period": "full",
+            "kind": "total",
+            "line": 146.5,
+            "price": 104,
+            "outcomeId": "4424520827",
+            "offerId": "2719656843",
+            "teamId": null,
+            "side": "under",
+            "pointDifference": 2.6422000000000025,
+            "breakEven": 0.49019607843137253,
+            "probability": 0.5368020304568528,
+            "expectedValue": 0.09507614213197979,
+            "qualified": true,
+            "quoteFetchedAt": "2026-11-20T09:06:03.550150+00:00",
+            "score": {
+              "away": 71.10449999999999,
+              "home": 72.7533
+            },
+            "sampleSize": 788,
+            "pushProbability": 0.0,
+            "evaluatedAt": "2026-11-20T09:06:31.176942+00:00",
+            "result": "LOSS"
+          },
+          {
+            "period": "full",
+            "kind": "total",
+            "line": 146.5,
+            "price": -125,
+            "outcomeId": "4424520826",
+            "offerId": "2719656843",
+            "teamId": null,
+            "side": "over",
+            "pointDifference": -2.6422000000000025,
+            "breakEven": 0.5555555555555556,
+            "probability": 0.4631979695431472,
+            "expectedValue": -0.16624365482233502,
+            "qualified": false,
+            "quoteFetchedAt": "2026-11-20T09:06:03.550150+00:00",
+            "score": {
+              "away": 71.10449999999999,
+              "home": 72.7533
+            },
+            "sampleSize": 788,
+            "pushProbability": 0.0,
+            "evaluatedAt": "2026-11-20T09:06:31.176942+00:00",
+            "result": "WIN"
+          }
+        ]
       }
     },
     "2026-11-18": {
@@ -59757,6 +60092,16 @@
       "LOSS": 6,
       "PUSH": 0,
       "brier": 0.24270090333847127
+    },
+    "2026-11-20": {
+      "quotedGames": 2,
+      "marketOutcomes": 8,
+      "estimates": 8,
+      "netUnits": -0.145,
+      "WIN": 1,
+      "LOSS": 1,
+      "PUSH": 0,
+      "brier": 0.27978503179228587
     }
   }
 }
