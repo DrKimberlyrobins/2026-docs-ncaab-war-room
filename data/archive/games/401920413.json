@@ -35,7 +35,7 @@
         "awayScoringShare": 0.48048617305976804,
         "homeScoringShare": 0.473406862745098,
         "modelVersion": "first-half-timing-v1",
-        "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+        "method": "Current full-game projection × average of own observed 1H scoring share and opponent observed 1H allowing share",
         "awayProfile": {
           "season": 2027,
           "games": 3,
@@ -332,7 +332,23 @@
     "kambi": null,
     "marketStatus": "No verified fresh pregame market available at save time"
   },
-  "result": null,
+  "result": {
+    "fetchedAt": "2026-11-20T02:18:06.082512+00:00",
+    "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401920413",
+    "full": {
+      "away": 74,
+      "home": 85,
+      "total": 159,
+      "homeMargin": 11
+    },
+    "half": {
+      "away": 37,
+      "home": 37,
+      "total": 74,
+      "homeMargin": 0
+    },
+    "status": "Final"
+  },
   "reportEvidence": {
     "articles": [
       {
@@ -483,7 +499,7 @@
           "High Point vs Wazzu",
           "HPU Basketball",
           "HPU Homecoming",
-          "HPU Men\u2019s Basketball",
+          "HPU Men’s Basketball",
           "Isaac Garrett",
           "Jamari Phillips",
           "Jason Rivera-Torres",
@@ -519,7 +535,7 @@
       },
       {
         "id": "503fe1a0fc27d33f68d8",
-        "title": "Panthers Toothsayer: High Point vs. Maryland Eastern Shore \u2014 A Clash of Contrasts in the Home Opener",
+        "title": "Panthers Toothsayer: High Point vs. Maryland Eastern Shore — A Clash of Contrasts in the Home Opener",
         "url": "https://pantherstooth.com/panthers-toothsayer-high-point-vs-maryland-eastern-shore-a-clash-of-contrasts-in-the-home-opener/",
         "publisher": "Pantherstooth",
         "kind": "Independent team coverage",
@@ -542,7 +558,7 @@
       },
       {
         "id": "97825a11b75ea7f5903a",
-        "title": "Beyond the Box Score: High Point\u2019s Depth Overwhelms Liberty in Midnight Opener",
+        "title": "Beyond the Box Score: High Point’s Depth Overwhelms Liberty in Midnight Opener",
         "url": "https://pantherstooth.com/beyond-the-box-score-high-points-depth-overwhelms-liberty-in-midnight-opener/",
         "publisher": "Pantherstooth",
         "kind": "Independent team coverage",

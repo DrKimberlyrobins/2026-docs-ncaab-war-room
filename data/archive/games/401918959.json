@@ -35,7 +35,7 @@
         "awayScoringShare": 0.498783858485351,
         "homeScoringShare": 0.4514954555062355,
         "modelVersion": "first-half-timing-v1",
-        "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+        "method": "Current full-game projection × average of own observed 1H scoring share and opponent observed 1H allowing share",
         "awayProfile": {
           "season": 2027,
           "games": 4,
@@ -354,7 +354,23 @@
     "kambi": null,
     "marketStatus": "No verified fresh pregame market available at save time"
   },
-  "result": null,
+  "result": {
+    "fetchedAt": "2026-11-20T02:18:06.082512+00:00",
+    "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401918959",
+    "full": {
+      "away": 83,
+      "home": 93,
+      "total": 176,
+      "homeMargin": 10
+    },
+    "half": {
+      "away": 29,
+      "home": 48,
+      "total": 77,
+      "homeMargin": 19
+    },
+    "status": "Final"
+  },
   "reportEvidence": {
     "articles": [
       {
