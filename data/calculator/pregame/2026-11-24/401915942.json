@@ -1,0 +1,175 @@
+{
+  "id": "401915942",
+  "date": "2026-11-25T01:00Z",
+  "awayName": "Texas Tech Red Raiders",
+  "homeName": "Louisville Cardinals",
+  "awayId": "2641",
+  "homeId": "97",
+  "location": "Neutral",
+  "model": {
+    "away": 76.9296,
+    "home": 71.74639999999998,
+    "total": 148.676,
+    "homeMargin": -5.183200000000014,
+    "possessions": 68.19999999999999,
+    "awayEfficiency": 112.80000000000001,
+    "homeEfficiency": 105.19999999999999,
+    "homeAdvantagePoints": 0.0,
+    "modelVersion": "kenpom-additive-efficiency-v1"
+  },
+  "matchedTeams": {
+    "away": "Texas Tech",
+    "home": "Louisville"
+  },
+  "firstHalf": {
+    "away": 38.46005125925925,
+    "home": 35.88746616408748,
+    "total": 74.34751742334673,
+    "homeMargin": -2.5725850951717746,
+    "awayScoringShare": 0.49993827160493826,
+    "homeScoringShare": 0.5001988415319443,
+    "modelVersion": "first-half-timing-v1",
+    "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+    "awayProfile": {
+      "season": 2027,
+      "games": 4,
+      "scoringShare": 0.5154320987654321,
+      "allowingShare": 0.42790697674418604,
+      "firstScoredAverage": 41.75,
+      "firstAllowedAverage": 23.0,
+      "samples": [
+        {
+          "id": "401919847",
+          "date": "2026-11-14T19:00Z",
+          "firstScored": 43.0,
+          "secondScored": 45.0,
+          "firstAllowed": 21.0,
+          "secondAllowed": 16.0
+        },
+        {
+          "id": "401913527",
+          "date": "2026-11-11T01:00Z",
+          "firstScored": 49.0,
+          "secondScored": 35.0,
+          "firstAllowed": 29.0,
+          "secondAllowed": 49.0
+        },
+        {
+          "id": "401921133",
+          "date": "2026-11-06T02:00Z",
+          "firstScored": 37.0,
+          "secondScored": 39.0,
+          "firstAllowed": 24.0,
+          "secondAllowed": 34.0
+        },
+        {
+          "id": "401921036",
+          "date": "2026-11-03T00:00Z",
+          "firstScored": 38.0,
+          "secondScored": 38.0,
+          "firstAllowed": 18.0,
+          "secondAllowed": 24.0
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401919847",
+          "fetchedAt": "2026-11-15T06:24:06.947772+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401913527",
+          "fetchedAt": "2026-11-11T10:53:10.418025+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401921133",
+          "fetchedAt": "2026-11-06T06:38:06.620741+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401921036",
+          "fetchedAt": "2026-11-03T17:00:26.189605+00:00"
+        }
+      ],
+      "priorSeason": false
+    },
+    "homeProfile": {
+      "season": 2027,
+      "games": 3,
+      "scoringShare": 0.5724907063197026,
+      "allowingShare": 0.48444444444444446,
+      "firstScoredAverage": 51.333333333333336,
+      "firstAllowedAverage": 36.333333333333336,
+      "samples": [
+        {
+          "id": "401918949",
+          "date": "2026-11-15T18:00Z",
+          "firstScored": 52.0,
+          "secondScored": 26.0,
+          "firstAllowed": 41.0,
+          "secondAllowed": 57.0
+        },
+        {
+          "id": "401918948",
+          "date": "2026-11-07T17:00Z",
+          "firstScored": 46.0,
+          "secondScored": 61.0,
+          "firstAllowed": 33.0,
+          "secondAllowed": 24.0
+        },
+        {
+          "id": "401918947",
+          "date": "2026-11-03T02:00Z",
+          "firstScored": 56.0,
+          "secondScored": 28.0,
+          "firstAllowed": 35.0,
+          "secondAllowed": 35.0
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401918949",
+          "fetchedAt": "2026-11-15T22:46:39.582482+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401918948",
+          "fetchedAt": "2026-11-10T09:07:30.931252+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401918947",
+          "fetchedAt": "2026-11-03T17:00:26.928479+00:00"
+        }
+      ],
+      "priorSeason": false
+    }
+  },
+  "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+  "independentFirstHalf": {
+    "modelVersion": "independent-1h-efficiency-v1",
+    "away": 39.022563098786776,
+    "home": 36.28688358813392,
+    "homeMargin": -2.735679510652858,
+    "total": 75.3094466869207,
+    "firstHalfPossessions": 34.914037291610946,
+    "awayEfficiency": 111.76754716981132,
+    "homeEfficiency": 103.93207547169813,
+    "ratingsAt": "2026-11-20T11:22:16.752003+00:00",
+    "tipoffAt": "2026-11-25T01:00Z",
+    "assumptions": {
+      "nationalEfficiency": 106.0,
+      "tempoMethod": "geometric",
+      "firstHalfPaceFactor": 0.5,
+      "homeAdvantageFullGame": 0.0,
+      "neutral": true,
+      "earlyPaceCorrectionCalibrated": false,
+      "uncertaintyCalibrated": false
+    },
+    "firstTenMinutes": null,
+    "coverProbability": null,
+    "status": "BASELINE_UNCALIBRATED"
+  },
+  "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline.",
+  "ratingsFetchedAt": "2026-11-20T11:22:16.752003+00:00",
+  "preparedAt": "2026-11-20T11:22:18.009792+00:00",
+  "scheduleSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?groups=50&limit=1000&dates=20261124",
+  "ratingSource": "https://kenpom.com/",
+  "evidenceLabel": "First saved pre-tipoff model receipt"
+}
