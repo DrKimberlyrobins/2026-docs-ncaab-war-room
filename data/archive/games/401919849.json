@@ -208,7 +208,100 @@
   "result": null,
   "decisionEvidence": {
     "version": "empirical-score-residuals-v1",
-    "markets": []
+    "markets": [
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": 7.5,
+        "price": -114,
+        "outcomeId": "4425998240",
+        "offerId": "2720140508",
+        "teamId": "284",
+        "side": null,
+        "pointDifference": -1.44729999999997,
+        "breakEven": 0.5327102803738317,
+        "probability": 0.5795180722891566,
+        "expectedValue": 0.0878672585077152,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-21T06:53:57.872320+00:00",
+        "score": {
+          "away": 77.1107,
+          "home": 68.16340000000002
+        },
+        "sampleSize": 830,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-21T06:54:23.722561+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 149.5,
+        "price": -118,
+        "outcomeId": "4426027354",
+        "offerId": "2720166428",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": 4.225899999999967,
+        "breakEven": 0.5412844036697247,
+        "probability": 0.5626506024096386,
+        "expectedValue": 0.03947314682458652,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-21T06:53:57.872320+00:00",
+        "score": {
+          "away": 77.1107,
+          "home": 68.16340000000002
+        },
+        "sampleSize": 830,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-21T06:54:23.722561+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 149.5,
+        "price": -104,
+        "outcomeId": "4426027353",
+        "offerId": "2720166428",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": -4.225899999999967,
+        "breakEven": 0.5098039215686274,
+        "probability": 0.43734939759036146,
+        "expectedValue": -0.14212233549582945,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-21T06:53:57.872320+00:00",
+        "score": {
+          "away": 77.1107,
+          "home": 68.16340000000002
+        },
+        "sampleSize": 830,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-21T06:54:23.722561+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": -7.5,
+        "price": -107,
+        "outcomeId": "4425998241",
+        "offerId": "2720140508",
+        "teamId": "111",
+        "side": null,
+        "pointDifference": 1.44729999999997,
+        "breakEven": 0.5169082125603864,
+        "probability": 0.42048192771084336,
+        "expectedValue": -0.18654430807341504,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-21T06:53:57.872320+00:00",
+        "score": {
+          "away": 77.1107,
+          "home": 68.16340000000002
+        },
+        "sampleSize": 830,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-21T06:54:23.722561+00:00"
+      }
+    ]
   },
   "kalshiEvidence": {
     "version": "empirical-score-residuals-v1",
@@ -1462,7 +1555,144 @@
           "away": 77.1107,
           "home": 68.16340000000002
         }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21NESTNH-128",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21NESTNH",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 127.5,
+        "teamSide": null,
+        "label": "Over 127.5 points",
+        "ask": 0.98,
+        "askSize": 21.0,
+        "fee": 0.0014,
+        "breakEven": 0.9814,
+        "quoteFetchedAt": "2026-11-21T06:54:27.590493+00:00",
+        "rules": "If over 127.5 total points are scored in the Northeastern vs Stonehill men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 145.27410000000003,
+        "pointDifference": 17.774100000000033,
+        "probability": 0.8847539015606243,
+        "sampleSize": 833,
+        "expectedValue": -0.09847778524493149,
+        "projectedScore": {
+          "away": 77.1107,
+          "home": 68.16340000000002
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21NESTNH-128",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21NESTNH",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 127.5,
+        "teamSide": null,
+        "label": "Over 127.5 points",
+        "ask": 0.26,
+        "askSize": 0.3,
+        "fee": 0.0135,
+        "breakEven": 0.2735,
+        "quoteFetchedAt": "2026-11-21T06:54:27.590493+00:00",
+        "rules": "If over 127.5 total points are scored in the Northeastern vs Stonehill men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 145.27410000000003,
+        "pointDifference": -17.774100000000033,
+        "probability": 0.11524609843937575,
+        "sampleSize": 833,
+        "expectedValue": -0.5786248685946043,
+        "projectedScore": {
+          "away": 77.1107,
+          "home": 68.16340000000002
+        }
       }
     ]
+  },
+  "additionalMarkets": {
+    "half": {},
+    "full": {
+      "spread": {
+        "id": "2720140508",
+        "criterionId": "1001159512",
+        "label": "Point Spread",
+        "period": "full",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4425998240",
+            "price": -114,
+            "changedAt": "2026-11-21T04:45:51Z",
+            "teamId": "284",
+            "line": 7.5
+          },
+          {
+            "id": "4425998241",
+            "price": -107,
+            "changedAt": "2026-11-21T04:45:51Z",
+            "teamId": "111",
+            "line": -7.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-21T06:53:57.872320+00:00",
+        "quoteSavedAt": "2026-11-21T06:54:23.722561+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028638736.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "moneyline": {
+        "id": "2720166426",
+        "criterionId": "1001159732",
+        "label": "Moneyline",
+        "period": "full",
+        "kind": "moneyline",
+        "outcomes": [
+          {
+            "id": "4426027349",
+            "price": 265,
+            "changedAt": "2026-11-21T04:45:51Z",
+            "teamId": "284"
+          },
+          {
+            "id": "4426027350",
+            "price": -360,
+            "changedAt": "2026-11-21T04:45:51Z",
+            "teamId": "111"
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-21T06:53:57.872320+00:00",
+        "quoteSavedAt": "2026-11-21T06:54:23.722561+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028638736.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "total": {
+        "id": "2720166428",
+        "criterionId": "1001159509",
+        "label": "Total Points - Including Overtime",
+        "period": "full",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4426027353",
+            "price": -104,
+            "changedAt": "2026-11-21T04:42:48Z",
+            "side": "over",
+            "line": 149.5
+          },
+          {
+            "id": "4426027354",
+            "price": -118,
+            "changedAt": "2026-11-21T04:42:48Z",
+            "side": "under",
+            "line": 149.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-21T06:53:57.872320+00:00",
+        "quoteSavedAt": "2026-11-21T06:54:23.722561+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028638736.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    }
+  },
+  "reportEvidence": {
+    "articles": []
   }
 }

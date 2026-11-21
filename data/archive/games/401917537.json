@@ -220,7 +220,100 @@
   "result": null,
   "decisionEvidence": {
     "version": "empirical-score-residuals-v1",
-    "markets": []
+    "markets": [
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 125.5,
+        "price": -104,
+        "outcomeId": "4425829985",
+        "offerId": "2720103395",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": 2.196799999999996,
+        "breakEven": 0.5098039215686274,
+        "probability": 0.516867469879518,
+        "expectedValue": 0.013855421686747124,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-21T06:54:00.604392+00:00",
+        "score": {
+          "away": 58.6496,
+          "home": 64.6536
+        },
+        "sampleSize": 830,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-21T06:54:23.722561+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": -9.5,
+        "price": -108,
+        "outcomeId": "4425829980",
+        "offerId": "2720103393",
+        "teamId": "279",
+        "side": null,
+        "pointDifference": -3.496000000000002,
+        "breakEven": 0.5192307692307693,
+        "probability": 0.5084337349397591,
+        "expectedValue": -0.020794288264167893,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-21T06:54:00.604392+00:00",
+        "score": {
+          "away": 58.6496,
+          "home": 64.6536
+        },
+        "sampleSize": 830,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-21T06:54:23.722561+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": 9.5,
+        "price": -113,
+        "outcomeId": "4425829981",
+        "offerId": "2720103393",
+        "teamId": "71",
+        "side": null,
+        "pointDifference": 3.496000000000002,
+        "breakEven": 0.5305164319248826,
+        "probability": 0.491566265060241,
+        "expectedValue": -0.07341934108113869,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-21T06:54:00.604392+00:00",
+        "score": {
+          "away": 58.6496,
+          "home": 64.6536
+        },
+        "sampleSize": 830,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-21T06:54:23.722561+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 125.5,
+        "price": -118,
+        "outcomeId": "4425829984",
+        "offerId": "2720103395",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": -2.196799999999996,
+        "breakEven": 0.5412844036697247,
+        "probability": 0.4831325301204819,
+        "expectedValue": -0.10743312231978762,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-21T06:54:00.604392+00:00",
+        "score": {
+          "away": 58.6496,
+          "home": 64.6536
+        },
+        "sampleSize": 830,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-21T06:54:23.722561+00:00"
+      }
+    ]
   },
   "kalshiEvidence": {
     "version": "empirical-score-residuals-v1",
@@ -1399,7 +1492,144 @@
           "away": 58.6496,
           "home": 64.6536
         }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21BRADPAC-148",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21BRADPAC",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 147.5,
+        "teamSide": null,
+        "label": "Over 147.5 points",
+        "ask": 0.99,
+        "askSize": 304.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-21T06:54:27.590493+00:00",
+        "rules": "If over 147.5 total points are scored in the Bradley vs Pacific men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 123.3032,
+        "pointDifference": 24.196799999999996,
+        "probability": 0.9099639855942377,
+        "sampleSize": 833,
+        "expectedValue": -0.08149390774781698,
+        "projectedScore": {
+          "away": 58.6496,
+          "home": 64.6536
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21BRADPAC-148",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21BRADPAC",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 147.5,
+        "teamSide": null,
+        "label": "Over 147.5 points",
+        "ask": 0.17,
+        "askSize": 10.0,
+        "fee": 0.0099,
+        "breakEven": 0.1799,
+        "quoteFetchedAt": "2026-11-21T06:54:27.590493+00:00",
+        "rules": "If over 147.5 total points are scored in the Bradley vs Pacific men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 123.3032,
+        "pointDifference": -24.196799999999996,
+        "probability": 0.09003601440576231,
+        "sampleSize": 833,
+        "expectedValue": -0.49952187656607944,
+        "projectedScore": {
+          "away": 58.6496,
+          "home": 64.6536
+        }
       }
     ]
+  },
+  "additionalMarkets": {
+    "half": {},
+    "full": {
+      "spread": {
+        "id": "2720103393",
+        "criterionId": "1001159512",
+        "label": "Point Spread",
+        "period": "full",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4425829980",
+            "price": -108,
+            "changedAt": "2026-11-21T03:45:08Z",
+            "teamId": "279",
+            "line": -9.5
+          },
+          {
+            "id": "4425829981",
+            "price": -113,
+            "changedAt": "2026-11-21T03:45:08Z",
+            "teamId": "71",
+            "line": 9.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-21T06:54:00.604392+00:00",
+        "quoteSavedAt": "2026-11-21T06:54:23.722561+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028971128.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "moneyline": {
+        "id": "2720103394",
+        "criterionId": "1001159732",
+        "label": "Moneyline",
+        "period": "full",
+        "kind": "moneyline",
+        "outcomes": [
+          {
+            "id": "4425829982",
+            "price": -590,
+            "changedAt": "2026-11-21T03:45:08Z",
+            "teamId": "279"
+          },
+          {
+            "id": "4425829983",
+            "price": 390,
+            "changedAt": "2026-11-21T03:45:08Z",
+            "teamId": "71"
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-21T06:54:00.604392+00:00",
+        "quoteSavedAt": "2026-11-21T06:54:23.722561+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028971128.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "total": {
+        "id": "2720103395",
+        "criterionId": "1001159509",
+        "label": "Total Points - Including Overtime",
+        "period": "full",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4425829984",
+            "price": -118,
+            "changedAt": "2026-11-21T03:45:08Z",
+            "side": "over",
+            "line": 125.5
+          },
+          {
+            "id": "4425829985",
+            "price": -104,
+            "changedAt": "2026-11-21T03:45:08Z",
+            "side": "under",
+            "line": 125.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-21T06:54:00.604392+00:00",
+        "quoteSavedAt": "2026-11-21T06:54:23.722561+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028971128.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    }
+  },
+  "reportEvidence": {
+    "articles": []
   }
 }

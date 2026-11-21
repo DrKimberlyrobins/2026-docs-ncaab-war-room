@@ -220,7 +220,100 @@
   "result": null,
   "decisionEvidence": {
     "version": "empirical-score-residuals-v1",
-    "markets": []
+    "markets": [
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": 32.5,
+        "price": -114,
+        "outcomeId": "4426030547",
+        "offerId": "2720146185",
+        "teamId": "2154",
+        "side": null,
+        "pointDifference": 13.15979999999999,
+        "breakEven": 0.5327102803738317,
+        "probability": 0.772289156626506,
+        "expectedValue": 0.4497357852462482,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-21T06:53:58.057035+00:00",
+        "score": {
+          "away": 58.2153,
+          "home": 77.55550000000001
+        },
+        "sampleSize": 830,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-21T06:54:23.722561+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 142.5,
+        "price": -114,
+        "outcomeId": "4426030541",
+        "offerId": "2720146182",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": 6.729199999999992,
+        "breakEven": 0.5327102803738317,
+        "probability": 0.6240963855421687,
+        "expectedValue": 0.17154935531600093,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-21T06:53:58.057035+00:00",
+        "score": {
+          "away": 58.2153,
+          "home": 77.55550000000001
+        },
+        "sampleSize": 830,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-21T06:54:23.722561+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 142.5,
+        "price": -107,
+        "outcomeId": "4426030540",
+        "offerId": "2720146182",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": -6.729199999999992,
+        "breakEven": 0.5169082125603864,
+        "probability": 0.3759036144578313,
+        "expectedValue": -0.27278459632924223,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-21T06:53:58.057035+00:00",
+        "score": {
+          "away": 58.2153,
+          "home": 77.55550000000001
+        },
+        "sampleSize": 830,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-21T06:54:23.722561+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": -32.5,
+        "price": -107,
+        "outcomeId": "4426030546",
+        "offerId": "2720146185",
+        "teamId": "46",
+        "side": null,
+        "pointDifference": -13.15979999999999,
+        "breakEven": 0.5169082125603864,
+        "probability": 0.22771084337349398,
+        "expectedValue": -0.5594752843148294,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-21T06:53:58.057035+00:00",
+        "score": {
+          "away": 58.2153,
+          "home": 77.55550000000001
+        },
+        "sampleSize": 830,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-21T06:54:23.722561+00:00"
+      }
+    ]
   },
   "reportEvidence": {
     "articles": [
@@ -1606,7 +1699,216 @@
           "away": 58.2153,
           "home": 77.55550000000001
         }
+      },
+      {
+        "ticker": "KXNCAAMBSPREAD-26NOV21COPPGTWN-GTWN55",
+        "eventTicker": "KXNCAAMBSPREAD-26NOV21COPPGTWN",
+        "period": "full",
+        "kind": "spread",
+        "answer": "no",
+        "line": 54.5,
+        "teamSide": "home",
+        "label": "Georgetown wins by over 54.5 points",
+        "ask": 0.99,
+        "askSize": 2346.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-21T06:54:27.180937+00:00",
+        "rules": "If Georgetown wins by more than 54.5 points in the Coppin St. vs Georgetown men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 19.34020000000001,
+        "pointDifference": 35.15979999999999,
+        "probability": 0.9903961584633854,
+        "sampleSize": 833,
+        "expectedValue": -0.00030669378885098266,
+        "projectedScore": {
+          "away": 58.2153,
+          "home": 77.55550000000001
+        }
+      },
+      {
+        "ticker": "KXNCAAMBSPREAD-26NOV21COPPGTWN-GTWN50",
+        "eventTicker": "KXNCAAMBSPREAD-26NOV21COPPGTWN",
+        "period": "full",
+        "kind": "spread",
+        "answer": "no",
+        "line": 49.5,
+        "teamSide": "home",
+        "label": "Georgetown wins by over 49.5 points",
+        "ask": 0.98,
+        "askSize": 72.0,
+        "fee": 0.0014,
+        "breakEven": 0.9814,
+        "quoteFetchedAt": "2026-11-21T06:54:27.180937+00:00",
+        "rules": "If Georgetown wins by more than 49.5 points in the Coppin St. vs Georgetown men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 19.34020000000001,
+        "pointDifference": 30.15979999999999,
+        "probability": 0.9771908763505402,
+        "sampleSize": 833,
+        "expectedValue": -0.00428889713619299,
+        "projectedScore": {
+          "away": 58.2153,
+          "home": 77.55550000000001
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21COPPGTWN-121",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21COPPGTWN",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 120.5,
+        "teamSide": null,
+        "label": "Over 120.5 points",
+        "ask": 0.98,
+        "askSize": 1.0,
+        "fee": 0.0014,
+        "breakEven": 0.9814,
+        "quoteFetchedAt": "2026-11-21T06:54:27.590493+00:00",
+        "rules": "If over 120.5 total points are scored in the Coppin St. vs Georgetown men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 135.7708,
+        "pointDifference": 15.270800000000008,
+        "probability": 0.8535414165666266,
+        "sampleSize": 833,
+        "expectedValue": -0.13028182538554453,
+        "projectedScore": {
+          "away": 58.2153,
+          "home": 77.55550000000001
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21COPPGTWN-127",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21COPPGTWN",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 126.5,
+        "teamSide": null,
+        "label": "Over 126.5 points",
+        "ask": 0.33,
+        "askSize": 120.0,
+        "fee": 0.0155,
+        "breakEven": 0.3455,
+        "quoteFetchedAt": "2026-11-21T06:54:27.590493+00:00",
+        "rules": "If over 126.5 total points are scored in the Coppin St. vs Georgetown men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 135.7708,
+        "pointDifference": -9.270800000000008,
+        "probability": 0.24729891956782712,
+        "sampleSize": 833,
+        "expectedValue": -0.2842288869237999,
+        "projectedScore": {
+          "away": 58.2153,
+          "home": 77.55550000000001
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21COPPGTWN-122",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21COPPGTWN",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 121.5,
+        "teamSide": null,
+        "label": "Over 121.5 points",
+        "ask": 0.26,
+        "askSize": 107.3,
+        "fee": 0.0135,
+        "breakEven": 0.2735,
+        "quoteFetchedAt": "2026-11-21T06:54:27.590493+00:00",
+        "rules": "If over 121.5 total points are scored in the Coppin St. vs Georgetown men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 135.7708,
+        "pointDifference": -14.270800000000008,
+        "probability": 0.16686674669867949,
+        "sampleSize": 833,
+        "expectedValue": -0.38988392431927066,
+        "projectedScore": {
+          "away": 58.2153,
+          "home": 77.55550000000001
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21COPPGTWN-121",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21COPPGTWN",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 120.5,
+        "teamSide": null,
+        "label": "Over 120.5 points",
+        "ask": 0.26,
+        "askSize": 203.3,
+        "fee": 0.0135,
+        "breakEven": 0.2735,
+        "quoteFetchedAt": "2026-11-21T06:54:27.590493+00:00",
+        "rules": "If over 120.5 total points are scored in the Coppin St. vs Georgetown men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 135.7708,
+        "pointDifference": -15.270800000000008,
+        "probability": 0.14645858343337334,
+        "sampleSize": 833,
+        "expectedValue": -0.4645024371723096,
+        "projectedScore": {
+          "away": 58.2153,
+          "home": 77.55550000000001
+        }
       }
     ]
+  },
+  "additionalMarkets": {
+    "half": {},
+    "full": {
+      "total": {
+        "id": "2720146182",
+        "criterionId": "1001159509",
+        "label": "Total Points - Including Overtime",
+        "period": "full",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4426030540",
+            "price": -107,
+            "changedAt": "2026-11-21T04:48:20Z",
+            "side": "over",
+            "line": 142.5
+          },
+          {
+            "id": "4426030541",
+            "price": -114,
+            "changedAt": "2026-11-21T04:48:20Z",
+            "side": "under",
+            "line": 142.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-21T06:53:58.057035+00:00",
+        "quoteSavedAt": "2026-11-21T06:54:23.722561+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028372165.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "spread": {
+        "id": "2720146185",
+        "criterionId": "1001159512",
+        "label": "Point Spread",
+        "period": "full",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4426030546",
+            "price": -107,
+            "changedAt": "2026-11-21T04:52:18Z",
+            "teamId": "46",
+            "line": -32.5
+          },
+          {
+            "id": "4426030547",
+            "price": -114,
+            "changedAt": "2026-11-21T04:52:18Z",
+            "teamId": "2154",
+            "line": 32.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-21T06:53:58.057035+00:00",
+        "quoteSavedAt": "2026-11-21T06:54:23.722561+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028372165.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    }
   }
 }

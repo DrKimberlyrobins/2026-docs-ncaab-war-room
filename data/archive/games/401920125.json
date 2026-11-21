@@ -208,7 +208,100 @@
   "result": null,
   "decisionEvidence": {
     "version": "empirical-score-residuals-v1",
-    "markets": []
+    "markets": [
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 156.5,
+        "price": -109,
+        "outcomeId": "4425837569",
+        "offerId": "2720071107",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": 2.5316000000000543,
+        "breakEven": 0.5215311004784688,
+        "probability": 0.5277108433734939,
+        "expectedValue": 0.011849231789543651,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-21T06:53:59.230317+00:00",
+        "score": {
+          "away": 75.10319999999997,
+          "home": 78.86519999999997
+        },
+        "sampleSize": 830,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-21T06:54:23.722561+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": 7.5,
+        "price": -106,
+        "outcomeId": "4425837567",
+        "offerId": "2720071106",
+        "teamId": "2464",
+        "side": null,
+        "pointDifference": 3.7379999999999995,
+        "breakEven": 0.5145631067961165,
+        "probability": 0.4987951807228916,
+        "expectedValue": -0.030643328029097562,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-21T06:53:59.230317+00:00",
+        "score": {
+          "away": 75.10319999999997,
+          "home": 78.86519999999997
+        },
+        "sampleSize": 830,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-21T06:54:23.722561+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": -7.5,
+        "price": -115,
+        "outcomeId": "4425837566",
+        "offerId": "2720071106",
+        "teamId": "13",
+        "side": null,
+        "pointDifference": -3.7379999999999995,
+        "breakEven": 0.5348837209302325,
+        "probability": 0.5012048192771085,
+        "expectedValue": -0.06296490309062334,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-21T06:53:59.230317+00:00",
+        "score": {
+          "away": 75.10319999999997,
+          "home": 78.86519999999997
+        },
+        "sampleSize": 830,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-21T06:54:23.722561+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 156.5,
+        "price": -112,
+        "outcomeId": "4425837568",
+        "offerId": "2720071107",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": -2.5316000000000543,
+        "breakEven": 0.5283018867924528,
+        "probability": 0.472289156626506,
+        "expectedValue": -0.10602409638554217,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-21T06:53:59.230317+00:00",
+        "score": {
+          "away": 75.10319999999997,
+          "home": 78.86519999999997
+        },
+        "sampleSize": 830,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-21T06:54:23.722561+00:00"
+      }
+    ]
   },
   "kalshiEvidence": {
     "version": "empirical-score-residuals-v1",
@@ -1437,7 +1530,194 @@
           "away": 75.10319999999997,
           "home": 78.86519999999997
         }
+      },
+      {
+        "ticker": "KXNCAAMBSPREAD-26NOV21NAUCP-CP29",
+        "eventTicker": "KXNCAAMBSPREAD-26NOV21NAUCP",
+        "period": "full",
+        "kind": "spread",
+        "answer": "no",
+        "line": 28.5,
+        "teamSide": "home",
+        "label": "Cal Poly wins by over 28.5 points",
+        "ask": 0.99,
+        "askSize": 44.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-21T06:54:27.180937+00:00",
+        "rules": "If Cal Poly wins by more than 28.5 points in the Northern Arizona vs Cal Poly men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 3.7620000000000005,
+        "pointDifference": 24.738,
+        "probability": 0.9447779111644657,
+        "sampleSize": 833,
+        "expectedValue": -0.04635317334766759,
+        "projectedScore": {
+          "away": 75.10319999999997,
+          "home": 78.86519999999997
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21NAUCP-136",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21NAUCP",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 135.5,
+        "teamSide": null,
+        "label": "Over 135.5 points",
+        "ask": 0.98,
+        "askSize": 1.0,
+        "fee": 0.0014,
+        "breakEven": 0.9814,
+        "quoteFetchedAt": "2026-11-21T06:54:27.590493+00:00",
+        "rules": "If over 135.5 total points are scored in the Northern Arizona vs Cal Poly men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 153.96839999999995,
+        "pointDifference": 18.468399999999946,
+        "probability": 0.8919567827130852,
+        "sampleSize": 833,
+        "expectedValue": -0.09113839136632855,
+        "projectedScore": {
+          "away": 75.10319999999997,
+          "home": 78.86519999999997
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21NAUCP-136",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21NAUCP",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 135.5,
+        "teamSide": null,
+        "label": "Over 135.5 points",
+        "ask": 0.25,
+        "askSize": 36.0,
+        "fee": 0.0132,
+        "breakEven": 0.2632,
+        "quoteFetchedAt": "2026-11-21T06:54:27.590493+00:00",
+        "rules": "If over 135.5 total points are scored in the Northern Arizona vs Cal Poly men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 153.96839999999995,
+        "pointDifference": -18.468399999999946,
+        "probability": 0.10804321728691477,
+        "sampleSize": 833,
+        "expectedValue": -0.5895014540770716,
+        "projectedScore": {
+          "away": 75.10319999999997,
+          "home": 78.86519999999997
+        }
+      },
+      {
+        "ticker": "KXNCAAMBSPREAD-26NOV21NAUCP-CP31",
+        "eventTicker": "KXNCAAMBSPREAD-26NOV21NAUCP",
+        "period": "full",
+        "kind": "spread",
+        "answer": "yes",
+        "line": 30.5,
+        "teamSide": "home",
+        "label": "Cal Poly wins by over 30.5 points",
+        "ask": 0.14,
+        "askSize": 20.0,
+        "fee": 0.0085,
+        "breakEven": 0.1485,
+        "quoteFetchedAt": "2026-11-21T06:54:27.180937+00:00",
+        "rules": "If Cal Poly wins by more than 30.5 points in the Northern Arizona vs Cal Poly men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 3.7620000000000005,
+        "pointDifference": -26.738,
+        "probability": 0.04081632653061224,
+        "sampleSize": 833,
+        "expectedValue": -0.7251425822854395,
+        "projectedScore": {
+          "away": 75.10319999999997,
+          "home": 78.86519999999997
+        }
       }
     ]
+  },
+  "additionalMarkets": {
+    "half": {},
+    "full": {
+      "spread": {
+        "id": "2720071106",
+        "criterionId": "1001159512",
+        "label": "Point Spread",
+        "period": "full",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4425837566",
+            "price": -115,
+            "changedAt": "2026-11-21T00:18:17Z",
+            "teamId": "13",
+            "line": -7.5
+          },
+          {
+            "id": "4425837567",
+            "price": -106,
+            "changedAt": "2026-11-21T00:18:17Z",
+            "teamId": "2464",
+            "line": 7.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-21T06:53:59.230317+00:00",
+        "quoteSavedAt": "2026-11-21T06:54:23.722561+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029104197.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "total": {
+        "id": "2720071107",
+        "criterionId": "1001159509",
+        "label": "Total Points - Including Overtime",
+        "period": "full",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4425837568",
+            "price": -112,
+            "changedAt": "2026-11-21T00:18:17Z",
+            "side": "over",
+            "line": 156.5
+          },
+          {
+            "id": "4425837569",
+            "price": -109,
+            "changedAt": "2026-11-21T00:18:17Z",
+            "side": "under",
+            "line": 156.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-21T06:53:59.230317+00:00",
+        "quoteSavedAt": "2026-11-21T06:54:23.722561+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029104197.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "moneyline": {
+        "id": "2720071108",
+        "criterionId": "1001159732",
+        "label": "Moneyline",
+        "period": "full",
+        "kind": "moneyline",
+        "outcomes": [
+          {
+            "id": "4425837570",
+            "price": -385,
+            "changedAt": "2026-11-21T00:18:17Z",
+            "teamId": "13"
+          },
+          {
+            "id": "4425837571",
+            "price": 275,
+            "changedAt": "2026-11-21T00:18:17Z",
+            "teamId": "2464"
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-21T06:53:59.230317+00:00",
+        "quoteSavedAt": "2026-11-21T06:54:23.722561+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029104197.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    }
+  },
+  "reportEvidence": {
+    "articles": []
   }
 }

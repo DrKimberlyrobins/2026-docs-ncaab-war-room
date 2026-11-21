@@ -220,7 +220,100 @@
   "result": null,
   "decisionEvidence": {
     "version": "empirical-score-residuals-v1",
-    "markets": []
+    "markets": [
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 141.5,
+        "price": -108,
+        "outcomeId": "4425923441",
+        "offerId": "2720092451",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": 4.09699999999998,
+        "breakEven": 0.5192307692307693,
+        "probability": 0.5602409638554217,
+        "expectedValue": 0.07898259705488606,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-21T06:53:58.678080+00:00",
+        "score": {
+          "away": 65.07900000000001,
+          "home": 72.32400000000001
+        },
+        "sampleSize": 830,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-21T06:54:23.722561+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": 12.5,
+        "price": -109,
+        "outcomeId": "4425917681",
+        "offerId": "2720107150",
+        "teamId": "2413",
+        "side": null,
+        "pointDifference": 5.2549999999999955,
+        "breakEven": 0.5215311004784688,
+        "probability": 0.5493975903614458,
+        "expectedValue": 0.05343207693157958,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-21T06:53:58.678080+00:00",
+        "score": {
+          "away": 65.07900000000001,
+          "home": 72.32400000000001
+        },
+        "sampleSize": 830,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-21T06:54:23.722561+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": -12.5,
+        "price": -112,
+        "outcomeId": "4425917680",
+        "offerId": "2720107150",
+        "teamId": "2210",
+        "side": null,
+        "pointDifference": -5.2549999999999955,
+        "breakEven": 0.5283018867924528,
+        "probability": 0.4506024096385542,
+        "expectedValue": -0.14707401032702236,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-21T06:53:58.678080+00:00",
+        "score": {
+          "away": 65.07900000000001,
+          "home": 72.32400000000001
+        },
+        "sampleSize": 830,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-21T06:54:23.722561+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 141.5,
+        "price": -113,
+        "outcomeId": "4425923440",
+        "offerId": "2720092451",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": -4.09699999999998,
+        "breakEven": 0.5305164319248826,
+        "probability": 0.4397590361445783,
+        "expectedValue": -0.17107367523190106,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-21T06:53:58.678080+00:00",
+        "score": {
+          "away": 65.07900000000001,
+          "home": 72.32400000000001
+        },
+        "sampleSize": 830,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-21T06:54:23.722561+00:00"
+      }
+    ]
   },
   "kalshiEvidence": {
     "version": "empirical-score-residuals-v1",
@@ -1374,7 +1467,144 @@
           "away": 65.07900000000001,
           "home": 72.32400000000001
         }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21MOREELON-164",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21MOREELON",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 163.5,
+        "teamSide": null,
+        "label": "Over 163.5 points",
+        "ask": 0.99,
+        "askSize": 252.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-21T06:54:27.590493+00:00",
+        "rules": "If over 163.5 total points are scored in the Morehead St. vs Elon men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 137.40300000000002,
+        "pointDifference": 26.09699999999998,
+        "probability": 0.9231692677070829,
+        "sampleSize": 833,
+        "expectedValue": -0.06816466366500169,
+        "projectedScore": {
+          "away": 65.07900000000001,
+          "home": 72.32400000000001
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21MOREELON-164",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21MOREELON",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 163.5,
+        "teamSide": null,
+        "label": "Over 163.5 points",
+        "ask": 0.19,
+        "askSize": 8.0,
+        "fee": 0.0108,
+        "breakEven": 0.2008,
+        "quoteFetchedAt": "2026-11-21T06:54:27.590493+00:00",
+        "rules": "If over 163.5 total points are scored in the Morehead St. vs Elon men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 137.40300000000002,
+        "pointDifference": -26.09699999999998,
+        "probability": 0.07683073229291716,
+        "sampleSize": 833,
+        "expectedValue": -0.617376831210572,
+        "projectedScore": {
+          "away": 65.07900000000001,
+          "home": 72.32400000000001
+        }
       }
     ]
+  },
+  "additionalMarkets": {
+    "half": {},
+    "full": {
+      "total": {
+        "id": "2720092451",
+        "criterionId": "1001159509",
+        "label": "Total Points - Including Overtime",
+        "period": "full",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4425923440",
+            "price": -113,
+            "changedAt": "2026-11-21T02:19:13Z",
+            "side": "over",
+            "line": 141.5
+          },
+          {
+            "id": "4425923441",
+            "price": -108,
+            "changedAt": "2026-11-21T02:19:13Z",
+            "side": "under",
+            "line": 141.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-21T06:53:58.678080+00:00",
+        "quoteSavedAt": "2026-11-21T06:54:23.722561+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028884437.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "spread": {
+        "id": "2720107150",
+        "criterionId": "1001159512",
+        "label": "Point Spread",
+        "period": "full",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4425917680",
+            "price": -112,
+            "changedAt": "2026-11-21T02:19:13Z",
+            "teamId": "2210",
+            "line": -12.5
+          },
+          {
+            "id": "4425917681",
+            "price": -109,
+            "changedAt": "2026-11-21T02:19:13Z",
+            "teamId": "2413",
+            "line": 12.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-21T06:53:58.678080+00:00",
+        "quoteSavedAt": "2026-11-21T06:54:23.722561+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028884437.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "moneyline": {
+        "id": "2720138632",
+        "criterionId": "1001159732",
+        "label": "Moneyline",
+        "period": "full",
+        "kind": "moneyline",
+        "outcomes": [
+          {
+            "id": "4425876235",
+            "price": -1115,
+            "changedAt": "2026-11-21T02:19:13Z",
+            "teamId": "2210"
+          },
+          {
+            "id": "4425876236",
+            "price": 600,
+            "changedAt": "2026-11-21T02:19:13Z",
+            "teamId": "2413"
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-21T06:53:58.678080+00:00",
+        "quoteSavedAt": "2026-11-21T06:54:23.722561+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028884437.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    }
+  },
+  "reportEvidence": {
+    "articles": []
   }
 }
