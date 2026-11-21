@@ -1,0 +1,660 @@
+{
+  "snapshot": {
+    "version": 1,
+    "id": "401920569",
+    "savedAt": "2026-11-21T02:07:07.517855+00:00",
+    "scheduledTipoff": "2026-11-21T20:00Z",
+    "gameDate": "2026-11-21",
+    "matchup": {
+      "id": "401920569",
+      "date": "2026-11-21T20:00Z",
+      "awayName": "Middle Tennessee Blue Raiders",
+      "homeName": "Indiana State Sycamores",
+      "awayId": "2393",
+      "homeId": "282",
+      "location": "Neutral",
+      "model": {
+        "away": 76.3196,
+        "home": 73.7394,
+        "total": 150.059,
+        "homeMargin": -2.5801999999999907,
+        "possessions": 67.9,
+        "awayEfficiency": 112.39999999999998,
+        "homeEfficiency": 108.6,
+        "homeAdvantagePoints": 0.0,
+        "modelVersion": "kenpom-additive-efficiency-v1"
+      },
+      "matchedTeams": {
+        "away": "Middle Tennessee",
+        "home": "Indiana St."
+      },
+      "firstHalf": {
+        "away": 33.437122895698195,
+        "home": 33.43862838388522,
+        "total": 66.87575127958341,
+        "homeMargin": 0.0015054881870213421,
+        "awayScoringShare": 0.4381197345858495,
+        "homeScoringShare": 0.4534703073782159,
+        "modelVersion": "first-half-timing-v1",
+        "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+        "awayProfile": {
+          "season": 2027,
+          "games": 5,
+          "scoringShare": 0.43137254901960786,
+          "allowingShare": 0.43342036553524804,
+          "firstScoredAverage": 35.2,
+          "firstAllowedAverage": 33.2,
+          "samples": [
+            {
+              "id": "401921027",
+              "date": "2026-11-18T01:00Z",
+              "firstScored": 33.0,
+              "secondScored": 52.0,
+              "firstAllowed": 46.0,
+              "secondAllowed": 32.0
+            },
+            {
+              "id": "401926152",
+              "date": "2026-11-14T00:30Z",
+              "firstScored": 50.0,
+              "secondScored": 38.0,
+              "firstAllowed": 32.0,
+              "secondAllowed": 43.0
+            },
+            {
+              "id": "401927369",
+              "date": "2026-11-11T00:30Z",
+              "firstScored": 27.0,
+              "secondScored": 46.0,
+              "firstAllowed": 20.0,
+              "secondAllowed": 48.0
+            },
+            {
+              "id": "401909785",
+              "date": "2026-11-07T02:00Z",
+              "firstScored": 14.0,
+              "secondScored": 31.0,
+              "firstAllowed": 36.0,
+              "secondAllowed": 53.0
+            },
+            {
+              "id": "401928619",
+              "date": "2026-11-02T16:30Z",
+              "firstScored": 52.0,
+              "secondScored": 65.0,
+              "firstAllowed": 32.0,
+              "secondAllowed": 41.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401921027",
+              "fetchedAt": "2026-11-18T08:48:53.750154+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401926152",
+              "fetchedAt": "2026-11-14T17:58:16.788588+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401927369",
+              "fetchedAt": "2026-11-11T10:53:08.840434+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401909785",
+              "fetchedAt": "2026-11-07T12:56:11.143123+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401928619",
+              "fetchedAt": "2026-11-02T21:41:48.403839+00:00"
+            }
+          ],
+          "priorSeason": false
+        },
+        "homeProfile": {
+          "season": 2027,
+          "games": 4,
+          "scoringShare": 0.4735202492211838,
+          "allowingShare": 0.4448669201520912,
+          "firstScoredAverage": 38.0,
+          "firstAllowedAverage": 29.25,
+          "samples": [
+            {
+              "id": "401927377",
+              "date": "2026-11-15T00:00Z",
+              "firstScored": 53.0,
+              "secondScored": 56.0,
+              "firstAllowed": 9.0,
+              "secondAllowed": 28.0
+            },
+            {
+              "id": "401926868",
+              "date": "2026-11-12T00:00Z",
+              "firstScored": 37.0,
+              "secondScored": 36.0,
+              "firstAllowed": 44.0,
+              "secondAllowed": 38.0
+            },
+            {
+              "id": "401911005",
+              "date": "2026-11-07T00:00Z",
+              "firstScored": 32.0,
+              "secondScored": 37.0,
+              "firstAllowed": 37.0,
+              "secondAllowed": 29.0
+            },
+            {
+              "id": "401925818",
+              "date": "2026-11-03T00:00Z",
+              "firstScored": 30.0,
+              "secondScored": 40.0,
+              "firstAllowed": 27.0,
+              "secondAllowed": 51.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401927377",
+              "fetchedAt": "2026-11-16T06:22:25.642260+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401926868",
+              "fetchedAt": "2026-11-12T02:15:03.513575+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401911005",
+              "fetchedAt": "2026-11-07T12:56:10.195243+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401925818",
+              "fetchedAt": "2026-11-03T17:00:27.498758+00:00"
+            }
+          ],
+          "priorSeason": false
+        }
+      },
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 39.18954407893506,
+        "home": 37.798890944831335,
+        "homeMargin": -1.3906531341037223,
+        "total": 76.98843502376639,
+        "firstHalfPossessions": 34.841928764062416,
+        "awayEfficiency": 112.47811320754715,
+        "homeEfficiency": 108.48679245283017,
+        "ratingsAt": "2026-11-21T02:06:45.893935+00:00",
+        "tipoffAt": "2026-11-21T20:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": true,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
+    },
+    "config": {
+      "season": 2027,
+      "nationalEfficiency": 106.0,
+      "nationalTempo": 71.5,
+      "baselineAsOf": "2026-11-01",
+      "baselineSource": "User-provided KenPom beginning-of-season screenshots",
+      "homeAdvantagePoints": 0.0,
+      "modelVersion": "additive-matchup-v1"
+    },
+    "ratingsFetchedAt": "2026-11-21T02:06:45.893935+00:00",
+    "preparedAt": "2026-11-21T02:06:46.730116+00:00",
+    "ratingSource": "https://kenpom.com/",
+    "scheduleSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?groups=50&limit=1000&dates=20261121",
+    "verification": "ESPN pregame state and future tipoff checked at server save time",
+    "gameRoomBaseline": {
+      "simulation": null,
+      "simulationStatus": "No verified adjusted-efficiency ratings feed configured.",
+      "id": "401920569",
+      "date": "2026-11-21T20:00Z",
+      "name": "TBD at TBD",
+      "preparedAt": "2026-11-20T02:18:04.220630+00:00",
+      "season": 2026,
+      "priorSeason": true,
+      "modelVersion": "score-baseline-v1",
+      "model": {
+        "full": null,
+        "half": null
+      },
+      "samples": {
+        "away": [],
+        "home": []
+      },
+      "source": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/teams/-2/schedule?season=2026",
+          "fetchedAt": "2026-11-19T20:31:58.616410+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/teams/-1/schedule?season=2026",
+          "fetchedAt": "2026-11-19T20:31:58.604959+00:00"
+        }
+      ],
+      "state": "unavailable",
+      "reason": "Fewer than 3 scored games for one or both teams, or source unavailable."
+    },
+    "kambi": null,
+    "marketStatus": "No verified fresh pregame market available at save time"
+  },
+  "result": null,
+  "decisionEvidence": {
+    "version": "empirical-score-residuals-v1",
+    "markets": []
+  },
+  "kalshiEvidence": {
+    "version": "empirical-score-residuals-v1",
+    "markets": [
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21MTUINST-129",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21MTUINST",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 128.5,
+        "teamSide": null,
+        "label": "Over 128.5 points",
+        "ask": 0.65,
+        "askSize": 72.0,
+        "fee": 0.016,
+        "breakEven": 0.666,
+        "quoteFetchedAt": "2026-11-21T02:07:14.035954+00:00",
+        "rules": "If over 128.5 total points are scored in the Middle Tennessee vs Indiana St. men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 150.059,
+        "pointDifference": 21.558999999999997,
+        "probability": 0.9211165048543689,
+        "sampleSize": 824,
+        "expectedValue": 0.38305781509664993,
+        "projectedScore": {
+          "away": 76.3196,
+          "home": 73.7394
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21MTUINST-134",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21MTUINST",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 133.5,
+        "teamSide": null,
+        "label": "Over 133.5 points",
+        "ask": 0.65,
+        "askSize": 19.04,
+        "fee": 0.016,
+        "breakEven": 0.666,
+        "quoteFetchedAt": "2026-11-21T02:07:14.035954+00:00",
+        "rules": "If over 133.5 total points are scored in the Middle Tennessee vs Indiana St. men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 150.059,
+        "pointDifference": 16.558999999999997,
+        "probability": 0.8652912621359223,
+        "sampleSize": 824,
+        "expectedValue": 0.29923612933321664,
+        "projectedScore": {
+          "away": 76.3196,
+          "home": 73.7394
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21MTUINST-138",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21MTUINST",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 137.5,
+        "teamSide": null,
+        "label": "Over 137.5 points",
+        "ask": 0.65,
+        "askSize": 19.04,
+        "fee": 0.016,
+        "breakEven": 0.666,
+        "quoteFetchedAt": "2026-11-21T02:07:14.035954+00:00",
+        "rules": "If over 137.5 total points are scored in the Middle Tennessee vs Indiana St. men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 150.059,
+        "pointDifference": 12.558999999999997,
+        "probability": 0.8009708737864077,
+        "sampleSize": 824,
+        "expectedValue": 0.2026589696492608,
+        "projectedScore": {
+          "away": 76.3196,
+          "home": 73.7394
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21MTUINST-142",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21MTUINST",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 141.5,
+        "teamSide": null,
+        "label": "Over 141.5 points",
+        "ask": 0.73,
+        "askSize": 24.68,
+        "fee": 0.0138,
+        "breakEven": 0.7438,
+        "quoteFetchedAt": "2026-11-21T02:07:14.035954+00:00",
+        "rules": "If over 141.5 total points are scored in the Middle Tennessee vs Indiana St. men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 150.059,
+        "pointDifference": 8.558999999999997,
+        "probability": 0.7293689320388349,
+        "sampleSize": 824,
+        "expectedValue": -0.01940181226292701,
+        "projectedScore": {
+          "away": 76.3196,
+          "home": 73.7394
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21MTUINST-145",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21MTUINST",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 144.5,
+        "teamSide": null,
+        "label": "Over 144.5 points",
+        "ask": 0.75,
+        "askSize": 26.66,
+        "fee": 0.0132,
+        "breakEven": 0.7632,
+        "quoteFetchedAt": "2026-11-21T02:07:14.035954+00:00",
+        "rules": "If over 144.5 total points are scored in the Middle Tennessee vs Indiana St. men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 150.059,
+        "pointDifference": 5.5589999999999975,
+        "probability": 0.6686893203883495,
+        "sampleSize": 824,
+        "expectedValue": -0.12383474791882927,
+        "projectedScore": {
+          "away": 76.3196,
+          "home": 73.7394
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21MTUINST-152",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21MTUINST",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 151.5,
+        "teamSide": null,
+        "label": "Over 151.5 points",
+        "ask": 0.65,
+        "askSize": 19.04,
+        "fee": 0.016,
+        "breakEven": 0.666,
+        "quoteFetchedAt": "2026-11-21T02:07:14.035954+00:00",
+        "rules": "If over 151.5 total points are scored in the Middle Tennessee vs Indiana St. men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 150.059,
+        "pointDifference": -1.4410000000000025,
+        "probability": 0.5048543689320388,
+        "sampleSize": 824,
+        "expectedValue": -0.24196040700895075,
+        "projectedScore": {
+          "away": 76.3196,
+          "home": 73.7394
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21MTUINST-148",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21MTUINST",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 147.5,
+        "teamSide": null,
+        "label": "Over 147.5 points",
+        "ask": 0.81,
+        "askSize": 35.08,
+        "fee": 0.0108,
+        "breakEven": 0.8208,
+        "quoteFetchedAt": "2026-11-21T02:07:14.035954+00:00",
+        "rules": "If over 147.5 total points are scored in the Middle Tennessee vs Indiana St. men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 150.059,
+        "pointDifference": 2.5589999999999975,
+        "probability": 0.595873786407767,
+        "sampleSize": 824,
+        "expectedValue": -0.27403291129658014,
+        "projectedScore": {
+          "away": 76.3196,
+          "home": 73.7394
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21MTUINST-155",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21MTUINST",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 154.5,
+        "teamSide": null,
+        "label": "Over 154.5 points",
+        "ask": 0.65,
+        "askSize": 19.04,
+        "fee": 0.016,
+        "breakEven": 0.666,
+        "quoteFetchedAt": "2026-11-21T02:07:14.035954+00:00",
+        "rules": "If over 154.5 total points are scored in the Middle Tennessee vs Indiana St. men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 150.059,
+        "pointDifference": -4.4410000000000025,
+        "probability": 0.4320388349514563,
+        "sampleSize": 824,
+        "expectedValue": -0.35129304061342903,
+        "projectedScore": {
+          "away": 76.3196,
+          "home": 73.7394
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21MTUINST-150",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21MTUINST",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 149.5,
+        "teamSide": null,
+        "label": "Over 149.5 points",
+        "ask": 0.87,
+        "askSize": 51.28,
+        "fee": 0.008,
+        "breakEven": 0.878,
+        "quoteFetchedAt": "2026-11-21T02:07:14.035954+00:00",
+        "rules": "If over 149.5 total points are scored in the Middle Tennessee vs Indiana St. men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 150.059,
+        "pointDifference": 0.5589999999999975,
+        "probability": 0.5473300970873787,
+        "sampleSize": 824,
+        "expectedValue": -0.3766172014950129,
+        "projectedScore": {
+          "away": 76.3196,
+          "home": 73.7394
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21MTUINST-158",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21MTUINST",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 157.5,
+        "teamSide": null,
+        "label": "Over 157.5 points",
+        "ask": 0.65,
+        "askSize": 19.04,
+        "fee": 0.016,
+        "breakEven": 0.666,
+        "quoteFetchedAt": "2026-11-21T02:07:14.035954+00:00",
+        "rules": "If over 157.5 total points are scored in the Middle Tennessee vs Indiana St. men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 150.059,
+        "pointDifference": -7.4410000000000025,
+        "probability": 0.3640776699029126,
+        "sampleSize": 824,
+        "expectedValue": -0.4533368319776087,
+        "projectedScore": {
+          "away": 76.3196,
+          "home": 73.7394
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21MTUINST-162",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21MTUINST",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 161.5,
+        "teamSide": null,
+        "label": "Over 161.5 points",
+        "ask": 0.65,
+        "askSize": 19.04,
+        "fee": 0.016,
+        "breakEven": 0.666,
+        "quoteFetchedAt": "2026-11-21T02:07:14.035954+00:00",
+        "rules": "If over 161.5 total points are scored in the Middle Tennessee vs Indiana St. men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 150.059,
+        "pointDifference": -11.441000000000003,
+        "probability": 0.28398058252427183,
+        "sampleSize": 824,
+        "expectedValue": -0.5736027289425348,
+        "projectedScore": {
+          "away": 76.3196,
+          "home": 73.7394
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21MTUINST-166",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21MTUINST",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 165.5,
+        "teamSide": null,
+        "label": "Over 165.5 points",
+        "ask": 0.95,
+        "askSize": 133.34,
+        "fee": 0.0034,
+        "breakEven": 0.9534,
+        "quoteFetchedAt": "2026-11-21T02:07:14.035954+00:00",
+        "rules": "If over 165.5 total points are scored in the Middle Tennessee vs Indiana St. men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 150.059,
+        "pointDifference": -15.441000000000003,
+        "probability": 0.20631067961165048,
+        "sampleSize": 824,
+        "expectedValue": -0.7836053287060515,
+        "projectedScore": {
+          "away": 76.3196,
+          "home": 73.7394
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21MTUINST-138",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21MTUINST",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 137.5,
+        "teamSide": null,
+        "label": "Over 137.5 points",
+        "ask": 0.99,
+        "askSize": 200.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-21T02:07:14.035954+00:00",
+        "rules": "If over 137.5 total points are scored in the Middle Tennessee vs Indiana St. men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 150.059,
+        "pointDifference": -12.558999999999997,
+        "probability": 0.19902912621359223,
+        "sampleSize": 824,
+        "expectedValue": -0.7991025272902067,
+        "projectedScore": {
+          "away": 76.3196,
+          "home": 73.7394
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21MTUINST-171",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21MTUINST",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 170.5,
+        "teamSide": null,
+        "label": "Over 170.5 points",
+        "ask": 0.94,
+        "askSize": 111.11,
+        "fee": 0.004,
+        "breakEven": 0.944,
+        "quoteFetchedAt": "2026-11-21T02:07:14.035954+00:00",
+        "rules": "If over 170.5 total points are scored in the Middle Tennessee vs Indiana St. men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 150.059,
+        "pointDifference": -20.441000000000003,
+        "probability": 0.13228155339805825,
+        "sampleSize": 824,
+        "expectedValue": -0.8598712358071416,
+        "projectedScore": {
+          "away": 76.3196,
+          "home": 73.7394
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21MTUINST-134",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21MTUINST",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 133.5,
+        "teamSide": null,
+        "label": "Over 133.5 points",
+        "ask": 0.97,
+        "askSize": 7.69,
+        "fee": 0.0021,
+        "breakEven": 0.9721,
+        "quoteFetchedAt": "2026-11-21T02:07:14.035954+00:00",
+        "rules": "If over 133.5 total points are scored in the Middle Tennessee vs Indiana St. men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 150.059,
+        "pointDifference": -16.558999999999997,
+        "probability": 0.13470873786407767,
+        "sampleSize": 824,
+        "expectedValue": -0.8614250201994881,
+        "projectedScore": {
+          "away": 76.3196,
+          "home": 73.7394
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV21MTUINST-129",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV21MTUINST",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 128.5,
+        "teamSide": null,
+        "label": "Over 128.5 points",
+        "ask": 0.87,
+        "askSize": 101.0,
+        "fee": 0.008,
+        "breakEven": 0.878,
+        "quoteFetchedAt": "2026-11-21T02:07:14.035954+00:00",
+        "rules": "If over 128.5 total points are scored in the Middle Tennessee vs Indiana St. men's college basketball game originally scheduled for Nov 21, 2026, then the market resolves to Yes.",
+        "prediction": 150.059,
+        "pointDifference": -21.558999999999997,
+        "probability": 0.07888349514563107,
+        "sampleSize": 824,
+        "expectedValue": -0.9101554724992812,
+        "projectedScore": {
+          "away": 76.3196,
+          "home": 73.7394
+        }
+      }
+    ]
+  }
+}
