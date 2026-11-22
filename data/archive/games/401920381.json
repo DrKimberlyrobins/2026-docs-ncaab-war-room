@@ -380,7 +380,100 @@
   "result": null,
   "decisionEvidence": {
     "version": "empirical-score-residuals-v1",
-    "markets": []
+    "markets": [
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": 0.5,
+        "price": -108,
+        "outcomeId": "4427299364",
+        "offerId": "2720567011",
+        "teamId": "197",
+        "side": null,
+        "pointDifference": 0.7867999999999711,
+        "breakEven": 0.5192307692307693,
+        "probability": 0.6389521640091116,
+        "expectedValue": 0.23057453809162226,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-22T08:43:27.775112+00:00",
+        "score": {
+          "away": 79.4436,
+          "home": 79.73039999999997
+        },
+        "sampleSize": 878,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-22T08:43:48.867558+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 158.5,
+        "price": -113,
+        "outcomeId": "4427310986",
+        "offerId": "2720598397",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": 0.6739999999999782,
+        "breakEven": 0.5305164319248826,
+        "probability": 0.5580865603644647,
+        "expectedValue": 0.05196847219142463,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-22T08:43:27.775112+00:00",
+        "score": {
+          "away": 79.4436,
+          "home": 79.73039999999997
+        },
+        "sampleSize": 878,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-22T08:43:48.867558+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 158.5,
+        "price": -108,
+        "outcomeId": "4427310987",
+        "offerId": "2720598397",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": -0.6739999999999782,
+        "breakEven": 0.5192307692307693,
+        "probability": 0.4419134396355353,
+        "expectedValue": -0.14890744959082092,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-22T08:43:27.775112+00:00",
+        "score": {
+          "away": 79.4436,
+          "home": 79.73039999999997
+        },
+        "sampleSize": 878,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-22T08:43:48.867558+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": -0.5,
+        "price": -113,
+        "outcomeId": "4427299363",
+        "offerId": "2720567011",
+        "teamId": "259",
+        "side": null,
+        "pointDifference": -0.7867999999999711,
+        "breakEven": 0.5305164319248826,
+        "probability": 0.36104783599088835,
+        "expectedValue": -0.3194408047251396,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-22T08:43:27.775112+00:00",
+        "score": {
+          "away": 79.4436,
+          "home": 79.73039999999997
+        },
+        "sampleSize": 878,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-22T08:43:48.867558+00:00"
+      }
+    ]
   },
   "kalshiEvidence": {
     "version": "empirical-score-residuals-v1",
@@ -3134,7 +3227,144 @@
           "away": 38.687316704601685,
           "home": 37.69842496262357
         }
+      },
+      {
+        "ticker": "KXNCAAMB1HSPREAD-26NOV22VTOKST-VT20",
+        "eventTicker": "KXNCAAMB1HSPREAD-26NOV22VTOKST",
+        "period": "half",
+        "kind": "spread",
+        "answer": "no",
+        "line": 19.5,
+        "teamSide": "away",
+        "label": "Virginia Tech wins by over 19.5 points",
+        "ask": 0.91,
+        "askSize": 1.0,
+        "fee": 0.0058,
+        "breakEven": 0.9158,
+        "quoteFetchedAt": "2026-11-22T08:43:52.398966+00:00",
+        "rules": "If Virginia Tech wins the 1st half by more than 19.5 points in the Virginia Tech vs Oklahoma St. men's college basketball game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+        "prediction": 0.9888917419781151,
+        "pointDifference": 18.511108258021885,
+        "probability": 0.9714285714285714,
+        "sampleSize": 875,
+        "expectedValue": 0.060743144167472674,
+        "projectedScore": {
+          "away": 38.687316704601685,
+          "home": 37.69842496262357
+        }
+      },
+      {
+        "ticker": "KXNCAAMB1HSPREAD-26NOV22VTOKST-VT16",
+        "eventTicker": "KXNCAAMB1HSPREAD-26NOV22VTOKST",
+        "period": "half",
+        "kind": "spread",
+        "answer": "no",
+        "line": 15.5,
+        "teamSide": "away",
+        "label": "Virginia Tech wins by over 15.5 points",
+        "ask": 0.91,
+        "askSize": 1.0,
+        "fee": 0.0058,
+        "breakEven": 0.9158,
+        "quoteFetchedAt": "2026-11-22T08:43:52.398966+00:00",
+        "rules": "If Virginia Tech wins the 1st half by more than 15.5 points in the Virginia Tech vs Oklahoma St. men's college basketball game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+        "prediction": 0.9888917419781151,
+        "pointDifference": 14.511108258021885,
+        "probability": 0.9462857142857143,
+        "sampleSize": 875,
+        "expectedValue": 0.03328861573019692,
+        "projectedScore": {
+          "away": 38.687316704601685,
+          "home": 37.69842496262357
+        }
       }
     ]
+  },
+  "additionalMarkets": {
+    "half": {},
+    "full": {
+      "spread": {
+        "id": "2720567011",
+        "criterionId": "1001159512",
+        "label": "Point Spread",
+        "period": "full",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4427299363",
+            "price": -113,
+            "changedAt": "2026-11-22T02:13:17Z",
+            "teamId": "259",
+            "line": -0.5
+          },
+          {
+            "id": "4427299364",
+            "price": -108,
+            "changedAt": "2026-11-22T02:13:17Z",
+            "teamId": "197",
+            "line": 0.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-22T08:43:27.775112+00:00",
+        "quoteSavedAt": "2026-11-22T08:43:48.867558+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029091954.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "moneyline": {
+        "id": "2720598396",
+        "criterionId": "1001159732",
+        "label": "Moneyline",
+        "period": "full",
+        "kind": "moneyline",
+        "outcomes": [
+          {
+            "id": "4427310984",
+            "price": -115,
+            "changedAt": "2026-11-22T02:13:17Z",
+            "teamId": "259"
+          },
+          {
+            "id": "4427310985",
+            "price": -110,
+            "changedAt": "2026-11-22T02:13:17Z",
+            "teamId": "197"
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-22T08:43:27.775112+00:00",
+        "quoteSavedAt": "2026-11-22T08:43:48.867558+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029091954.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "total": {
+        "id": "2720598397",
+        "criterionId": "1001159509",
+        "label": "Total Points - Including Overtime",
+        "period": "full",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4427310986",
+            "price": -113,
+            "changedAt": "2026-11-22T02:13:20Z",
+            "side": "over",
+            "line": 158.5
+          },
+          {
+            "id": "4427310987",
+            "price": -108,
+            "changedAt": "2026-11-22T02:13:20Z",
+            "side": "under",
+            "line": 158.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-22T08:43:27.775112+00:00",
+        "quoteSavedAt": "2026-11-22T08:43:48.867558+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029091954.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    }
+  },
+  "reportEvidence": {
+    "articles": []
   }
 }

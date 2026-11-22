@@ -402,7 +402,100 @@
   "result": null,
   "decisionEvidence": {
     "version": "empirical-score-residuals-v1",
-    "markets": []
+    "markets": [
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": 2.5,
+        "price": -103,
+        "outcomeId": "4427309033",
+        "offerId": "2720597680",
+        "teamId": "77",
+        "side": null,
+        "pointDifference": 1.0050000000000239,
+        "breakEven": 0.5073891625615764,
+        "probability": 0.6480637813211845,
+        "expectedValue": 0.2772519185262179,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-22T08:43:25.365054+00:00",
+        "score": {
+          "away": 70.785,
+          "home": 69.29000000000002
+        },
+        "sampleSize": 878,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-22T08:43:48.867558+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 135.5,
+        "price": -114,
+        "outcomeId": "4427300193",
+        "offerId": "2720592353",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": 4.575000000000017,
+        "breakEven": 0.5327102803738317,
+        "probability": 0.6548974943052391,
+        "expectedValue": 0.2293689805379052,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-22T08:43:25.365054+00:00",
+        "score": {
+          "away": 70.785,
+          "home": 69.29000000000002
+        },
+        "sampleSize": 878,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-22T08:43:48.867558+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 135.5,
+        "price": -107,
+        "outcomeId": "4427300194",
+        "offerId": "2720592353",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": -4.575000000000017,
+        "breakEven": 0.5169082125603864,
+        "probability": 0.3451025056947608,
+        "expectedValue": -0.33237178804845324,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-22T08:43:25.365054+00:00",
+        "score": {
+          "away": 70.785,
+          "home": 69.29000000000002
+        },
+        "sampleSize": 878,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-22T08:43:48.867558+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": -2.5,
+        "price": -121,
+        "outcomeId": "4427309032",
+        "offerId": "2720597680",
+        "teamId": "2168",
+        "side": null,
+        "pointDifference": -1.0050000000000239,
+        "breakEven": 0.5475113122171946,
+        "probability": 0.35193621867881547,
+        "expectedValue": -0.35720740224778336,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-22T08:43:25.365054+00:00",
+        "score": {
+          "away": 70.785,
+          "home": 69.29000000000002
+        },
+        "sampleSize": 878,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-22T08:43:48.867558+00:00"
+      }
+    ]
   },
   "kalshiEvidence": {
     "version": "empirical-score-residuals-v1",
@@ -3456,7 +3549,169 @@
           "away": 32.69375741890959,
           "home": 35.19779980054851
         }
+      },
+      {
+        "ticker": "KXNCAAMB1HSPREAD-26NOV22DAYNW-DAY14",
+        "eventTicker": "KXNCAAMB1HSPREAD-26NOV22DAYNW",
+        "period": "half",
+        "kind": "spread",
+        "answer": "no",
+        "line": 13.5,
+        "teamSide": "away",
+        "label": "Dayton wins by over 13.5 points",
+        "ask": 0.97,
+        "askSize": 4.0,
+        "fee": 0.0021,
+        "breakEven": 0.9721,
+        "quoteFetchedAt": "2026-11-22T08:43:52.398966+00:00",
+        "rules": "If Dayton wins the 1st half by more than 13.5 points in the Dayton vs Northwestern men's college basketball game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+        "prediction": -2.504042381638918,
+        "pointDifference": 16.004042381638918,
+        "probability": 0.9565714285714285,
+        "sampleSize": 875,
+        "expectedValue": -0.015974253089776205,
+        "projectedScore": {
+          "away": 32.69375741890959,
+          "home": 35.19779980054851
+        }
+      },
+      {
+        "ticker": "KXNCAAMB1HSPREAD-26NOV22DAYNW-DAY8",
+        "eventTicker": "KXNCAAMB1HSPREAD-26NOV22DAYNW",
+        "period": "half",
+        "kind": "spread",
+        "answer": "no",
+        "line": 7.5,
+        "teamSide": "away",
+        "label": "Dayton wins by over 7.5 points",
+        "ask": 0.98,
+        "askSize": 1139.0,
+        "fee": 0.0014,
+        "breakEven": 0.9814,
+        "quoteFetchedAt": "2026-11-22T08:43:52.398966+00:00",
+        "rules": "If Dayton wins the 1st half by more than 7.5 points in the Dayton vs Northwestern men's college basketball game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+        "prediction": -2.504042381638918,
+        "pointDifference": 10.004042381638918,
+        "probability": 0.8982857142857142,
+        "sampleSize": 875,
+        "expectedValue": -0.08468951061166273,
+        "projectedScore": {
+          "away": 32.69375741890959,
+          "home": 35.19779980054851
+        }
+      },
+      {
+        "ticker": "KXNCAAMB1HSPREAD-26NOV22DAYNW-NW9",
+        "eventTicker": "KXNCAAMB1HSPREAD-26NOV22DAYNW",
+        "period": "half",
+        "kind": "spread",
+        "answer": "no",
+        "line": 8.5,
+        "teamSide": "home",
+        "label": "Northwestern wins by over 8.5 points",
+        "ask": 0.97,
+        "askSize": 9.0,
+        "fee": 0.0021,
+        "breakEven": 0.9721,
+        "quoteFetchedAt": "2026-11-22T08:43:52.398966+00:00",
+        "rules": "If Northwestern wins the 1st half by more than 8.5 points in the Dayton vs Northwestern men's college basketball game originally scheduled for Nov 22, 2026, then the market resolves to Yes.",
+        "prediction": 2.504042381638918,
+        "pointDifference": 5.995957618361082,
+        "probability": 0.6171428571428571,
+        "sampleSize": 875,
+        "expectedValue": -0.36514467941275885,
+        "projectedScore": {
+          "away": 32.69375741890959,
+          "home": 35.19779980054851
+        }
       }
     ]
+  },
+  "additionalMarkets": {
+    "half": {},
+    "full": {
+      "moneyline": {
+        "id": "2720566320",
+        "criterionId": "1001159732",
+        "label": "Moneyline",
+        "period": "full",
+        "kind": "moneyline",
+        "outcomes": [
+          {
+            "id": "4427297508",
+            "price": -175,
+            "changedAt": "2026-11-22T01:31:40Z",
+            "teamId": "2168"
+          },
+          {
+            "id": "4427297509",
+            "price": 133,
+            "changedAt": "2026-11-22T01:31:40Z",
+            "teamId": "77"
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-22T08:43:25.365054+00:00",
+        "quoteSavedAt": "2026-11-22T08:43:48.867558+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029091959.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "total": {
+        "id": "2720592353",
+        "criterionId": "1001159509",
+        "label": "Total Points - Including Overtime",
+        "period": "full",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4427300193",
+            "price": -114,
+            "changedAt": "2026-11-22T01:31:40Z",
+            "side": "over",
+            "line": 135.5
+          },
+          {
+            "id": "4427300194",
+            "price": -107,
+            "changedAt": "2026-11-22T01:31:40Z",
+            "side": "under",
+            "line": 135.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-22T08:43:25.365054+00:00",
+        "quoteSavedAt": "2026-11-22T08:43:48.867558+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029091959.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "spread": {
+        "id": "2720597680",
+        "criterionId": "1001159512",
+        "label": "Point Spread",
+        "period": "full",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4427309032",
+            "price": -121,
+            "changedAt": "2026-11-22T01:31:40Z",
+            "teamId": "2168",
+            "line": -2.5
+          },
+          {
+            "id": "4427309033",
+            "price": -103,
+            "changedAt": "2026-11-22T01:31:40Z",
+            "teamId": "77",
+            "line": 2.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-22T08:43:25.365054+00:00",
+        "quoteSavedAt": "2026-11-22T08:43:48.867558+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029091959.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    }
+  },
+  "reportEvidence": {
+    "articles": []
   }
 }
