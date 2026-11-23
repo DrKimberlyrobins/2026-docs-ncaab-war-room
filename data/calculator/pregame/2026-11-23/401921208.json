@@ -1,0 +1,175 @@
+{
+  "id": "401921208",
+  "date": "2026-11-24T01:00Z",
+  "awayName": "Stephen F. Austin Lumberjacks",
+  "homeName": "Utah Valley Wolverines",
+  "awayId": "2617",
+  "homeId": "3084",
+  "location": "Neutral",
+  "model": {
+    "away": 71.34240000000001,
+    "home": 75.48400000000001,
+    "total": 146.82640000000004,
+    "homeMargin": 4.141599999999997,
+    "possessions": 66.80000000000001,
+    "awayEfficiency": 106.80000000000001,
+    "homeEfficiency": 113.0,
+    "homeAdvantagePoints": 0.0,
+    "modelVersion": "kenpom-additive-efficiency-v1"
+  },
+  "matchedTeams": {
+    "away": "Stephen F. Austin",
+    "home": "Utah Valley"
+  },
+  "firstHalf": {
+    "away": 34.10022167104728,
+    "home": 37.64654165024308,
+    "total": 71.74676332129036,
+    "homeMargin": 3.5463199791958004,
+    "awayScoringShare": 0.4779797381507669,
+    "homeScoringShare": 0.498735382998292,
+    "modelVersion": "first-half-timing-v1",
+    "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+    "awayProfile": {
+      "season": 2027,
+      "games": 4,
+      "scoringShare": 0.484593837535014,
+      "allowingShare": 0.4703389830508475,
+      "firstScoredAverage": 43.25,
+      "firstAllowedAverage": 27.75,
+      "samples": [
+        {
+          "id": "401921096",
+          "date": "2026-11-14T19:00Z",
+          "firstScored": 30.0,
+          "secondScored": 42.0,
+          "firstAllowed": 39.0,
+          "secondAllowed": 33.0
+        },
+        {
+          "id": "401917963",
+          "date": "2026-11-12T01:00Z",
+          "firstScored": 35.0,
+          "secondScored": 41.0,
+          "firstAllowed": 29.0,
+          "secondAllowed": 42.0
+        },
+        {
+          "id": "401925089",
+          "date": "2026-11-07T00:30Z",
+          "firstScored": 46.0,
+          "secondScored": 43.0,
+          "firstAllowed": 17.0,
+          "secondAllowed": 15.0
+        },
+        {
+          "id": "401925088",
+          "date": "2026-11-03T00:30Z",
+          "firstScored": 62.0,
+          "secondScored": 58.0,
+          "firstAllowed": 26.0,
+          "secondAllowed": 35.0
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401921096",
+          "fetchedAt": "2026-11-15T06:24:05.731935+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401917963",
+          "fetchedAt": "2026-11-12T11:00:14.077381+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401925089",
+          "fetchedAt": "2026-11-07T12:56:12.992104+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401925088",
+          "fetchedAt": "2026-11-03T17:00:29.827747+00:00"
+        }
+      ],
+      "priorSeason": false
+    },
+    "homeProfile": {
+      "season": 2027,
+      "games": 3,
+      "scoringShare": 0.5271317829457365,
+      "allowingShare": 0.4713656387665198,
+      "firstScoredAverage": 45.333333333333336,
+      "firstAllowedAverage": 35.666666666666664,
+      "samples": [
+        {
+          "id": "401911455",
+          "date": "2026-11-15T03:00Z",
+          "firstScored": 34.0,
+          "secondScored": 39.0,
+          "firstAllowed": 28.0,
+          "secondAllowed": 43.0
+        },
+        {
+          "id": "401920435",
+          "date": "2026-11-08T02:00Z",
+          "firstScored": 52.0,
+          "secondScored": 49.0,
+          "firstAllowed": 45.0,
+          "secondAllowed": 48.0
+        },
+        {
+          "id": "401920434",
+          "date": "2026-11-03T01:00Z",
+          "firstScored": 50.0,
+          "secondScored": 34.0,
+          "firstAllowed": 34.0,
+          "secondAllowed": 29.0
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401911455",
+          "fetchedAt": "2026-11-15T06:24:05.927352+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401920435",
+          "fetchedAt": "2026-11-08T10:15:39.965817+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401920434",
+          "fetchedAt": "2026-11-03T17:00:32.048048+00:00"
+        }
+      ],
+      "priorSeason": false
+    }
+  },
+  "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+  "independentFirstHalf": {
+    "modelVersion": "independent-1h-efficiency-v1",
+    "away": 36.91524169139929,
+    "home": 39.09054195484968,
+    "homeMargin": 2.1753002634503886,
+    "total": 76.00578364624897,
+    "firstHalfPossessions": 34.56739793504857,
+    "awayEfficiency": 106.79207547169813,
+    "homeEfficiency": 113.08500000000001,
+    "ratingsAt": "2026-11-23T12:14:47.649971+00:00",
+    "tipoffAt": "2026-11-24T01:00Z",
+    "assumptions": {
+      "nationalEfficiency": 106.0,
+      "tempoMethod": "geometric",
+      "firstHalfPaceFactor": 0.5,
+      "homeAdvantageFullGame": 0.0,
+      "neutral": true,
+      "earlyPaceCorrectionCalibrated": false,
+      "uncertaintyCalibrated": false
+    },
+    "firstTenMinutes": null,
+    "coverProbability": null,
+    "status": "BASELINE_UNCALIBRATED"
+  },
+  "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline.",
+  "ratingsFetchedAt": "2026-11-23T12:14:47.649971+00:00",
+  "preparedAt": "2026-11-23T12:14:47.857918+00:00",
+  "scheduleSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?groups=50&limit=1000&dates=20261123",
+  "ratingSource": "https://kenpom.com/",
+  "evidenceLabel": "First saved pre-tipoff model receipt"
+}
