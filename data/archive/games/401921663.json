@@ -1,0 +1,822 @@
+{
+  "snapshot": {
+    "version": 1,
+    "id": "401921663",
+    "savedAt": "2026-11-23T12:15:10.122800+00:00",
+    "scheduledTipoff": "2026-11-24T02:30Z",
+    "gameDate": "2026-11-23",
+    "matchup": {
+      "id": "401921663",
+      "date": "2026-11-24T02:30Z",
+      "awayName": "Loyola Chicago Ramblers",
+      "homeName": "Seattle U Redhawks",
+      "awayId": "2350",
+      "homeId": "2547",
+      "location": "Neutral",
+      "model": {
+        "away": 68.74799999999999,
+        "home": 69.224,
+        "total": 137.97199999999998,
+        "homeMargin": 0.4760000000000133,
+        "possessions": 68.0,
+        "awayEfficiency": 101.1,
+        "homeEfficiency": 101.80000000000001,
+        "homeAdvantagePoints": 0.0,
+        "modelVersion": "kenpom-additive-efficiency-v1"
+      },
+      "matchedTeams": {
+        "away": "Loyola Chicago",
+        "home": "Seattle"
+      },
+      "firstHalf": {
+        "away": 35.66033667807814,
+        "home": 34.34094007522456,
+        "total": 70.0012767533027,
+        "homeMargin": -1.3193966028535797,
+        "awayScoringShare": 0.5187108959981112,
+        "homeScoringShare": 0.49608430710771634,
+        "modelVersion": "first-half-timing-v1",
+        "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+        "awayProfile": {
+          "season": 2027,
+          "games": 5,
+          "scoringShare": 0.5025380710659898,
+          "allowingShare": 0.504297994269341,
+          "firstScoredAverage": 39.6,
+          "firstAllowedAverage": 35.2,
+          "samples": [
+            {
+              "id": "401911232",
+              "date": "2026-11-19T01:00Z",
+              "firstScored": 41.0,
+              "secondScored": 34.0,
+              "firstAllowed": 46.0,
+              "secondAllowed": 33.0
+            },
+            {
+              "id": "401911231",
+              "date": "2026-11-14T18:30Z",
+              "firstScored": 44.0,
+              "secondScored": 29.0,
+              "firstAllowed": 24.0,
+              "secondAllowed": 34.0
+            },
+            {
+              "id": "401911230",
+              "date": "2026-11-11T20:00Z",
+              "firstScored": 35.0,
+              "secondScored": 58.0,
+              "firstAllowed": 50.0,
+              "secondAllowed": 57.0
+            },
+            {
+              "id": "401911229",
+              "date": "2026-11-06T01:00Z",
+              "firstScored": 42.0,
+              "secondScored": 34.0,
+              "firstAllowed": 29.0,
+              "secondAllowed": 24.0
+            },
+            {
+              "id": "401911228",
+              "date": "2026-11-03T01:00Z",
+              "firstScored": 36.0,
+              "secondScored": 41.0,
+              "firstAllowed": 27.0,
+              "secondAllowed": 25.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401911232",
+              "fetchedAt": "2026-11-19T20:32:02.249918+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401911231",
+              "fetchedAt": "2026-11-15T06:24:05.493718+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401911230",
+              "fetchedAt": "2026-11-12T02:15:00.223571+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401911229",
+              "fetchedAt": "2026-11-07T12:56:11.431510+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401911228",
+              "fetchedAt": "2026-11-03T17:00:26.645620+00:00"
+            }
+          ],
+          "priorSeason": false
+        },
+        "homeProfile": {
+          "season": 2027,
+          "games": 5,
+          "scoringShare": 0.48787061994609165,
+          "allowingShare": 0.5348837209302325,
+          "firstScoredAverage": 36.2,
+          "firstAllowedAverage": 36.8,
+          "samples": [
+            {
+              "id": "401917533",
+              "date": "2026-11-18T03:00Z",
+              "firstScored": 48.0,
+              "secondScored": 35.0,
+              "firstAllowed": 25.0,
+              "secondAllowed": 29.0
+            },
+            {
+              "id": "401917528",
+              "date": "2026-11-15T21:00Z",
+              "firstScored": 44.0,
+              "secondScored": 33.0,
+              "firstAllowed": 43.0,
+              "secondAllowed": 27.0
+            },
+            {
+              "id": "401917521",
+              "date": "2026-11-12T03:00Z",
+              "firstScored": 22.0,
+              "secondScored": 37.0,
+              "firstAllowed": 41.0,
+              "secondAllowed": 45.0
+            },
+            {
+              "id": "401917517",
+              "date": "2026-11-08T03:00Z",
+              "firstScored": 28.0,
+              "secondScored": 51.0,
+              "firstAllowed": 28.0,
+              "secondAllowed": 32.0
+            },
+            {
+              "id": "401917506",
+              "date": "2026-11-03T04:59Z",
+              "firstScored": 39.0,
+              "secondScored": 34.0,
+              "firstAllowed": 47.0,
+              "secondAllowed": 27.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401917533",
+              "fetchedAt": "2026-11-18T08:48:55.182653+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401917528",
+              "fetchedAt": "2026-11-16T06:22:25.902805+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401917521",
+              "fetchedAt": "2026-11-12T19:52:34.234360+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401917517",
+              "fetchedAt": "2026-11-08T10:15:38.748696+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401917506",
+              "fetchedAt": "2026-11-03T17:00:29.171827+00:00"
+            }
+          ],
+          "priorSeason": false
+        }
+      },
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 35.247541279197776,
+        "home": 35.49808035384433,
+        "homeMargin": 0.25053907464655367,
+        "total": 70.7456216330421,
+        "firstHalfPossessions": 34.87477598494362,
+        "awayEfficiency": 101.06886792452829,
+        "homeEfficiency": 101.78726415094339,
+        "ratingsAt": "2026-11-23T12:14:47.649971+00:00",
+        "tipoffAt": "2026-11-24T02:30Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": true,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
+    },
+    "config": {
+      "season": 2027,
+      "nationalEfficiency": 106.0,
+      "nationalTempo": 71.5,
+      "baselineAsOf": "2026-11-01",
+      "baselineSource": "User-provided KenPom beginning-of-season screenshots",
+      "homeAdvantagePoints": 0.0,
+      "modelVersion": "additive-matchup-v1"
+    },
+    "ratingsFetchedAt": "2026-11-23T12:14:47.649971+00:00",
+    "preparedAt": "2026-11-23T12:14:47.857918+00:00",
+    "ratingSource": "https://kenpom.com/",
+    "scheduleSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?groups=50&limit=1000&dates=20261123",
+    "verification": "ESPN pregame state and future tipoff checked at server save time",
+    "gameRoomBaseline": {
+      "simulation": null,
+      "simulationStatus": "No verified adjusted-efficiency ratings feed configured.",
+      "id": "401921663",
+      "date": "2026-11-24T02:30Z",
+      "name": "TBD at TBD",
+      "preparedAt": "2026-11-20T02:18:04.220630+00:00",
+      "season": 2026,
+      "priorSeason": true,
+      "modelVersion": "score-baseline-v1",
+      "model": {
+        "full": null,
+        "half": null
+      },
+      "samples": {
+        "away": [],
+        "home": []
+      },
+      "source": [
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/teams/-2/schedule?season=2026",
+          "fetchedAt": "2026-11-19T20:31:58.616410+00:00"
+        },
+        {
+          "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/teams/-1/schedule?season=2026",
+          "fetchedAt": "2026-11-19T20:31:58.604959+00:00"
+        }
+      ],
+      "state": "unavailable",
+      "reason": "Fewer than 3 scored games for one or both teams, or source unavailable."
+    },
+    "kambi": null,
+    "marketStatus": "No verified fresh pregame market available at save time"
+  },
+  "result": null,
+  "decisionEvidence": {
+    "version": "empirical-score-residuals-v1",
+    "markets": []
+  },
+  "kalshiEvidence": {
+    "version": "empirical-score-residuals-v1",
+    "markets": [
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV23SEALCHI-155",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV23SEALCHI",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 154.5,
+        "teamSide": null,
+        "label": "Over 154.5 points",
+        "ask": 0.99,
+        "askSize": 831.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-23T12:15:14.470060+00:00",
+        "rules": "If over 154.5 total points are scored in the Seattle vs Loyola Chicago men's college basketball game originally scheduled for Nov 23, 2026, then the market resolves to Yes.",
+        "prediction": 137.97199999999998,
+        "pointDifference": 16.52800000000002,
+        "probability": 0.8127018299246501,
+        "sampleSize": 929,
+        "expectedValue": -0.1796690926368728,
+        "projectedScore": {
+          "away": 68.74799999999999,
+          "home": 69.224
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV23SEALCHI-152",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV23SEALCHI",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 151.5,
+        "teamSide": null,
+        "label": "Over 151.5 points",
+        "ask": 0.94,
+        "askSize": 854.0,
+        "fee": 0.004,
+        "breakEven": 0.944,
+        "quoteFetchedAt": "2026-11-23T12:15:14.470060+00:00",
+        "rules": "If over 151.5 total points are scored in the Seattle vs Loyola Chicago men's college basketball game originally scheduled for Nov 23, 2026, then the market resolves to Yes.",
+        "prediction": 137.97199999999998,
+        "pointDifference": 13.52800000000002,
+        "probability": 0.759956942949408,
+        "sampleSize": 929,
+        "expectedValue": -0.1949608655196949,
+        "projectedScore": {
+          "away": 68.74799999999999,
+          "home": 69.224
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV23SEALCHI-150",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV23SEALCHI",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 149.5,
+        "teamSide": null,
+        "label": "Over 149.5 points",
+        "ask": 0.9,
+        "askSize": 828.0,
+        "fee": 0.0063,
+        "breakEven": 0.9063,
+        "quoteFetchedAt": "2026-11-23T12:15:14.470060+00:00",
+        "rules": "If over 149.5 total points are scored in the Seattle vs Loyola Chicago men's college basketball game originally scheduled for Nov 23, 2026, then the market resolves to Yes.",
+        "prediction": 137.97199999999998,
+        "pointDifference": 11.52800000000002,
+        "probability": 0.7136706135629709,
+        "sampleSize": 929,
+        "expectedValue": -0.212544837732571,
+        "projectedScore": {
+          "away": 68.74799999999999,
+          "home": 69.224
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV23SEALCHI-129",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV23SEALCHI",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 128.5,
+        "teamSide": null,
+        "label": "Over 128.5 points",
+        "ask": 0.98,
+        "askSize": 875.0,
+        "fee": 0.0014,
+        "breakEven": 0.9814,
+        "quoteFetchedAt": "2026-11-23T12:15:14.470060+00:00",
+        "rules": "If over 128.5 total points are scored in the Seattle vs Loyola Chicago men's college basketball game originally scheduled for Nov 23, 2026, then the market resolves to Yes.",
+        "prediction": 137.97199999999998,
+        "pointDifference": 9.47199999999998,
+        "probability": 0.7642626480086114,
+        "sampleSize": 929,
+        "expectedValue": -0.22125265130567415,
+        "projectedScore": {
+          "away": 68.74799999999999,
+          "home": 69.224
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV23SEALCHI-148",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV23SEALCHI",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 147.5,
+        "teamSide": null,
+        "label": "Over 147.5 points",
+        "ask": 0.86,
+        "askSize": 810.0,
+        "fee": 0.0085,
+        "breakEven": 0.8685,
+        "quoteFetchedAt": "2026-11-23T12:15:14.470060+00:00",
+        "rules": "If over 147.5 total points are scored in the Seattle vs Loyola Chicago men's college basketball game originally scheduled for Nov 23, 2026, then the market resolves to Yes.",
+        "prediction": 137.97199999999998,
+        "pointDifference": 9.52800000000002,
+        "probability": 0.6749192680301399,
+        "sampleSize": 929,
+        "expectedValue": -0.22289088309713315,
+        "projectedScore": {
+          "away": 68.74799999999999,
+          "home": 69.224
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV23SEALCHI-145",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV23SEALCHI",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 144.5,
+        "teamSide": null,
+        "label": "Over 144.5 points",
+        "ask": 0.79,
+        "askSize": 828.0,
+        "fee": 0.0117,
+        "breakEven": 0.8017,
+        "quoteFetchedAt": "2026-11-23T12:15:14.470060+00:00",
+        "rules": "If over 144.5 total points are scored in the Seattle vs Loyola Chicago men's college basketball game originally scheduled for Nov 23, 2026, then the market resolves to Yes.",
+        "prediction": 137.97199999999998,
+        "pointDifference": 6.52800000000002,
+        "probability": 0.6103336921420882,
+        "sampleSize": 929,
+        "expectedValue": -0.2387006459497465,
+        "projectedScore": {
+          "away": 68.74799999999999,
+          "home": 69.224
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV23SEALCHI-134",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV23SEALCHI",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 133.5,
+        "teamSide": null,
+        "label": "Over 133.5 points",
+        "ask": 0.87,
+        "askSize": 805.0,
+        "fee": 0.008,
+        "breakEven": 0.878,
+        "quoteFetchedAt": "2026-11-23T12:15:14.470060+00:00",
+        "rules": "If over 133.5 total points are scored in the Seattle vs Loyola Chicago men's college basketball game originally scheduled for Nov 23, 2026, then the market resolves to Yes.",
+        "prediction": 137.97199999999998,
+        "pointDifference": 4.47199999999998,
+        "probability": 0.6544671689989235,
+        "sampleSize": 929,
+        "expectedValue": -0.25459320159575904,
+        "projectedScore": {
+          "away": 68.74799999999999,
+          "home": 69.224
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV23SEALCHI-142",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV23SEALCHI",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 141.5,
+        "teamSide": null,
+        "label": "Over 141.5 points",
+        "ask": 0.72,
+        "askSize": 804.0,
+        "fee": 0.0142,
+        "breakEven": 0.7342,
+        "quoteFetchedAt": "2026-11-23T12:15:14.470060+00:00",
+        "rules": "If over 141.5 total points are scored in the Seattle vs Loyola Chicago men's college basketball game originally scheduled for Nov 23, 2026, then the market resolves to Yes.",
+        "prediction": 137.97199999999998,
+        "pointDifference": 3.52800000000002,
+        "probability": 0.542518837459634,
+        "sampleSize": 929,
+        "expectedValue": -0.2610748604472432,
+        "projectedScore": {
+          "away": 68.74799999999999,
+          "home": 69.224
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV23SEALCHI-138",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV23SEALCHI",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 137.5,
+        "teamSide": null,
+        "label": "Over 137.5 points",
+        "ask": 0.77,
+        "askSize": 852.0,
+        "fee": 0.0124,
+        "breakEven": 0.7824,
+        "quoteFetchedAt": "2026-11-23T12:15:14.470060+00:00",
+        "rules": "If over 137.5 total points are scored in the Seattle vs Loyola Chicago men's college basketball game originally scheduled for Nov 23, 2026, then the market resolves to Yes.",
+        "prediction": 137.97199999999998,
+        "pointDifference": 0.47199999999998,
+        "probability": 0.5586652314316469,
+        "sampleSize": 929,
+        "expectedValue": -0.28595957127856986,
+        "projectedScore": {
+          "away": 68.74799999999999,
+          "home": 69.224
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV23SEALCHI-138",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV23SEALCHI",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 137.5,
+        "teamSide": null,
+        "label": "Over 137.5 points",
+        "ask": 0.62,
+        "askSize": 838.0,
+        "fee": 0.0165,
+        "breakEven": 0.6365,
+        "quoteFetchedAt": "2026-11-23T12:15:14.470060+00:00",
+        "rules": "If over 137.5 total points are scored in the Seattle vs Loyola Chicago men's college basketball game originally scheduled for Nov 23, 2026, then the market resolves to Yes.",
+        "prediction": 137.97199999999998,
+        "pointDifference": -0.47199999999998,
+        "probability": 0.4413347685683531,
+        "sampleSize": 929,
+        "expectedValue": -0.3066225159963031,
+        "projectedScore": {
+          "away": 68.74799999999999,
+          "home": 69.224
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV23SEALCHI-142",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV23SEALCHI",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 141.5,
+        "teamSide": null,
+        "label": "Over 141.5 points",
+        "ask": 0.68,
+        "askSize": 850.0,
+        "fee": 0.0153,
+        "breakEven": 0.6953,
+        "quoteFetchedAt": "2026-11-23T12:15:14.470060+00:00",
+        "rules": "If over 141.5 total points are scored in the Seattle vs Loyola Chicago men's college basketball game originally scheduled for Nov 23, 2026, then the market resolves to Yes.",
+        "prediction": 137.97199999999998,
+        "pointDifference": -3.52800000000002,
+        "probability": 0.45748116254036597,
+        "sampleSize": 929,
+        "expectedValue": -0.34203773545179644,
+        "projectedScore": {
+          "away": 68.74799999999999,
+          "home": 69.224
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV23SEALCHI-134",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV23SEALCHI",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 133.5,
+        "teamSide": null,
+        "label": "Over 133.5 points",
+        "ask": 0.52,
+        "askSize": 849.0,
+        "fee": 0.0175,
+        "breakEven": 0.5375,
+        "quoteFetchedAt": "2026-11-23T12:15:14.470060+00:00",
+        "rules": "If over 133.5 total points are scored in the Seattle vs Loyola Chicago men's college basketball game originally scheduled for Nov 23, 2026, then the market resolves to Yes.",
+        "prediction": 137.97199999999998,
+        "pointDifference": -4.47199999999998,
+        "probability": 0.3455328310010764,
+        "sampleSize": 929,
+        "expectedValue": -0.3571482213933462,
+        "projectedScore": {
+          "away": 68.74799999999999,
+          "home": 69.224
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV23SEALCHI-145",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV23SEALCHI",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 144.5,
+        "teamSide": null,
+        "label": "Over 144.5 points",
+        "ask": 0.61,
+        "askSize": 826.0,
+        "fee": 0.0167,
+        "breakEven": 0.6267,
+        "quoteFetchedAt": "2026-11-23T12:15:14.470060+00:00",
+        "rules": "If over 144.5 total points are scored in the Seattle vs Loyola Chicago men's college basketball game originally scheduled for Nov 23, 2026, then the market resolves to Yes.",
+        "prediction": 137.97199999999998,
+        "pointDifference": -6.52800000000002,
+        "probability": 0.38966630785791173,
+        "sampleSize": 929,
+        "expectedValue": -0.3782251350599781,
+        "projectedScore": {
+          "away": 68.74799999999999,
+          "home": 69.224
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV23SEALCHI-148",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV23SEALCHI",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 147.5,
+        "teamSide": null,
+        "label": "Over 147.5 points",
+        "ask": 0.54,
+        "askSize": 949.0,
+        "fee": 0.0174,
+        "breakEven": 0.5574,
+        "quoteFetchedAt": "2026-11-23T12:15:14.470060+00:00",
+        "rules": "If over 147.5 total points are scored in the Seattle vs Loyola Chicago men's college basketball game originally scheduled for Nov 23, 2026, then the market resolves to Yes.",
+        "prediction": 137.97199999999998,
+        "pointDifference": -9.52800000000002,
+        "probability": 0.32508073196986004,
+        "sampleSize": 929,
+        "expectedValue": -0.4167909365449228,
+        "projectedScore": {
+          "away": 68.74799999999999,
+          "home": 69.224
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV23SEALCHI-129",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV23SEALCHI",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 128.5,
+        "teamSide": null,
+        "label": "Over 128.5 points",
+        "ask": 0.4,
+        "askSize": 0.31,
+        "fee": 0.0168,
+        "breakEven": 0.4168,
+        "quoteFetchedAt": "2026-11-23T12:15:14.470060+00:00",
+        "rules": "If over 128.5 total points are scored in the Seattle vs Loyola Chicago men's college basketball game originally scheduled for Nov 23, 2026, then the market resolves to Yes.",
+        "prediction": 137.97199999999998,
+        "pointDifference": -9.47199999999998,
+        "probability": 0.2357373519913886,
+        "sampleSize": 929,
+        "expectedValue": -0.43441134359071837,
+        "projectedScore": {
+          "away": 68.74799999999999,
+          "home": 69.224
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV23SEALCHI-150",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV23SEALCHI",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 149.5,
+        "teamSide": null,
+        "label": "Over 149.5 points",
+        "ask": 0.49,
+        "askSize": 853.0,
+        "fee": 0.0175,
+        "breakEven": 0.5075,
+        "quoteFetchedAt": "2026-11-23T12:15:14.470060+00:00",
+        "rules": "If over 149.5 total points are scored in the Seattle vs Loyola Chicago men's college basketball game originally scheduled for Nov 23, 2026, then the market resolves to Yes.",
+        "prediction": 137.97199999999998,
+        "pointDifference": -11.52800000000002,
+        "probability": 0.28632938643702904,
+        "sampleSize": 929,
+        "expectedValue": -0.43580416465610033,
+        "projectedScore": {
+          "away": 68.74799999999999,
+          "home": 69.224
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV23SEALCHI-152",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV23SEALCHI",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 151.5,
+        "teamSide": null,
+        "label": "Over 151.5 points",
+        "ask": 0.45,
+        "askSize": 847.0,
+        "fee": 0.0174,
+        "breakEven": 0.4674,
+        "quoteFetchedAt": "2026-11-23T12:15:14.470060+00:00",
+        "rules": "If over 151.5 total points are scored in the Seattle vs Loyola Chicago men's college basketball game originally scheduled for Nov 23, 2026, then the market resolves to Yes.",
+        "prediction": 137.97199999999998,
+        "pointDifference": -13.52800000000002,
+        "probability": 0.24004305705059203,
+        "sampleSize": 929,
+        "expectedValue": -0.48642906065341884,
+        "projectedScore": {
+          "away": 68.74799999999999,
+          "home": 69.224
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV23SEALCHI-155",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV23SEALCHI",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 154.5,
+        "teamSide": null,
+        "label": "Over 154.5 points",
+        "ask": 0.4,
+        "askSize": 805.0,
+        "fee": 0.0168,
+        "breakEven": 0.4168,
+        "quoteFetchedAt": "2026-11-23T12:15:14.470060+00:00",
+        "rules": "If over 154.5 total points are scored in the Seattle vs Loyola Chicago men's college basketball game originally scheduled for Nov 23, 2026, then the market resolves to Yes.",
+        "prediction": 137.97199999999998,
+        "pointDifference": -16.52800000000002,
+        "probability": 0.18729817007534985,
+        "sampleSize": 929,
+        "expectedValue": -0.550628190798105,
+        "projectedScore": {
+          "away": 68.74799999999999,
+          "home": 69.224
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV23SEALCHI-158",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV23SEALCHI",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 157.5,
+        "teamSide": null,
+        "label": "Over 157.5 points",
+        "ask": 0.35,
+        "askSize": 864.0,
+        "fee": 0.016,
+        "breakEven": 0.366,
+        "quoteFetchedAt": "2026-11-23T12:15:14.470060+00:00",
+        "rules": "If over 157.5 total points are scored in the Seattle vs Loyola Chicago men's college basketball game originally scheduled for Nov 23, 2026, then the market resolves to Yes.",
+        "prediction": 137.97199999999998,
+        "pointDifference": -19.52800000000002,
+        "probability": 0.147470398277718,
+        "sampleSize": 929,
+        "expectedValue": -0.5970754145417542,
+        "projectedScore": {
+          "away": 68.74799999999999,
+          "home": 69.224
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV23SEALCHI-162",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV23SEALCHI",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 161.5,
+        "teamSide": null,
+        "label": "Over 161.5 points",
+        "ask": 0.31,
+        "askSize": 859.0,
+        "fee": 0.015,
+        "breakEven": 0.325,
+        "quoteFetchedAt": "2026-11-23T12:15:14.470060+00:00",
+        "rules": "If over 161.5 total points are scored in the Seattle vs Loyola Chicago men's college basketball game originally scheduled for Nov 23, 2026, then the market resolves to Yes.",
+        "prediction": 137.97199999999998,
+        "pointDifference": -23.52800000000002,
+        "probability": 0.10764262648008611,
+        "sampleSize": 929,
+        "expectedValue": -0.6687919185228121,
+        "projectedScore": {
+          "away": 68.74799999999999,
+          "home": 69.224
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV23SEALCHI-166",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV23SEALCHI",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 165.5,
+        "teamSide": null,
+        "label": "Over 165.5 points",
+        "ask": 0.27,
+        "askSize": 829.0,
+        "fee": 0.0138,
+        "breakEven": 0.2838,
+        "quoteFetchedAt": "2026-11-23T12:15:14.470060+00:00",
+        "rules": "If over 165.5 total points are scored in the Seattle vs Loyola Chicago men's college basketball game originally scheduled for Nov 23, 2026, then the market resolves to Yes.",
+        "prediction": 137.97199999999998,
+        "pointDifference": -27.52800000000002,
+        "probability": 0.0721205597416577,
+        "sampleSize": 929,
+        "expectedValue": -0.7458754061252371,
+        "projectedScore": {
+          "away": 68.74799999999999,
+          "home": 69.224
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV23SEALCHI-171",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV23SEALCHI",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 170.5,
+        "teamSide": null,
+        "label": "Over 170.5 points",
+        "ask": 0.24,
+        "askSize": 878.0,
+        "fee": 0.0128,
+        "breakEven": 0.2528,
+        "quoteFetchedAt": "2026-11-23T12:15:14.470060+00:00",
+        "rules": "If over 170.5 total points are scored in the Seattle vs Loyola Chicago men's college basketball game originally scheduled for Nov 23, 2026, then the market resolves to Yes.",
+        "prediction": 137.97199999999998,
+        "pointDifference": -32.52800000000002,
+        "probability": 0.038751345532831,
+        "sampleSize": 929,
+        "expectedValue": -0.8467114496327888,
+        "projectedScore": {
+          "away": 68.74799999999999,
+          "home": 69.224
+        }
+      }
+    ]
+  }
+}
