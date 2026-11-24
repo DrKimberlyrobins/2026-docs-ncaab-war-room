@@ -208,7 +208,100 @@
   "result": null,
   "decisionEvidence": {
     "version": "empirical-score-residuals-v1",
-    "markets": []
+    "markets": [
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": 1.5,
+        "price": -103,
+        "outcomeId": "4429924768",
+        "offerId": "2721410092",
+        "teamId": "264",
+        "side": null,
+        "pointDifference": 1.181999999999988,
+        "breakEven": 0.5073891625615764,
+        "probability": 0.6469957081545065,
+        "expectedValue": 0.2751468811200465,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-24T10:20:58.547829+00:00",
+        "score": {
+          "away": 74.3484,
+          "home": 74.03039999999999
+        },
+        "sampleSize": 932,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-24T10:21:20.984201+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 153.5,
+        "price": -117,
+        "outcomeId": "4429924770",
+        "offerId": "2721410093",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": 5.121200000000016,
+        "breakEven": 0.5391705069124424,
+        "probability": 0.5826180257510729,
+        "expectedValue": 0.08058215032463958,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-24T10:20:58.547829+00:00",
+        "score": {
+          "away": 74.3484,
+          "home": 74.03039999999999
+        },
+        "sampleSize": 932,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-24T10:21:20.984201+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 153.5,
+        "price": -105,
+        "outcomeId": "4429924769",
+        "offerId": "2721410093",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": -5.121200000000016,
+        "breakEven": 0.5121951219512195,
+        "probability": 0.41738197424892703,
+        "expectedValue": -0.18511138360923768,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-24T10:20:58.547829+00:00",
+        "score": {
+          "away": 74.3484,
+          "home": 74.03039999999999
+        },
+        "sampleSize": 932,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-24T10:21:20.984201+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": -1.5,
+        "price": -120,
+        "outcomeId": "4429924767",
+        "offerId": "2721410092",
+        "teamId": "228",
+        "side": null,
+        "pointDifference": -1.181999999999988,
+        "breakEven": 0.5454545454545454,
+        "probability": 0.3530042918454936,
+        "expectedValue": -0.3528254649499284,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-24T10:20:58.547829+00:00",
+        "score": {
+          "away": 74.3484,
+          "home": 74.03039999999999
+        },
+        "sampleSize": 932,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-24T10:21:20.984201+00:00"
+      }
+    ]
   },
   "kalshiEvidence": {
     "version": "empirical-score-residuals-v1",
@@ -3037,7 +3130,219 @@
           "away": 35.86480251256281,
           "home": 37.97602108885442
         }
+      },
+      {
+        "ticker": "KXNCAAMB1HSPREAD-26NOV24CLEMWASH-CLEM9",
+        "eventTicker": "KXNCAAMB1HSPREAD-26NOV24CLEMWASH",
+        "period": "half",
+        "kind": "spread",
+        "answer": "no",
+        "line": 8.5,
+        "teamSide": "away",
+        "label": "Clemson wins by over 8.5 points",
+        "ask": 0.7,
+        "askSize": 5.0,
+        "fee": 0.0147,
+        "breakEven": 0.7147,
+        "quoteFetchedAt": "2026-11-24T10:21:27.028545+00:00",
+        "rules": "If Clemson wins the 1st half by more than 8.5 points in the Clemson vs Washington men's college basketball game originally scheduled for Nov 24, 2026, then the market resolves to Yes.",
+        "prediction": -2.1112185762916056,
+        "pointDifference": 10.611218576291606,
+        "probability": 0.9053763440860215,
+        "sampleSize": 930,
+        "expectedValue": 0.26679214227790893,
+        "projectedScore": {
+          "away": 35.86480251256281,
+          "home": 37.97602108885442
+        }
+      },
+      {
+        "ticker": "KXNCAAMB1HSPREAD-26NOV24CLEMWASH-CLEM6",
+        "eventTicker": "KXNCAAMB1HSPREAD-26NOV24CLEMWASH",
+        "period": "half",
+        "kind": "spread",
+        "answer": "no",
+        "line": 5.5,
+        "teamSide": "away",
+        "label": "Clemson wins by over 5.5 points",
+        "ask": 0.7,
+        "askSize": 12.0,
+        "fee": 0.0147,
+        "breakEven": 0.7147,
+        "quoteFetchedAt": "2026-11-24T10:21:27.028545+00:00",
+        "rules": "If Clemson wins the 1st half by more than 5.5 points in the Clemson vs Washington men's college basketball game originally scheduled for Nov 24, 2026, then the market resolves to Yes.",
+        "prediction": -2.1112185762916056,
+        "pointDifference": 7.611218576291606,
+        "probability": 0.8397849462365592,
+        "sampleSize": 930,
+        "expectedValue": 0.17501741463069706,
+        "projectedScore": {
+          "away": 35.86480251256281,
+          "home": 37.97602108885442
+        }
+      },
+      {
+        "ticker": "KXNCAAMB1HSPREAD-26NOV24CLEMWASH-CLEM3",
+        "eventTicker": "KXNCAAMB1HSPREAD-26NOV24CLEMWASH",
+        "period": "half",
+        "kind": "spread",
+        "answer": "no",
+        "line": 2.5,
+        "teamSide": "away",
+        "label": "Clemson wins by over 2.5 points",
+        "ask": 0.7,
+        "askSize": 9.69,
+        "fee": 0.0147,
+        "breakEven": 0.7147,
+        "quoteFetchedAt": "2026-11-24T10:21:27.028545+00:00",
+        "rules": "If Clemson wins the 1st half by more than 2.5 points in the Clemson vs Washington men's college basketball game originally scheduled for Nov 24, 2026, then the market resolves to Yes.",
+        "prediction": -2.1112185762916056,
+        "pointDifference": 4.611218576291606,
+        "probability": 0.7666666666666667,
+        "sampleSize": 930,
+        "expectedValue": 0.07271116086003458,
+        "projectedScore": {
+          "away": 35.86480251256281,
+          "home": 37.97602108885442
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV24CLEMWASH-179",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV24CLEMWASH",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 178.5,
+        "teamSide": null,
+        "label": "Over 178.5 points",
+        "ask": 0.99,
+        "askSize": 365.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-24T10:21:27.744252+00:00",
+        "rules": "If over 178.5 total points are scored in the Clemson vs Washington men's college basketball game originally scheduled for Nov 24, 2026, then the market resolves to Yes.",
+        "prediction": 148.37879999999998,
+        "pointDifference": 30.121200000000016,
+        "probability": 0.9464094319399786,
+        "sampleSize": 933,
+        "expectedValue": -0.044706336994066224,
+        "projectedScore": {
+          "away": 74.3484,
+          "home": 74.03039999999999
+        }
+      },
+      {
+        "ticker": "KXNCAAMB1HSPREAD-26NOV24CLEMWASH-WASH2",
+        "eventTicker": "KXNCAAMB1HSPREAD-26NOV24CLEMWASH",
+        "period": "half",
+        "kind": "spread",
+        "answer": "no",
+        "line": 1.5,
+        "teamSide": "home",
+        "label": "Washington wins by over 1.5 points",
+        "ask": 0.77,
+        "askSize": 434.0,
+        "fee": 0.0124,
+        "breakEven": 0.7824,
+        "quoteFetchedAt": "2026-11-24T10:21:27.028545+00:00",
+        "rules": "If Washington wins the 1st half by more than 1.5 points in the Clemson vs Washington men's college basketball game originally scheduled for Nov 24, 2026, then the market resolves to Yes.",
+        "prediction": 2.1112185762916056,
+        "pointDifference": -0.6112185762916056,
+        "probability": 0.36236559139784946,
+        "sampleSize": 930,
+        "expectedValue": -0.5368537942256525,
+        "projectedScore": {
+          "away": 35.86480251256281,
+          "home": 37.97602108885442
+        }
       }
     ]
+  },
+  "additionalMarkets": {
+    "half": {},
+    "full": {
+      "spread": {
+        "id": "2721410092",
+        "criterionId": "1001159512",
+        "label": "Point Spread",
+        "period": "full",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4429924767",
+            "price": -120,
+            "changedAt": "2026-11-24T05:55:16Z",
+            "teamId": "228",
+            "line": -1.5
+          },
+          {
+            "id": "4429924768",
+            "price": -103,
+            "changedAt": "2026-11-24T05:55:16Z",
+            "teamId": "264",
+            "line": 1.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-24T10:20:58.547829+00:00",
+        "quoteSavedAt": "2026-11-24T10:21:20.984201+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029977034.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "total": {
+        "id": "2721410093",
+        "criterionId": "1001159509",
+        "label": "Total Points - Including Overtime",
+        "period": "full",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4429924769",
+            "price": -105,
+            "changedAt": "2026-11-24T05:55:16Z",
+            "side": "over",
+            "line": 153.5
+          },
+          {
+            "id": "4429924770",
+            "price": -117,
+            "changedAt": "2026-11-24T05:55:16Z",
+            "side": "under",
+            "line": 153.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-24T10:20:58.547829+00:00",
+        "quoteSavedAt": "2026-11-24T10:21:20.984201+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029977034.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "moneyline": {
+        "id": "2721427070",
+        "criterionId": "1001159732",
+        "label": "Moneyline",
+        "period": "full",
+        "kind": "moneyline",
+        "outcomes": [
+          {
+            "id": "4429901606",
+            "price": -143,
+            "changedAt": "2026-11-24T05:55:16Z",
+            "teamId": "228"
+          },
+          {
+            "id": "4429901607",
+            "price": 112,
+            "changedAt": "2026-11-24T05:55:16Z",
+            "teamId": "264"
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-24T10:20:58.547829+00:00",
+        "quoteSavedAt": "2026-11-24T10:21:20.984201+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029977034.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    }
+  },
+  "reportEvidence": {
+    "articles": []
   }
 }

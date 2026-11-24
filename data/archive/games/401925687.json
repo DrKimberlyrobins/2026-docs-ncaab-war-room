@@ -232,7 +232,100 @@
   "result": null,
   "decisionEvidence": {
     "version": "empirical-score-residuals-v1",
-    "markets": []
+    "markets": [
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": 16.5,
+        "price": -109,
+        "outcomeId": "4429865841",
+        "offerId": "2721387300",
+        "teamId": "2016",
+        "side": null,
+        "pointDifference": 9.913700000000006,
+        "breakEven": 0.5215311004784688,
+        "probability": 0.6899141630901288,
+        "expectedValue": 0.3228629365673113,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-24T10:20:56.233277+00:00",
+        "score": {
+          "away": 68.91849999999998,
+          "home": 75.50479999999997
+        },
+        "sampleSize": 932,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-24T10:21:20.984201+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 145.5,
+        "price": -114,
+        "outcomeId": "4429880429",
+        "offerId": "2721412126",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": -1.076700000000045,
+        "breakEven": 0.5327102803738317,
+        "probability": 0.5150214592274678,
+        "expectedValue": -0.03320533092387606,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-24T10:20:56.233277+00:00",
+        "score": {
+          "away": 68.91849999999998,
+          "home": 75.50479999999997
+        },
+        "sampleSize": 932,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-24T10:21:20.984201+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 145.5,
+        "price": -107,
+        "outcomeId": "4429880430",
+        "offerId": "2721412126",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": 1.076700000000045,
+        "breakEven": 0.5169082125603864,
+        "probability": 0.48497854077253216,
+        "expectedValue": -0.06177048654285817,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-24T10:20:56.233277+00:00",
+        "score": {
+          "away": 68.91849999999998,
+          "home": 75.50479999999997
+        },
+        "sampleSize": 932,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-24T10:21:20.984201+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": -16.5,
+        "price": -112,
+        "outcomeId": "4429865840",
+        "offerId": "2721387300",
+        "teamId": "2348",
+        "side": null,
+        "pointDifference": -9.913700000000006,
+        "breakEven": 0.5283018867924528,
+        "probability": 0.31008583690987124,
+        "expectedValue": -0.4130518087063151,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-24T10:20:56.233277+00:00",
+        "score": {
+          "away": 68.91849999999998,
+          "home": 75.50479999999997
+        },
+        "sampleSize": 932,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-24T10:21:20.984201+00:00"
+      }
+    ]
   },
   "kalshiEvidence": {
     "version": "empirical-score-residuals-v1",
@@ -1563,5 +1656,92 @@
         }
       }
     ]
+  },
+  "additionalMarkets": {
+    "half": {},
+    "full": {
+      "spread": {
+        "id": "2721387300",
+        "criterionId": "1001159512",
+        "label": "Point Spread",
+        "period": "full",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4429865840",
+            "price": -112,
+            "changedAt": "2026-11-24T09:15:04Z",
+            "teamId": "2348",
+            "line": -16.5
+          },
+          {
+            "id": "4429865841",
+            "price": -109,
+            "changedAt": "2026-11-24T09:15:04Z",
+            "teamId": "2016",
+            "line": 16.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-24T10:20:56.233277+00:00",
+        "quoteSavedAt": "2026-11-24T10:21:20.984201+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028742234.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "moneyline": {
+        "id": "2721412125",
+        "criterionId": "1001159732",
+        "label": "Moneyline",
+        "period": "full",
+        "kind": "moneyline",
+        "outcomes": [
+          {
+            "id": "4429880427",
+            "price": -2500,
+            "changedAt": "2026-11-24T09:15:04Z",
+            "teamId": "2348"
+          },
+          {
+            "id": "4429880428",
+            "price": 900,
+            "changedAt": "2026-11-24T09:15:04Z",
+            "teamId": "2016"
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-24T10:20:56.233277+00:00",
+        "quoteSavedAt": "2026-11-24T10:21:20.984201+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028742234.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "total": {
+        "id": "2721412126",
+        "criterionId": "1001159509",
+        "label": "Total Points - Including Overtime",
+        "period": "full",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4429880429",
+            "price": -114,
+            "changedAt": "2026-11-24T05:10:29Z",
+            "side": "over",
+            "line": 145.5
+          },
+          {
+            "id": "4429880430",
+            "price": -107,
+            "changedAt": "2026-11-24T05:10:29Z",
+            "side": "under",
+            "line": 145.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-24T10:20:56.233277+00:00",
+        "quoteSavedAt": "2026-11-24T10:21:20.984201+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028742234.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    }
+  },
+  "reportEvidence": {
+    "articles": []
   }
 }

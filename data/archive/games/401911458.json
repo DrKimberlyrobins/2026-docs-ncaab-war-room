@@ -232,7 +232,100 @@
   "result": null,
   "decisionEvidence": {
     "version": "empirical-score-residuals-v1",
-    "markets": []
+    "markets": [
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": 0.5,
+        "price": 104,
+        "outcomeId": "4429868249",
+        "offerId": "2721351565",
+        "teamId": "2541",
+        "side": null,
+        "pointDifference": 1.6295999999999964,
+        "breakEven": 0.49019607843137253,
+        "probability": 0.6534334763948498,
+        "expectedValue": 0.3330042918454937,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-24T10:20:55.102482+00:00",
+        "score": {
+          "away": 76.8834,
+          "home": 78.01299999999999
+        },
+        "sampleSize": 932,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-24T10:21:20.984201+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 157.5,
+        "price": -108,
+        "outcomeId": "4429888540",
+        "offerId": "2721397618",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": 2.6036000000000286,
+        "breakEven": 0.5192307692307693,
+        "probability": 0.526824034334764,
+        "expectedValue": 0.014624066126211976,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-24T10:20:55.102482+00:00",
+        "score": {
+          "away": 76.8834,
+          "home": 78.01299999999999
+        },
+        "sampleSize": 932,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-24T10:21:20.984201+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 157.5,
+        "price": -113,
+        "outcomeId": "4429888539",
+        "offerId": "2721397618",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": -2.6036000000000286,
+        "breakEven": 0.5305164319248826,
+        "probability": 0.47317596566523606,
+        "expectedValue": -0.10808424171066118,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-24T10:20:55.102482+00:00",
+        "score": {
+          "away": 76.8834,
+          "home": 78.01299999999999
+        },
+        "sampleSize": 932,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-24T10:21:20.984201+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": -0.5,
+        "price": -125,
+        "outcomeId": "4429868250",
+        "offerId": "2721351565",
+        "teamId": "2440",
+        "side": null,
+        "pointDifference": -1.6295999999999964,
+        "breakEven": 0.5555555555555556,
+        "probability": 0.3465665236051502,
+        "expectedValue": -0.37618025751072964,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-24T10:20:55.102482+00:00",
+        "score": {
+          "away": 76.8834,
+          "home": 78.01299999999999
+        },
+        "sampleSize": 932,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-24T10:21:20.984201+00:00"
+      }
+    ]
   },
   "kalshiEvidence": {
     "version": "empirical-score-residuals-v1",
@@ -1636,7 +1729,169 @@
           "away": 76.8834,
           "home": 78.01299999999999
         }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV24NEVSCU-180",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV24NEVSCU",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 179.5,
+        "teamSide": null,
+        "label": "Over 179.5 points",
+        "ask": 0.96,
+        "askSize": 602.0,
+        "fee": 0.0027,
+        "breakEven": 0.9627,
+        "quoteFetchedAt": "2026-11-24T10:21:27.744252+00:00",
+        "rules": "If over 179.5 total points are scored in the Nevada vs Santa Clara men's college basketball game originally scheduled for Nov 24, 2026, then the market resolves to Yes.",
+        "prediction": 154.89639999999997,
+        "pointDifference": 24.60360000000003,
+        "probability": 0.9046087888531619,
+        "sampleSize": 933,
+        "expectedValue": -0.060341966497183055,
+        "projectedScore": {
+          "away": 76.8834,
+          "home": 78.01299999999999
+        }
+      },
+      {
+        "ticker": "KXNCAAMBSPREAD-26NOV24NEVSCU-SCU21",
+        "eventTicker": "KXNCAAMBSPREAD-26NOV24NEVSCU",
+        "period": "full",
+        "kind": "spread",
+        "answer": "no",
+        "line": 20.5,
+        "teamSide": "home",
+        "label": "Santa Clara wins by over 20.5 points",
+        "ask": 0.99,
+        "askSize": 6.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-24T10:21:27.738446+00:00",
+        "rules": "If Santa Clara wins by more than 20.5 points in the Nevada vs Santa Clara men's college basketball game originally scheduled for Nov 24, 2026, then the market resolves to Yes.",
+        "prediction": 1.1295999999999964,
+        "pointDifference": 19.370400000000004,
+        "probability": 0.8917470525187567,
+        "sampleSize": 933,
+        "expectedValue": -0.09988184867391064,
+        "projectedScore": {
+          "away": 76.8834,
+          "home": 78.01299999999999
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV24NEVSCU-180",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV24NEVSCU",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 179.5,
+        "teamSide": null,
+        "label": "Over 179.5 points",
+        "ask": 0.17,
+        "askSize": 6.0,
+        "fee": 0.0099,
+        "breakEven": 0.1799,
+        "quoteFetchedAt": "2026-11-24T10:21:27.744252+00:00",
+        "rules": "If over 179.5 total points are scored in the Nevada vs Santa Clara men's college basketball game originally scheduled for Nov 24, 2026, then the market resolves to Yes.",
+        "prediction": 154.89639999999997,
+        "pointDifference": -24.60360000000003,
+        "probability": 0.09539121114683816,
+        "sampleSize": 933,
+        "expectedValue": -0.4697542459875589,
+        "projectedScore": {
+          "away": 76.8834,
+          "home": 78.01299999999999
+        }
       }
     ]
+  },
+  "additionalMarkets": {
+    "half": {},
+    "full": {
+      "spread": {
+        "id": "2721351565",
+        "criterionId": "1001159512",
+        "label": "Point Spread",
+        "period": "full",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4429868249",
+            "price": 104,
+            "changedAt": "2026-11-24T05:07:52Z",
+            "teamId": "2541",
+            "line": 0.5
+          },
+          {
+            "id": "4429868250",
+            "price": -125,
+            "changedAt": "2026-11-24T05:07:52Z",
+            "teamId": "2440",
+            "line": -0.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-24T10:20:55.102482+00:00",
+        "quoteSavedAt": "2026-11-24T10:21:20.984201+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029977518.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "moneyline": {
+        "id": "2721383365",
+        "criterionId": "1001159732",
+        "label": "Moneyline",
+        "period": "full",
+        "kind": "moneyline",
+        "outcomes": [
+          {
+            "id": "4429847682",
+            "price": 102,
+            "changedAt": "2026-11-24T05:07:52Z",
+            "teamId": "2541"
+          },
+          {
+            "id": "4429847683",
+            "price": -129,
+            "changedAt": "2026-11-24T05:07:52Z",
+            "teamId": "2440"
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-24T10:20:55.102482+00:00",
+        "quoteSavedAt": "2026-11-24T10:21:20.984201+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029977518.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "total": {
+        "id": "2721397618",
+        "criterionId": "1001159509",
+        "label": "Total Points - Including Overtime",
+        "period": "full",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4429888539",
+            "price": -113,
+            "changedAt": "2026-11-24T09:13:03Z",
+            "side": "over",
+            "line": 157.5
+          },
+          {
+            "id": "4429888540",
+            "price": -108,
+            "changedAt": "2026-11-24T09:13:03Z",
+            "side": "under",
+            "line": 157.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-24T10:20:55.102482+00:00",
+        "quoteSavedAt": "2026-11-24T10:21:20.984201+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029977518.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    }
+  },
+  "reportEvidence": {
+    "articles": []
   }
 }

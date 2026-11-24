@@ -232,7 +232,100 @@
   "result": null,
   "decisionEvidence": {
     "version": "empirical-score-residuals-v1",
-    "markets": []
+    "markets": [
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 131.5,
+        "price": -113,
+        "outcomeId": "4429858127",
+        "offerId": "2721394591",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": 4.105700000000013,
+        "breakEven": 0.5305164319248826,
+        "probability": 0.5600858369098712,
+        "expectedValue": 0.05573702001595198,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-24T10:20:56.046492+00:00",
+        "score": {
+          "away": 63.2766,
+          "home": 64.11769999999999
+        },
+        "sampleSize": 932,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-24T10:21:20.984201+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": 4.5,
+        "price": -110,
+        "outcomeId": "4429858125",
+        "offerId": "2721394590",
+        "teamId": "2803",
+        "side": null,
+        "pointDifference": 3.658900000000017,
+        "breakEven": 0.5238095238095238,
+        "probability": 0.5010729613733905,
+        "expectedValue": -0.04340616465079989,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-24T10:20:56.046492+00:00",
+        "score": {
+          "away": 63.2766,
+          "home": 64.11769999999999
+        },
+        "sampleSize": 932,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-24T10:21:20.984201+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": -4.5,
+        "price": -110,
+        "outcomeId": "4429858123",
+        "offerId": "2721394590",
+        "teamId": "2368",
+        "side": null,
+        "pointDifference": -3.658900000000017,
+        "breakEven": 0.5238095238095238,
+        "probability": 0.4989270386266094,
+        "expectedValue": -0.04750292625829117,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-24T10:20:56.046492+00:00",
+        "score": {
+          "away": 63.2766,
+          "home": 64.11769999999999
+        },
+        "sampleSize": 932,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-24T10:21:20.984201+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 131.5,
+        "price": -108,
+        "outcomeId": "4429858126",
+        "offerId": "2721394591",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": -4.105700000000013,
+        "breakEven": 0.5192307692307693,
+        "probability": 0.43991416309012876,
+        "expectedValue": -0.15275790812271506,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-24T10:20:56.046492+00:00",
+        "score": {
+          "away": 63.2766,
+          "home": 64.11769999999999
+        },
+        "sampleSize": 932,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-24T10:21:20.984201+00:00"
+      }
+    ]
   },
   "kalshiEvidence": {
     "version": "empirical-score-residuals-v1",
@@ -1688,5 +1781,92 @@
         }
       }
     ]
+  },
+  "additionalMarkets": {
+    "half": {},
+    "full": {
+      "moneyline": {
+        "id": "2721369261",
+        "criterionId": "1001159732",
+        "label": "Moneyline",
+        "period": "full",
+        "kind": "moneyline",
+        "outcomes": [
+          {
+            "id": "4429826597",
+            "price": -225,
+            "changedAt": "2026-11-24T09:09:22Z",
+            "teamId": "2368"
+          },
+          {
+            "id": "4429826599",
+            "price": 170,
+            "changedAt": "2026-11-24T09:09:22Z",
+            "teamId": "2803"
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-24T10:20:56.046492+00:00",
+        "quoteSavedAt": "2026-11-24T10:21:20.984201+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028802985.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "spread": {
+        "id": "2721394590",
+        "criterionId": "1001159512",
+        "label": "Point Spread",
+        "period": "full",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4429858123",
+            "price": -110,
+            "changedAt": "2026-11-24T04:21:17Z",
+            "teamId": "2368",
+            "line": -4.5
+          },
+          {
+            "id": "4429858125",
+            "price": -110,
+            "changedAt": "2026-11-24T04:21:17Z",
+            "teamId": "2803",
+            "line": 4.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-24T10:20:56.046492+00:00",
+        "quoteSavedAt": "2026-11-24T10:21:20.984201+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028802985.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "total": {
+        "id": "2721394591",
+        "criterionId": "1001159509",
+        "label": "Total Points - Including Overtime",
+        "period": "full",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4429858126",
+            "price": -108,
+            "changedAt": "2026-11-24T09:09:24Z",
+            "side": "over",
+            "line": 131.5
+          },
+          {
+            "id": "4429858127",
+            "price": -113,
+            "changedAt": "2026-11-24T09:09:24Z",
+            "side": "under",
+            "line": 131.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-24T10:20:56.046492+00:00",
+        "quoteSavedAt": "2026-11-24T10:21:20.984201+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028802985.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    }
+  },
+  "reportEvidence": {
+    "articles": []
   }
 }
