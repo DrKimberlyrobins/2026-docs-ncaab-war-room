@@ -244,7 +244,100 @@
   "result": null,
   "decisionEvidence": {
     "version": "empirical-score-residuals-v1",
-    "markets": []
+    "markets": [
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": 15.5,
+        "price": -114,
+        "outcomeId": "4431125336",
+        "offerId": "2721783612",
+        "teamId": "2344",
+        "side": null,
+        "pointDifference": 7.93040000000002,
+        "breakEven": 0.5327102803738317,
+        "probability": 0.6363636363636364,
+        "expectedValue": 0.19457735247208943,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-25T04:04:15.214118+00:00",
+        "score": {
+          "away": 67.26320000000001,
+          "home": 74.83279999999999
+        },
+        "sampleSize": 979,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-25T04:04:36.574897+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 144.5,
+        "price": -114,
+        "outcomeId": "4431107783",
+        "offerId": "2721797835",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": 2.4039999999999964,
+        "breakEven": 0.5327102803738317,
+        "probability": 0.5240040858018387,
+        "expectedValue": -0.016343207354443192,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-25T04:04:15.214118+00:00",
+        "score": {
+          "away": 67.26320000000001,
+          "home": 74.83279999999999
+        },
+        "sampleSize": 979,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-25T04:04:36.574897+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 144.5,
+        "price": -107,
+        "outcomeId": "4431107782",
+        "offerId": "2721797835",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": -2.4039999999999964,
+        "breakEven": 0.5169082125603864,
+        "probability": 0.4759959141981614,
+        "expectedValue": -0.07914809122411764,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-25T04:04:15.214118+00:00",
+        "score": {
+          "away": 67.26320000000001,
+          "home": 74.83279999999999
+        },
+        "sampleSize": 979,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-25T04:04:36.574897+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": -15.5,
+        "price": -107,
+        "outcomeId": "4431125335",
+        "offerId": "2721783612",
+        "teamId": "2244",
+        "side": null,
+        "pointDifference": -7.93040000000002,
+        "breakEven": 0.5169082125603864,
+        "probability": 0.36363636363636365,
+        "expectedValue": -0.2965165675446049,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-25T04:04:15.214118+00:00",
+        "score": {
+          "away": 67.26320000000001,
+          "home": 74.83279999999999
+        },
+        "sampleSize": 979,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-25T04:04:36.574897+00:00"
+      }
+    ]
   },
   "kalshiEvidence": {
     "version": "empirical-score-residuals-v1",
@@ -1423,7 +1516,194 @@
           "away": 67.26320000000001,
           "home": 74.83279999999999
         }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25LONGGMU-123",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25LONGGMU",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 122.5,
+        "teamSide": null,
+        "label": "Over 122.5 points",
+        "ask": 0.98,
+        "askSize": 1.0,
+        "fee": 0.0014,
+        "breakEven": 0.9814,
+        "quoteFetchedAt": "2026-11-25T04:04:45.784220+00:00",
+        "rules": "If over 122.5 total points are scored in the Longwood vs George Mason men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 142.096,
+        "pointDifference": 19.596000000000004,
+        "probability": 0.905241935483871,
+        "sampleSize": 992,
+        "expectedValue": -0.07760145151429494,
+        "projectedScore": {
+          "away": 67.26320000000001,
+          "home": 74.83279999999999
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25LONGGMU-128",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25LONGGMU",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 127.5,
+        "teamSide": null,
+        "label": "Over 127.5 points",
+        "ask": 0.97,
+        "askSize": 246.0,
+        "fee": 0.0021,
+        "breakEven": 0.9721,
+        "quoteFetchedAt": "2026-11-25T04:04:45.784220+00:00",
+        "rules": "If over 127.5 total points are scored in the Longwood vs George Mason men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 142.096,
+        "pointDifference": 14.596000000000004,
+        "probability": 0.842741935483871,
+        "sampleSize": 992,
+        "expectedValue": -0.1330707381093807,
+        "projectedScore": {
+          "away": 67.26320000000001,
+          "home": 74.83279999999999
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25LONGGMU-128",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25LONGGMU",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 127.5,
+        "teamSide": null,
+        "label": "Over 127.5 points",
+        "ask": 0.26,
+        "askSize": 234.25,
+        "fee": 0.0135,
+        "breakEven": 0.2735,
+        "quoteFetchedAt": "2026-11-25T04:04:45.784220+00:00",
+        "rules": "If over 127.5 total points are scored in the Longwood vs George Mason men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 142.096,
+        "pointDifference": -14.596000000000004,
+        "probability": 0.15725806451612903,
+        "sampleSize": 992,
+        "expectedValue": -0.4250162174913016,
+        "projectedScore": {
+          "away": 67.26320000000001,
+          "home": 74.83279999999999
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25LONGGMU-123",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25LONGGMU",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 122.5,
+        "teamSide": null,
+        "label": "Over 122.5 points",
+        "ask": 0.19,
+        "askSize": 257.0,
+        "fee": 0.0108,
+        "breakEven": 0.2008,
+        "quoteFetchedAt": "2026-11-25T04:04:45.784220+00:00",
+        "rules": "If over 122.5 total points are scored in the Longwood vs George Mason men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 142.096,
+        "pointDifference": -19.596000000000004,
+        "probability": 0.09475806451612903,
+        "sampleSize": 992,
+        "expectedValue": -0.5280972882662897,
+        "projectedScore": {
+          "away": 67.26320000000001,
+          "home": 74.83279999999999
+        }
       }
     ]
+  },
+  "additionalMarkets": {
+    "half": {},
+    "full": {
+      "moneyline": {
+        "id": "2721783611",
+        "criterionId": "1001159732",
+        "label": "Moneyline",
+        "period": "full",
+        "kind": "moneyline",
+        "outcomes": [
+          {
+            "id": "4431125333",
+            "price": -2000,
+            "changedAt": "2026-11-25T03:44:04Z",
+            "teamId": "2244"
+          },
+          {
+            "id": "4431125334",
+            "price": 800,
+            "changedAt": "2026-11-25T03:44:04Z",
+            "teamId": "2344"
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-25T04:04:15.214118+00:00",
+        "quoteSavedAt": "2026-11-25T04:04:36.574897+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029080346.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "spread": {
+        "id": "2721783612",
+        "criterionId": "1001159512",
+        "label": "Point Spread",
+        "period": "full",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4431125335",
+            "price": -107,
+            "changedAt": "2026-11-25T03:44:04Z",
+            "teamId": "2244",
+            "line": -15.5
+          },
+          {
+            "id": "4431125336",
+            "price": -114,
+            "changedAt": "2026-11-25T03:44:04Z",
+            "teamId": "2344",
+            "line": 15.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-25T04:04:15.214118+00:00",
+        "quoteSavedAt": "2026-11-25T04:04:36.574897+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029080346.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "total": {
+        "id": "2721797835",
+        "criterionId": "1001159509",
+        "label": "Total Points - Including Overtime",
+        "period": "full",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4431107782",
+            "price": -107,
+            "changedAt": "2026-11-25T03:44:04Z",
+            "side": "over",
+            "line": 144.5
+          },
+          {
+            "id": "4431107783",
+            "price": -114,
+            "changedAt": "2026-11-25T03:44:04Z",
+            "side": "under",
+            "line": 144.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-25T04:04:15.214118+00:00",
+        "quoteSavedAt": "2026-11-25T04:04:36.574897+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029080346.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    }
+  },
+  "reportEvidence": {
+    "articles": []
   }
 }
