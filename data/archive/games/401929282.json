@@ -232,7 +232,100 @@
   "result": null,
   "decisionEvidence": {
     "version": "empirical-score-residuals-v1",
-    "markets": []
+    "markets": [
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": -1.5,
+        "price": -121,
+        "outcomeId": "4432274564",
+        "offerId": "2722173154",
+        "teamId": "2116",
+        "side": null,
+        "pointDifference": 0.49950000000002603,
+        "breakEven": 0.5475113122171946,
+        "probability": 0.6341222879684418,
+        "expectedValue": 0.1581902945539307,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-25T23:33:18.053092+00:00",
+        "score": {
+          "away": 71.85299999999998,
+          "home": 73.8525
+        },
+        "sampleSize": 1014,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-25T23:33:37.866585+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 146.5,
+        "price": -120,
+        "outcomeId": "4432260299",
+        "offerId": "2722141572",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": -0.7945000000000277,
+        "breakEven": 0.5454545454545454,
+        "probability": 0.5216962524654832,
+        "expectedValue": -0.043556870479947364,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-25T23:33:18.053092+00:00",
+        "score": {
+          "away": 71.85299999999998,
+          "home": 73.8525
+        },
+        "sampleSize": 1014,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-25T23:33:37.866585+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 146.5,
+        "price": -103,
+        "outcomeId": "4432260300",
+        "offerId": "2722141572",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": 0.7945000000000277,
+        "breakEven": 0.5073891625615764,
+        "probability": 0.47830374753451677,
+        "expectedValue": -0.05732368204362234,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-25T23:33:18.053092+00:00",
+        "score": {
+          "away": 71.85299999999998,
+          "home": 73.8525
+        },
+        "sampleSize": 1014,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-25T23:33:37.866585+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": 1.5,
+        "price": -103,
+        "outcomeId": "4432274566",
+        "offerId": "2722173154",
+        "teamId": "103",
+        "side": null,
+        "pointDifference": -0.49950000000002603,
+        "breakEven": 0.5073891625615764,
+        "probability": 0.36587771203155817,
+        "expectedValue": -0.27890120832615234,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-25T23:33:18.053092+00:00",
+        "score": {
+          "away": 71.85299999999998,
+          "home": 73.8525
+        },
+        "sampleSize": 1014,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-25T23:33:37.866585+00:00"
+      }
+    ]
   },
   "reportEvidence": {
     "articles": [
@@ -2627,7 +2720,491 @@
           "away": 34.12127852695627,
           "home": 33.93499445735703
         }
+      },
+      {
+        "ticker": "KXNCAAMBSPREAD-26NOV26BCUCF-BC21",
+        "eventTicker": "KXNCAAMBSPREAD-26NOV26BCUCF",
+        "period": "full",
+        "kind": "spread",
+        "answer": "no",
+        "line": 20.5,
+        "teamSide": "away",
+        "label": "Boston College wins by over 20.5 points",
+        "ask": 0.99,
+        "askSize": 1998.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-25T23:33:49.531162+00:00",
+        "rules": "If Boston College wins by more than 20.5 points in the Boston College vs UCF men's college basketball game originally scheduled for Nov 26, 2026, then the market resolves to Yes.",
+        "prediction": -1.999500000000026,
+        "pointDifference": 22.499500000000026,
+        "probability": 0.9823702252693438,
+        "sampleSize": 1021,
+        "expectedValue": -0.008407968840876363,
+        "projectedScore": {
+          "away": 71.85299999999998,
+          "home": 73.8525
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV26BCUCF-121",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV26BCUCF",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 120.5,
+        "teamSide": null,
+        "label": "Over 120.5 points",
+        "ask": 0.98,
+        "askSize": 1.0,
+        "fee": 0.0014,
+        "breakEven": 0.9814,
+        "quoteFetchedAt": "2026-11-25T23:33:49.582858+00:00",
+        "rules": "If over 120.5 total points are scored in the Boston College vs UCF men's college basketball game originally scheduled for Nov 26, 2026, then the market resolves to Yes.",
+        "prediction": 145.70549999999997,
+        "pointDifference": 25.205499999999972,
+        "probability": 0.9480901077375122,
+        "sampleSize": 1021,
+        "expectedValue": -0.033941198555622394,
+        "projectedScore": {
+          "away": 71.85299999999998,
+          "home": 73.8525
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV26BCUCF-125",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV26BCUCF",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 124.5,
+        "teamSide": null,
+        "label": "Over 124.5 points",
+        "ask": 0.96,
+        "askSize": 3.0,
+        "fee": 0.0027,
+        "breakEven": 0.9627,
+        "quoteFetchedAt": "2026-11-25T23:33:49.582858+00:00",
+        "rules": "If over 124.5 total points are scored in the Boston College vs UCF men's college basketball game originally scheduled for Nov 26, 2026, then the market resolves to Yes.",
+        "prediction": 145.70549999999997,
+        "pointDifference": 21.205499999999972,
+        "probability": 0.9187071498530852,
+        "sampleSize": 1021,
+        "expectedValue": -0.045697361739809685,
+        "projectedScore": {
+          "away": 71.85299999999998,
+          "home": 73.8525
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV26BCUCF-175",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV26BCUCF",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 174.5,
+        "teamSide": null,
+        "label": "Over 174.5 points",
+        "ask": 0.99,
+        "askSize": 327.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-25T23:33:49.582858+00:00",
+        "rules": "If over 174.5 total points are scored in the Boston College vs UCF men's college basketball game originally scheduled for Nov 26, 2026, then the market resolves to Yes.",
+        "prediction": 145.70549999999997,
+        "pointDifference": 28.794500000000028,
+        "probability": 0.9373163565132223,
+        "sampleSize": 1021,
+        "expectedValue": -0.05388477186512335,
+        "projectedScore": {
+          "away": 71.85299999999998,
+          "home": 73.8525
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV26BCUCF-171",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV26BCUCF",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 170.5,
+        "teamSide": null,
+        "label": "Over 170.5 points",
+        "ask": 0.96,
+        "askSize": 3.0,
+        "fee": 0.0027,
+        "breakEven": 0.9627,
+        "quoteFetchedAt": "2026-11-25T23:33:49.582858+00:00",
+        "rules": "If over 170.5 total points are scored in the Boston College vs UCF men's college basketball game originally scheduled for Nov 26, 2026, then the market resolves to Yes.",
+        "prediction": 145.70549999999997,
+        "pointDifference": 24.794500000000028,
+        "probability": 0.9079333986287953,
+        "sampleSize": 1021,
+        "expectedValue": -0.056888544064822584,
+        "projectedScore": {
+          "away": 71.85299999999998,
+          "home": 73.8525
+        }
+      },
+      {
+        "ticker": "KXNCAAMB1HSPREAD-26NOV26BCUCF-BC13",
+        "eventTicker": "KXNCAAMB1HSPREAD-26NOV26BCUCF",
+        "period": "half",
+        "kind": "spread",
+        "answer": "no",
+        "line": 12.5,
+        "teamSide": "away",
+        "label": "Boston College wins by over 12.5 points",
+        "ask": 0.99,
+        "askSize": 12.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-25T23:33:49.075996+00:00",
+        "rules": "If Boston College wins the 1st half by more than 12.5 points in the Boston College vs UCF men's college basketball game originally scheduled for Nov 26, 2026, then the market resolves to Yes.",
+        "prediction": 0.18628406959923893,
+        "pointDifference": 12.313715930400761,
+        "probability": 0.9243614931237721,
+        "sampleSize": 1018,
+        "expectedValue": -0.06696124646838386,
+        "projectedScore": {
+          "away": 34.12127852695627,
+          "home": 33.93499445735703
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV26BCUCF-167",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV26BCUCF",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 166.5,
+        "teamSide": null,
+        "label": "Over 166.5 points",
+        "ask": 0.96,
+        "askSize": 3.0,
+        "fee": 0.0027,
+        "breakEven": 0.9627,
+        "quoteFetchedAt": "2026-11-25T23:33:49.582858+00:00",
+        "rules": "If over 166.5 total points are scored in the Boston College vs UCF men's college basketball game originally scheduled for Nov 26, 2026, then the market resolves to Yes.",
+        "prediction": 145.70549999999997,
+        "pointDifference": 20.794500000000028,
+        "probability": 0.8707149853085211,
+        "sampleSize": 1021,
+        "expectedValue": -0.09554899209668527,
+        "projectedScore": {
+          "away": 71.85299999999998,
+          "home": 73.8525
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV26BCUCF-163",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV26BCUCF",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 162.5,
+        "teamSide": null,
+        "label": "Over 162.5 points",
+        "ask": 0.96,
+        "askSize": 3.0,
+        "fee": 0.0027,
+        "breakEven": 0.9627,
+        "quoteFetchedAt": "2026-11-25T23:33:49.582858+00:00",
+        "rules": "If over 162.5 total points are scored in the Boston College vs UCF men's college basketball game originally scheduled for Nov 26, 2026, then the market resolves to Yes.",
+        "prediction": 145.70549999999997,
+        "pointDifference": 16.794500000000028,
+        "probability": 0.8246816846229187,
+        "sampleSize": 1021,
+        "expectedValue": -0.14336586203083132,
+        "projectedScore": {
+          "away": 71.85299999999998,
+          "home": 73.8525
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV26BCUCF-160",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV26BCUCF",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 159.5,
+        "teamSide": null,
+        "label": "Over 159.5 points",
+        "ask": 0.96,
+        "askSize": 4.0,
+        "fee": 0.0027,
+        "breakEven": 0.9627,
+        "quoteFetchedAt": "2026-11-25T23:33:49.582858+00:00",
+        "rules": "If over 159.5 total points are scored in the Boston College vs UCF men's college basketball game originally scheduled for Nov 26, 2026, then the market resolves to Yes.",
+        "prediction": 145.70549999999997,
+        "pointDifference": 13.794500000000028,
+        "probability": 0.7668952007835456,
+        "sampleSize": 1021,
+        "expectedValue": -0.20339129450135499,
+        "projectedScore": {
+          "away": 71.85299999999998,
+          "home": 73.8525
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV26BCUCF-160",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV26BCUCF",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 159.5,
+        "teamSide": null,
+        "label": "Over 159.5 points",
+        "ask": 0.32,
+        "askSize": 115.0,
+        "fee": 0.0153,
+        "breakEven": 0.3353,
+        "quoteFetchedAt": "2026-11-25T23:33:49.582858+00:00",
+        "rules": "If over 159.5 total points are scored in the Boston College vs UCF men's college basketball game originally scheduled for Nov 26, 2026, then the market resolves to Yes.",
+        "prediction": 145.70549999999997,
+        "pointDifference": -13.794500000000028,
+        "probability": 0.23310479921645447,
+        "sampleSize": 1021,
+        "expectedValue": -0.3047873569446631,
+        "projectedScore": {
+          "away": 71.85299999999998,
+          "home": 73.8525
+        }
+      },
+      {
+        "ticker": "KXNCAAMB1HSPREAD-26NOV26BCUCF-UCF8",
+        "eventTicker": "KXNCAAMB1HSPREAD-26NOV26BCUCF",
+        "period": "half",
+        "kind": "spread",
+        "answer": "no",
+        "line": 7.5,
+        "teamSide": "home",
+        "label": "UCF wins by over 7.5 points",
+        "ask": 0.99,
+        "askSize": 5.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-25T23:33:49.075996+00:00",
+        "rules": "If UCF wins the 1st half by more than 7.5 points in the Boston College vs UCF men's college basketball game originally scheduled for Nov 26, 2026, then the market resolves to Yes.",
+        "prediction": -0.18628406959923893,
+        "pointDifference": 7.686284069599239,
+        "probability": 0.6807465618860511,
+        "sampleSize": 1018,
+        "expectedValue": -0.3128630646148672,
+        "projectedScore": {
+          "away": 34.12127852695627,
+          "home": 33.93499445735703
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV26BCUCF-163",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV26BCUCF",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 162.5,
+        "teamSide": null,
+        "label": "Over 162.5 points",
+        "ask": 0.28,
+        "askSize": 198.0,
+        "fee": 0.0142,
+        "breakEven": 0.2942,
+        "quoteFetchedAt": "2026-11-25T23:33:49.582858+00:00",
+        "rules": "If over 162.5 total points are scored in the Boston College vs UCF men's college basketball game originally scheduled for Nov 26, 2026, then the market resolves to Yes.",
+        "prediction": 145.70549999999997,
+        "pointDifference": -16.794500000000028,
+        "probability": 0.17531831537708129,
+        "sampleSize": 1021,
+        "expectedValue": -0.404084584034394,
+        "projectedScore": {
+          "away": 71.85299999999998,
+          "home": 73.8525
+        }
+      },
+      {
+        "ticker": "KXNCAAMB1HSPREAD-26NOV26BCUCF-UCF2",
+        "eventTicker": "KXNCAAMB1HSPREAD-26NOV26BCUCF",
+        "period": "half",
+        "kind": "spread",
+        "answer": "no",
+        "line": 1.5,
+        "teamSide": "home",
+        "label": "UCF wins by over 1.5 points",
+        "ask": 0.98,
+        "askSize": 4.0,
+        "fee": 0.0014,
+        "breakEven": 0.9814,
+        "quoteFetchedAt": "2026-11-25T23:33:49.075996+00:00",
+        "rules": "If UCF wins the 1st half by more than 1.5 points in the Boston College vs UCF men's college basketball game originally scheduled for Nov 26, 2026, then the market resolves to Yes.",
+        "prediction": -0.18628406959923893,
+        "pointDifference": 1.686284069599239,
+        "probability": 0.46660117878192536,
+        "sampleSize": 1018,
+        "expectedValue": -0.5245555545323769,
+        "projectedScore": {
+          "away": 34.12127852695627,
+          "home": 33.93499445735703
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV26BCUCF-121",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV26BCUCF",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 120.5,
+        "teamSide": null,
+        "label": "Over 120.5 points",
+        "ask": 0.17,
+        "askSize": 321.0,
+        "fee": 0.0099,
+        "breakEven": 0.1799,
+        "quoteFetchedAt": "2026-11-25T23:33:49.582858+00:00",
+        "rules": "If over 120.5 total points are scored in the Boston College vs UCF men's college basketball game originally scheduled for Nov 26, 2026, then the market resolves to Yes.",
+        "prediction": 145.70549999999997,
+        "pointDifference": -25.205499999999972,
+        "probability": 0.05190989226248776,
+        "sampleSize": 1021,
+        "expectedValue": -0.7114514048777778,
+        "projectedScore": {
+          "away": 71.85299999999998,
+          "home": 73.8525
+        }
+      },
+      {
+        "ticker": "KXNCAAMBSPREAD-26NOV26BCUCF-BC21",
+        "eventTicker": "KXNCAAMBSPREAD-26NOV26BCUCF",
+        "period": "full",
+        "kind": "spread",
+        "answer": "yes",
+        "line": 20.5,
+        "teamSide": "away",
+        "label": "Boston College wins by over 20.5 points",
+        "ask": 0.11,
+        "askSize": 35.0,
+        "fee": 0.0069,
+        "breakEven": 0.1169,
+        "quoteFetchedAt": "2026-11-25T23:33:49.531162+00:00",
+        "rules": "If Boston College wins by more than 20.5 points in the Boston College vs UCF men's college basketball game originally scheduled for Nov 26, 2026, then the market resolves to Yes.",
+        "prediction": -1.999500000000026,
+        "pointDifference": -22.499500000000026,
+        "probability": 0.01762977473065622,
+        "sampleSize": 1021,
+        "expectedValue": -0.8491892666325388,
+        "projectedScore": {
+          "away": 71.85299999999998,
+          "home": 73.8525
+        }
+      },
+      {
+        "ticker": "KXNCAAMBSPREAD-26NOV26BCUCF-BC25",
+        "eventTicker": "KXNCAAMBSPREAD-26NOV26BCUCF",
+        "period": "full",
+        "kind": "spread",
+        "answer": "yes",
+        "line": 24.5,
+        "teamSide": "away",
+        "label": "Boston College wins by over 24.5 points",
+        "ask": 0.11,
+        "askSize": 35.0,
+        "fee": 0.0069,
+        "breakEven": 0.1169,
+        "quoteFetchedAt": "2026-11-25T23:33:49.531162+00:00",
+        "rules": "If Boston College wins by more than 24.5 points in the Boston College vs UCF men's college basketball game originally scheduled for Nov 26, 2026, then the market resolves to Yes.",
+        "prediction": -1.999500000000026,
+        "pointDifference": -26.499500000000026,
+        "probability": 0.009794319294809012,
+        "sampleSize": 1021,
+        "expectedValue": -0.9162162592402994,
+        "projectedScore": {
+          "away": 71.85299999999998,
+          "home": 73.8525
+        }
       }
     ]
+  },
+  "additionalMarkets": {
+    "half": {},
+    "full": {
+      "total": {
+        "id": "2722141572",
+        "criterionId": "1001159509",
+        "label": "Total Points - Including Overtime",
+        "period": "full",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4432260299",
+            "price": -120,
+            "changedAt": "2026-11-25T22:56:11Z",
+            "side": "over",
+            "line": 146.5
+          },
+          {
+            "id": "4432260300",
+            "price": -103,
+            "changedAt": "2026-11-25T22:56:11Z",
+            "side": "under",
+            "line": 146.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-25T23:33:18.053092+00:00",
+        "quoteSavedAt": "2026-11-25T23:33:37.866585+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029301826.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "moneyline": {
+        "id": "2722173153",
+        "criterionId": "1001159732",
+        "label": "Moneyline",
+        "period": "full",
+        "kind": "moneyline",
+        "outcomes": [
+          {
+            "id": "4432274563",
+            "price": -148,
+            "changedAt": "2026-11-25T22:56:11Z",
+            "teamId": "2116"
+          },
+          {
+            "id": "4432274565",
+            "price": 115,
+            "changedAt": "2026-11-25T22:56:11Z",
+            "teamId": "103"
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-25T23:33:18.053092+00:00",
+        "quoteSavedAt": "2026-11-25T23:33:37.866585+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029301826.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "spread": {
+        "id": "2722173154",
+        "criterionId": "1001159512",
+        "label": "Point Spread",
+        "period": "full",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4432274564",
+            "price": -121,
+            "changedAt": "2026-11-25T22:56:11Z",
+            "teamId": "2116",
+            "line": -1.5
+          },
+          {
+            "id": "4432274566",
+            "price": -103,
+            "changedAt": "2026-11-25T22:56:11Z",
+            "teamId": "103",
+            "line": 1.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-25T23:33:18.053092+00:00",
+        "quoteSavedAt": "2026-11-25T23:33:37.866585+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029301826.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    }
   }
 }
