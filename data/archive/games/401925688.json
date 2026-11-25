@@ -244,7 +244,100 @@
   "result": null,
   "decisionEvidence": {
     "version": "empirical-score-residuals-v1",
-    "markets": []
+    "markets": [
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": 23.5,
+        "price": 106,
+        "outcomeId": "4431150899",
+        "offerId": "2721813113",
+        "teamId": "2016",
+        "side": null,
+        "pointDifference": 5.2949999999999875,
+        "breakEven": 0.4854368932038835,
+        "probability": 0.5545545545545546,
+        "expectedValue": 0.1423823823823824,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-25T14:51:22.878831+00:00",
+        "score": {
+          "away": 63.61819999999999,
+          "home": 81.8232
+        },
+        "sampleSize": 999,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-25T14:51:46.105582+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 148.5,
+        "price": -108,
+        "outcomeId": "4431142206",
+        "offerId": "2721821739",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": 3.0586000000000126,
+        "breakEven": 0.5192307692307693,
+        "probability": 0.5365365365365365,
+        "expectedValue": 0.033329625922218525,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-25T14:51:22.878831+00:00",
+        "score": {
+          "away": 63.61819999999999,
+          "home": 81.8232
+        },
+        "sampleSize": 999,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-25T14:51:46.105582+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 148.5,
+        "price": -113,
+        "outcomeId": "4431142205",
+        "offerId": "2721821739",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": -3.0586000000000126,
+        "breakEven": 0.5305164319248826,
+        "probability": 0.46346346346346345,
+        "expectedValue": -0.12639187860426793,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-25T14:51:22.878831+00:00",
+        "score": {
+          "away": 63.61819999999999,
+          "home": 81.8232
+        },
+        "sampleSize": 999,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-25T14:51:46.105582+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": -23.5,
+        "price": -129,
+        "outcomeId": "4431150898",
+        "offerId": "2721813113",
+        "teamId": "326",
+        "side": null,
+        "pointDifference": -5.2949999999999875,
+        "breakEven": 0.5633187772925764,
+        "probability": 0.44544544544544545,
+        "expectedValue": -0.2092480076976201,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-25T14:51:22.878831+00:00",
+        "score": {
+          "away": 63.61819999999999,
+          "home": 81.8232
+        },
+        "sampleSize": 999,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-25T14:51:46.105582+00:00"
+      }
+    ]
   },
   "kalshiEvidence": {
     "version": "empirical-score-residuals-v1",
@@ -1573,7 +1666,119 @@
           "away": 63.61819999999999,
           "home": 81.8232
         }
+      },
+      {
+        "ticker": "KXNCAAMBSPREAD-26NOV25ALCNTXST-TXST47",
+        "eventTicker": "KXNCAAMBSPREAD-26NOV25ALCNTXST",
+        "period": "full",
+        "kind": "spread",
+        "answer": "no",
+        "line": 46.5,
+        "teamSide": "home",
+        "label": "Texas St. wins by over 46.5 points",
+        "ask": 0.99,
+        "askSize": 86.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-25T14:51:54.933765+00:00",
+        "rules": "If Texas St. wins by more than 46.5 points in the Alcorn St. vs Texas St. men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 18.205000000000013,
+        "pointDifference": 28.294999999999987,
+        "probability": 0.968968968968969,
+        "sampleSize": 999,
+        "expectedValue": -0.021935026780085822,
+        "projectedScore": {
+          "away": 63.61819999999999,
+          "home": 81.8232
+        }
+      },
+      {
+        "ticker": "KXNCAAMBSPREAD-26NOV25ALCNTXST-TXST47",
+        "eventTicker": "KXNCAAMBSPREAD-26NOV25ALCNTXST",
+        "period": "full",
+        "kind": "spread",
+        "answer": "yes",
+        "line": 46.5,
+        "teamSide": "home",
+        "label": "Texas St. wins by over 46.5 points",
+        "ask": 0.09,
+        "askSize": 10.0,
+        "fee": 0.0058,
+        "breakEven": 0.0958,
+        "quoteFetchedAt": "2026-11-25T14:51:54.933765+00:00",
+        "rules": "If Texas St. wins by more than 46.5 points in the Alcorn St. vs Texas St. men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 18.205000000000013,
+        "pointDifference": -28.294999999999987,
+        "probability": 0.031031031031031032,
+        "sampleSize": 999,
+        "expectedValue": -0.6760852710748327,
+        "projectedScore": {
+          "away": 63.61819999999999,
+          "home": 81.8232
+        }
       }
     ]
+  },
+  "additionalMarkets": {
+    "half": {},
+    "full": {
+      "spread": {
+        "id": "2721813113",
+        "criterionId": "1001159512",
+        "label": "Point Spread",
+        "period": "full",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4431150898",
+            "price": -129,
+            "changedAt": "2026-11-25T12:51:28Z",
+            "teamId": "326",
+            "line": -23.5
+          },
+          {
+            "id": "4431150899",
+            "price": 106,
+            "changedAt": "2026-11-25T12:51:28Z",
+            "teamId": "2016",
+            "line": 23.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-25T14:51:22.878831+00:00",
+        "quoteSavedAt": "2026-11-25T14:51:46.105582+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029497915.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "total": {
+        "id": "2721821739",
+        "criterionId": "1001159509",
+        "label": "Total Points - Including Overtime",
+        "period": "full",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4431142205",
+            "price": -113,
+            "changedAt": "2026-11-25T12:51:28Z",
+            "side": "over",
+            "line": 148.5
+          },
+          {
+            "id": "4431142206",
+            "price": -108,
+            "changedAt": "2026-11-25T12:51:28Z",
+            "side": "under",
+            "line": 148.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-25T14:51:22.878831+00:00",
+        "quoteSavedAt": "2026-11-25T14:51:46.105582+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029497915.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    }
+  },
+  "reportEvidence": {
+    "articles": []
   }
 }

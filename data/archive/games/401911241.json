@@ -232,7 +232,100 @@
   "result": null,
   "decisionEvidence": {
     "version": "empirical-score-residuals-v1",
-    "markets": []
+    "markets": [
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": 11.5,
+        "price": 107,
+        "outcomeId": "4431457726",
+        "offerId": "2721918205",
+        "teamId": "2065",
+        "side": null,
+        "pointDifference": 6.2635999999999825,
+        "breakEven": 0.4830917874396135,
+        "probability": 0.5825825825825826,
+        "expectedValue": 0.20594594594594595,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-25T14:51:23.602331+00:00",
+        "score": {
+          "away": 71.65599999999998,
+          "home": 76.8924
+        },
+        "sampleSize": 999,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-25T14:51:46.105582+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 149.5,
+        "price": 107,
+        "outcomeId": "4431132135",
+        "offerId": "2721806857",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": -0.9516000000000417,
+        "breakEven": 0.4830917874396135,
+        "probability": 0.5195195195195195,
+        "expectedValue": 0.07540540540540557,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-25T14:51:23.602331+00:00",
+        "score": {
+          "away": 71.65599999999998,
+          "home": 76.8924
+        },
+        "sampleSize": 999,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-25T14:51:46.105582+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 149.5,
+        "price": -130,
+        "outcomeId": "4431132136",
+        "offerId": "2721806857",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": 0.9516000000000417,
+        "breakEven": 0.5652173913043478,
+        "probability": 0.4804804804804805,
+        "expectedValue": -0.14991914991914987,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-25T14:51:23.602331+00:00",
+        "score": {
+          "away": 71.65599999999998,
+          "home": 76.8924
+        },
+        "sampleSize": 999,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-25T14:51:46.105582+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": -11.5,
+        "price": -130,
+        "outcomeId": "4431457725",
+        "offerId": "2721918205",
+        "teamId": "257",
+        "side": null,
+        "pointDifference": -6.2635999999999825,
+        "breakEven": 0.5652173913043478,
+        "probability": 0.4174174174174174,
+        "expectedValue": -0.26149226149226146,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-25T14:51:23.602331+00:00",
+        "score": {
+          "away": 71.65599999999998,
+          "home": 76.8924
+        },
+        "sampleSize": 999,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-25T14:51:46.105582+00:00"
+      }
+    ]
   },
   "reportEvidence": {
     "articles": [
@@ -1619,7 +1712,166 @@
           "away": 71.65599999999998,
           "home": 76.8924
         }
+      },
+      {
+        "ticker": "KXNCAAMBSPREAD-26NOV25COOKRICH-COOK9",
+        "eventTicker": "KXNCAAMBSPREAD-26NOV25COOKRICH",
+        "period": "full",
+        "kind": "spread",
+        "answer": "no",
+        "line": 8.5,
+        "teamSide": "away",
+        "label": "Bethune-Cookman wins by over 8.5 points",
+        "ask": 0.97,
+        "askSize": 3.0,
+        "fee": 0.0021,
+        "breakEven": 0.9721,
+        "quoteFetchedAt": "2026-11-25T14:51:54.933765+00:00",
+        "rules": "If Bethune-Cookman wins by more than 8.5 points in the Bethune-Cookman vs Richmond men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": -5.2364000000000175,
+        "pointDifference": 13.736400000000017,
+        "probability": 0.928928928928929,
+        "sampleSize": 999,
+        "expectedValue": -0.044410113230193386,
+        "projectedScore": {
+          "away": 71.65599999999998,
+          "home": 76.8924
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25COOKRICH-126",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25COOKRICH",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 125.5,
+        "teamSide": null,
+        "label": "Over 125.5 points",
+        "ask": 0.99,
+        "askSize": 477.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-25T14:51:55.136595+00:00",
+        "rules": "If over 125.5 total points are scored in the Bethune-Cookman vs Richmond men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 148.54839999999996,
+        "pointDifference": 23.04839999999996,
+        "probability": 0.9359359359359359,
+        "sampleSize": 999,
+        "expectedValue": -0.05527815086712838,
+        "projectedScore": {
+          "away": 71.65599999999998,
+          "home": 76.8924
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25COOKRICH-126",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25COOKRICH",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 125.5,
+        "teamSide": null,
+        "label": "Over 125.5 points",
+        "ask": 0.16,
+        "askSize": 274.0,
+        "fee": 0.0095,
+        "breakEven": 0.1695,
+        "quoteFetchedAt": "2026-11-25T14:51:55.136595+00:00",
+        "rules": "If over 125.5 total points are scored in the Bethune-Cookman vs Richmond men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 148.54839999999996,
+        "pointDifference": -23.04839999999996,
+        "probability": 0.06406406406406406,
+        "sampleSize": 999,
+        "expectedValue": -0.6220409199760233,
+        "projectedScore": {
+          "away": 71.65599999999998,
+          "home": 76.8924
+        }
       }
     ]
+  },
+  "additionalMarkets": {
+    "half": {},
+    "full": {
+      "moneyline": {
+        "id": "2721780798",
+        "criterionId": "1001159732",
+        "label": "Moneyline",
+        "period": "full",
+        "kind": "moneyline",
+        "outcomes": [
+          {
+            "id": "4431138212",
+            "price": -910,
+            "changedAt": "2026-11-25T14:33:23Z",
+            "teamId": "257"
+          },
+          {
+            "id": "4431138213",
+            "price": 550,
+            "changedAt": "2026-11-25T14:33:23Z",
+            "teamId": "2065"
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-25T14:51:23.602331+00:00",
+        "quoteSavedAt": "2026-11-25T14:51:46.105582+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028371992.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "total": {
+        "id": "2721806857",
+        "criterionId": "1001159509",
+        "label": "Total Points - Including Overtime",
+        "period": "full",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4431132135",
+            "price": 107,
+            "changedAt": "2026-11-25T13:11:26Z",
+            "side": "over",
+            "line": 149.5
+          },
+          {
+            "id": "4431132136",
+            "price": -130,
+            "changedAt": "2026-11-25T13:11:26Z",
+            "side": "under",
+            "line": 149.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-25T14:51:23.602331+00:00",
+        "quoteSavedAt": "2026-11-25T14:51:46.105582+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028371992.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "spread": {
+        "id": "2721918205",
+        "criterionId": "1001159512",
+        "label": "Point Spread",
+        "period": "full",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4431457725",
+            "price": -130,
+            "changedAt": "2026-11-25T14:33:23Z",
+            "teamId": "257",
+            "line": -11.5
+          },
+          {
+            "id": "4431457726",
+            "price": 107,
+            "changedAt": "2026-11-25T14:33:23Z",
+            "teamId": "2065",
+            "line": 11.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-25T14:51:23.602331+00:00",
+        "quoteSavedAt": "2026-11-25T14:51:46.105582+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028371992.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    }
   }
 }
