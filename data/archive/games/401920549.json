@@ -1,0 +1,780 @@
+{
+  "snapshot": {
+    "version": 1,
+    "id": "401920549",
+    "savedAt": "2026-11-25T08:17:23.984381+00:00",
+    "scheduledTipoff": "2026-11-25T23:00Z",
+    "gameDate": "2026-11-25",
+    "matchup": {
+      "id": "401920549",
+      "date": "2026-11-25T23:00Z",
+      "awayName": "Kennesaw State Owls",
+      "homeName": "Charleston Cougars",
+      "awayId": "338",
+      "homeId": "232",
+      "location": "Neutral",
+      "model": {
+        "away": 79.45350000000002,
+        "home": 79.821,
+        "total": 159.27450000000002,
+        "homeMargin": 0.3674999999999784,
+        "possessions": 73.5,
+        "awayEfficiency": 108.10000000000002,
+        "homeEfficiency": 108.6,
+        "homeAdvantagePoints": 0.0,
+        "modelVersion": "kenpom-additive-efficiency-v1"
+      },
+      "matchedTeams": {
+        "away": "Kennesaw St.",
+        "home": "Charleston"
+      },
+      "firstHalf": {
+        "away": 33.81493424789373,
+        "home": 37.047784949418855,
+        "total": 70.86271919731259,
+        "homeMargin": 3.2328507015251233,
+        "awayScoringShare": 0.42559401722886625,
+        "homeScoringShare": 0.46413581575548857,
+        "modelVersion": "first-half-timing-v1",
+        "method": "Current full-game projection \u00d7 average of own observed 1H scoring share and opponent observed 1H allowing share",
+        "awayProfile": {
+          "season": 2027,
+          "games": 5,
+          "scoringShare": 0.44820295983086683,
+          "allowingShare": 0.47282608695652173,
+          "firstScoredAverage": 42.4,
+          "firstAllowedAverage": 34.8,
+          "samples": [
+            {
+              "id": "401906761",
+              "date": "2026-11-18T00:30Z",
+              "firstScored": 40.0,
+              "secondScored": 51.0,
+              "firstAllowed": 56.0,
+              "secondAllowed": 53.0
+            },
+            {
+              "id": "401926788",
+              "date": "2026-11-13T00:00Z",
+              "firstScored": 53.0,
+              "secondScored": 54.0,
+              "firstAllowed": 28.0,
+              "secondAllowed": 26.0
+            },
+            {
+              "id": "401925708",
+              "date": "2026-11-11T00:00Z",
+              "firstScored": 32.0,
+              "secondScored": 56.0,
+              "firstAllowed": 33.0,
+              "secondAllowed": 46.0
+            },
+            {
+              "id": "401917949",
+              "date": "2026-11-07T00:00Z",
+              "firstScored": 29.0,
+              "secondScored": 42.0,
+              "firstAllowed": 34.0,
+              "secondAllowed": 35.0
+            },
+            {
+              "id": "401926787",
+              "date": "2026-11-03T00:00Z",
+              "firstScored": 58.0,
+              "secondScored": 58.0,
+              "firstAllowed": 23.0,
+              "secondAllowed": 34.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401906761",
+              "fetchedAt": "2026-11-18T08:48:58.101306+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401926788",
+              "fetchedAt": "2026-11-13T10:55:05.240682+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401925708",
+              "fetchedAt": "2026-11-11T10:53:10.791235+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401917949",
+              "fetchedAt": "2026-11-07T12:56:10.160733+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401926787",
+              "fetchedAt": "2026-11-03T17:00:21.848957+00:00"
+            }
+          ],
+          "priorSeason": false
+        },
+        "homeProfile": {
+          "season": 2027,
+          "games": 4,
+          "scoringShare": 0.45544554455445546,
+          "allowingShare": 0.40298507462686567,
+          "firstScoredAverage": 46.0,
+          "firstAllowedAverage": 27.0,
+          "samples": [
+            {
+              "id": "401925926",
+              "date": "2026-11-15T19:00Z",
+              "firstScored": 34.0,
+              "secondScored": 56.0,
+              "firstAllowed": 27.0,
+              "secondAllowed": 39.0
+            },
+            {
+              "id": "401925858",
+              "date": "2026-11-11T23:30Z",
+              "firstScored": 46.0,
+              "secondScored": 45.0,
+              "firstAllowed": 28.0,
+              "secondAllowed": 53.0
+            },
+            {
+              "id": "401926813",
+              "date": "2026-11-07T00:00Z",
+              "firstScored": 52.0,
+              "secondScored": 60.0,
+              "firstAllowed": 27.0,
+              "secondAllowed": 39.0
+            },
+            {
+              "id": "401931655",
+              "date": "2026-11-03T00:30Z",
+              "firstScored": 52.0,
+              "secondScored": 59.0,
+              "firstAllowed": 26.0,
+              "secondAllowed": 29.0
+            }
+          ],
+          "sources": [
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401925926",
+              "fetchedAt": "2026-11-15T22:46:33.663674+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401925858",
+              "fetchedAt": "2026-11-12T02:15:00.857836+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401926813",
+              "fetchedAt": "2026-11-07T12:56:11.157620+00:00"
+            },
+            {
+              "url": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/summary?event=401931655",
+              "fetchedAt": "2026-11-03T17:00:26.342875+00:00"
+            }
+          ],
+          "priorSeason": false
+        }
+      },
+      "firstHalfStatus": "Ready from actual half scores; prior-season timing profiles are labeled.",
+      "independentFirstHalf": {
+        "modelVersion": "independent-1h-efficiency-v1",
+        "away": 39.15386009663094,
+        "home": 39.31547997500298,
+        "homeMargin": 0.1616198783720364,
+        "total": 78.46934007163392,
+        "firstHalfPossessions": 36.24224054884024,
+        "awayEfficiency": 108.03377358490567,
+        "homeEfficiency": 108.47971698113206,
+        "ratingsAt": "2026-11-25T08:17:05.595523+00:00",
+        "tipoffAt": "2026-11-25T23:00Z",
+        "assumptions": {
+          "nationalEfficiency": 106.0,
+          "tempoMethod": "geometric",
+          "firstHalfPaceFactor": 0.5,
+          "homeAdvantageFullGame": 0.0,
+          "neutral": true,
+          "earlyPaceCorrectionCalibrated": false,
+          "uncertaintyCalibrated": false
+        },
+        "firstTenMinutes": null,
+        "coverProbability": null,
+        "status": "BASELINE_UNCALIBRATED"
+      },
+      "independentFirstHalfStatus": "Uncalibrated independent efficiency baseline."
+    },
+    "config": {
+      "season": 2027,
+      "nationalEfficiency": 106.0,
+      "nationalTempo": 71.5,
+      "baselineAsOf": "2026-11-01",
+      "baselineSource": "User-provided KenPom beginning-of-season screenshots",
+      "homeAdvantagePoints": 0.0,
+      "modelVersion": "additive-matchup-v1"
+    },
+    "ratingsFetchedAt": "2026-11-25T08:17:05.595523+00:00",
+    "preparedAt": "2026-11-25T08:17:05.831260+00:00",
+    "ratingSource": "https://kenpom.com/",
+    "scheduleSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?groups=50&limit=1000&dates=20261125",
+    "verification": "ESPN pregame state and future tipoff checked at server save time",
+    "gameRoomBaseline": null,
+    "kambi": null,
+    "marketStatus": "No verified fresh pregame market available at save time"
+  },
+  "result": null,
+  "decisionEvidence": {
+    "version": "empirical-score-residuals-v1",
+    "markets": []
+  },
+  "kalshiEvidence": {
+    "version": "empirical-score-residuals-v1",
+    "markets": [
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25KENNCOFC-129",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25KENNCOFC",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 128.5,
+        "teamSide": null,
+        "label": "Over 128.5 points",
+        "ask": 0.99,
+        "askSize": 1.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-25T08:17:31.341292+00:00",
+        "rules": "If over 128.5 total points are scored in the Kennesaw St. vs Charleston men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 159.27450000000002,
+        "pointDifference": 30.774500000000018,
+        "probability": 0.9785575048732943,
+        "sampleSize": 1026,
+        "expectedValue": -0.012256480394373406,
+        "projectedScore": {
+          "away": 79.45350000000002,
+          "home": 79.821
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25KENNCOFC-134",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25KENNCOFC",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 133.5,
+        "teamSide": null,
+        "label": "Over 133.5 points",
+        "ask": 0.99,
+        "askSize": 1.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-25T08:17:31.341292+00:00",
+        "rules": "If over 133.5 total points are scored in the Kennesaw St. vs Charleston men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 159.27450000000002,
+        "pointDifference": 25.774500000000018,
+        "probability": 0.9522417153996101,
+        "sampleSize": 1026,
+        "expectedValue": -0.03881930412878764,
+        "projectedScore": {
+          "away": 79.45350000000002,
+          "home": 79.821
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25KENNCOFC-138",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25KENNCOFC",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 137.5,
+        "teamSide": null,
+        "label": "Over 137.5 points",
+        "ask": 0.99,
+        "askSize": 1.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-25T08:17:31.341292+00:00",
+        "rules": "If over 137.5 total points are scored in the Kennesaw St. vs Charleston men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 159.27450000000002,
+        "pointDifference": 21.774500000000018,
+        "probability": 0.9259259259259259,
+        "sampleSize": 1026,
+        "expectedValue": -0.06538212786320187,
+        "projectedScore": {
+          "away": 79.45350000000002,
+          "home": 79.821
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25KENNCOFC-142",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25KENNCOFC",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 141.5,
+        "teamSide": null,
+        "label": "Over 141.5 points",
+        "ask": 0.99,
+        "askSize": 1.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-25T08:17:31.341292+00:00",
+        "rules": "If over 141.5 total points are scored in the Kennesaw St. vs Charleston men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 159.27450000000002,
+        "pointDifference": 17.774500000000018,
+        "probability": 0.8830409356725146,
+        "sampleSize": 1026,
+        "expectedValue": -0.10866969246743252,
+        "projectedScore": {
+          "away": 79.45350000000002,
+          "home": 79.821
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25KENNCOFC-145",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25KENNCOFC",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 144.5,
+        "teamSide": null,
+        "label": "Over 144.5 points",
+        "ask": 0.99,
+        "askSize": 1.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-25T08:17:31.341292+00:00",
+        "rules": "If over 144.5 total points are scored in the Kennesaw St. vs Charleston men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 159.27450000000002,
+        "pointDifference": 14.774500000000018,
+        "probability": 0.8430799220272904,
+        "sampleSize": 1026,
+        "expectedValue": -0.14900583221228383,
+        "projectedScore": {
+          "away": 79.45350000000002,
+          "home": 79.821
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25KENNCOFC-148",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25KENNCOFC",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 147.5,
+        "teamSide": null,
+        "label": "Over 147.5 points",
+        "ask": 0.99,
+        "askSize": 1.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-25T08:17:31.341292+00:00",
+        "rules": "If over 147.5 total points are scored in the Kennesaw St. vs Charleston men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 159.27450000000002,
+        "pointDifference": 11.774500000000018,
+        "probability": 0.7962962962962963,
+        "sampleSize": 1026,
+        "expectedValue": -0.19622862996235363,
+        "projectedScore": {
+          "away": 79.45350000000002,
+          "home": 79.821
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25KENNCOFC-155",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25KENNCOFC",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 154.5,
+        "teamSide": null,
+        "label": "Over 154.5 points",
+        "ask": 0.85,
+        "askSize": 540.0,
+        "fee": 0.009,
+        "breakEven": 0.859,
+        "quoteFetchedAt": "2026-11-25T08:17:31.341292+00:00",
+        "rules": "If over 154.5 total points are scored in the Kennesaw St. vs Charleston men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 159.27450000000002,
+        "pointDifference": 4.7745000000000175,
+        "probability": 0.6569200779727096,
+        "sampleSize": 1026,
+        "expectedValue": -0.23525020026459886,
+        "projectedScore": {
+          "away": 79.45350000000002,
+          "home": 79.821
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25KENNCOFC-150",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25KENNCOFC",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 149.5,
+        "teamSide": null,
+        "label": "Over 149.5 points",
+        "ask": 0.99,
+        "askSize": 1.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-25T08:17:31.341292+00:00",
+        "rules": "If over 149.5 total points are scored in the Kennesaw St. vs Charleston men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 159.27450000000002,
+        "pointDifference": 9.774500000000018,
+        "probability": 0.7563352826510721,
+        "sampleSize": 1026,
+        "expectedValue": -0.23656476970720494,
+        "projectedScore": {
+          "away": 79.45350000000002,
+          "home": 79.821
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25KENNCOFC-158",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25KENNCOFC",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 157.5,
+        "teamSide": null,
+        "label": "Over 157.5 points",
+        "ask": 0.78,
+        "askSize": 949.0,
+        "fee": 0.0121,
+        "breakEven": 0.7921,
+        "quoteFetchedAt": "2026-11-25T08:17:31.341292+00:00",
+        "rules": "If over 157.5 total points are scored in the Kennesaw St. vs Charleston men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 159.27450000000002,
+        "pointDifference": 1.7745000000000175,
+        "probability": 0.5925925925925926,
+        "sampleSize": 1026,
+        "expectedValue": -0.25187149022523353,
+        "projectedScore": {
+          "away": 79.45350000000002,
+          "home": 79.821
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25KENNCOFC-166",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25KENNCOFC",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 165.5,
+        "teamSide": null,
+        "label": "Over 165.5 points",
+        "ask": 0.8,
+        "askSize": 843.0,
+        "fee": 0.0112,
+        "breakEven": 0.8112,
+        "quoteFetchedAt": "2026-11-25T08:17:31.341292+00:00",
+        "rules": "If over 165.5 total points are scored in the Kennesaw St. vs Charleston men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 159.27450000000002,
+        "pointDifference": 6.2254999999999825,
+        "probability": 0.6062378167641326,
+        "sampleSize": 1026,
+        "expectedValue": -0.25266541325920544,
+        "projectedScore": {
+          "away": 79.45350000000002,
+          "home": 79.821
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25KENNCOFC-152",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25KENNCOFC",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 151.5,
+        "teamSide": null,
+        "label": "Over 151.5 points",
+        "ask": 0.99,
+        "askSize": 1.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-25T08:17:31.341292+00:00",
+        "rules": "If over 151.5 total points are scored in the Kennesaw St. vs Charleston men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 159.27450000000002,
+        "pointDifference": 7.7745000000000175,
+        "probability": 0.7202729044834308,
+        "sampleSize": 1026,
+        "expectedValue": -0.272965676306217,
+        "projectedScore": {
+          "away": 79.45350000000002,
+          "home": 79.821
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25KENNCOFC-162",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25KENNCOFC",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 161.5,
+        "teamSide": null,
+        "label": "Over 161.5 points",
+        "ask": 0.7,
+        "askSize": 879.0,
+        "fee": 0.0147,
+        "breakEven": 0.7147,
+        "quoteFetchedAt": "2026-11-25T08:17:31.341292+00:00",
+        "rules": "If over 161.5 total points are scored in the Kennesaw St. vs Charleston men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 159.27450000000002,
+        "pointDifference": 2.2254999999999825,
+        "probability": 0.5116959064327485,
+        "sampleSize": 1026,
+        "expectedValue": -0.28404098722156357,
+        "projectedScore": {
+          "away": 79.45350000000002,
+          "home": 79.821
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25KENNCOFC-162",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25KENNCOFC",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 161.5,
+        "teamSide": null,
+        "label": "Over 161.5 points",
+        "ask": 0.69,
+        "askSize": 543.0,
+        "fee": 0.015,
+        "breakEven": 0.705,
+        "quoteFetchedAt": "2026-11-25T08:17:31.341292+00:00",
+        "rules": "If over 161.5 total points are scored in the Kennesaw St. vs Charleston men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 159.27450000000002,
+        "pointDifference": -2.2254999999999825,
+        "probability": 0.48830409356725146,
+        "sampleSize": 1026,
+        "expectedValue": -0.3073700800464518,
+        "projectedScore": {
+          "away": 79.45350000000002,
+          "home": 79.821
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25KENNCOFC-158",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25KENNCOFC",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 157.5,
+        "teamSide": null,
+        "label": "Over 157.5 points",
+        "ask": 0.62,
+        "askSize": 879.0,
+        "fee": 0.0165,
+        "breakEven": 0.6365,
+        "quoteFetchedAt": "2026-11-25T08:17:31.341292+00:00",
+        "rules": "If over 157.5 total points are scored in the Kennesaw St. vs Charleston men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 159.27450000000002,
+        "pointDifference": -1.7745000000000175,
+        "probability": 0.4074074074074074,
+        "sampleSize": 1026,
+        "expectedValue": -0.3599255186058014,
+        "projectedScore": {
+          "away": 79.45350000000002,
+          "home": 79.821
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25KENNCOFC-166",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25KENNCOFC",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 165.5,
+        "teamSide": null,
+        "label": "Over 165.5 points",
+        "ask": 0.6,
+        "askSize": 913.0,
+        "fee": 0.0168,
+        "breakEven": 0.6168,
+        "quoteFetchedAt": "2026-11-25T08:17:31.341292+00:00",
+        "rules": "If over 165.5 total points are scored in the Kennesaw St. vs Charleston men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 159.27450000000002,
+        "pointDifference": -6.2254999999999825,
+        "probability": 0.3937621832358674,
+        "sampleSize": 1026,
+        "expectedValue": -0.36160476129074676,
+        "projectedScore": {
+          "away": 79.45350000000002,
+          "home": 79.821
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25KENNCOFC-155",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25KENNCOFC",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 154.5,
+        "teamSide": null,
+        "label": "Over 154.5 points",
+        "ask": 0.55,
+        "askSize": 852.0,
+        "fee": 0.0174,
+        "breakEven": 0.5674,
+        "quoteFetchedAt": "2026-11-25T08:17:31.341292+00:00",
+        "rules": "If over 154.5 total points are scored in the Kennesaw St. vs Charleston men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 159.27450000000002,
+        "pointDifference": -4.7745000000000175,
+        "probability": 0.34307992202729043,
+        "sampleSize": 1026,
+        "expectedValue": -0.39534733516515613,
+        "projectedScore": {
+          "away": 79.45350000000002,
+          "home": 79.821
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25KENNCOFC-145",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25KENNCOFC",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 144.5,
+        "teamSide": null,
+        "label": "Over 144.5 points",
+        "ask": 0.35,
+        "askSize": 850.0,
+        "fee": 0.016,
+        "breakEven": 0.366,
+        "quoteFetchedAt": "2026-11-25T08:17:31.341292+00:00",
+        "rules": "If over 144.5 total points are scored in the Kennesaw St. vs Charleston men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 159.27450000000002,
+        "pointDifference": -14.774500000000018,
+        "probability": 0.15692007797270954,
+        "sampleSize": 1026,
+        "expectedValue": -0.5712566175609028,
+        "projectedScore": {
+          "away": 79.45350000000002,
+          "home": 79.821
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25KENNCOFC-142",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25KENNCOFC",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 141.5,
+        "teamSide": null,
+        "label": "Over 141.5 points",
+        "ask": 0.31,
+        "askSize": 859.0,
+        "fee": 0.015,
+        "breakEven": 0.325,
+        "quoteFetchedAt": "2026-11-25T08:17:31.341292+00:00",
+        "rules": "If over 141.5 total points are scored in the Kennesaw St. vs Charleston men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 159.27450000000002,
+        "pointDifference": -17.774500000000018,
+        "probability": 0.11695906432748537,
+        "sampleSize": 1026,
+        "expectedValue": -0.6401259559154296,
+        "projectedScore": {
+          "away": 79.45350000000002,
+          "home": 79.821
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25KENNCOFC-171",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25KENNCOFC",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 170.5,
+        "teamSide": null,
+        "label": "Over 170.5 points",
+        "ask": 0.95,
+        "askSize": 100.0,
+        "fee": 0.0034,
+        "breakEven": 0.9534,
+        "quoteFetchedAt": "2026-11-25T08:17:31.341292+00:00",
+        "rules": "If over 170.5 total points are scored in the Kennesaw St. vs Charleston men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 159.27450000000002,
+        "pointDifference": -11.225499999999982,
+        "probability": 0.28460038986354774,
+        "sampleSize": 1026,
+        "expectedValue": -0.7014889974160398,
+        "projectedScore": {
+          "away": 79.45350000000002,
+          "home": 79.821
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25KENNCOFC-138",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25KENNCOFC",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 137.5,
+        "teamSide": null,
+        "label": "Over 137.5 points",
+        "ask": 0.26,
+        "askSize": 855.0,
+        "fee": 0.0135,
+        "breakEven": 0.2735,
+        "quoteFetchedAt": "2026-11-25T08:17:31.341292+00:00",
+        "rules": "If over 137.5 total points are scored in the Kennesaw St. vs Charleston men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 159.27450000000002,
+        "pointDifference": -21.774500000000018,
+        "probability": 0.07407407407407407,
+        "sampleSize": 1026,
+        "expectedValue": -0.7291624348297109,
+        "projectedScore": {
+          "away": 79.45350000000002,
+          "home": 79.821
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25KENNCOFC-134",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25KENNCOFC",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 133.5,
+        "teamSide": null,
+        "label": "Over 133.5 points",
+        "ask": 0.23,
+        "askSize": 842.0,
+        "fee": 0.0124,
+        "breakEven": 0.2424,
+        "quoteFetchedAt": "2026-11-25T08:17:31.341292+00:00",
+        "rules": "If over 133.5 total points are scored in the Kennesaw St. vs Charleston men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 159.27450000000002,
+        "pointDifference": -25.774500000000018,
+        "probability": 0.04775828460038986,
+        "sampleSize": 1026,
+        "expectedValue": -0.8029773737607679,
+        "projectedScore": {
+          "away": 79.45350000000002,
+          "home": 79.821
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV25KENNCOFC-129",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV25KENNCOFC",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 128.5,
+        "teamSide": null,
+        "label": "Over 128.5 points",
+        "ask": 0.9,
+        "askSize": 152.0,
+        "fee": 0.0063,
+        "breakEven": 0.9063,
+        "quoteFetchedAt": "2026-11-25T08:17:31.341292+00:00",
+        "rules": "If over 128.5 total points are scored in the Kennesaw St. vs Charleston men's college basketball game originally scheduled for Nov 25, 2026, then the market resolves to Yes.",
+        "prediction": 159.27450000000002,
+        "pointDifference": -30.774500000000018,
+        "probability": 0.021442495126705652,
+        "sampleSize": 1026,
+        "expectedValue": -0.9763406210673004,
+        "projectedScore": {
+          "away": 79.45350000000002,
+          "home": 79.821
+        }
+      }
+    ]
+  }
+}
