@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-26",
+  "games": [
+    {
+      "gameId": "401929281",
+      "date": "2026-11-26T16:00Z",
+      "awayName": "Georgia Bulldogs",
+      "homeName": "Cincinnati Bearcats",
+      "actualAway1H": 34.0,
+      "actualHome1H": 50.0,
+      "actualMargin1H": 16.0,
+      "actualTotal1H": 84.0,
+      "models": {
+        "independent": {
+          "version": "independent-1h-efficiency-v1",
+          "projectedAway": 37.16442931912849,
+          "projectedHome": 39.65285624224784,
+          "projectedMargin": 2.4884269231193556,
+          "projectedTotal": 76.81728556137634,
+          "awayError": 3.1644293191284874,
+          "homeError": -10.347143757752157,
+          "marginError": -13.511573076880644,
+          "totalError": -7.1827144386236625
+        },
+        "historical": {
+          "version": "first-half-timing-v1",
+          "projectedAway": 37.35630921658984,
+          "projectedHome": 38.360420346559124,
+          "projectedMargin": 1.0041111299692815,
+          "projectedTotal": 75.71672956314896,
+          "awayError": 3.3563092165898425,
+          "homeError": -11.639579653440876,
+          "marginError": -14.995888870030718,
+          "totalError": -8.28327043685104
+        }
+      },
+      "pregamePreparedAt": "2026-11-22T11:05:26.846909+00:00",
+      "ratingsFetchedAt": "2026-11-22T11:05:25.419530+00:00",
+      "resultSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?groups=50&limit=1000&dates=20261126"
+    }
+  ],
+  "summary": {
+    "independent": {
+      "games": 1,
+      "marginMAE": 13.511573076880644,
+      "totalMAE": 7.1827144386236625,
+      "marginBias": -13.511573076880644
+    },
+    "historical": {
+      "games": 1,
+      "marginMAE": 14.995888870030718,
+      "totalMAE": 8.28327043685104,
+      "marginBias": -14.995888870030718
+    }
+  },
+  "gradedAt": "2026-11-26T18:37:32.333280+00:00"
+}
