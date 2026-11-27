@@ -220,7 +220,100 @@
   "result": null,
   "decisionEvidence": {
     "version": "empirical-score-residuals-v1",
-    "markets": []
+    "markets": [
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 146.5,
+        "price": -110,
+        "outcomeId": "4433750583",
+        "offerId": "2722616856",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": 3.71399999999997,
+        "breakEven": 0.5238095238095238,
+        "probability": 0.5526315789473685,
+        "expectedValue": 0.05502392344497604,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-27T10:44:55.354862+00:00",
+        "score": {
+          "away": 69.41900000000001,
+          "home": 73.36700000000002
+        },
+        "sampleSize": 1064,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-27T10:45:26.561697+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": 7.5,
+        "price": -107,
+        "outcomeId": "4433750581",
+        "offerId": "2722616855",
+        "teamId": "2515",
+        "side": null,
+        "pointDifference": 3.5519999999999925,
+        "breakEven": 0.5169082125603864,
+        "probability": 0.5046992481203008,
+        "expectedValue": -0.023619211580352652,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-27T10:44:55.354862+00:00",
+        "score": {
+          "away": 69.41900000000001,
+          "home": 73.36700000000002
+        },
+        "sampleSize": 1064,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-27T10:45:26.561697+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": -7.5,
+        "price": -114,
+        "outcomeId": "4433750580",
+        "offerId": "2722616855",
+        "teamId": "44",
+        "side": null,
+        "pointDifference": -3.5519999999999925,
+        "breakEven": 0.5327102803738317,
+        "probability": 0.49530075187969924,
+        "expectedValue": -0.0702249043661785,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-27T10:44:55.354862+00:00",
+        "score": {
+          "away": 69.41900000000001,
+          "home": 73.36700000000002
+        },
+        "sampleSize": 1064,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-27T10:45:26.561697+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 146.5,
+        "price": -110,
+        "outcomeId": "4433750582",
+        "offerId": "2722616856",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": -3.71399999999997,
+        "breakEven": 0.5238095238095238,
+        "probability": 0.4473684210526316,
+        "expectedValue": -0.14593301435406708,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-27T10:44:55.354862+00:00",
+        "score": {
+          "away": 69.41900000000001,
+          "home": 73.36700000000002
+        },
+        "sampleSize": 1064,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-27T10:45:26.561697+00:00"
+      }
+    ]
   },
   "reportEvidence": {
     "articles": [
@@ -1604,7 +1697,166 @@
           "away": 69.41900000000001,
           "home": 73.36700000000002
         }
+      },
+      {
+        "ticker": "KXNCAAMBSPREAD-26NOV27RADAMER-RAD14",
+        "eventTicker": "KXNCAAMBSPREAD-26NOV27RADAMER",
+        "period": "full",
+        "kind": "spread",
+        "answer": "no",
+        "line": 13.5,
+        "teamSide": "away",
+        "label": "Radford wins by over 13.5 points",
+        "ask": 0.99,
+        "askSize": 5.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-27T10:45:33.436534+00:00",
+        "rules": "If Radford wins by more than 13.5 points in the Radford vs American men's college basketball game originally scheduled for Nov 27, 2026, then the market resolves to Yes.",
+        "prediction": -3.9480000000000075,
+        "pointDifference": 17.448000000000008,
+        "probability": 0.9568480300187617,
+        "sampleSize": 1066,
+        "expectedValue": -0.034169748643623994,
+        "projectedScore": {
+          "away": 69.41900000000001,
+          "home": 73.36700000000002
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV27RADAMER-125",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV27RADAMER",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 124.5,
+        "teamSide": null,
+        "label": "Over 124.5 points",
+        "ask": 0.98,
+        "askSize": 1.0,
+        "fee": 0.0014,
+        "breakEven": 0.9814,
+        "quoteFetchedAt": "2026-11-27T10:45:33.459448+00:00",
+        "rules": "If over 124.5 total points are scored in the Radford vs American men's college basketball game originally scheduled for Nov 27, 2026, then the market resolves to Yes.",
+        "prediction": 142.78600000000003,
+        "pointDifference": 18.28600000000003,
+        "probability": 0.8874296435272045,
+        "sampleSize": 1066,
+        "expectedValue": -0.09575133123374312,
+        "projectedScore": {
+          "away": 69.41900000000001,
+          "home": 73.36700000000002
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV27RADAMER-125",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV27RADAMER",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 124.5,
+        "teamSide": null,
+        "label": "Over 124.5 points",
+        "ask": 0.15,
+        "askSize": 415.0,
+        "fee": 0.009,
+        "breakEven": 0.159,
+        "quoteFetchedAt": "2026-11-27T10:45:33.459448+00:00",
+        "rules": "If over 124.5 total points are scored in the Radford vs American men's college basketball game originally scheduled for Nov 27, 2026, then the market resolves to Yes.",
+        "prediction": 142.78600000000003,
+        "pointDifference": -18.28600000000003,
+        "probability": 0.1125703564727955,
+        "sampleSize": 1066,
+        "expectedValue": -0.29201033664908493,
+        "projectedScore": {
+          "away": 69.41900000000001,
+          "home": 73.36700000000002
+        }
       }
     ]
+  },
+  "additionalMarkets": {
+    "half": {},
+    "full": {
+      "spread": {
+        "id": "2722616855",
+        "criterionId": "1001159512",
+        "label": "Point Spread",
+        "period": "full",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4433750580",
+            "price": -114,
+            "changedAt": "2026-11-27T02:43:06Z",
+            "teamId": "44",
+            "line": -7.5
+          },
+          {
+            "id": "4433750581",
+            "price": -107,
+            "changedAt": "2026-11-27T02:43:06Z",
+            "teamId": "2515",
+            "line": 7.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-27T10:44:55.354862+00:00",
+        "quoteSavedAt": "2026-11-27T10:45:26.561697+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028739733.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "total": {
+        "id": "2722616856",
+        "criterionId": "1001159509",
+        "label": "Total Points - Including Overtime",
+        "period": "full",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4433750582",
+            "price": -110,
+            "changedAt": "2026-11-27T02:43:06Z",
+            "side": "over",
+            "line": 146.5
+          },
+          {
+            "id": "4433750583",
+            "price": -110,
+            "changedAt": "2026-11-27T02:43:06Z",
+            "side": "under",
+            "line": 146.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-27T10:44:55.354862+00:00",
+        "quoteSavedAt": "2026-11-27T10:45:26.561697+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028739733.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "moneyline": {
+        "id": "2722616858",
+        "criterionId": "1001159732",
+        "label": "Moneyline",
+        "period": "full",
+        "kind": "moneyline",
+        "outcomes": [
+          {
+            "id": "4433750585",
+            "price": -385,
+            "changedAt": "2026-11-27T02:43:09Z",
+            "teamId": "44"
+          },
+          {
+            "id": "4433750587",
+            "price": 280,
+            "changedAt": "2026-11-27T02:43:09Z",
+            "teamId": "2515"
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-27T10:44:55.354862+00:00",
+        "quoteSavedAt": "2026-11-27T10:45:26.561697+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028739733.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    }
   }
 }
