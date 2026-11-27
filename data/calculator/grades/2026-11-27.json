@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-27",
+  "games": [
+    {
+      "gameId": "401920429",
+      "date": "2026-11-27T16:00Z",
+      "awayName": "Virginia Cavaliers",
+      "homeName": "Xavier Musketeers",
+      "actualAway1H": 42.0,
+      "actualHome1H": 27.0,
+      "actualMargin1H": -15.0,
+      "actualTotal1H": 69.0,
+      "models": {
+        "independent": {
+          "version": "independent-1h-efficiency-v1",
+          "projectedAway": 41.184363082146156,
+          "projectedHome": 37.12551274733493,
+          "projectedMargin": -4.0588503348112255,
+          "projectedTotal": 78.30987582948109,
+          "awayError": -0.8156369178538441,
+          "homeError": 10.12551274733493,
+          "marginError": 10.941149665188775,
+          "totalError": 9.309875829481086
+        },
+        "historical": {
+          "version": "first-half-timing-v1",
+          "projectedAway": 38.18760973630832,
+          "projectedHome": 35.623241571987336,
+          "projectedMargin": -2.5643681643209817,
+          "projectedTotal": 73.81085130829565,
+          "awayError": -3.8123902636916824,
+          "homeError": 8.623241571987336,
+          "marginError": 12.435631835679018,
+          "totalError": 4.810851308295653
+        }
+      },
+      "pregamePreparedAt": "2026-11-23T12:14:48.761886+00:00",
+      "ratingsFetchedAt": "2026-11-23T12:14:47.649971+00:00",
+      "resultSource": "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/scoreboard?groups=50&limit=1000&dates=20261127"
+    }
+  ],
+  "summary": {
+    "independent": {
+      "games": 1,
+      "marginMAE": 10.941149665188775,
+      "totalMAE": 9.309875829481086,
+      "marginBias": 10.941149665188775
+    },
+    "historical": {
+      "games": 1,
+      "marginMAE": 12.435631835679018,
+      "totalMAE": 4.810851308295653,
+      "marginBias": 12.435631835679018
+    }
+  },
+  "gradedAt": "2026-11-27T18:26:21.094323+00:00"
+}
