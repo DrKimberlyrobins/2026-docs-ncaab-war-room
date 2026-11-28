@@ -244,7 +244,100 @@
   "result": null,
   "decisionEvidence": {
     "version": "empirical-score-residuals-v1",
-    "markets": []
+    "markets": [
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 158.5,
+        "price": -113,
+        "outcomeId": "4435124079",
+        "offerId": "2723043827",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": 6.871599999999972,
+        "breakEven": 0.5305164319248826,
+        "probability": 0.6380090497737556,
+        "expectedValue": 0.20261882833460135,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-28T11:37:10.525435+00:00",
+        "score": {
+          "away": 76.23,
+          "home": 75.39840000000002
+        },
+        "sampleSize": 1105,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-28T11:37:36.946387+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": -1.5,
+        "price": -125,
+        "outcomeId": "4435124080",
+        "offerId": "2723043828",
+        "teamId": "2005",
+        "side": null,
+        "pointDifference": -2.3315999999999804,
+        "breakEven": 0.5555555555555556,
+        "probability": 0.5321266968325792,
+        "expectedValue": -0.04217194570135759,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-28T11:37:10.525435+00:00",
+        "score": {
+          "away": 76.23,
+          "home": 75.39840000000002
+        },
+        "sampleSize": 1105,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-28T11:37:36.946387+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": 1.5,
+        "price": 102,
+        "outcomeId": "4435124081",
+        "offerId": "2723043828",
+        "teamId": "225",
+        "side": null,
+        "pointDifference": 2.3315999999999804,
+        "breakEven": 0.49504950495049505,
+        "probability": 0.4678733031674208,
+        "expectedValue": -0.05489592760181003,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-28T11:37:10.525435+00:00",
+        "score": {
+          "away": 76.23,
+          "home": 75.39840000000002
+        },
+        "sampleSize": 1105,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-28T11:37:36.946387+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 158.5,
+        "price": -108,
+        "outcomeId": "4435124078",
+        "offerId": "2723043827",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": -6.871599999999972,
+        "breakEven": 0.5192307692307693,
+        "probability": 0.36199095022624433,
+        "expectedValue": -0.3028322440087146,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-28T11:37:10.525435+00:00",
+        "score": {
+          "away": 76.23,
+          "home": 75.39840000000002
+        },
+        "sampleSize": 1105,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-28T11:37:36.946387+00:00"
+      }
+    ]
   },
   "reportEvidence": {
     "articles": [
@@ -1524,7 +1617,141 @@
           "away": 76.23,
           "home": 75.39840000000002
         }
+      },
+      {
+        "ticker": "KXNCAAMBSPREAD-26NOV28BRWNAFA-AFA24",
+        "eventTicker": "KXNCAAMBSPREAD-26NOV28BRWNAFA",
+        "period": "full",
+        "kind": "spread",
+        "answer": "no",
+        "line": 23.5,
+        "teamSide": "home",
+        "label": "Air Force wins by over 23.5 points",
+        "ask": 0.99,
+        "askSize": 122.69,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-28T11:37:51.573537+00:00",
+        "rules": "If Air Force wins by more than 23.5 points in the Brown vs Air Force men's college basketball game originally scheduled for Nov 28, 2026, then the market resolves to Yes.",
+        "prediction": -0.8315999999999804,
+        "pointDifference": 24.33159999999998,
+        "probability": 0.9367088607594937,
+        "sampleSize": 1106,
+        "expectedValue": -0.05449797036489993,
+        "projectedScore": {
+          "away": 76.23,
+          "home": 75.39840000000002
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV28BRWNAFA-129",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV28BRWNAFA",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 128.5,
+        "teamSide": null,
+        "label": "Over 128.5 points",
+        "ask": 0.99,
+        "askSize": 100.05,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-28T11:37:51.500638+00:00",
+        "rules": "If over 128.5 total points are scored in the Brown vs Air Force men's college basketball game originally scheduled for Nov 28, 2026, then the market resolves to Yes.",
+        "prediction": 151.62840000000003,
+        "pointDifference": 23.128400000000028,
+        "probability": 0.9358047016274864,
+        "sampleSize": 1106,
+        "expectedValue": -0.055410617111651975,
+        "projectedScore": {
+          "away": 76.23,
+          "home": 75.39840000000002
+        }
       }
     ]
+  },
+  "additionalMarkets": {
+    "half": {},
+    "full": {
+      "total": {
+        "id": "2723043827",
+        "criterionId": "1001159509",
+        "label": "Total Points - Including Overtime",
+        "period": "full",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4435124078",
+            "price": -108,
+            "changedAt": "2026-11-28T08:45:09Z",
+            "side": "over",
+            "line": 158.5
+          },
+          {
+            "id": "4435124079",
+            "price": -113,
+            "changedAt": "2026-11-28T08:45:09Z",
+            "side": "under",
+            "line": 158.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-28T11:37:10.525435+00:00",
+        "quoteSavedAt": "2026-11-28T11:37:36.946387+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028638942.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "spread": {
+        "id": "2723043828",
+        "criterionId": "1001159512",
+        "label": "Point Spread",
+        "period": "full",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4435124080",
+            "price": -125,
+            "changedAt": "2026-11-28T08:45:17Z",
+            "teamId": "2005",
+            "line": -1.5
+          },
+          {
+            "id": "4435124081",
+            "price": 102,
+            "changedAt": "2026-11-28T08:45:17Z",
+            "teamId": "225",
+            "line": 1.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-28T11:37:10.525435+00:00",
+        "quoteSavedAt": "2026-11-28T11:37:36.946387+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028638942.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "moneyline": {
+        "id": "2723081609",
+        "criterionId": "1001159732",
+        "label": "Moneyline",
+        "period": "full",
+        "kind": "moneyline",
+        "outcomes": [
+          {
+            "id": "4435085717",
+            "price": -150,
+            "changedAt": "2026-11-28T08:45:09Z",
+            "teamId": "2005"
+          },
+          {
+            "id": "4435085718",
+            "price": 118,
+            "changedAt": "2026-11-28T08:45:09Z",
+            "teamId": "225"
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-28T11:37:10.525435+00:00",
+        "quoteSavedAt": "2026-11-28T11:37:36.946387+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1028638942.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    }
   }
 }

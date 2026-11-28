@@ -244,7 +244,100 @@
   "result": null,
   "decisionEvidence": {
     "version": "empirical-score-residuals-v1",
-    "markets": []
+    "markets": [
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": 4.5,
+        "price": 100,
+        "outcomeId": "4435157268",
+        "offerId": "2723091285",
+        "teamId": "2449",
+        "side": null,
+        "pointDifference": 0.45539999999999736,
+        "breakEven": 0.5,
+        "probability": 0.6199095022624435,
+        "expectedValue": 0.2398190045248869,
+        "qualified": true,
+        "quoteFetchedAt": "2026-11-28T11:37:13.781373+00:00",
+        "score": {
+          "away": 73.18799999999999,
+          "home": 69.14339999999999
+        },
+        "sampleSize": 1105,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-28T11:37:36.946387+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 142.5,
+        "price": -114,
+        "outcomeId": "4435197603",
+        "offerId": "2723077076",
+        "teamId": null,
+        "side": "over",
+        "pointDifference": -0.16860000000002628,
+        "breakEven": 0.5327102803738317,
+        "probability": 0.5321266968325792,
+        "expectedValue": -0.0010954989283161684,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-28T11:37:13.781373+00:00",
+        "score": {
+          "away": 73.18799999999999,
+          "home": 69.14339999999999
+        },
+        "sampleSize": 1105,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-28T11:37:36.946387+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "total",
+        "line": 142.5,
+        "price": -107,
+        "outcomeId": "4435197604",
+        "offerId": "2723077076",
+        "teamId": null,
+        "side": "under",
+        "pointDifference": 0.16860000000002628,
+        "breakEven": 0.5169082125603864,
+        "probability": 0.4678733031674208,
+        "expectedValue": -0.09486192751723255,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-28T11:37:13.781373+00:00",
+        "score": {
+          "away": 73.18799999999999,
+          "home": 69.14339999999999
+        },
+        "sampleSize": 1105,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-28T11:37:36.946387+00:00"
+      },
+      {
+        "period": "full",
+        "kind": "spread",
+        "line": -4.5,
+        "price": -121,
+        "outcomeId": "4435157267",
+        "offerId": "2723091285",
+        "teamId": "2181",
+        "side": null,
+        "pointDifference": -0.45539999999999736,
+        "breakEven": 0.5475113122171946,
+        "probability": 0.38009049773755654,
+        "expectedValue": -0.30578512396694224,
+        "qualified": false,
+        "quoteFetchedAt": "2026-11-28T11:37:13.781373+00:00",
+        "score": {
+          "away": 73.18799999999999,
+          "home": 69.14339999999999
+        },
+        "sampleSize": 1105,
+        "pushProbability": 0.0,
+        "evaluatedAt": "2026-11-28T11:37:36.946387+00:00"
+      }
+    ]
   },
   "reportEvidence": {
     "articles": [
@@ -1531,7 +1624,166 @@
           "away": 73.18799999999999,
           "home": 69.14339999999999
         }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV28NDSUDRKE-122",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV28NDSUDRKE",
+        "period": "full",
+        "kind": "total",
+        "answer": "yes",
+        "line": 121.5,
+        "teamSide": null,
+        "label": "Over 121.5 points",
+        "ask": 0.95,
+        "askSize": 4.0,
+        "fee": 0.0034,
+        "breakEven": 0.9534,
+        "quoteFetchedAt": "2026-11-28T11:37:51.500638+00:00",
+        "rules": "If over 121.5 total points are scored in the North Dakota St. vs Drake men's college basketball game originally scheduled for Nov 28, 2026, then the market resolves to Yes.",
+        "prediction": 142.33139999999997,
+        "pointDifference": 20.831399999999974,
+        "probability": 0.9159132007233273,
+        "sampleSize": 1106,
+        "expectedValue": -0.039319067837919816,
+        "projectedScore": {
+          "away": 73.18799999999999,
+          "home": 69.14339999999999
+        }
+      },
+      {
+        "ticker": "KXNCAAMBSPREAD-26NOV28NDSUDRKE-NDSU17",
+        "eventTicker": "KXNCAAMBSPREAD-26NOV28NDSUDRKE",
+        "period": "full",
+        "kind": "spread",
+        "answer": "no",
+        "line": 16.5,
+        "teamSide": "home",
+        "label": "North Dakota St. wins by over 16.5 points",
+        "ask": 0.99,
+        "askSize": 7.0,
+        "fee": 0.0007,
+        "breakEven": 0.9907,
+        "quoteFetchedAt": "2026-11-28T11:37:51.573537+00:00",
+        "rules": "If North Dakota St. wins by more than 16.5 points in the North Dakota St. vs Drake men's college basketball game originally scheduled for Nov 28, 2026, then the market resolves to Yes.",
+        "prediction": -4.044600000000003,
+        "pointDifference": 20.544600000000003,
+        "probability": 0.9050632911392406,
+        "sampleSize": 1106,
+        "expectedValue": -0.08644060650122082,
+        "projectedScore": {
+          "away": 73.18799999999999,
+          "home": 69.14339999999999
+        }
+      },
+      {
+        "ticker": "KXNCAAMBTOTAL-26NOV28NDSUDRKE-122",
+        "eventTicker": "KXNCAAMBTOTAL-26NOV28NDSUDRKE",
+        "period": "full",
+        "kind": "total",
+        "answer": "no",
+        "line": 121.5,
+        "teamSide": null,
+        "label": "Over 121.5 points",
+        "ask": 0.11,
+        "askSize": 8.0,
+        "fee": 0.0069,
+        "breakEven": 0.1169,
+        "quoteFetchedAt": "2026-11-28T11:37:51.500638+00:00",
+        "rules": "If over 121.5 total points are scored in the North Dakota St. vs Drake men's college basketball game originally scheduled for Nov 28, 2026, then the market resolves to Yes.",
+        "prediction": 142.33139999999997,
+        "pointDifference": -20.831399999999974,
+        "probability": 0.08408679927667269,
+        "sampleSize": 1106,
+        "expectedValue": -0.2806946169660164,
+        "projectedScore": {
+          "away": 73.18799999999999,
+          "home": 69.14339999999999
+        }
       }
     ]
+  },
+  "additionalMarkets": {
+    "half": {},
+    "full": {
+      "moneyline": {
+        "id": "2723074345",
+        "criterionId": "1001159732",
+        "label": "Moneyline",
+        "period": "full",
+        "kind": "moneyline",
+        "outcomes": [
+          {
+            "id": "4435185760",
+            "price": -245,
+            "changedAt": "2026-11-28T05:24:30Z",
+            "teamId": "2181"
+          },
+          {
+            "id": "4435185761",
+            "price": 185,
+            "changedAt": "2026-11-28T05:24:30Z",
+            "teamId": "2449"
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-28T11:37:13.781373+00:00",
+        "quoteSavedAt": "2026-11-28T11:37:36.946387+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029992214.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "total": {
+        "id": "2723077076",
+        "criterionId": "1001159509",
+        "label": "Total Points - Including Overtime",
+        "period": "full",
+        "kind": "total",
+        "outcomes": [
+          {
+            "id": "4435197603",
+            "price": -114,
+            "changedAt": "2026-11-28T04:38:48Z",
+            "side": "over",
+            "line": 142.5
+          },
+          {
+            "id": "4435197604",
+            "price": -107,
+            "changedAt": "2026-11-28T04:38:48Z",
+            "side": "under",
+            "line": 142.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-28T11:37:13.781373+00:00",
+        "quoteSavedAt": "2026-11-28T11:37:36.946387+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029992214.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      },
+      "spread": {
+        "id": "2723091285",
+        "criterionId": "1001159512",
+        "label": "Point Spread",
+        "period": "full",
+        "kind": "spread",
+        "outcomes": [
+          {
+            "id": "4435157267",
+            "price": -121,
+            "changedAt": "2026-11-28T05:24:30Z",
+            "teamId": "2181",
+            "line": -4.5
+          },
+          {
+            "id": "4435157268",
+            "price": 100,
+            "changedAt": "2026-11-28T05:24:30Z",
+            "teamId": "2449",
+            "line": 4.5
+          }
+        ],
+        "main": true,
+        "quoteFetchedAt": "2026-11-28T11:37:13.781373+00:00",
+        "quoteSavedAt": "2026-11-28T11:37:36.946387+00:00",
+        "sourceUrl": "https://eu.offering-api.kambicdn.com/offering/v2018/pivusmsrl-bil/betoffer/event/1029992214.json?lang=en_US&market=US-MS&client_id=200&channel_id=7&includeParticipants=true"
+      }
+    }
   }
 }
